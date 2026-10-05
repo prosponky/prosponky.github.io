@@ -18,12 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - name: Install standard browser
-        run: |
-          npm install --no-save @playwright/test@1.63.0
-          npx playwright install --with-deps chromium
       - name: Collect complete public inventory
-        run: xvfb-run --auto-servernum node scripts/collect-inventory.mjs --visible
+        run: node scripts/collect-dealerrater.mjs
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}
@@ -36,6 +32,7 @@ jobs:
           git commit -m 'Refresh Greenway public inventory'
           git push
           gh api --method POST repos/${{ github.repository }}/pages/builds
+
 
 
 
