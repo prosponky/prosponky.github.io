@@ -2,7 +2,7 @@ name: Refresh public inventory
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 10 * * *'
+    - cron: '17 11 * * *'
 permissions:
   contents: write
   pages: write
@@ -19,7 +19,9 @@ jobs:
         with:
           node-version: 24
       - name: Collect complete public inventory
-        run: node scripts/collect-truecar.mjs
+        env:
+          MARKETCHECK_API_KEY: ${{ secrets.MARKETCHECK_API_KEY }}
+        run: node scripts/collect-marketcheck.mjs
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}
@@ -32,4 +34,7 @@ jobs:
           git commit -m 'Refresh Greenway public inventory'
           git push
           gh api --method POST repos/${{ github.repository }}/pages/builds
+
+
+
 
