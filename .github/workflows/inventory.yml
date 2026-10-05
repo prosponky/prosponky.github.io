@@ -1,0 +1,38 @@
+name: Refresh public inventory
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 10 * * *'
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: inventory-refresh
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install browser collector
+        run: |
+          npm install --no-save @playwright/test@1.63.0
+          npx playwright install --with-deps chromium
+      - name: Collect complete public inventory
+        run: node scripts/collect-inventory.mjs
+      - name: Publish refreshed snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p inventory
+          cp public/inventory/greenway.json inventory/greenway.json
+          git config user.name 'Pocket Desking inventory'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add inventory/greenway.json
+          git commit -m 'Refresh Greenway public inventory'
+          git push
+          gh api --method POST repos/${{ github.repository }}/pages/builds
