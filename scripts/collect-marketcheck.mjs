@@ -6,9 +6,12 @@ import {marketcheckPage} from '../src/marketcheck-inventory.js';
 const key=process.env.MARKETCHECK_API_KEY;
 if(!key)throw Error('MarketCheck API access is not configured; no snapshot changed.');
 const checkedAt=new Date().toISOString(),rows=[],seen=new Set();let expected;
+const maxCalls=Number(process.env.INVENTORY_MAX_CALLS||1);let calls=0;
+if(!Number.isInteger(maxCalls)||maxCalls<1||maxCalls>10)throw Error('Invalid inventory call limit.');
 for(let start=0;start<10000;){
+ if(++calls>maxCalls)throw Error('Inventory call limit reached; previous snapshot retained.');
  const url=new URL('https://api.marketcheck.com/v2/dealerships/inventory');
- for(const [k,v] of Object.entries({api_key:key,source:'greenwaykiaattheavenues.com',start:String(start),rows:'100',append_api_key:'false'}))url.searchParams.set(k,v);
+ for(const [k,v] of Object.entries({api_key:key,source:'greenwaykiaattheavenues.com',start:String(start),rows:'1500',append_api_key:'false'}))url.searchParams.set(k,v);
  let response;try{response=await fetch(url,{signal:AbortSignal.timeout(30000)});}catch{throw Error('Inventory service connection failed; previous snapshot retained.');}
  if(!response.ok)throw Error(`Inventory service returned HTTP ${response.status}; previous snapshot retained.`);
  const page=marketcheckPage(await response.json(),checkedAt);
