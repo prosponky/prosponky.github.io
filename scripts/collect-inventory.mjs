@@ -13,14 +13,18 @@ try{
  for(const [path,condition] of [['/new-vehicles/','new'],['/pre-owned-vehicles/','used']]){
   const response=await page.goto(origin+path,{waitUntil:'domcontentloaded',timeout:30000});
   if(!response?.ok())throw Error(`Public inventory returned ${response?.status()}; previous snapshot retained.`);
-  const signatures=new Set();
+  await page.getByRole('heading',{name:/Vehicles for Sale/}).first().waitFor({timeout:20000});
+  const countText=await page.getByRole('heading',{name:/Vehicles for Sale/}).first().innerText();
+  const expected=Number(countText.match(/^([\d,]+)/)?.[1]?.replaceAll(',',''));
+  if(!Number.isInteger(expected)||expected<1)throw Error('Inventory total is unavailable; previous snapshot retained.');
+  const categoryVins=new Set(),signatures=new Set();
   for(let pageNumber=1;pageNumber<=100;pageNumber++){
    await page.locator('.hit').first().waitFor({timeout:20000});
    const cards=await page.locator('.hit').evaluateAll(cards=>cards.map(e=>({text:e.innerText,url:e.querySelector('a[href*="/inventory/"]')?.href})));
    const signature=cards.map(c=>c.url).join('|');
    if(signatures.has(signature))throw Error('Inventory pagination repeated; previous snapshot retained.');
    signatures.add(signature);
-   for(const card of cards){const row=parseInventoryCard(card.text,card.url,condition,checkedAt);rows.set(row.vin,row);}
+   for(const card of cards){const row=parseInventoryCard(card.text,card.url,condition,checkedAt);rows.set(row.vin,row);categoryVins.add(row.vin);}
    console.log(`${condition}: page ${pageNumber}, ${rows.size} unique vehicles`);
    const next=page.getByRole('button',{name:'next page',exact:true});
    if(!await next.count()||await next.isDisabled())break;
@@ -28,6 +32,7 @@ try{
    await next.click();
    await page.waitForFunction(old=>document.querySelector('.hit a[href*="/inventory/"]')?.href!==old,cards[0].url,{timeout:20000});
   }
+  if(categoryVins.size!==expected)throw Error('Inventory count changed or pagination was incomplete; previous snapshot retained.');
  }
  if(![...rows.values()].some(r=>r.condition==='new')||![...rows.values()].some(r=>r.condition==='used'))throw Error('Inventory missing a vehicle category.');
  const data={dealer:'Greenway Kia at the Avenues',source:origin,checkedAt,vehicles:[...rows.values()]};
