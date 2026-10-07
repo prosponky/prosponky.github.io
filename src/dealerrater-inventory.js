@@ -17,7 +17,7 @@ export function dealerraterPage(html,checkedAt){
   const dollars=value=>{const n=Number(String(value).replaceAll(',',''));if(!Number.isFinite(n)||n<=0)throw Error('DealerRater price is invalid.');return n;};
   const msrpText=card.match(/MSRP:\s*\$([\d,]+(?:\.\d{1,2})?)/)?.[1];
   return {stockNumber,vin,condition,year:Number(car.modelDate),make:car.manufacturer,model:car.model,color:String(car.color||'').trim(),mileage:car.mileageFromOdometer!==undefined&&car.mileageFromOdometer!==''&&Number.isFinite(Number(car.mileageFromOdometer))&&Number(car.mileageFromOdometer)>=0?Number(car.mileageFromOdometer):null,
-   msrp:msrpText?dollars(msrpText):null,advertisedPrice:dollars(offer.price),dealerDiscount:null,discountKind:'',
+   msrp:msrpText?dollars(msrpText):null,advertisedPrice:offer.price===null||offer.price===undefined||String(offer.price).trim()===''||Number(offer.price)===0?null:dollars(offer.price),dealerDiscount:null,discountKind:'',
    sourceName:'DealerRater',sourceUrl:url.href,checkedAt};
  });
  if(!vehicles.length)throw Error('DealerRater inventory is empty.');
