@@ -1,4 +1,5 @@
-import {mkdir,writeFile,rename} from 'node:fs/promises';
+import {inventoryChanges} from '../src/inventory-changes.js';
+import {mkdir,writeFile,rename,readFile} from 'node:fs/promises';
 import {dealerraterPage} from '../src/dealerrater-inventory.js';
 const checkedAt=new Date().toISOString(),rows=new Map(),seenPages=new Set();let expected;
 let url='https://www.dealerrater.com/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/';
@@ -16,7 +17,9 @@ for(let pageNumber=1;url&&pageNumber<=100;pageNumber++){
 }
 if(url||rows.size!==expected)throw Error('Incomplete inventory pagination; previous snapshot retained.');
 if(![...rows.values()].some(r=>r.condition==='new')||![...rows.values()].some(r=>r.condition==='used'))throw Error('Missing inventory category; previous snapshot retained.');
+let previous;for(const path of ['inventory/greenway.json','public/inventory/greenway.json']){try{previous=JSON.parse(await readFile(path,'utf8'));break;}catch{}}
+const dailyChanges=inventoryChanges(previous,[...rows.values()],checkedAt);
 await mkdir('public/inventory',{recursive:true});
-await writeFile('public/inventory/greenway.json.tmp',JSON.stringify({dealer:'Greenway Kia at the Avenues',source:'DealerRater public listings',checkedAt,coverage:'Greenway inventory published on DealerRater; third-party availability and pricing may lag the dealer.',vehicles:[...rows.values()]}));
+await writeFile('public/inventory/greenway.json.tmp',JSON.stringify({dealer:'Greenway Kia at the Avenues',source:'DealerRater public listings',checkedAt,dailyChanges,coverage:'Greenway inventory published on DealerRater; third-party availability and pricing may lag the dealer.',vehicles:[...rows.values()]}));
 await rename('public/inventory/greenway.json.tmp','public/inventory/greenway.json');
 console.log(`Saved ${rows.size} public DealerRater listings.`);
