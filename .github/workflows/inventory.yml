@@ -37,8 +37,20 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add inventory/*.json
           git diff --cached --quiet || git commit -m 'Refresh all store inventories'
-          git pull --rebase origin main
-          git push
+          published=false
+          for attempt in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              published=true
+              break
+            fi
+            echo "Publish collided with another update; retrying ($attempt/5)."
+            sleep "$attempt"
+          done
+          if [ "$published" != true ]; then
+            echo "::error::Inventory publish failed after five attempts. Existing live inventory is unchanged."
+            exit 1
+          fi
           gh api --method POST repos/${{ github.repository }}/pages/builds
 
 
