@@ -11,7 +11,9 @@ export function parseOfficialCard({text,url},config,condition){
   if(amounts.length>1)throw Error('Conflicting official price labels for '+stockNumber);
   return amounts.length===1&&Number.isFinite(amounts[0])&&amounts[0]>0?amounts[0]:null;
  };
- return {stockNumber,vin,condition,url:link.href,price:labeledPrice(config.salePriceLabel),msrp:condition==='new'?labeledPrice('MSRP'):null};
+ const heading=text.match(/(?:^|\n)(?:New|Used|Pre-Owned|Certified Pre-Owned)\s+(\d{4})\s*\n([^\n]+)\nStock\s*:/i);
+ const vehicleTitle=heading?heading[1]+' '+heading[2].trim():'';
+ return {stockNumber,vin,condition,vehicleTitle,url:link.href,price:labeledPrice(config.salePriceLabel),msrp:condition==='new'?labeledPrice('MSRP'):null};
 }
 export class OfficialCollection{
  constructor(config){this.config=config;this.records=new Map();this.expected=0;this.completed=[];}
@@ -23,6 +25,6 @@ export class OfficialCollection{
  finish(){if(!this.section||this.section.vins.size!==this.section.total)throw Error('Incomplete official section');this.expected+=this.section.total;this.completed.push(this.section.condition);this.section=null;}
  snapshot(checkedAt=new Date().toISOString()){
   if(this.section||!this.completed.length||this.records.size!==this.expected||!Number.isFinite(Date.parse(checkedAt)))throw Error('Incomplete official collection');
-  return {checkedAt,source:this.config.origin,adapter:this.config.adapter,sections:this.completed,total:this.expected,prices:Object.fromEntries([...this.records].map(([vin,row])=>[vin,{stockNumber:row.stockNumber,condition:row.condition,price:row.price,msrp:row.msrp,url:row.url}]))};
+  return {checkedAt,source:this.config.origin,adapter:this.config.adapter,sections:this.completed,total:this.expected,prices:Object.fromEntries([...this.records].map(([vin,row])=>[vin,{stockNumber:row.stockNumber,condition:row.condition,vehicleTitle:row.vehicleTitle,price:row.price,msrp:row.msrp,url:row.url}]))};
  }
 }
