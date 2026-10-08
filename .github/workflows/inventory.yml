@@ -19,17 +19,20 @@ jobs:
         with:
           node-version: 24
       - name: Collect complete public inventory
-        run: node scripts/collect-dealerrater.mjs
+        run: |
+          node scripts/collect-dealerrater.mjs
+          node scripts/collect-dealerrater.mjs coggin-atlantic
+          node scripts/collect-dealerrater.mjs coggin-avenues
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p inventory
-          cp public/inventory/greenway.json inventory/greenway.json
+          cp public/inventory/*.json inventory/
           git config user.name 'Pocket Desking inventory'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add inventory/greenway.json
-          git commit -m 'Refresh Greenway public inventory'
+          git add inventory/*.json
+          git diff --cached --quiet || git commit -m 'Refresh all store inventories'
           git push
           gh api --method POST repos/${{ github.repository }}/pages/builds
 

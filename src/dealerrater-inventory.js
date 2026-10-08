@@ -1,7 +1,8 @@
 const origin='https://www.dealerrater.com';
-const inventoryPath='/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/';
-export function dealerraterPage(html,checkedAt){
- if(!html.includes('Greenway Kia at the Avenues')||!html.includes('10564 Philips'))throw Error('DealerRater dealership identity is missing.');
+const greenway={name:'Greenway Kia at the Avenues',address:'10564 Philips',id:'26040',path:'/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/'};
+export function dealerraterPage(html,checkedAt,dealer=greenway){
+ const inventoryPath=dealer.path;
+ if(!html.includes(dealer.name)||!html.includes(dealer.address))throw Error('DealerRater dealership identity is missing.');
  const total=Number(html.match(/Inventory\s*\((\d+)\)/)?.[1]);
  if(!Number.isInteger(total)||total<1)throw Error('DealerRater inventory count is missing.');
  const cars=[...html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map(m=>JSON.parse(m[1])).filter(r=>r['@type']==='Car');
@@ -10,7 +11,7 @@ export function dealerraterPage(html,checkedAt){
  const vehicles=cars.map(car=>{
   const vin=String(car.vehicleIdentificationNumber||'').toUpperCase(),stockNumber=String(car.sku||'').trim().toUpperCase();
   const offer=car.offers,url=new URL(offer?.url||'');
-  if(!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)||!stockNumber||url.origin!==origin||!url.pathname.endsWith('-26040/')||!url.pathname.includes('-ad-'+vin+'-')||offer.seller!=='Greenway Kia at the Avenues'||offer.priceCurrency!=='USD'||!String(offer.availability).endsWith('/InStock'))throw Error('DealerRater listing identity is invalid.');
+  if(!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)||!stockNumber||url.origin!==origin||!url.pathname.endsWith('-'+dealer.id+'/')||!url.pathname.includes('-ad-'+vin+'-')||offer.seller!==dealer.name||offer.priceCurrency!=='USD'||!String(offer.availability).endsWith('/InStock'))throw Error('DealerRater listing identity is invalid.');
   const condition=String(car.itemCondition).endsWith('/NewCondition')?'new':String(car.itemCondition).endsWith('/UsedCondition')?'used':null;
   const card=cards.find(text=>text.includes(url.pathname));
   if(!condition||!card||!car.modelDate||!car.manufacturer||!car.model)throw Error('DealerRater vehicle details are incomplete.');

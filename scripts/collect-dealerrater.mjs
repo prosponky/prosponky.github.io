@@ -1,13 +1,15 @@
 import {inventoryChanges} from '../src/inventory-changes.js';
 import {mkdir,writeFile,rename,readFile} from 'node:fs/promises';
 import {dealerraterPage} from '../src/dealerrater-inventory.js';
+const configs={greenway:{name:'Greenway Kia at the Avenues',address:'10564 Philips',id:'26040',path:'/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/'},'coggin-atlantic':{name:'Coggin Nissan On Atlantic',address:'10600 Atlantic Blvd',id:'3377',path:'/classifieds/dealer/Coggin-Nissan-On-Atlantic-cars-3377/'},'coggin-avenues':{name:'Coggin Nissan at the Avenues',address:'10859 Phillips Highway',id:'22911',path:'/classifieds/dealer/Coggin-Nissan-at-the-Avenues-cars-22911/'}};
+const key=process.argv[2]||'greenway',dealer=configs[key];if(!dealer)throw Error('Unknown store');
 const checkedAt=new Date().toISOString(),rows=new Map(),seenPages=new Set();let expected;
-let url='https://www.dealerrater.com/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/';
+let url='https://www.dealerrater.com'+dealer.path;
 for(let pageNumber=1;url&&pageNumber<=100;pageNumber++){
  if(seenPages.has(url))throw Error('Inventory pagination repeated; previous snapshot retained.');seenPages.add(url);
  const response=await fetch(url,{signal:AbortSignal.timeout(30000)});
  if(!response.ok)throw Error(`DealerRater returned HTTP ${response.status}; previous snapshot retained.`);
- const page=dealerraterPage(await response.text(),checkedAt);
+ const page=dealerraterPage(await response.text(),checkedAt,dealer);
  if(expected===undefined)expected=page.total;
  if(page.total!==expected)throw Error('Inventory count changed during collection; previous snapshot retained.');
  for(const row of page.vehicles){if(rows.has(row.vin))throw Error('Duplicate VIN across inventory pages; previous snapshot retained.');rows.set(row.vin,row);}
@@ -17,9 +19,9 @@ for(let pageNumber=1;url&&pageNumber<=100;pageNumber++){
 }
 if(url||rows.size!==expected)throw Error('Incomplete inventory pagination; previous snapshot retained.');
 if(![...rows.values()].some(r=>r.condition==='new')||![...rows.values()].some(r=>r.condition==='used'))throw Error('Missing inventory category; previous snapshot retained.');
-let previous;for(const path of ['inventory/greenway.json','public/inventory/greenway.json']){try{previous=JSON.parse(await readFile(path,'utf8'));break;}catch{}}
+let previous;for(const path of [`inventory/${key}.json`,`public/inventory/${key}.json`]){try{previous=JSON.parse(await readFile(path,'utf8'));break;}catch{}}
 const dailyChanges=inventoryChanges(previous,[...rows.values()],checkedAt);
 await mkdir('public/inventory',{recursive:true});
-await writeFile('public/inventory/greenway.json.tmp',JSON.stringify({dealer:'Greenway Kia at the Avenues',source:'DealerRater public listings',checkedAt,dailyChanges,coverage:'Greenway inventory published on DealerRater; third-party availability and pricing may lag the dealer.',vehicles:[...rows.values()]}));
-await rename('public/inventory/greenway.json.tmp','public/inventory/greenway.json');
+await writeFile(`public/inventory/${key}.json.tmp`,JSON.stringify({dealer:dealer.name,source:'DealerRater public listings',checkedAt,dailyChanges,coverage:dealer.name+' inventory published on DealerRater; third-party availability and pricing may lag the dealer.',vehicles:[...rows.values()]}));
+await rename(`public/inventory/${key}.json.tmp`,`public/inventory/${key}.json`);
 console.log(`Saved ${rows.size} public DealerRater listings.`);
