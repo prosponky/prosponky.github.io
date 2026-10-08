@@ -1,0 +1,32 @@
+{
+  "greenway": {
+    "name": "Greenway Kia at the Avenues",
+    "store": "GW Kia Ave",
+    "origin": "https://www.greenwaykiaattheavenues.com",
+    "adapter": "dealer-inspire-browser",
+    "sections": [{"path":"/new-vehicles/","condition":"new"},{"path":"/pre-owned-vehicles/","condition":"used"}],
+    "cardSelector": ".hit",
+    "nextButton": "next page",
+    "countHeading": "Vehicles for Sale",
+    "salePriceLabel": "Greenway Price",
+    "priceFile": "greenway-prices.json"
+  },
+  "coggin-atlantic": {
+    "name": "Coggin Nissan On Atlantic",
+    "store": "Coggin Nissan Atl",
+    "origin": "https://www.cogginnissanatlantic.com",
+    "adapter": "dealer-com-public-html",
+    "account": "cogginnissanonatlantic",
+    "salePriceLabel": "Retail Price",
+    "priceFile": "coggin-atlantic-links.json"
+  },
+  "coggin-avenues": {
+    "name": "Coggin Nissan at the Avenues",
+    "store": "Coggin Nissan Ave",
+    "origin": "https://www.nissanattheavenues.com",
+    "adapter": "dealer-com-public-html",
+    "account": "cogginnissanattheavenues",
+    "salePriceLabel": "Retail Price",
+    "priceFile": "coggin-avenues-links.json"
+  }
+}

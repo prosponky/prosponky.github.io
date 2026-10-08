@@ -27,12 +27,9 @@ jobs:
       - name: Collect official Coggin customer cash and links
         continue-on-error: true
         run: node scripts/collect-coggin-offers.mjs
-      - name: Verify official Greenway used prices
-        continue-on-error: true
-        run: |
-          npm install --no-save @playwright/test
-          npx playwright install --with-deps chromium
-          node scripts/collect-greenway-prices.mjs
+      # Greenway official prices are verified in the supported local browser by
+      # the 7 a.m./noon Codex heartbeat. This host is denied by the dealer; never
+      # replace its verified map with syndicated or partial pricing.
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}
