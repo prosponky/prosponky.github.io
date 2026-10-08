@@ -10,7 +10,8 @@ export function nextPageUrl(href,current,config,section){
 }
 function restore(config,state){
  const collection=new OfficialCollection(config);
- if(state.source!==config.origin||state.adapter!==config.adapter||Date.now()-Date.parse(state.startedAt)>3600000||!Number.isFinite(Date.parse(state.startedAt)))throw Error('Invalid or expired collection checkpoint');
+ const age=Date.now()-Date.parse(state.startedAt);
+ if(state.source!==config.origin||state.adapter!==config.adapter||!Number.isFinite(age)||age<0||age>3600000)throw Error('Invalid or expired collection checkpoint');
  for(let i=0;i<state.sections.length;i++){
   const section=state.sections[i];if(section.condition!==config.sections[i]?.condition)throw Error('Checkpoint section mismatch');
   collection.start(section.condition,section.total);for(const cards of section.pages){if(cards===null)collection.section.pages.clear();else collection.add(cards);}

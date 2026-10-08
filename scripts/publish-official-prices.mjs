@@ -32,4 +32,7 @@ try{
   await writeFile(resolve('tmp','inventory-health-'+store+'.json'),JSON.stringify({status:'published',store,total:data.total,checkedAt:data.checkedAt,updatedAt:new Date().toISOString(),liveVerified}));
  }
  console.log(JSON.stringify({store,total:data.total,checkedAt:data.checkedAt,published:flags.includes('--publish'),liveVerified}));
+}catch(error){
+ await writeFile(resolve('tmp','inventory-health-'+store+'.json'),JSON.stringify({status:'publication-failed',store,checkedAt:data.checkedAt,updatedAt:new Date().toISOString(),reason:error.message}));
+ throw error;
 }finally{await unlink(lock);}
