@@ -2,7 +2,7 @@ name: Refresh public inventory
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 7 * * *'
+    - cron: '0 7,12 * * *'
       timezone: 'America/New_York'
 permissions:
   contents: write
@@ -27,6 +27,12 @@ jobs:
       - name: Collect official Coggin customer cash and links
         continue-on-error: true
         run: node scripts/collect-coggin-offers.mjs
+      - name: Verify official Greenway used prices
+        continue-on-error: true
+        run: |
+          npm install --no-save @playwright/test
+          npx playwright install --with-deps chromium
+          node scripts/collect-greenway-prices.mjs
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}
