@@ -1,3 +1,4 @@
+import {collectCarfaxBatch} from './browser-carfax.mjs';
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
@@ -15,7 +16,7 @@ export async function runBrowserBatch(tab,run,{maxPages=3}={}){
  let checkpoint;try{checkpoint=JSON.parse(await readFile(run.checkpoint,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
  try{
   const result=await collectBrowserBatch(tab,run.config,{checkpoint,maxPages,onCheckpoint:async(state,progress)=>{await save(run.checkpoint,state);await save(run.health,{status:'collecting',store:run.store,updatedAt:new Date().toISOString(),...progress,checkpoint:run.checkpoint});}});
-  if(result.done){await save(run.snapshot,result.snapshot);await save(run.health,{status:'verified',store:run.store,updatedAt:new Date().toISOString(),total:result.snapshot.total,snapshot:run.snapshot});}
+  if(result.done){await save(run.snapshot,result.snapshot);const reports=await collectCarfaxBatch(tab,run.snapshot,run.snapshot.replace('-snapshot.json','-carfax.json'));await save(run.health,{status:'collecting-carfax',store:run.store,updatedAt:new Date().toISOString(),count:reports.count,total:reports.total});if(!reports.done)return {done:false,snapshot:null,checkpoint:run.checkpoint};result.snapshot.carfax=reports.map;await save(run.snapshot,result.snapshot);await save(run.health,{status:'verified',store:run.store,updatedAt:new Date().toISOString(),total:result.snapshot.total,snapshot:run.snapshot});}
   return {done:result.done,snapshot:result.done?run.snapshot:null,checkpoint:run.checkpoint};
  }catch(error){await save(run.health,{status:'failed',store:run.store,updatedAt:new Date().toISOString(),reason:error.message,checkpoint:run.checkpoint});throw error;}
 }

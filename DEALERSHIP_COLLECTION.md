@@ -45,3 +45,7 @@ The first actual scheduled browser run dispatched on October 8, 2026 at 12:11 p.
 ## Vehicle trim
 
 The official collectors preserve trim alongside VIN-matched evidence: Coggin stores use the explicit public `trim` field in the complete official inventory map; Greenway stores its visible year/make/model/trim title in each verified price record. Inventory joins these details only on verified dealer identity, VIN, and matching stock/condition where available. Greenway trim is the official title suffix after the matching model, with bounded documented model spelling normalization. Seller prose, stock patterns, equipment, and unrelated VINs are never used to guess trim. Missing trim leaves no popup row. Scheduled collections retain these fields on each complete refresh; atomic publication and price validation remain unchanged.
+
+## Carfax reports
+
+Pre-owned vehicle popups use only dealer-provided HTTPS Carfax report URLs. Coggin collections retain public Carfax callout links by exact VIN in each complete official map. The supported Greenway browser runner collects rendered detail-page report links in durable batches of five vehicles after inventory collection; publication requires every used VIN to have been checked. No report is synthesized from a VIN. Missing reports remain unavailable, and opening a report preserves the inventory card. The browser runner returns done only after report collection completes.
