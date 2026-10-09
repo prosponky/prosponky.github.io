@@ -67,6 +67,303 @@
       "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/fiAmTZ3TDr0CtBrk7NT2Hg2II8xGk1JZ6SzMFCS51DO21Ftf0dv_KKOdx9aC_MKSLEuTpYAWjwBizyTaISrF-nEP7G_WZ7pofdM",
       "checkedAt": "2026-10-09T13:41:55.353Z",
       "sha256": "fd72b1648dc4c9c8ec34772ea7e1dfb5d64580bcf0085cf6572d77659079a65d"
+    },
+    "JN8AS5MT7EW102999": {
+      "vin": "JN8AS5MT7EW102999",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:56:54.407Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/used-2014-nissan-rogue-select-s-fwd-sport-utility-jn8as5mt7ew102999/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFT4DE8TE408501": {
+      "vin": "3KPFT4DE8TE408501",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:56:56.632Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-lx-fwd-4dr-car-3kpft4de8te408501/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFT4DE0TE405463": {
+      "vin": "3KPFT4DE0TE405463",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:56:58.587Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-lxs-fwd-4dr-car-3kpft4de0te405463/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFT4DE3TE370711": {
+      "vin": "3KPFT4DE3TE370711",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:57:00.634Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-lxs-fwd-4dr-car-3kpft4de3te370711/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYK33DF3SG243265": {
+      "vin": "5XYK33DF3SG243265",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:57:02.374Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/certified-used-2025-kia-sportage-ex-fwd-sport-utility-5xyk33df3sg243265/",
+          "identity": true
+        }
+      ]
+    },
+    "KNAG64J76V5540007": {
+      "vin": "KNAG64J76V5540007",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:11:02.479Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-k5-gt-line-fwd-4dr-car-knag64j76v5540007/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYK23DF4VG487269": {
+      "vin": "5XYK23DF4VG487269",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:11:04.844Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-sportage-lx-fwd-5dr-sport-utility-5xyk23df4vg487269/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYRG4JC3TG494436": {
+      "vin": "5XYRG4JC3TG494436",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:11:07.227Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-sorento-lx-fwd-4dr-sport-utility-5xyrg4jc3tg494436/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYK33DF5VG485317": {
+      "vin": "5XYK33DF5VG485317",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:11:07.976Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-sportage-ex-fwd-5dr-sport-utility-5xyk33df5vg485317/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYK33DFXVG486088": {
+      "vin": "5XYK33DFXVG486088",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:11:10.487Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-sportage-ex-fwd-5dr-sport-utility-5xyk33dfxvg486088/",
+          "identity": true
+        }
+      ]
+    },
+    "3KMDB4DA9VE006073": {
+      "vin": "3KMDB4DA9VE006073",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:12:10.059Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-ev3-wind-fwd-sport-utility-3kmdb4da9ve006073/",
+          "identity": true
+        }
+      ]
+    },
+    "KNDNC5K35V6672397": {
+      "vin": "KNDNC5K35V6672397",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:12:12.599Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-carnival-ex-fwd-mini-van-passenger-kndnc5k35v6672397/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYPC5SA3VG062664": {
+      "vin": "5XYPC5SA3VG062664",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:12:14.780Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-telluride-hybrid-ex-fwd-5dr-sport-utility-5xypc5sa3vg062664/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYPCES14VG054797": {
+      "vin": "5XYPCES14VG054797",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:12:16.898Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-telluride-x-line-ex-awd-5dr-sport-utility-5xypces14vg054797/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYPD5S19VG053268": {
+      "vin": "5XYPD5S19VG053268",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:12:19.300Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-telluride-sx-fwd-5dr-sport-utility-5xypd5s19vg053268/",
+          "identity": true
+        }
+      ]
+    },
+    "KNDNE5KA1V6223307": {
+      "vin": "KNDNE5KA1V6223307",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:13:26.486Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-carnival-hybrid-sx-prestige-fwd-mini-van-passenger-kndne5ka1v6223307/",
+          "identity": true
+        }
+      ]
+    },
+    "5XYPDESA8VG062737": {
+      "vin": "5XYPDESA8VG062737",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:13:29.168Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2027-kia-telluride-hybrid-x-line-sx-awd-5dr-sport-utility-5xypdesa8vg062737/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFT4DE4TE384438": {
+      "vin": "3KPFT4DE4TE384438",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:13:33.538Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-lxs-fwd-4-door-sedan-3kpft4de4te384438/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFU4DE8TE352413": {
+      "vin": "3KPFU4DE8TE352413",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:13:57.149Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-ex-fwd-4-door-sedan-3kpfu4de8te352413/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFU4DE3TE358975": {
+      "vin": "3KPFU4DE3TE358975",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:13:59.256Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-ex-fwd-4-door-sedan-3kpfu4de3te358975/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFU4DE2TE369997": {
+      "vin": "3KPFU4DE2TE369997",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:14:01.899Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-ex-fwd-4-door-sedan-3kpfu4de2te369997/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFU4DE5TE352451": {
+      "vin": "3KPFU4DE5TE352451",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:14:03.970Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-ex-fwd-4-door-sedan-3kpfu4de5te352451/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFU4DE7TE303414": {
+      "vin": "3KPFU4DE7TE303414",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:15:07.134Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-ex-fwd-4-door-sedan-3kpfu4de7te303414/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFW4DE6TE406480": {
+      "vin": "3KPFW4DE6TE406480",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:15:48.327Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-gt-line-fwd-4-door-sedan-3kpfw4de6te406480/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFW4DE6TE405040": {
+      "vin": "3KPFW4DE6TE405040",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:15:50.398Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-gt-line-fwd-4-door-sedan-3kpfw4de6te405040/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFW4DEXTE416591": {
+      "vin": "3KPFW4DEXTE416591",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:15:52.141Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-gt-line-fwd-4-door-sedan-3kpfw4dexte416591/",
+          "identity": true
+        }
+      ]
+    },
+    "3KPFW4DE5TE416594": {
+      "vin": "3KPFW4DE5TE416594",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T14:15:54.250Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.greenwaykiaattheavenues.com/inventory/new-2026-kia-k4-gt-line-fwd-4-door-sedan-3kpfw4de5te416594/",
+          "identity": true
+        }
+      ]
     }
   },
   "checkedAt": "2026-10-09T13:41:55.353Z"

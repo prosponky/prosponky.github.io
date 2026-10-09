@@ -6,6 +6,8 @@ The original hero artwork has been restored. Sticker collection is scheduled for
 
 The supported-browser fallback uses `prepare-sticker-browser.mjs`, then one `collectStickerBrowserBatch` call per CUA tool call, then `verify-sticker-browser.mjs STORE`. Durable queues are `tmp/STORE-sticker-browser.json`. Do not reset an unfinished queue. Browser runtimes that block local module imports must use the literal self-contained function from `sticker-browser-batch.mjs`; string code generation is unavailable. The browser reads only normal public detail/report pages. Candidate links alone are never published as verified stickers.
 
+Collection and PDF verification write the same checkpoint: run them sequentially and wait for the verification process to finish before another browser batch for that store. Verification merges only processed markers into the latest queue and never replaces its collection index.
+
 Current coverage remains incomplete. Morning automation must continue the queues and publish verified maps without waiting for the whole queue; missing or rejected documents stay hidden. The goal remains active until every registered store is covered and a real scheduled morning run completes end to end. Initial browser batches found and PDF-verified additional original stickers at Greenway and Coggin Atlantic; several Nissan documents fail the strict original-Monroney content rule.
 
 The vehicle dialog shows **Window sticker** after Carfax (or after the listing button on new vehicles) only for a verified VIN-specific original PDF. New and used use the same rule. Missing, failed, expired, mismatched or unsafe evidence produces no button. Opening it leaves the vehicle dialog intact.

@@ -10,3 +10,7 @@ export function morningStickerRun(date=new Date()){
 export function shouldCollectStickers({manual=false,schedule='',date=new Date()}={}){
  return manual||(schedule?schedule==='0 7 * * *':morningStickerRun(date));
 }
+export function mergeVerificationMarkers(current,processed){
+ for(const [vin,result] of Object.entries(processed.results))if(result.processedAt&&current.results[vin]?.checkedAt===result.checkedAt)current.results[vin].processedAt=result.processedAt;
+ return current;
+}

@@ -243,7 +243,359 @@
           "identity": true
         }
       ]
+    },
+    "3N8AP6BEXVL315866": {
+      "vin": "3N8AP6BEXVL315866",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:53.321Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE0VL317612": {
+      "vin": "3N8AP6BE0VL317612",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:54.045Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE2VL315828": {
+      "vin": "3N8AP6BE2VL315828",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:54.846Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE2VL311276": {
+      "vin": "3N8AP6BE2VL311276",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:55.541Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE6VL315668": {
+      "vin": "3N8AP6BE6VL315668",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:56.360Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE6VL318036": {
+      "vin": "3N8AP6BE6VL318036",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:56.991Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE1VL322351": {
+      "vin": "3N8AP6BE1VL322351",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:57.654Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE5VL322238": {
+      "vin": "3N8AP6BE5VL322238",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:58.248Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE4VL315166": {
+      "vin": "3N8AP6BE4VL315166",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:58.928Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE0VL318288": {
+      "vin": "3N8AP6BE0VL318288",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:14:59.662Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N1CN7AP5GL893091": {
+      "vin": "3N1CN7AP5GL893091",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:00.296Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "JN8BT3BA3SW007519": {
+      "vin": "JN8BT3BA3SW007519",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:00.971Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE7VL319888": {
+      "vin": "3N8AP6BE7VL319888",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:01.594Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE5VL325544": {
+      "vin": "3N8AP6BE5VL325544",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:02.225Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE2VL301590": {
+      "vin": "3N8AP6BE2VL301590",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:02.854Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BE7VL319812": {
+      "vin": "3N8AP6BE7VL319812",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:03.738Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6BEXVL323014": {
+      "vin": "3N8AP6BEXVL323014",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:04.379Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N1AB9CV5VY228280": {
+      "vin": "3N1AB9CV5VY228280",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:04.968Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CB5VL320865": {
+      "vin": "3N8AP6CB5VL320865",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:05.789Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CB6VL325119": {
+      "vin": "3N8AP6CB6VL325119",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:06.477Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N1AB9DV7VY228814": {
+      "vin": "3N1AB9DV7VY228814",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:07.103Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CB0VL324421": {
+      "vin": "3N8AP6CB0VL324421",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:07.873Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CBXVL307187": {
+      "vin": "3N8AP6CBXVL307187",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:08.628Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CB7VL307132": {
+      "vin": "3N8AP6CB7VL307132",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:09.473Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "3N8AP6CB4VL320422": {
+      "vin": "3N8AP6CB4VL320422",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:10.219Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA6VC678762": {
+      "vin": "5N1BT3BA6VC678762",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:12.028Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA7VC670282": {
+      "vin": "5N1BT3BA7VC670282",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:12.917Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA2VC679276": {
+      "vin": "5N1BT3BA2VC679276",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:13.688Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA3VC682154": {
+      "vin": "5N1BT3BA3VC682154",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:14.315Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA4VC673978": {
+      "vin": "5N1BT3BA4VC673978",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:15.069Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA5VC680583": {
+      "vin": "5N1BT3BA5VC680583",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:15.681Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BA5VC681636": {
+      "vin": "5N1BT3BA5VC681636",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:16.391Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB8VC681123": {
+      "vin": "5N1BT3BB8VC681123",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:17.535Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB6VC676681": {
+      "vin": "5N1BT3BB6VC676681",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:18.248Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB5VC682410": {
+      "vin": "5N1BT3BB5VC682410",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:18.934Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB3VC683183": {
+      "vin": "5N1BT3BB3VC683183",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:19.666Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB8VC682580": {
+      "vin": "5N1BT3BB8VC682580",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:20.434Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB6VC679256": {
+      "vin": "5N1BT3BB6VC679256",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:21.165Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "5N1BT3BB3VC682356": {
+      "vin": "5N1BT3BB3VC682356",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T14:15:21.754Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed"
+      ]
+    },
+    "JN8BT3DD3TW432778": {
+      "vin": "JN8BT3DD3TW432778",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:25:12.147Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3CS1TC280144": {
+      "vin": "5N1DR3CS1TC280144",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:25:13.012Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "JN8BT3DD5TW014092": {
+      "vin": "JN8BT3DD5TW014092",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:25:13.923Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3CUXTC299051": {
+      "vin": "5N1DR3CUXTC299051",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:25:14.643Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DV9TC297492": {
+      "vin": "5N1DR3DV9TC297492",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:25:15.244Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:51:13.330Z"
+  "checkedAt": "2026-10-09T14:25:15.245Z"
 }
