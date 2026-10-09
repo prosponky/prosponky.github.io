@@ -49,10 +49,9 @@
     "1N6AA1E68HN524304": {
       "vin": "1N6AA1E68HN524304",
       "status": "unverified",
-      "checkedAt": "2026-10-09T13:35:20.341Z",
+      "checkedAt": "2026-10-09T14:49:06.321Z",
       "errors": [
-        "Security challenge; skipped",
-        "HTTP 403"
+        "Document VIN or original Monroney content not confirmed"
       ]
     },
     "1N4BL4CW1MN326220": {
@@ -1516,7 +1515,207 @@
       "errors": [
         "Dealer-provided informational copy; not an original Monroney"
       ]
+    },
+    "JA4T0LA94TZ032858": {
+      "vin": "JA4T0LA94TZ032858",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:41.241Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3CS7TC108641": {
+      "vin": "5N1AZ3CS7TC108641",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:42.697Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3CS2TC131941": {
+      "vin": "5N1AZ3CS2TC131941",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:44.133Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "1N6ED1EK5VN607285": {
+      "vin": "1N6ED1EK5VN607285",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:44.835Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3CS4TC121704": {
+      "vin": "5N1AZ3CS4TC121704",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:46.223Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3CSXVC106711": {
+      "vin": "5N1AZ3CSXVC106711",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:46.815Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3DS2TC132618": {
+      "vin": "5N1AZ3DS2TC132618",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:48.428Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DV8TC297676": {
+      "vin": "5N1DR3DV8TC297676",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:49.089Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DV2TC297821": {
+      "vin": "5N1DR3DV2TC297821",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:49.758Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DM9TC260630": {
+      "vin": "5N1DR3DM9TC260630",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:51.470Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3DS2TC132621": {
+      "vin": "5N1AZ3DS2TC132621",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:52.623Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DM6TC298459": {
+      "vin": "5N1DR3DM6TC298459",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:53.544Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3DS3VC101509": {
+      "vin": "5N1AZ3DS3VC101509",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:54.203Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "JA4T0MA96TZ046847": {
+      "vin": "JA4T0MA96TZ046847",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:55.824Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1AZ3DS4VC108176": {
+      "vin": "5N1AZ3DS4VC108176",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:56.549Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3DK1TC282328": {
+      "vin": "5N1DR3DK1TC282328",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:57.930Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "JN1BZ4BH8VM550462": {
+      "vin": "JN1BZ4BH8VM550462",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:48:59.187Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "JN1BZ4BH4VM550071": {
+      "vin": "JN1BZ4BH4VM550071",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:00.751Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "JN8AY3EA5T9030812": {
+      "vin": "JN8AY3EA5T9030812",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:01.449Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "3N8AP6BE2VL307955": {
+      "vin": "3N8AP6BE2VL307955",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:02.071Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1BT3BA0VC678692": {
+      "vin": "5N1BT3BA0VC678692",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:02.799Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3BE4TC298956": {
+      "vin": "5N1DR3BE4TC298956",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:03.534Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "3N1AB9BV6VY230783": {
+      "vin": "3N1AB9BV6VY230783",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:04.156Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1DR3BEXTC298895": {
+      "vin": "5N1DR3BEXTC298895",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:04.818Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
+    },
+    "5N1BT3BA6VC679748": {
+      "vin": "5N1BT3BA6VC679748",
+      "status": "informational-copy",
+      "checkedAt": "2026-10-09T14:49:05.604Z",
+      "errors": [
+        "Dealer-provided informational copy; not an original Monroney"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T14:45:41.451Z"
+  "checkedAt": "2026-10-09T14:49:06.322Z"
 }
