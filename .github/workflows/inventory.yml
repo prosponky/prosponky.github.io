@@ -37,6 +37,8 @@ jobs:
       # Greenway official prices are verified in the supported local browser by
       # the 7 a.m./noon Codex heartbeat. This host is denied by the dealer; never
       # replace its verified map with syndicated or partial pricing.
+      # AutoNation USA Jacksonville likewise uses the supported local browser
+      # at 7 a.m./noon. These jobs retain its map without attempting denied HTTP.
       - name: Publish refreshed snapshot
         env:
           GH_TOKEN: ${{ github.token }}

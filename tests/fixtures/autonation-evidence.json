@@ -1,0 +1,328 @@
+{
+  "config": {
+    "name": "AutoNation USA Jacksonville",
+    "store": "AutoNation USA Jax",
+    "origin": "https://www.autonationusa.com",
+    "adapter": "autonation-browser",
+    "storeId": "2993",
+    "inventoryPath": "/used-cars/usa-jacksonville-fl-32225?hid=2993&cnd=new%7Cused%7Ccpo&sortBy=year&sortDirection=1",
+    "salePriceLabel": "AutoNation 1Price"
+  },
+  "checkedAt": "2026-10-09T20:46:46.526Z",
+  "own": {
+    "storeId": "2993",
+    "url": "https://www.autonationusa.com/cars/km8j33a40hu496836/hyundai-tucson-2017",
+    "vehicle": {
+      "ActualHyperionId": "2993",
+      "Certification": "AN-Cert",
+      "ExteriorColor": "Coliseum Gray",
+      "FuelType": "Gasoline Fuel",
+      "HyperionId": "2993",
+      "InventoryVehicleDetail": {
+        "PricingStack": {
+          "Items": [
+            {
+              "DisplayName": "Autonation1Price",
+              "ItemDisplayMode": "lock",
+              "Name": "Autonation1Price",
+              "SortOrder": 3,
+              "Value": 10492
+            },
+            {
+              "DisplayName": "Difference",
+              "ItemDisplayMode": "lock",
+              "Name": "Difference",
+              "SortOrder": 5,
+              "Value": 10492
+            },
+            {
+              "DisplayName": "BalanceDue",
+              "ItemDisplayMode": "lock",
+              "Name": "BalanceDue",
+              "SortOrder": 8,
+              "Value": 11530
+            },
+            {
+              "DisplayName": "VehiclePrice",
+              "ItemDisplayMode": "lock",
+              "Name": "VehiclePrice",
+              "SortOrder": 0,
+              "Value": 8998
+            },
+            {
+              "DisplayName": "Dealer Fee",
+              "ItemDisplayMode": "lock",
+              "Name": "Dealer Fee",
+              "SortOrder": 1,
+              "Value": 995
+            },
+            {
+              "DisplayName": "Electronic Filing Fee",
+              "ItemDisplayMode": "lock",
+              "Name": "Electronic Filing Fee",
+              "SortOrder": 2,
+              "Value": 499
+            },
+            {
+              "DisplayName": "Trade-In Value",
+              "ItemDisplayMode": "lock",
+              "Name": "Trade-In Value",
+              "SortOrder": 4,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Payoff balance",
+              "ItemDisplayMode": "lock",
+              "Name": "Payoff balance",
+              "SortOrder": 6,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Estimated Tax, Title, and Registration",
+              "ItemDisplayMode": "lock",
+              "Name": "Estimated Tax, Title, and Registration",
+              "SortOrder": 7,
+              "Value": 1038
+            },
+            {
+              "DisplayName": "Autonation1Price",
+              "ItemDisplayMode": "unlock",
+              "Name": "Autonation1Price",
+              "SortOrder": 3,
+              "Value": 10492
+            },
+            {
+              "DisplayName": "Difference",
+              "ItemDisplayMode": "unlock",
+              "Name": "Difference",
+              "SortOrder": 5,
+              "Value": 10492
+            },
+            {
+              "DisplayName": "BalanceDue",
+              "ItemDisplayMode": "unlock",
+              "Name": "BalanceDue",
+              "SortOrder": 8,
+              "Value": 11530
+            },
+            {
+              "DisplayName": "VehiclePrice",
+              "ItemDisplayMode": "unlock",
+              "Name": "VehiclePrice",
+              "SortOrder": 0,
+              "Value": 8998
+            },
+            {
+              "DisplayName": "Dealer Fee",
+              "ItemDisplayMode": "unlock",
+              "Name": "Dealer Fee",
+              "SortOrder": 1,
+              "Value": 995
+            },
+            {
+              "DisplayName": "Electronic Filing Fee",
+              "ItemDisplayMode": "unlock",
+              "Name": "Electronic Filing Fee",
+              "SortOrder": 2,
+              "Value": 499
+            },
+            {
+              "DisplayName": "Trade-In Value",
+              "ItemDisplayMode": "unlock",
+              "Name": "Trade-In Value",
+              "SortOrder": 4,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Payoff balance",
+              "ItemDisplayMode": "unlock",
+              "Name": "Payoff balance",
+              "SortOrder": 6,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Estimated Tax, Title, and Registration",
+              "ItemDisplayMode": "unlock",
+              "Name": "Estimated Tax, Title, and Registration",
+              "SortOrder": 7,
+              "Value": 1038
+            }
+          ]
+        },
+        "VehicleHistory": {
+          "CarfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/KupCvyHjkRFmt0AwiGbrvs_fVDCzPKMr2jqlL-pEJLug3Cfto8VhSjwF64juhQzwbU_P_er52Mz8gENTqqdBQBJ6Yv0bhV9iLRQ"
+        }
+      },
+      "IsAvailabile": true,
+      "Make": "Hyundai",
+      "Mileage": 115135,
+      "Model": "Tucson",
+      "StockNumber": "HU496836",
+      "StockType": "USED",
+      "StockTypeForSite": "USED",
+      "Trim": "SE",
+      "Vin": "KM8J33A40HU496836",
+      "Year": 2017
+    },
+    "expectedVin": "KM8J33A40HU496836",
+    "cardPrice": 10492
+  },
+  "neighbor": {
+    "storeId": "2993",
+    "url": "https://www.autonationusa.com/cars/1fmcu0jd1hud56671/ford-escape-2017",
+    "vehicle": {
+      "ActualHyperionId": "2285",
+      "Certification": "AN-Cert",
+      "ExteriorColor": "Ruby Red Metallic Tinted Clearcoat",
+      "FuelType": "Gasoline Fuel",
+      "HyperionId": "2993",
+      "InventoryVehicleDetail": {
+        "PricingStack": {
+          "Items": [
+            {
+              "DisplayName": "Autonation1Price",
+              "ItemDisplayMode": "lock",
+              "Name": "Autonation1Price",
+              "SortOrder": 3,
+              "Value": 7236
+            },
+            {
+              "DisplayName": "Difference",
+              "ItemDisplayMode": "lock",
+              "Name": "Difference",
+              "SortOrder": 5,
+              "Value": 7236
+            },
+            {
+              "DisplayName": "BalanceDue",
+              "ItemDisplayMode": "lock",
+              "Name": "BalanceDue",
+              "SortOrder": 8,
+              "Value": 8089
+            },
+            {
+              "DisplayName": "VehiclePrice",
+              "ItemDisplayMode": "lock",
+              "Name": "VehiclePrice",
+              "SortOrder": 0,
+              "Value": 5742
+            },
+            {
+              "DisplayName": "Dealer Fee",
+              "ItemDisplayMode": "lock",
+              "Name": "Dealer Fee",
+              "SortOrder": 1,
+              "Value": 995
+            },
+            {
+              "DisplayName": "Electronic Filing Fee",
+              "ItemDisplayMode": "lock",
+              "Name": "Electronic Filing Fee",
+              "SortOrder": 2,
+              "Value": 499
+            },
+            {
+              "DisplayName": "Trade-In Value",
+              "ItemDisplayMode": "lock",
+              "Name": "Trade-In Value",
+              "SortOrder": 4,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Payoff balance",
+              "ItemDisplayMode": "lock",
+              "Name": "Payoff balance",
+              "SortOrder": 6,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Estimated Tax, Title, and Registration",
+              "ItemDisplayMode": "lock",
+              "Name": "Estimated Tax, Title, and Registration",
+              "SortOrder": 7,
+              "Value": 853
+            },
+            {
+              "DisplayName": "Autonation1Price",
+              "ItemDisplayMode": "unlock",
+              "Name": "Autonation1Price",
+              "SortOrder": 3,
+              "Value": 7236
+            },
+            {
+              "DisplayName": "Difference",
+              "ItemDisplayMode": "unlock",
+              "Name": "Difference",
+              "SortOrder": 5,
+              "Value": 7236
+            },
+            {
+              "DisplayName": "BalanceDue",
+              "ItemDisplayMode": "unlock",
+              "Name": "BalanceDue",
+              "SortOrder": 8,
+              "Value": 8089
+            },
+            {
+              "DisplayName": "VehiclePrice",
+              "ItemDisplayMode": "unlock",
+              "Name": "VehiclePrice",
+              "SortOrder": 0,
+              "Value": 5742
+            },
+            {
+              "DisplayName": "Dealer Fee",
+              "ItemDisplayMode": "unlock",
+              "Name": "Dealer Fee",
+              "SortOrder": 1,
+              "Value": 995
+            },
+            {
+              "DisplayName": "Electronic Filing Fee",
+              "ItemDisplayMode": "unlock",
+              "Name": "Electronic Filing Fee",
+              "SortOrder": 2,
+              "Value": 499
+            },
+            {
+              "DisplayName": "Trade-In Value",
+              "ItemDisplayMode": "unlock",
+              "Name": "Trade-In Value",
+              "SortOrder": 4,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Payoff balance",
+              "ItemDisplayMode": "unlock",
+              "Name": "Payoff balance",
+              "SortOrder": 6,
+              "Value": 0
+            },
+            {
+              "DisplayName": "Estimated Tax, Title, and Registration",
+              "ItemDisplayMode": "unlock",
+              "Name": "Estimated Tax, Title, and Registration",
+              "SortOrder": 7,
+              "Value": 853
+            }
+          ]
+        },
+        "VehicleHistory": {
+          "CarfaxUrl": "https://www.carfax.com/vehiclehistory/ar20/8E2B6FQD0Zj4YyzRcQtCT5WBdv6HBorQW6gx8ZYx97pbYk1LrTGxMReMu0gEPqzkirp4WrQ8ERJIdozy3LS6MfTFr6RZwqXfSKk"
+        }
+      },
+      "IsAvailabile": true,
+      "Make": "Ford",
+      "Mileage": 147479,
+      "Model": "Escape",
+      "StockNumber": "HUD56671",
+      "StockType": "USED",
+      "StockTypeForSite": "USED",
+      "Trim": "Titanium",
+      "Vin": "1FMCU0JD1HUD56671",
+      "Year": 2017
+    },
+    "expectedVin": "1FMCU0JD1HUD56671",
+    "cardPrice": 7236
+  }
+}

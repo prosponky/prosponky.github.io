@@ -20,6 +20,15 @@
     "salePriceLabel": "Retail Price",
     "priceFile": "coggin-atlantic-links.json"
   },
+  "autonation-jacksonville": {
+    "name": "AutoNation USA Jacksonville",
+    "store": "AutoNation USA Jax",
+    "origin": "https://www.autonationusa.com",
+    "adapter": "autonation-browser",
+    "storeId": "2993",
+    "inventoryPath": "/used-cars/usa-jacksonville-fl-32225?hid=2993&cnd=new%7Cused%7Ccpo&sortBy=autonationprice&sortDirection=0",
+    "salePriceLabel": "AutoNation 1Price"
+  },
   "coggin-avenues": {
     "name": "Coggin Nissan at the Avenues",
     "store": "Coggin Nissan Ave",
