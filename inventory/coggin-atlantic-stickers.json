@@ -33,8 +33,8 @@
       "status": "verified",
       "url": "https://www.carfax.com/phoenix/sticker/v4/FORD/Ricxa75PTRfK7zeuobf1JTRvaQozCvedrdUDP28R1gQDRYGt9qpGenqM2WLhYeM9tnesk3whJsBt807QDqDPhi65acLG2_gqbqndXojhQBJJNfYkuQSUV2AdfiaA99e4PgZ3dS2sWAS-zZq9y8f0br3u7xHabS8uRKgvoMmxoL2etP64U-stszdy_WpVReKsC-EEyy3coQIwxDEsOFW9m0OpoCSHYLuABVmG88A7w_NXqlSfSw4USnn8HlJ5FGGtLW6rPnfqDgmm03TBpmTG3mNFoDD_vMXQBFe6xbvf67t6ccYngDZtOK4N7JsUMDzRKbKLO-oBJAJJ6XVkShewgoGBiZ_vZdD9uo1FNH7juhb4ZNq0lVFRsi2XYAF0apgyMeUX48bnbDVEoD8.cfx",
       "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/v-Yx7sGYhP25aq4Df6AJSgbZkLmBt_5MLlS7sK7f458dJZauISp67oYn_Ghzqr6xSYG_qWfQp5iGbswZW8zr3QSWIyXNAOuJNeI",
-      "checkedAt": "2026-10-09T13:21:33.452Z",
-      "sha256": "d93a9e9e35ca3b6ae7aaa0d79c0092289fd6ecc84bcd3803da62a38a6d347fc8"
+      "checkedAt": "2026-10-09T14:28:13.506Z",
+      "sha256": "40be74bd32ba73fc3a355ba04963bd7163e12f97651cdce8709afdacd0f69a62"
     },
     "3N1AB9BV9VY230101": {
       "vin": "3N1AB9BV9VY230101",
@@ -597,5 +597,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-09T14:25:15.245Z"
+  "checkedAt": "2026-10-09T14:28:13.507Z"
 }
