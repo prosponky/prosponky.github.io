@@ -144,7 +144,27 @@
         "Security challenge; skipped",
         "HTTP 403"
       ]
+    },
+    "JN8BT3BA0RW356020": {
+      "vin": "JN8BT3BA0RW356020",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:46:35.258Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "JN8BT3BB1RW180345": {
+      "vin": "JN8BT3BB1RW180345",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:46:36.526Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:43:16.926Z"
+  "checkedAt": "2026-10-09T13:46:36.527Z"
 }
