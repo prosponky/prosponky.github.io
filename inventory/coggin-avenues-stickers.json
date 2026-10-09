@@ -164,7 +164,117 @@
         "Security challenge; skipped",
         "HTTP 403"
       ]
+    },
+    "3N8AP6BE7VL304484": {
+      "vin": "3N8AP6BE7VL304484",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:14.905Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6BE0VL313575": {
+      "vin": "3N8AP6BE0VL313575",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:16.495Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N1AB9CV0VY224492": {
+      "vin": "3N1AB9CV0VY224492",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:17.565Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "5N1DR3BA4SC202755": {
+      "vin": "5N1DR3BA4SC202755",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:18.733Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "3N8AP6CE3TL442048": {
+      "vin": "3N8AP6CE3TL442048",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:19.908Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6CE7TL442277": {
+      "vin": "3N8AP6CE7TL442277",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:21.396Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6CE2TL442316": {
+      "vin": "3N8AP6CE2TL442316",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:22.872Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6CE2VL314452": {
+      "vin": "3N8AP6CE2VL314452",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:23.924Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6CE4VL317014": {
+      "vin": "3N8AP6CE4VL317014",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:25.001Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "5N1DR3BA4SC205221": {
+      "vin": "5N1DR3BA4SC205221",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:26.357Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "3N1AB9CV8VY216169": {
+      "vin": "3N1AB9CV8VY216169",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:27.495Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6CE7TL440528": {
+      "vin": "3N8AP6CE7TL440528",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:28.631Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:46:36.527Z"
+  "checkedAt": "2026-10-09T13:51:28.631Z"
 }

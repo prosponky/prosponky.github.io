@@ -7,3 +7,6 @@ export function stickerQueue(vehicles,records,now=Date.now()){
 export function morningStickerRun(date=new Date()){
  return Number(new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',hourCycle:'h23'}).format(date))===7;
 }
+export function shouldCollectStickers({manual=false,schedule='',date=new Date()}={}){
+ return manual||(schedule?schedule==='0 7 * * *':morningStickerRun(date));
+}

@@ -2,7 +2,9 @@ name: Refresh public inventory
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 7,12 * * *'
+    - cron: '0 7 * * *'
+      timezone: 'America/New_York'
+    - cron: '0 12 * * *'
       timezone: 'America/New_York'
 permissions:
   contents: write
@@ -19,12 +21,17 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Start from latest published inventory evidence
+        run: |
+          mkdir -p public/inventory
+          cp inventory/*.json public/inventory/
       - name: Collect complete public inventory
         run: |
           node scripts/collect-dealerrater.mjs
           node scripts/collect-dealerrater.mjs coggin-atlantic
           node scripts/collect-dealerrater.mjs coggin-avenues
       - name: Collect official Coggin customer cash and links
+        id: official-coggin
         continue-on-error: true
         run: node scripts/collect-coggin-offers.mjs
       - uses: actions/setup-python@v5
@@ -38,13 +45,26 @@ jobs:
             if [ -f "$file" ]; then cp "$file" public/inventory/; fi
           done
       - name: Incremental morning window stickers (no noon collection)
+        id: official-stickers
         continue-on-error: true
+        env:
+          STICKER_SCHEDULE: ${{ github.event.schedule }}
         run: node scripts/refresh-window-stickers.mjs
+      - name: Record individual official collection outcomes
+        if: always()
+        env:
+          COGGIN_OUTCOME: ${{ steps.official-coggin.outcome }}
+          STICKER_OUTCOME: ${{ steps.official-stickers.outcome }}
+        run: |
+          mkdir -p tmp
+          node -e 'require("fs").writeFileSync("tmp/official-step-outcomes.json",JSON.stringify({checkedAt:new Date().toISOString(),coggin:process.env.COGGIN_OUTCOME,stickers:process.env.STICKER_OUTCOME}))'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: window-sticker-collection-report
-          path: tmp/sticker-refresh-latest.json
+          path: |
+            tmp/sticker-refresh-latest.json
+            tmp/official-step-outcomes.json
           if-no-files-found: ignore
       # Greenway official prices are verified in the supported local browser by
       # the 7 a.m./noon Codex heartbeat. This host is denied by the dealer; never

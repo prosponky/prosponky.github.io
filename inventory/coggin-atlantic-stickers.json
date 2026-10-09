@@ -193,7 +193,57 @@
         "Security challenge; skipped",
         "HTTP 403"
       ]
+    },
+    "3N8AP6CA6SL363727": {
+      "vin": "3N8AP6CA6SL363727",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:09.144Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "5N1DR3CD3NC262488": {
+      "vin": "5N1DR3CD3NC262488",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:10.590Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "3N1AB9BV4VY230054": {
+      "vin": "3N1AB9BV4VY230054",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:12.105Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped"
+      ]
+    },
+    "3N8AP6DA2TL310863": {
+      "vin": "3N8AP6DA2TL310863",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:51:13.329Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "3N8AP6BE0VL315987": {
+      "vin": "3N8AP6BE0VL315987",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:50:49.219Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-aa24c90bac180edf8db7c817eb769296.htm",
+          "identity": true
+        }
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:46:33.814Z"
+  "checkedAt": "2026-10-09T13:51:13.330Z"
 }

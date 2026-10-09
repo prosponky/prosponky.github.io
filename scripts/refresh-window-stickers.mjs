@@ -1,9 +1,9 @@
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {morningStickerRun} from './sticker-queue.mjs';
+import {shouldCollectStickers} from './sticker-queue.mjs';
 import {stickerQueue} from './sticker-queue.mjs';
 // Noon never repeats sticker work. Explicit manual runs are separate from scheduled evidence.
-if(!process.argv.includes('--manual')&&!morningStickerRun()){
+if(!shouldCollectStickers({manual:process.argv.includes('--manual'),schedule:process.env.STICKER_SCHEDULE||''})){
  console.log('Outside 7 a.m. Eastern sticker window; inventory refresh remains independent.');
  process.exit(0);
 }
