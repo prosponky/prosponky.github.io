@@ -16,7 +16,13 @@ for(const [store,config] of Object.entries(registry)){
  const path=`tmp/${store}-sticker-browser.json`;
  // Never reset an in-progress queue: its durable VIN results are authoritative.
  const previous=await read(path);
- if(previous&&!previous.done){console.log(store,'resume',previous.index,'/',previous.vehicles.length);continue;}
+ if(previous&&!previous.done){
+  if(previous.source!==config.origin)throw Error('Checkpoint source changed');
+  const known=new Set(previous.vehicles.map(v=>v.vin)),added=vehicles.filter(v=>!known.has(v.vin));
+  previous.vehicles.splice(previous.index,0,...added);
+  if(added.length){const {rename}=await import('node:fs/promises');await writeFile(path+'.tmp',JSON.stringify(previous));await rename(path+'.tmp',path);}
+  console.log(store,'resume',previous.index,'/',previous.vehicles.length,'new',added.length);continue;
+ }
  await writeFile(path,JSON.stringify({source:config.origin,store,startedAt:new Date().toISOString(),index:0,done:false,vehicles,results:{}}));
  console.log(store,vehicles.length,'queued');
 }
