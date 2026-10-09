@@ -1,41 +1,42 @@
-# Original window stickers
+# Window sticker collection
 
-## Current automation (October 9)
+The live vehicle popup shows **Window sticker** only after a VIN-specific original PDF passes verification. It appears after Carfax on used vehicles and after the listing action on new vehicles. Opening the document keeps the card open.
 
-The original hero artwork has been restored. Sticker collection is scheduled for 7 a.m. Eastern only; the noon inventory/price refresh remains independent. `refresh-window-stickers.mjs` reads every registered dealership, processes durable batches of five, prioritizes new VINs, and stops a denied host rather than sending hundreds of identical requests. Weekly rechecks keep verified documents within their seven-day display window. Failed rechecks retain prior verification time and never claim a fresh success. The GitHub workflow publishes an explicit collection report; a challenged collection step fails visibly even though other inventory work continues.
+## Schedule and publication
 
-The supported-browser fallback uses `prepare-sticker-browser.mjs`, then one `collectStickerBrowserBatch` call per CUA tool call, then `verify-sticker-browser.mjs STORE`. Durable queues are `tmp/STORE-sticker-browser.json`. Do not reset an unfinished queue. Browser runtimes that block local module imports must use the literal self-contained function from `sticker-browser-batch.mjs`; string code generation is unavailable. The browser reads only normal public detail/report pages. Candidate links alone are never published as verified stickers.
+Inventory, prices, availability and Carfax checks remain scheduled at **7 a.m. and noon Eastern**. Window stickers run only with the morning schedule. Separate cron identifiers preserve this distinction even if GitHub delays the morning job. The local heartbeat provides the supported-browser fallback; the computer and Codex must be running for that fallback.
 
-Collection and PDF verification write the same checkpoint: run them sequentially and wait for the verification process to finish before another browser batch for that store. Verification merges only processed markers into the latest queue and never replaces its collection index.
+The workflow starts from the latest published evidence, updates successful collections and retains previous maps when a source fails. Individual Coggin and sticker outcomes are saved in the workflow artifact; an overall job success does not prove those steps succeeded. Production reads the refreshed public GitHub inventory maps, so a data update does not require another app deployment.
 
-Current coverage remains incomplete. Morning automation must continue the queues and publish verified maps without waiting for the whole queue; missing or rejected documents stay hidden. The goal remains active until every registered store is covered and a real scheduled morning run completes end to end. Initial browser batches found and PDF-verified additional original stickers at Greenway and Coggin Atlantic; several Nissan documents fail the strict original-Monroney content rule.
+`refresh-window-stickers.mjs` iterates every registered dealership, prioritizes new VINs, checkpoints batches of five, and stops denied hosts rather than repeating hundreds of failures. Verified PDFs are rechecked directly after six days, within the seven-day display window. Failed retrieval never advances the prior successful verification time. A retrieved document that is no longer an original VIN match invalidates that evidence.
 
-The vehicle dialog shows **Window sticker** after Carfax (or after the listing button on new vehicles) only for a verified VIN-specific original PDF. New and used use the same rule. Missing, failed, expired, mismatched or unsafe evidence produces no button. Opening it leaves the vehicle dialog intact.
+## Supported browser fallback
 
-`src/window-sticker.js` validates exact HTTPS provider hosts, exact document VIN, successful verification status and seven-day availability. Stored evidence includes source page, final PDF URL, checked time and document SHA-256. These checks do not alter price retention. Manufacturer eligibility or a constructed endpoint never establishes availability.
+1. Run `node scripts/prepare-sticker-browser.mjs`. Unfinished queues retain progress and insert new VINs ahead of the remaining backlog.
+2. Run one `collectStickerBrowserBatch` call per supported CUA tool call, with a maximum of five vehicles. Its implementation is in `scripts/sticker-browser-batch.mjs`.
+3. Stop collection before running `node scripts/verify-sticker-browser.mjs STORE`. Wait for its terminal result before resuming browser batches for that store. `--limit 5` provides a bounded verification batch; repeat until pending verification records are zero.
+4. Publish verified `inventory/STORE-stickers.json` maps through the clean release checkout, request the Pages build, and compare every live map exactly to the published snapshot.
 
-Run the bounded collector (maximum five vehicles per invocation):
+Queues are `tmp/STORE-sticker-browser.json`. Both collection and verification use atomic writes. Verification merges processed markers into the current checkpoint and never replaces a newer collection index. A real challenge leaves the current VIN pending; never bypass it. If local file-module imports are denied in CUA, paste the literal self-contained browser function. String code generation is unavailable.
 
+Dealer details and dealer-provided Carfax reports supply explicit links. New arrivals can discover their report directly from the dealer page without depending on an older report cache. No VIN-based report or manufacturer URL is synthesized. Candidate links are not verification evidence by themselves.
+
+## PDF verification
+
+Set `POCKET_PDF_PYTHON` to a Python executable with pypdf. The bundled desktop Python supports it; the cloud workflow installs the pinned free dependency. Redirects, HTTPS hosts, download size and timeouts are bounded. Verification requires the actual document VIN, MSRP and fuel-economy content, and rejects sample, reproduction and informational-copy disclaimers. Image-only documents without a readable VIN remain unverified.
+
+The current display rule excludes Nissan PDFs marked **Unofficial Copy / Not actual Monroney Label**, even when the dealer provides a working link. These are classified separately as `informational-copy`. The user has been asked whether to include clearly labeled copies; do not change that policy without their answer.
+
+Commands:
+
+    node scripts/collect-window-stickers.mjs --store greenway --limit 5
     node scripts/collect-window-stickers.mjs --store coggin-atlantic --limit 5
     node scripts/collect-window-stickers.mjs --store coggin-avenues --limit 5
-    node scripts/collect-window-stickers.mjs --store greenway --limit 5
 
-Optional `--vin VIN` targets an existing inventory record. `POCKET_PDF_PYTHON` must point to a Python executable with pypdf; missing PDF extraction fails closed. The desktop bundled Python supports this. No paid service is used. Repeated runs continue with records not checked within the last day. Each record is checkpointed atomically in `public/inventory/<store>-stickers.json`. Publish those independent maps alongside a feature release using the normal release process. Schedule collection externally alongside the existing public collectors; no schedule was changed by this implementation.
+`--discovery-file PATH` accepts up to five fresh browser-observed links. `--vin VIN --recheck` directly rechecks an existing verified document. The evidence includes its source page, final PDF URL, successful verification time and document SHA-256. These rules do not alter indefinite retention of verified vehicle prices.
 
-Discovery follows explicitly labeled Window sticker/Monroney anchors on registered dealer details and their dealer-provided Carfax reports. It never synthesizes a URL or searches every manufacturer's endpoint. Redirects are bounded and checked at every hop. Challenges and HTTP errors are recorded, never bypassed. PDF checks require the actual VIN plus MSRP and fuel-economy content, and reject sample/reproduction/unavailable documents. Providers outside the reviewed allowlist and non-PDF wrappers require a future adapter, so some valid stickers may remain hidden.
+## Verified examples and unfinished work
 
-Candidate provider paths: dealer-hosted original PDFs and explicit Carfax/OEM links on the reviewed allowlist (FordDirect, Stellantis brand sites, Kia, Hyundai, Nissan, Subaru and Toyota). This is a safety allowlist, **not a claim that every brand or VIN has a working sticker endpoint**. No generic free all-brand sticker service was verified.
+Original PDFs have been verified for Greenway Telluride **LG008800**, Atlantic Explorer **CJNTKGA04413**, and Atlantic Seltos **CJNTM7107436**. The live Telluride card shows the action; direct PDF rechecks passed for Telluride and Explorer. The original hero artwork is restored and verified live.
 
-2026-10-09 validation: build and 13 focused tests passed. Five current-feed records were checked across the three stores; zero original stickers verified. HTTP collectors received challenges/403s. The supported browser opened Coggin Atlantic's current Altima stock 429416 (VIN 1N4BL4EV5SN429416) and confirmed no original sticker link in its accessible dealer page. Its dealer-provided Carfax report presented a device check. No positive live sticker example is claimed. This feature has not been published.
-
-## Follow-up verification (supersedes the initial zero-example result)
-
-A later normal browser visit opened Carfax without a challenge. Its first Detailed History entry for Ford Explorer stock **CJNTKGA04413**, VIN **1FM5K7D81KGA04413**, had the exact Original Window Sticker link. Download succeeded with an actual PDF; pypdf extracted the exact VIN, 2019 Explorer XLT factory equipment, MSRP $37,055 and fuel economy. The collector verified and cached this record with a document SHA-256. This is a positive working original-sticker example, not merely an untested endpoint.
-
-For used Nissan Altima stock **429416**, VIN **1N4BL4EV5SN429416**, the first history entry also had Original Window Sticker and its PDF downloaded successfully. The embedded image visually matches the VIN, but its text disclaimer explicitly says **Unofficial Copy** and **Not actual Monroney Label**. It is recorded as `informational-copy`, original false, so the strict original-only button stays hidden. Do not call this missing or blocked.
-
-For NEW Nissan Sentra stock **CJNVY230101**, VIN **3N1AB9BV9VY230101**, the dealer detail page directly exposes View Window Sticker at its registered same-origin `/api/legacy/pse/windowsticker/nissan` path. The actual observed link is saved as a candidate; its download returns HTTP403. Status unverified, not unavailable. No URL was guessed.
-
-`scripts/sticker-browser-discovery.mjs` reads explicit links and VIN association from an already accessible page through supported browser APIs. Save its output (max five entries) and pass `--discovery-file PATH` to the collector, along with `--vin` when desired. The collector downloads the observed destination independently and requires the actual PDF content to match before verification. Fresh discoveries can retry a previous failure. No cookies or credentials are exported. If the local browser cannot import the helper, the same read-only DOM operation can produce the documented JSON entries (`vin`, `sourceVin`, `sourceUrl`, `url`, `label`, `discoveredAt`). Source failures remain distinct from confirmed absence.
-
-Final checks: build, 14 focused Node tests, and three browser tests pass. Browser tests cover new/used conditional placement, opening a new tab while preserving the card, and stale-evidence hiding. No feature publication or automatic sticker schedule change has occurred. Existing Halloween banner release is preserved.
+Initial inventory-wide coverage remains unfinished. Consult `tmp/sticker-goal-progress.json` and the actual queues for current counts; do not treat the examples or passing tests as full coverage. The goal requires completed initial collection, verified publication, and a real scheduled morning end-to-end run. October 9's cloud recovery was manually dispatched and is not scheduled-run proof.
