@@ -8,7 +8,66 @@
       "errors": [
         "HTTP 403"
       ]
+    },
+    "2FMPK3J96KBB85658": {
+      "vin": "2FMPK3J96KBB85658",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:14.051Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "5XYPGDA39LG698357": {
+      "vin": "5XYPGDA39LG698357",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:14.081Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "1HGCR2F53HA219379": {
+      "vin": "1HGCR2F53HA219379",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:14.178Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "KMHLM4AG7MU070559": {
+      "vin": "KMHLM4AG7MU070559",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:14.204Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "5J6RW1H51JA011235": {
+      "vin": "5J6RW1H51JA011235",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:14.284Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    },
+    "1N4BL4CV7LC131093": {
+      "vin": "1N4BL4CV7LC131093",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:37:47.629Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "HTTP 403"
+      ]
+    },
+    "5XYP64HC2LG008800": {
+      "vin": "5XYP64HC2LG008800",
+      "documentVin": "5XYP64HC2LG008800",
+      "original": true,
+      "status": "verified",
+      "url": "https://www.carfax.com/phoenix/sticker/v4/KIA/CQR9wYt1NcE6LghbAn90ktqcPG1u-YyhFNBkL0RaSAuG5XVixD8WwbSV9bRs3HNpLygl9tpj5j6dxx889mzise2AOO5y1PmqUPvc5b14RrXzlHP_7ipi2xnhoXfAB64yMOxfmxXLR0zDXqJGDzyQyuPM6xh2h9trHiXXd_15hhns4DjWEqTXc9fxb4pJ_t-mWeTOoKyH4l0rdjZgcF6TP9z3gUn2JlxVqm30lXPiACuFbVnGexHgCQdGFdaJvTnvNrlkAfoZSf2gj6G-rdybI6uJ-sV1DOw0-wgast4aSR2UuGpsugicUzIHfC3s1QOZsbDeOlSAmBEX8lnmCpMLb7s4YHnXIpIcwfk_QNCaC068KemkY3vANTAXOaF2cHm2wnaEEQ.cfx",
+      "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/fiAmTZ3TDr0CtBrk7NT2Hg2II8xGk1JZ6SzMFCS51DO21Ftf0dv_KKOdx9aC_MKSLEuTpYAWjwBizyTaISrF-nEP7G_WZ7pofdM",
+      "checkedAt": "2026-10-09T13:37:48.221Z",
+      "sha256": "fd72b1648dc4c9c8ec34772ea7e1dfb5d64580bcf0085cf6572d77659079a65d"
     }
   },
-  "checkedAt": "2026-10-09T13:11:56.036Z"
+  "checkedAt": "2026-10-09T13:37:48.222Z"
 }

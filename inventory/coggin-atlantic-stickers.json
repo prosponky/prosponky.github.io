@@ -43,7 +43,82 @@
       "status": "unverified",
       "checkedAt": "2026-10-09T13:22:55.840Z",
       "reason": "View Window Sticker anchor observed in supported browser; PDF request HTTP 403. Not evidence of absence."
+    },
+    "5N1CR2MM9EC632007": {
+      "vin": "5N1CR2MM9EC632007",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:15.189Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1C4AJWAG6DL672892": {
+      "vin": "1C4AJWAG6DL672892",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:15.806Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "KNDPB3ACXF7711398": {
+      "vin": "KNDPB3ACXF7711398",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:16.372Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1C4PJLDX8JD577678": {
+      "vin": "1C4PJLDX8JD577678",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:16.834Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1GTR1VE01CZ171964": {
+      "vin": "1GTR1VE01CZ171964",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:17.429Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "KNDEPCAA1M7107436": {
+      "vin": "KNDEPCAA1M7107436",
+      "documentVin": "KNDEPCAA1M7107436",
+      "original": true,
+      "status": "verified",
+      "url": "https://www.carfax.com/phoenix/sticker/v4/KIA/TGwcUy07GWnjC8EV028IVu2l59miib5rsbGi_hUwvoBV1Wv5BchHx2iPmIx-FmhQ1pGx3Gdo1sdo7goyB58xo0zAtPrDHy8LiOzI_5cK0XmmVADkaXSdoMOoiLyRoLrn8Q60A-61jeXqzPbOkxL1iwLp7-sS4uEz179JBJf1opvNejPAvdVQh8OU7rFLX6Uvk6N_m5s92Es2NLqdvgyPXKSRfvWkq6qWeRhVlJQ_deDZ8SlkSO142G9NwLYHmSH_cFRRfP-JZo_xRa8d622QZPltaR10vuyM7eZwEJ6aGO-URyXb0WpGKKp4gr6OaxIwrJKYZ5DK-NF-no_kKf_sVfiHXJvRVtRLH6A-ojWkuK7KD8Qfporofx44L8vWuI0gel551Q.cfx",
+      "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/88V0iAzrvbdJ7W7wz1jqr222o8V4CQEPv8ezTvYkY013IHVesdC7jsbPW-ycMKSTcYfy_t66iyCW5tZmKaf1a0aMbjcCSO_vULw",
+      "checkedAt": "2026-10-09T13:38:34.565Z",
+      "sha256": "f4dfac218a8974c7271888327220fac319dd15725377b98f2cb2c345d58468c8"
+    },
+    "3N1AB8CV7LY203579": {
+      "vin": "3N1AB8CV7LY203579",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:38:36.187Z",
+      "errors": [
+        "HTTP 410",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "JN8AY2ND0KX010367": {
+      "vin": "JN8AY2ND0KX010367",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:38:39.484Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:21:33.453Z"
+  "checkedAt": "2026-10-09T13:38:39.485Z"
 }

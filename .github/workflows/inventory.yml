@@ -27,6 +27,20 @@ jobs:
       - name: Collect official Coggin customer cash and links
         continue-on-error: true
         run: node scripts/collect-coggin-offers.mjs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install free PDF text verifier
+        run: python -m pip install pypdf==6.1.1
+      - name: Incremental morning window stickers (no noon collection)
+        continue-on-error: true
+        run: node scripts/refresh-window-stickers.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: window-sticker-collection-report
+          path: tmp/sticker-refresh-latest.json
+          if-no-files-found: ignore
       # Greenway official prices are verified in the supported local browser by
       # the 7 a.m./noon Codex heartbeat. This host is denied by the dealer; never
       # replace its verified map with syndicated or partial pricing.

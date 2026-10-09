@@ -9,7 +9,82 @@
         "Security challenge; skipped",
         "HTTP 403"
       ]
+    },
+    "5N1BA0NF2FN615031": {
+      "vin": "5N1BA0NF2FN615031",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:18.251Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "4JGDA5JB0FA522086": {
+      "vin": "4JGDA5JB0FA522086",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:18.809Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "5N1AZ2MG7GN168384": {
+      "vin": "5N1AZ2MG7GN168384",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:19.283Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1C4BJWDG9HL678255": {
+      "vin": "1C4BJWDG9HL678255",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:19.872Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1N6AA1E68HN524304": {
+      "vin": "1N6AA1E68HN524304",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:35:20.341Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "1N4BL4CW1MN326220": {
+      "vin": "1N4BL4CW1MN326220",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:38:40.976Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "3N1AB8CV4RY209350": {
+      "vin": "3N1AB8CV4RY209350",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:38:42.733Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "5N1BT3BA2NC679973": {
+      "vin": "5N1BT3BA2NC679973",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:38:43.973Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
     }
   },
-  "checkedAt": "2026-10-09T13:11:55.763Z"
+  "checkedAt": "2026-10-09T13:38:43.973Z"
 }
