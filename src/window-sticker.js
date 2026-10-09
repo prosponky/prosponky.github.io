@@ -11,6 +11,7 @@ export function stickerCandidates(html,base){
 }
 export function stickerDocumentMatches(text,vin){return /^[A-HJ-NPR-Z0-9]{17}$/.test(vin)&&text.replace(/\s/g,'').toUpperCase().includes(vin)&&/MSRP|manufacturer.?s suggested retail price/i.test(text)&&/fuel economy|fueleconomy\.gov|environment and energy/i.test(text)&&!(/sticker (?:not found|unavailable)|no window sticker|reproduction|sample sticker|unofficial copy|not actual monroney/i.test(text));}
 export function verifiedWindowSticker(record,vin,now=Date.now()){
- const checked=Date.parse(record?.checkedAt);return record?.status==='verified'&&record.vin===vin&&record.documentVin===vin&&record.original===true&&Number.isFinite(checked)&&checked<=now&&now-checked<=7*86400000&&stickerUrl(record.sourceUrl)&&stickerUrl(record.url)?stickerUrl(record.url):null;
+ const checked=Date.parse(record?.checkedAt);return record?.status==='verified'&&record.vin===vin&&record.documentVin===vin&&record.original===true&&Number.isFinite(checked)&&checked<=now&&stickerUrl(record.sourceUrl)&&stickerUrl(record.url)?stickerUrl(record.url):null;
 }
 export function windowStickerButton(record,vin,now=Date.now()){return verifiedWindowSticker(record,vin,now)?'<button type="button" class="quiet full" data-view-window-sticker>Window sticker</button>':'';}
+

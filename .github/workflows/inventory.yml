@@ -44,7 +44,7 @@ jobs:
           for file in inventory/*-stickers.json; do
             if [ -f "$file" ]; then cp "$file" public/inventory/; fi
           done
-      - name: Incremental morning window stickers (no noon collection)
+      - name: Window sticker collection is paced separately (five vehicles per day)
         id: official-stickers
         continue-on-error: true
         env:
@@ -94,6 +94,7 @@ jobs:
             exit 1
           fi
           gh api --method POST repos/${{ github.repository }}/pages/builds
+
 
 
 

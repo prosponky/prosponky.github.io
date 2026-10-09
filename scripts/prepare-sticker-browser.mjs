@@ -1,33 +1,26 @@
-import {readFile,writeFile,mkdir} from 'node:fs/promises';
-import {stickerQueue} from './sticker-queue.mjs';
-const registry=JSON.parse(await readFile('data/dealership-sources.json','utf8'));
-const read=async path=>{try{return JSON.parse(await readFile(path,'utf8'));}catch(e){if(e.code==='ENOENT')return null;throw e;}};
+import {mkdir,copyFile} from 'node:fs/promises';
+import {readJson,saveJson,reserveSticker,easternDay} from './sticker-policy.mjs';
+const registry=await readJson('data/dealership-sources.json'),vehicles=[],records={};
 await mkdir('tmp',{recursive:true});
 for(const [store,config] of Object.entries(registry)){
- const feed=await read(`public/inventory/${store}.json`),cache=await read(`public/inventory/${store}-stickers.json`);
- const official=await read(`public/inventory/${config.priceFile}`),links=config.account?official:await read('public/inventory/dealer-links.json');
- const reports=config.account?official:await read('public/inventory/greenway-carfax.json');
+ const feed=await readJson(`public/inventory/${store}.json`),cache=await readJson(`public/inventory/${store}-stickers.json`),official=await readJson(`public/inventory/${config.priceFile}`),links=config.account?official:await readJson('public/inventory/dealer-links.json'),reports=config.account?official:await readJson('public/inventory/greenway-carfax.json');
  const active=new Set(official?.inventoryVins||Object.keys(official?.prices||{}));
- const records={...cache?.records};
- // HTTP failures are eligible for the browser immediately, without aging valid evidence.
- for(const [vin,row] of Object.entries(records))if(row.status==='unverified')delete records[vin];
- const vehicles=stickerQueue(feed.vehicles.filter(v=>!active.size||active.has(v.vin)),records)
- .map(v=>({vin:v.vin,stockNumber:v.stockNumber,listingUrl:config.account?links?.stocks?.[v.stockNumber]:official?.prices?.[v.vin]?.url||links?.links?.[v.vin],reportUrl:config.account?reports?.carfax?.[v.vin]:reports?.reports?.[v.vin]?.url}));
- const path=`tmp/${store}-sticker-browser.json`;
- // Never reset an in-progress queue: its durable VIN results are authoritative.
- const previous=await read(path);
- if(previous&&!previous.done){
-  if(previous.source!==config.origin)throw Error('Checkpoint source changed');
-  const known=new Set(previous.vehicles.map(v=>v.vin)),added=vehicles.filter(v=>!known.has(v.vin));
-  const fresh=new Map(vehicles.map(v=>[v.vin,v]));
-  previous.vehicles=previous.vehicles.map(v=>fresh.has(v.vin)?{...v,...fresh.get(v.vin)}:v);
-  const completed=previous.vehicles.slice(0,previous.index),pending=previous.vehicles.slice(previous.index);
-  const retry=completed.filter(v=>previous.results[v.vin]?.pages?.length===0&&(v.listingUrl||v.reportUrl));
-  if(retry.length){const vins=new Set(retry.map(v=>v.vin));previous.vehicles=[...completed.filter(v=>!vins.has(v.vin)),...retry,...pending];previous.index-=retry.length;for(const vin of vins)delete previous.results[vin];}
-  previous.vehicles.splice(previous.index,0,...added);
-  const {rename}=await import('node:fs/promises');await writeFile(path+'.tmp',JSON.stringify(previous));await rename(path+'.tmp',path);
-  console.log(store,'resume',previous.index,'/',previous.vehicles.length,'new',added.length);continue;
- }
- await writeFile(path,JSON.stringify({source:config.origin,store,startedAt:new Date().toISOString(),index:0,done:false,vehicles,results:{}}));
- console.log(store,vehicles.length,'queued');
+ for(const v of feed.vehicles.filter(v=>!active.size||active.has(v.vin))){const key=store+':'+v.vin;vehicles.push({key,store,vin:v.vin,stockNumber:v.stockNumber,listingUrl:config.account?links?.stocks?.[v.stockNumber]:official?.prices?.[v.vin]?.url||links?.links?.[v.vin],reportUrl:config.account?reports?.carfax?.[v.vin]:reports?.reports?.[v.vin]?.url});records[key]=cache?.records?.[v.vin];}
 }
+const path='public/inventory/sticker-collection.json';let ledger=await readJson(path);
+if(!ledger){ledger={version:1,createdAt:new Date().toISOString(),seen:Object.fromEntries(vehicles.map(v=>[v.key,{firstSeen:new Date().toISOString(),baseline:true}])),attempts:Object.entries(records).filter(([,r])=>r?.checkedAt).map(([key,r])=>({key,day:easternDay(new Date(r.checkedAt)),at:r.checkedAt}))};}
+// Archive superseded bulk queues once; do not resume their pending backlog.
+for(const store of Object.keys(registry)){
+ const file=`tmp/${store}-sticker-browser.json`,q=await readJson(file);
+ if(q&&!q.policy){await copyFile(file,file+'.bulk-archive');await saveJson(file,{source:registry[store].origin,store,policy:'five-per-day',index:0,done:true,vehicles:[],results:{}});}
+}
+const unfinished=[];
+for(const store of Object.keys(registry)){const q=await readJson(`tmp/${store}-sticker-browser.json`);if(q?.blocked){console.log('Collection stopped at an access challenge; no automatic retry:',store);process.exit(0);}if(q?.policy&&(!q.done||Object.values(q.results).some(r=>!r.processedAt&&(r.status==='no-link'||r.discoveries?.length))))unfinished.push(store);}
+if(unfinished.length){console.log('Resume reserved vehicle only:',unfinished.join(', '));process.exit(0);}
+const next=reserveSticker(ledger,vehicles,records);
+await saveJson(path,ledger);
+if(!next){console.log('No eligible sticker slot: daily cap, two-hour spacing, or empty queue.');process.exit(0);}
+await saveJson(`tmp/${next.store}-sticker-browser.json`,{source:registry[next.store].origin,store:next.store,policy:'five-per-day',startedAt:new Date().toISOString(),index:0,done:false,vehicles:[next],results:{}});
+console.log('Reserved one vehicle:',next.store,next.stockNumber,'Daily attempts:',ledger.attempts.filter(a=>a.day===easternDay()).length);
+
+

@@ -1,0 +1,5973 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-09T14:57:51.414Z",
+  "seen": {
+    "greenway:JN8AS5MT7EW102999": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1J4GW58N0YC419531": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:2FMPK3J96KBB85658": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5J6RW1H51JA011235": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1HGCR2F53HA219379": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1N4BL4CV7LC131093": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:2HKRM3H35FH507709": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5YFS4MCE5MP081908": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5TDDK3EH8DS229377": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP64HC2LG008800": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C4GJXAN6KW520931": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5TDDKRFH2GS288723": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDJ33AU8L7012343": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1G1ZD5ST4RF220471": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP24HC4LG045682": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NMS53AD1KH130269": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NMS53AD7LH158272": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NPEF4JA8MH111228": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3N1AB8CV6RY220639": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:JM1BPBMM8K1138332": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3VVTX7B24NM001822": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3VVSX7B29NM019504": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP34HC0LG003569": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KL79MPSL3PB091384": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3GNAXUEG6RL226693": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:YV4102PK7K1510721": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C4PJMMB5PD109765": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPRCA62M7848385": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1GCGSDEN3L1232711": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPF54AD7RE786078": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5FNYF6H6XMB085949": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NMS24AJ5PH569776": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPF54AD7RE775579": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1FM5K7FW5MNA08281": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3N1CP5CV1RL526184": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1HGCY1F26RA004857": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPUCAGXP7033511": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEU2AAXS7732241": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:W1N4N5BB9MJ167318": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3MVDMBCMXRM692227": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE8TE408501": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KMHL64JA4RA417277": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KM8JE3AE3NU152898": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7MUAAAAG6PV044651": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDERCAA0R7518201": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:LRBFZNR43PD150981": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C6RR6GG8RS123198": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE6SE199810": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE0TE405463": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5YFS4MCE9SP236957": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP5DHC7NG285965": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE3TE321976": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE4TE384438": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFT4DE3TE370711": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1GYKPCRS9LZ224291": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:JM3KKAHD8S1201990": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRKDLF6PG238819": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU4DE8TE352413": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU4DE3TE358975": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU4DE2TE369997": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU4DE5TE352451": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU4DE7TE303414": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:2LMPJ8J92PBL24051": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRHDLF9NG158233": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:WBX73EF06P5X28240": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK6CDF7RG154557": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE6TE406480": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE6TE405040": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DEXTE416591": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE5TE416594": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DE6TE415532": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DE1TE394928": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK6CDF5RG162009": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DE2TE415463": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE5TE416000": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE8TE415889": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE4TE405358": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE8TE405881": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPXCAG3P7058838": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEL3D36V5028740": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3GCPDBEK2PG106612": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:WAUL2BF25RN056234": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG24J76T5526102": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG24J79T5524957": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF8RG203705": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NMP5DGL6RH014828": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE2TE416312": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE5TE414389": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE0TE404952": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF3SG243265": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE2TE389435": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE8TE416184": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J76V5540007": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDCP3LE9T5364913": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDCP3LEXT5365861": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF1SG283693": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DE5TE389784": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDELCD34V5026954": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP34HC5NG208078": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J73T5489286": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDELCD3XV5029633": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D33V5019512": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J73T5500321": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D30V5030905": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D35V5025635": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D37V5025636": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C4SJVBP4RS139112": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D39V5021698": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DC5TE412264": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J74T5498627": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J71T5496303": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK23DF4VG487269": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5J6RS6H83RL029271": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DC1TE414660": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDCR3L19T5159566": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRG4JC5TG481431": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRG4JC5TG488069": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRG4JC1TG489834": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK23DFXVG475983": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRG4JC7TG482919": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP5DHC6NG221903": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG2VY003727": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG3VY004515": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG4VY004734": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG4VY004698": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D39V7027280": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRG4JC3TG494436": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP64GCXRG561091": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF5VG485317": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF8VG482105": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF7VG474545": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEC3D37V5026981": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDECCD36V7011750": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1GKS2CKJ9LR144449": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG6VY005383": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DGXVY005676": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPB3DG3VY004451": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF8VG477311": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J78T5462665": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J72T5470146": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DC0TE416582": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFW4DC9TE415916": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J73T5495878": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J70T5481405": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDCR3LE7T5389383": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J79V5536825": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J76T5481604": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF5VG474138": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J78T5466070": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPU3DG4V7430723": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DCXTE409828": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KPFU5DC6TE409471": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDCR3LE8T5371703": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD37V7054006": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD38V7021970": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD38V7029177": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J7XT5510697": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J72T5500312": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPV3DF1T7539836": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF1VG483029": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF3VG479595": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J75T5525852": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5FNRL6H68RB021025": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J71T5509759": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD3XV7014437": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J70T5522941": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DFXVG486088": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD36V7021787": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEDCD38V7022830": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG64J7XT5509033": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DFXTG468445": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF5TG467560": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF3VG473649": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK33DF1TG465627": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KMDB4DA2VE003273": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3GCPACE84PG336798": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC8TG434292": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KMDB4DA9VE006073": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC2TG482211": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K38S6452330": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEECD76V5024684": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5TDKDRAH9PS039747": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC3TG494481": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC8TG494346": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KMDB4DA9VE002119": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC4TG433835": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK6CDF0TG446218": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPCDDG7VY013611": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRLDJC4TG442468": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC3TG436502": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1GNSKSKD3PR182191": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPCDDG3VY008146": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPCDDG8VY011124": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC2TG468468": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5NMP34G13RH011924": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC8TG437337": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC9TG427609": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JCXTG437405": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC5TG467315": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC9TG468337": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC4TG464356": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRLDJC2TG439620": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRLDJC2TG445594": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRL4JC7TG463332": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPVDDG0V7457162": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRLDJC1TG429287": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPCDDG8VY010488": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPCDDG5VY002493": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5J8YE1H06NL010764": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPVDDG5V7457027": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK6CDF0TG449281": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPVDDG4V7457116": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYC34JA5TG019452": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRH4JF2TG423221": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDEECD79V5024369": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:3KMDB4DA2VE004861": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG9T5538321": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG1T5543075": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG4T5540204": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG5T5560560": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG0T5556870": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF7TG470373": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF5TG471683": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPVDDG9T7372169": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF9TG471105": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRH4JFXTG425265": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK6CDF9TG373799": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRHDJF5TG420250": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF4TG380369": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRH4JF4TG445236": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK53DF6TG465245": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRHDJG8T5458251": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG9T5556656": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRH4JG4T5554653": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNAG44J88V5531646": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C4SJSEP1RS109849": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRH4JF0TG494482": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRH4JFXTG495638": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRHDJG4T5435114": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP5DGC5SG567793": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5K31V6657317": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5K34V6654380": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYK5CDF4TG444815": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRK4JF0TG496637": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5K3XV6666713": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5K32V6657083": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5K32V6652630": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:7YAPEDDG1VY008267": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYP5DGCXSG569006": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRHDJG4T5558671": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1GNSCRKD7MR209393": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRHDJFXTG420101": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K31V6657010": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRHDJF7TG417267": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5KA4V6207840": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K35V6672397": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K31V6657007": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRHDJF7TG469983": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNB5KA5V6211525": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K30T6620222": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K30T6613495": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K39V6656638": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K34T6612964": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K3XT6613679": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDPXDDG3T7307117": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRKDJF7TG445636": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRKDJF0TG437359": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K39T6615357": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K3XT6614766": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5K37T6624705": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA9V6207183": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA4T6149089": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA4T6153109": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA6T6152365": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA4T6150615": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNC5KA1T6142116": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRKDJF2TG452154": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG5T5548619": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG7T5544278": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG4T5556338": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJGXT5549801": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG3T5538378": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG2T5546911": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG7T5546905": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG3T5542401": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG2T5550540": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYRKDJF5TG486282": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDRKDJG5T5532274": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5K33V6669721": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPC5SA3VG062664": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5K37V6655370": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5K38V6659833": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES10VG053159": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA5V6208423": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES10VG051413": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES14VG054797": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES13VG047646": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES18VG050672": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCESA3VG052507": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5S19VG053268": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPCES12VG047427": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA8V6194856": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA5T6134742": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:1C4SDJGJ9RC184660": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5K36V6652511": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5K31V6656272": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA7VG059795": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA1VG047478": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA2VG048719": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA1VG045505": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA2VG047893": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA4VG044008": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA3VG052195": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SA3VG042119": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPD5SAXVG043039": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA0V6215053": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA1V6223307": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA3V6200255": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDES18VG050703": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA3T6185656": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDES10VG031627": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDES15VG035169": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA5VG053297": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA4VG050083": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA1VG060408": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLES12VG040512": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESAXVG012213": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA3VG032030": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA8VG062737": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA8VG008824": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA4VG031971": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA9VG044702": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA4VG004754": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:KNDNE5KA1V6198618": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA4VG026298": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA1VG055466": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPDESA4VG046602": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESA3VG031253": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLES10VG044347": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESAXVG042508": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESAXVG024168": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLES14VG046344": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLES13VG040616": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLES18VG041700": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESA4VG051124": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESA6VG044093": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESA8VG034178": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "greenway:5XYPLESAXVG037339": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AZ28R79T105594": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1CN7AP5GL893091": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1CR2MM9EC632007": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C4AJWAG6DL672892": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KNDPB3ACXF7711398": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C4PJLDX8JD577678": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1GTR1VE01CZ171964": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KL8CD6SAXLC451314": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KNDEPCAA1M7107436": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB8CV7LY203579": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY2ND0KX010367": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AZ2NF6H9646433": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8BT3BA2PW011407": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C4RJKAG4N8633041": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1CP5CV5NL509902": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DV9SN330793": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3GKALXEX2KL389695": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3C4NJDBB2NT123687": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8BT3BA3SW007519": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3AA4RC230423": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1FM5K7D81KGA04413": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5NTJB4AE4RH087564": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C6RR6FT3JS221803": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BAXRC691942": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KM8JBCA19NU036398": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:19XFC1F79KE210196": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BAXSC833115": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BC4PC239801": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1HGCV1F43LA029006": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CV9PN378884": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5NMJB3AEXPH270826": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ2CJ0NC111336": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5J8TC1H64LL013759": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KM8R34HE8MU260713": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C4HJXEN8KW623041": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CA6SL363727": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CD3NC262488": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:WAUBBAF47MN012056": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:4S4BTANC5P3194652": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6AA1EF6PN103342": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE7VL319888": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE5VL325544": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3C4NJDBN5TT190498": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6DA2TL310863": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KNDPU3DF7S7350433": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9BV9VY230101": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9BV4VY230054": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE2VL301590": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BEXVL315866": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE0VL315987": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE0VL317612": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE2VL311276": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE2VL315828": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE1VL322351": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE6VL315668": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE6VL318036": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE4VL315166": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE5VL322238": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE0VL318288": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BEXVL310957": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE7VL319812": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BE4VL311540": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6BEXVL323014": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9CV3VY224938": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CE2TL390024": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9CV3VY224194": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CW2RN353529": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9CV3VY225099": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1GCPSCEK7P1233141": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4EV5SN429416": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV0VY231098": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DVXVY229987": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9CV5VY228280": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3AA1SC268407": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JTJGJRDZ1M2158928": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB5VL320865": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV6VY214399": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB6VL325119": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV3VY217616": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV3VY203585": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV5VY214880": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV8VY201332": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV2VY220037": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV9VY217071": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV5VY210571": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV7VY228814": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV4VY206947": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ9RN625284": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1C4HJXEG0NW180020": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB7VL315649": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DV2VY206669": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB1VL314691": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB0VL324421": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB0VL304475": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB0VL304251": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB9VL304801": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CBXVL307187": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB7VL307132": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB4VL317987": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB3VL305085": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB3VL308035": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CB4VL320422": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6DB3TL425819": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6DB9TL426151": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6DB3TL425433": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6DB8TL408305": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DW7TN347229": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DV6TN365020": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N1AB9DVXVY207102": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA2TC883069": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CV0TN360428": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CV9TN361996": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CV0TN365449": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DV1TN365779": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA8TC875980": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4CVXTN367080": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA7TC882886": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5TC880238": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5TC880160": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5TC880496": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:4S4BTGUD0S3244993": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5TC896374": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB8TC879391": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA6VC678762": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DV9TN357641": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N4BL4DV0TN352747": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JM3KKEHA2R1156407": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB1TC895819": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA7VC670282": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA0VC671905": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1FJ2TN653384": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA2VC679276": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA3VC682154": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA1VC673050": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA4VC673978": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA5VC680583": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA9TC891461": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BAXTC880758": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA2TC880592": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA4TC889326": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA4TC880352": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA6TC880398": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA3TC880536": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA3TC891195": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA6TC880529": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA4TC876124": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA2TC880639": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA8TC880824": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA2TC876087": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA8TC885232": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA1TC884083": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA1TC875920": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:W1NKM4HB0PF043893": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:KM8R7DGE7RU670870": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB6TC881494": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB2TC884523": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB7TC884551": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BBXTC894197": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB8TC894134": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB2TC890872": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB2TC888782": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB9TC889069": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB0TC894404": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA5VC681636": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB8VC681123": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB6VC676681": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BBXVC673881": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BBXVC676733": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5VC682410": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB3VC683183": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB0VC673467": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB8VC682580": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5VC673397": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB6VC679256": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB3VC682356": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB1VC678015": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BB5VC673187": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ4TN675503": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2TN673913": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ1TN681873": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2VN607543": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2VN614508": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ5VN613577": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ1TN633595": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ4TN655753": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ3TN672057": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2VN604707": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS8TC278165": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS6TC280075": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS6TC280786": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BSXTC278250": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS8TC280725": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ6TN679665": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2TN678903": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ7TN636470": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ5TN645474": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS6TC288693": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EK0VN601121": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EK0VN601264": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS2TC281126": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ8VN607949": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3BS9TC283925": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ4VN600349": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ2VN609776": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ3VN605736": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ8VN608793": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ9VN609385": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ3VN607499": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS7TC272842": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ9VN608060": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8BT3DD3TW432778": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ3VN607504": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS8TC218191": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CSXTC216264": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS0TC269605": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS1TC269998": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS3TC292120": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS7TC278673": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CSXTC276383": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS1TC276935": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS5TC293964": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS7TC204198": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ8VN601634": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS0TC272651": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS4TC297519": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS3TC277147": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS1TC280144": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS2TC292058": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CS4TC295771": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8BT3DD5TW014092": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ9VN607975": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EJ8VN604808": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3CUXTC299051": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EK1VN602052": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EK9VN611405": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3CS2TC118185": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1G6DR5RW8P0136711": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3CS6TC119565": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JA4T0LA91TZ026080": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JA4T0LA90TZ041279": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:1N6ED1EK6VN609191": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3CS1VC101106": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1DR3DV9TC297492": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3DS5TC111004": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3DS5TC128773": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3CS0VC101503": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN1BZ4CH4RM362798": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3DS0VC109468": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JA4T0MA94TZ046796": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3DS1VC108541": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1AZ3DS5VC105867": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3BA7T9031223": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3BA0T9031435": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3EA4T9030655": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3EA9T9030604": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3EB1T9144962": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3DB2T9144714": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3CC6T9231803": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3CH8T9730548": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN8AY3CH5T9730541": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:3N8AP6CE5TL309078": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:5N1BT3BA4TC714686": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN1BZ4BH1TM501049": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN1BZ4BH6VM550377": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN1BZ4BH3VM551342": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-atlantic:JN1BZ4BH1VM551064": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3FADP4BJ2KM151471": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BA0NF2FN615031": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:4JGDA5JB0FA522086": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ2MG7GN168384": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1C4BJWDG9HL678255": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6AA1E68HN524304": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4CW1MN326220": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB8CV4RY209350": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB8BVXNY251940": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA2NC679973": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1FMJK1KTXJEA55129": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV9SN356133": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV4SN319572": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DVXSN345223": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV9SN324525": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3BA8SW004082": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5TDZZRFH8KS324179": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5J6RW1H27LA009661": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3FMCR9D92NRE20930": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1GNERHKW5LJ201362": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9CVXTY253009": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:KM8R7DHE6MU192416": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3BA0RW356020": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5NMJA3DE4SH457311": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JM3KFBCM7P0194898": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9BV4VY231222": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9BV6VY230783": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE2VL307955": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3BB1RW180345": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE7VL304484": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:4T1B61HK1KU688441": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE0VL313575": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE7VL320281": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BEXVL320825": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BEXVL321053": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE9VL323327": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE5VL325379": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE1VL325492": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6BE2VL325260": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:YV4102RL7M1763725": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9CV7VY227759": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9CV9VY227911": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1C4HJXDN4LW200024": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9CV0VY224492": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BA4SC202755": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1C4RJJAG7P8803101": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE3TL442048": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE7TL442277": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE2TL442316": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE2VL314452": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE9VL320099": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE4VL317014": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BA4SC205221": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE8VL324922": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9CV8VY216169": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE7TL440528": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE4TL441815": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE0TL435252": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE2VL305346": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CEXVL323657": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE5VL323338": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE7VL305598": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CEXVL307006": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE4VL320740": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV2VY203710": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV8VY206286": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE5TL382886": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE8TL436150": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DVXVY209173": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV2VY211130": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CE6VL320285": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JM1NDAD75P0557536": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV3VY202100": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV4VY204888": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DVXVY208699": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV0VY221915": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV2VY228378": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV8VY201315": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV2VY210270": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N8AP6CBXTL439637": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3TMAZ5CNXNM167680": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV6TN367415": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV7VY207462": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV6VY207341": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9EW8TY255640": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV4TN363315": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CA2RC212533": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3N1AB9DV9VY206023": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD8TW474413": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4DV1TN364387": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4CV1TN361619": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4CV1TN362589": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4CV9TN365207": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N4BL4CV9TN365465": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ1RN632066": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8AY2BD3N9676331": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ8RN610517": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:3MW89FF07P8D31979": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CC7SC239685": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA4TC883252": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA0TC883037": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA2TC885856": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA8TC880001": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BD3RC235055": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA2TC884674": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8AY2BC0P9180994": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB5TC875654": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB1TC883167": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EK6PN631291": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA4TC829403": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA9TC885210": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA0TC875889": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA9TC883375": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA6TC883401": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA7TC881592": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BAXTC882865": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EK0RN650504": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA2TC875716": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB1TC879507": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB9TC873602": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB9TC866410": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA0VC678692": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA9VC678318": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB1TC884920": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB2TC885140": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB3TC884837": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1C4RJKBG8S8673312": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BAXVC681647": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BA6VC679748": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB9TC892831": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB1TC862173": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB2TC890404": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ0VN605631": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJXVN606754": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB5TC894091": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB6TC891944": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1BT3BB1TC894525": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5UXCW2C06N9K63274": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1CM8VN605910": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1CM2VN601948": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ4TN669331": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ0TN678835": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ8TN679487": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ8TN679747": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ3TN676190": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ9TN680437": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ8TN678713": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ0TN675532": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJXTN669916": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJXVN606544": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ6VN606363": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ3TN681499": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ7TN671445": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ2TN671949": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EK6VN608347": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EKXVN613924": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ3TN672818": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ0TN676521": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ8TN675424": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1GNSCNKD3PR190922": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJXTN673335": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EK2VN606045": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJXVN607998": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ9VN608124": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ2VN611107": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ5VN610985": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ6VN600630": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:2GCUDDED6R1143545": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BT6TC286239": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ5TN671329": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD7TW488531": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD8TW319733": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD4TW485778": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ4VN601825": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD4TW014794": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD5TW433723": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ7TN674071": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ5TN666017": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ0TN673697": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD4TW433891": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8BT3DD5TW430353": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS8TC261283": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS3TC249848": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS3TC233360": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS8TC279881": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS2TC273896": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS1TC278894": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS4TC277657": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS5TC292085": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS3TC293459": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS1TC277650": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS1TC296375": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CSXTC298092": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS4TC301326": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS6TC298445": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS0TC272357": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS7TC277796": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS7TC276857": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3CS0TC295704": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BE4TC298956": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3BEXTC298895": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EJ4VN604837": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3BS3VC106566": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN1BZ4AH7VM551104": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS2TC114198": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS5TC131559": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS0TC118959": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JA4T0LA94TZ032858": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS7TC108641": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS2TC131941": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:1N6ED1EK5VN607285": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CS4TC121704": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3CSXVC106711": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DV2TC297060": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DS2TC132618": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DV8TC297676": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DV2TC297821": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DM9TC260630": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DS2TC132621": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DM6TC298459": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DS3VC101509": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JA4T0MA96TZ046847": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DS4VC108176": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DS5VC109532": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1AZ3DSXVC109493": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:5N1DR3DK1TC282328": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN1BZ4BH8VM550462": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN1BZ4BH4VM550071": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8AY3BA7T9031206": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8AY3BA6T9031455": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    },
+    "coggin-avenues:JN8AY3EA5T9030812": {
+      "firstSeen": "2026-10-09T14:57:51.415Z",
+      "baseline": true
+    }
+  },
+  "attempts": [
+    {
+      "key": "greenway:JN8AS5MT7EW102999",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:56:54.407Z"
+    },
+    {
+      "key": "greenway:1J4GW58N0YC419531",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:11:56.035Z"
+    },
+    {
+      "key": "greenway:2FMPK3J96KBB85658",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:14.051Z"
+    },
+    {
+      "key": "greenway:5J6RW1H51JA011235",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:14.284Z"
+    },
+    {
+      "key": "greenway:1HGCR2F53HA219379",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:14.178Z"
+    },
+    {
+      "key": "greenway:1N4BL4CV7LC131093",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:41:54.305Z"
+    },
+    {
+      "key": "greenway:5XYP64HC2LG008800",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:28:12.214Z"
+    },
+    {
+      "key": "greenway:3KPFT4DE8TE408501",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:56:56.632Z"
+    },
+    {
+      "key": "greenway:3KPFT4DE0TE405463",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:56:58.587Z"
+    },
+    {
+      "key": "greenway:3KPFT4DE4TE384438",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:13:33.538Z"
+    },
+    {
+      "key": "greenway:3KPFT4DE3TE370711",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:57:00.634Z"
+    },
+    {
+      "key": "greenway:3KPFU4DE8TE352413",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:13:57.149Z"
+    },
+    {
+      "key": "greenway:3KPFU4DE3TE358975",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:13:59.256Z"
+    },
+    {
+      "key": "greenway:3KPFU4DE2TE369997",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:01.899Z"
+    },
+    {
+      "key": "greenway:3KPFU4DE5TE352451",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:03.970Z"
+    },
+    {
+      "key": "greenway:3KPFU4DE7TE303414",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:07.134Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE6TE406480",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:48.327Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE6TE405040",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:50.398Z"
+    },
+    {
+      "key": "greenway:3KPFW4DEXTE416591",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:52.141Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE5TE416594",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:54.250Z"
+    },
+    {
+      "key": "greenway:3KPFU5DE6TE415532",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:02.097Z"
+    },
+    {
+      "key": "greenway:3KPFU5DE1TE394928",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:04.353Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE5TE416000",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:10.203Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE8TE415889",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:31.929Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE4TE405358",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:34.753Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE8TE405881",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:35.432Z"
+    },
+    {
+      "key": "greenway:KNAG24J76T5526102",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:19:09.593Z"
+    },
+    {
+      "key": "greenway:KNAG24J79T5524957",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:19:11.878Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE2TE416312",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:19:59.119Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE5TE414389",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:19:59.923Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE0TE404952",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:20:01.996Z"
+    },
+    {
+      "key": "greenway:5XYK33DF3SG243265",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:57:02.374Z"
+    },
+    {
+      "key": "greenway:3KPFW4DE8TE416184",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:24.972Z"
+    },
+    {
+      "key": "greenway:KNAG64J76V5540007",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:11:02.479Z"
+    },
+    {
+      "key": "greenway:KNDCP3LE9T5364913",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:25.839Z"
+    },
+    {
+      "key": "greenway:KNDCP3LEXT5365861",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:27.959Z"
+    },
+    {
+      "key": "greenway:KNDELCD34V5026954",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:53.395Z"
+    },
+    {
+      "key": "greenway:KNAG64J73T5489286",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:58.318Z"
+    },
+    {
+      "key": "greenway:KNDELCD3XV5029633",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:00.313Z"
+    },
+    {
+      "key": "greenway:KNDEC3D33V5019512",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:02.280Z"
+    },
+    {
+      "key": "greenway:KNAG64J73T5500321",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:43.907Z"
+    },
+    {
+      "key": "greenway:KNDEC3D30V5030905",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:44.752Z"
+    },
+    {
+      "key": "greenway:KNDEC3D35V5025635",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:45.349Z"
+    },
+    {
+      "key": "greenway:KNDEC3D37V5025636",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:47.303Z"
+    },
+    {
+      "key": "greenway:KNDEC3D39V5021698",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:23:11.061Z"
+    },
+    {
+      "key": "greenway:3KPFU5DC5TE412264",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:23:13.108Z"
+    },
+    {
+      "key": "greenway:KNAG64J74T5498627",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:23:14.984Z"
+    },
+    {
+      "key": "greenway:KNAG64J71T5496303",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:23:17.156Z"
+    },
+    {
+      "key": "greenway:5XYK23DF4VG487269",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:11:04.844Z"
+    },
+    {
+      "key": "greenway:3KPFU5DC1TE414660",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:24:10.607Z"
+    },
+    {
+      "key": "greenway:KNDCR3L19T5159566",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:24:13.093Z"
+    },
+    {
+      "key": "greenway:5XYRG4JC5TG481431",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:24:15.455Z"
+    },
+    {
+      "key": "greenway:5XYRG4JC5TG488069",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:24:15.952Z"
+    },
+    {
+      "key": "greenway:5XYRG4JC1TG489834",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:24:17.753Z"
+    },
+    {
+      "key": "greenway:5XYK23DFXVG475983",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:43.333Z"
+    },
+    {
+      "key": "greenway:5XYRG4JC7TG482919",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:46.342Z"
+    },
+    {
+      "key": "greenway:7YAPB3DG3VY004515",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:52.778Z"
+    },
+    {
+      "key": "greenway:7YAPB3DG4VY004734",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:26:16.946Z"
+    },
+    {
+      "key": "greenway:7YAPB3DG4VY004698",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:26:14.516Z"
+    },
+    {
+      "key": "greenway:KNDEC3D39V7027280",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:26:18.143Z"
+    },
+    {
+      "key": "greenway:5XYRG4JC3TG494436",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:11:07.227Z"
+    },
+    {
+      "key": "greenway:5XYK33DF5VG485317",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:11:07.976Z"
+    },
+    {
+      "key": "greenway:5XYK33DF8VG482105",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:26:19.836Z"
+    },
+    {
+      "key": "greenway:5XYK33DF7VG474545",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:24.958Z"
+    },
+    {
+      "key": "greenway:KNDEC3D37V5026981",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:27.110Z"
+    },
+    {
+      "key": "greenway:KNDECCD36V7011750",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:29.338Z"
+    },
+    {
+      "key": "greenway:7YAPB3DG6VY005383",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:54.074Z"
+    },
+    {
+      "key": "greenway:7YAPB3DGXVY005676",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:56.434Z"
+    },
+    {
+      "key": "greenway:7YAPB3DG3VY004451",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:58.289Z"
+    },
+    {
+      "key": "greenway:5XYK33DF8VG477311",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:00.158Z"
+    },
+    {
+      "key": "greenway:KNAG64J78T5462665",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:01.816Z"
+    },
+    {
+      "key": "greenway:KNAG64J72T5470146",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:22.711Z"
+    },
+    {
+      "key": "greenway:3KPFW4DC0TE416582",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:26.942Z"
+    },
+    {
+      "key": "greenway:3KPFW4DC9TE415916",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:24.793Z"
+    },
+    {
+      "key": "greenway:KNAG64J73T5495878",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:28.888Z"
+    },
+    {
+      "key": "greenway:KNAG64J70T5481405",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:34:31.029Z"
+    },
+    {
+      "key": "greenway:KNDCR3LE7T5389383",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:07.410Z"
+    },
+    {
+      "key": "greenway:KNAG64J79V5536825",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:09.912Z"
+    },
+    {
+      "key": "greenway:5XYK33DF5VG474138",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:35.012Z"
+    },
+    {
+      "key": "greenway:KNAG64J78T5466070",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:38.248Z"
+    },
+    {
+      "key": "greenway:KNDPU3DG4V7430723",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:40.230Z"
+    },
+    {
+      "key": "greenway:3KPFU5DCXTE409828",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:41.896Z"
+    },
+    {
+      "key": "greenway:3KPFU5DC6TE409471",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:43.864Z"
+    },
+    {
+      "key": "greenway:KNDCR3LE8T5371703",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:08.424Z"
+    },
+    {
+      "key": "greenway:KNDEDCD37V7054006",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:10.783Z"
+    },
+    {
+      "key": "greenway:KNDEDCD38V7021970",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:12.795Z"
+    },
+    {
+      "key": "greenway:KNDEDCD38V7029177",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:14.886Z"
+    },
+    {
+      "key": "greenway:KNAG64J7XT5510697",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:16.655Z"
+    },
+    {
+      "key": "greenway:KNAG64J72T5500312",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:33.772Z"
+    },
+    {
+      "key": "greenway:KNDPV3DF1T7539836",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:35.884Z"
+    },
+    {
+      "key": "greenway:5XYK33DF1VG483029",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:38.109Z"
+    },
+    {
+      "key": "greenway:5XYK33DF3VG479595",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:39.861Z"
+    },
+    {
+      "key": "greenway:KNAG64J75T5525852",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:40:41.879Z"
+    },
+    {
+      "key": "greenway:KNDEDCD3XV7014437",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:07.119Z"
+    },
+    {
+      "key": "greenway:KNAG64J70T5522941",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:09.078Z"
+    },
+    {
+      "key": "greenway:5XYK33DFXVG486088",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:11:10.487Z"
+    },
+    {
+      "key": "greenway:KNDEDCD36V7021787",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:47.257Z"
+    },
+    {
+      "key": "greenway:KNDEDCD38V7022830",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:10.678Z"
+    },
+    {
+      "key": "greenway:KNAG64J7XT5509033",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:49.793Z"
+    },
+    {
+      "key": "greenway:5XYK33DFXTG468445",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:51.724Z"
+    },
+    {
+      "key": "greenway:5XYK33DF5TG467560",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:53.669Z"
+    },
+    {
+      "key": "greenway:5XYK33DF3VG473649",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:55.557Z"
+    },
+    {
+      "key": "greenway:5XYK33DF1TG465627",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:42:20.226Z"
+    },
+    {
+      "key": "greenway:3KMDB4DA2VE003273",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:42:22.879Z"
+    },
+    {
+      "key": "greenway:3KMDB4DA9VE006073",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:12:10.059Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC2TG482211",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:42:26.886Z"
+    },
+    {
+      "key": "greenway:KNDEECD76V5024684",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:12.486Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC3TG494481",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:17.357Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC8TG494346",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:18.943Z"
+    },
+    {
+      "key": "greenway:3KMDB4DA9VE002119",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:51.347Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC4TG433835",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:56.730Z"
+    },
+    {
+      "key": "greenway:5XYK6CDF0TG446218",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:53.917Z"
+    },
+    {
+      "key": "greenway:7YAPCDDG7VY013611",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:56.174Z"
+    },
+    {
+      "key": "greenway:5XYRLDJC4TG442468",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:58.583Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC3TG436502",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:21.292Z"
+    },
+    {
+      "key": "greenway:7YAPCDDG3VY008146",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:23.722Z"
+    },
+    {
+      "key": "greenway:7YAPCDDG8VY011124",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:25.946Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC2TG468468",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:28.144Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC8TG437337",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:44.753Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC9TG427609",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:47.181Z"
+    },
+    {
+      "key": "greenway:5XYRL4JCXTG437405",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:50.520Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC5TG467315",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:25.440Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC9TG468337",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:23.944Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC4TG464356",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:27.043Z"
+    },
+    {
+      "key": "greenway:5XYRL4JC7TG463332",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:28.970Z"
+    },
+    {
+      "key": "greenway:KNDPVDDG0V7457162",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:42.173Z"
+    },
+    {
+      "key": "greenway:7YAPCDDG8VY010488",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:52.695Z"
+    },
+    {
+      "key": "greenway:KNDNC5K35V6672397",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:12:12.599Z"
+    },
+    {
+      "key": "greenway:5XYPC5SA3VG062664",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:12:14.780Z"
+    },
+    {
+      "key": "greenway:5XYPCES14VG054797",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:12:16.898Z"
+    },
+    {
+      "key": "greenway:5XYPD5S19VG053268",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:12:19.300Z"
+    },
+    {
+      "key": "greenway:KNDNE5KA1V6223307",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:13:26.486Z"
+    },
+    {
+      "key": "greenway:5XYPDESA8VG062737",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:13:29.168Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8AZ28R79T105594",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:11:26.530Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1CN7AP5GL893091",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:00.296Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1CR2MM9EC632007",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:15.189Z"
+    },
+    {
+      "key": "coggin-atlantic:1C4AJWAG6DL672892",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:15.806Z"
+    },
+    {
+      "key": "coggin-atlantic:KNDPB3ACXF7711398",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:16.372Z"
+    },
+    {
+      "key": "coggin-atlantic:1C4PJLDX8JD577678",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:16.834Z"
+    },
+    {
+      "key": "coggin-atlantic:1GTR1VE01CZ171964",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:17.429Z"
+    },
+    {
+      "key": "coggin-atlantic:KL8CD6SAXLC451314",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:37:59.983Z"
+    },
+    {
+      "key": "coggin-atlantic:KNDEPCAA1M7107436",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:41:56.650Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB8CV7LY203579",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:41:58.477Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8AY2ND0KX010367",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:01.106Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1CP5CV5NL509902",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:02.862Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8BT3BA3SW007519",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:00.971Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3AA4RC230423",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:43:13.758Z"
+    },
+    {
+      "key": "coggin-atlantic:1FM5K7D81KGA04413",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:28:13.506Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BAXRC691942",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:43:14.978Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BAXSC833115",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:46:30.834Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BC4PC239801",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:46:32.295Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CV9PN378884",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:46:33.814Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CA6SL363727",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:09.144Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3CD3NC262488",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:10.590Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE7VL319888",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:01.594Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE5VL325544",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:02.225Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6DA2TL310863",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:13.329Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9BV9VY230101",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:22:55.840Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9BV4VY230054",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:12.105Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE2VL301590",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:02.854Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BEXVL315866",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:53.321Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE0VL315987",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:50:49.219Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE0VL317612",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:54.045Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE2VL311276",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:55.541Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE2VL315828",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:54.846Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE1VL322351",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:57.654Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE6VL315668",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:56.360Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE6VL318036",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:56.991Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE4VL315166",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:58.928Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE5VL322238",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:58.248Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE0VL318288",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:14:59.662Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BEXVL310957",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:35.171Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE7VL319812",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:03.738Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BE4VL311540",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:35.815Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6BEXVL323014",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:04.379Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9CV3VY224938",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:36.399Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CE2TL390024",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:36.975Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9CV3VY224194",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:38.595Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CW2RN353529",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:40.365Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4EV5SN429416",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:22:55.840Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DVXVY229987",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:41.237Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9CV5VY228280",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:04.968Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB5VL320865",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:05.789Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV6VY214399",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:41.913Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB6VL325119",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:06.477Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV3VY217616",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:43.031Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV3VY203585",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:43.839Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV5VY214880",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:44.508Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV8VY201332",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:46.011Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV2VY220037",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:46.664Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV9VY217071",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:45.274Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV5VY210571",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:47.281Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV7VY228814",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:07.103Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV4VY206947",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:47.903Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ9RN625284",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:48.615Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB7VL315649",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:21:39.309Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DV2VY206669",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:49.410Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB1VL314691",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:50.112Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB0VL324421",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:07.873Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB0VL304475",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:51.433Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB0VL304251",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:50.822Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB9VL304801",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:52.040Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CBXVL307187",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:08.628Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB7VL307132",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:09.473Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB4VL317987",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:52.613Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB3VL305085",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:53.348Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB3VL308035",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:53.951Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6CB4VL320422",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:10.219Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6DB3TL425819",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:54.793Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6DB9TL426151",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:55.485Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6DB3TL425433",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:57.362Z"
+    },
+    {
+      "key": "coggin-atlantic:3N8AP6DB8TL408305",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:59.615Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4DW7TN347229",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:00.227Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4DV6TN365020",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:01.621Z"
+    },
+    {
+      "key": "coggin-atlantic:3N1AB9DVXVY207102",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:02.206Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA2TC883069",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:03.292Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CV0TN360428",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:04.142Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CV9TN361996",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:05.021Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CV0TN365449",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:05.780Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4DV1TN365779",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:06.612Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA8TC875980",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:07.450Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4CVXTN367080",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:57.989Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA7TC882886",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:08.087Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5TC880238",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:10.519Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5TC880160",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:09.685Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5TC880496",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:11.186Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5TC896374",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:11.924Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB8TC879391",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:13.399Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA6VC678762",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:12.028Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4DV9TN357641",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:14.634Z"
+    },
+    {
+      "key": "coggin-atlantic:1N4BL4DV0TN352747",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:16.272Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB1TC895819",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:25.490Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA7VC670282",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:12.917Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA0VC671905",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:08.785Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1FJ2TN653384",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:26.258Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA2VC679276",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:13.688Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA3VC682154",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:14.315Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA1VC673050",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:14.053Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA4VC673978",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:15.069Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA5VC680583",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:15.681Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BAXTC880758",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:30.137Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA2TC880592",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:31.133Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA4TC889326",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:28.314Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA4TC880352",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:48.483Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA6TC880398",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:49.071Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA3TC880536",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:50.714Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA3TC891195",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:52.727Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA6TC880529",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:51.328Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA4TC876124",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:54.030Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA2TC880639",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:33.911Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA8TC880824",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:56.256Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA2TC876087",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:38:54.692Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA8TC885232",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:35.666Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA1TC884083",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:36.383Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA1TC875920",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:37.121Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB6TC881494",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:37.789Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB2TC884523",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:40.942Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB7TC884551",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:39.645Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BBXTC894197",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:41.689Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB8TC894134",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:42.266Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB2TC890872",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:43.074Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB2TC888782",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:44.657Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB9TC889069",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:46.372Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB0TC894404",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:47.027Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BA5VC681636",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:16.391Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB8VC681123",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:17.535Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB6VC676681",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:18.248Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BBXVC673881",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:47.652Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BBXVC676733",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:48.245Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5VC682410",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:18.934Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB3VC683183",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:19.666Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB0VC673467",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:48.844Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB8VC682580",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:20.434Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5VC673397",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:57.057Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB6VC679256",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:21.165Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB3VC682356",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:21.754Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB1VC678015",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:58.095Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1BT3BB5VC673187",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:49.546Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ4TN675503",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:59.256Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ2TN673913",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:59.966Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ1TN681873",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:01.799Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ2VN607543",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:02.388Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ2VN614508",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:41:50.231Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ5VN613577",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:44:56.286Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ1TN633595",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:03.039Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ4TN655753",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:04.716Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ3TN672057",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:06.017Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ2VN604707",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:06.636Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS8TC278165",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:08.066Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS6TC280075",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:08.712Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS6TC280786",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:11.686Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BSXTC278250",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:10.192Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS8TC280725",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:13.637Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ6TN679665",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:14.367Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ2TN678903",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:15.906Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ7TN636470",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:16.511Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ5TN645474",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:17.809Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS6TC288693",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:19.533Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EK0VN601121",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:20.236Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EK0VN601264",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:21.693Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3BS2TC281126",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:22.472Z"
+    },
+    {
+      "key": "coggin-atlantic:1N6ED1EJ8VN607949",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:23.373Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8BT3DD3TW432778",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:12.147Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3CS1TC280144",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:13.012Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8BT3DD5TW014092",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:13.923Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3CUXTC299051",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:14.643Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1DR3DV9TC297492",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:15.244Z"
+    },
+    {
+      "key": "coggin-atlantic:5N1AZ3DS0VC109468",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:33.280Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8AY3BA0T9031435",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:33.888Z"
+    },
+    {
+      "key": "coggin-atlantic:JN8AY3EB1T9144962",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:29:34.574Z"
+    },
+    {
+      "key": "coggin-avenues:3FADP4BJ2KM151471",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:11:55.763Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BA0NF2FN615031",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:18.251Z"
+    },
+    {
+      "key": "coggin-avenues:4JGDA5JB0FA522086",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:18.809Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ2MG7GN168384",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:19.283Z"
+    },
+    {
+      "key": "coggin-avenues:1C4BJWDG9HL678255",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:35:19.872Z"
+    },
+    {
+      "key": "coggin-avenues:1N6AA1E68HN524304",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:06.321Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4CW1MN326220",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:04.399Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB8CV4RY209350",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:05.863Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA2NC679973",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:07.256Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV9SN356133",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:08.787Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV4SN319572",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:10.064Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DVXSN345223",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:11.369Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV9SN324525",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:13.567Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3BA8SW004082",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:42:14.729Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9CVXTY253009",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:43:16.925Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3BA0RW356020",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:46:35.258Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9BV4VY231222",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:35.415Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9BV6VY230783",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:04.156Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE2VL307955",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:02.071Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3BB1RW180345",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:46:36.526Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE7VL304484",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:14.905Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE0VL313575",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:16.495Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE7VL320281",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:36.221Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BEXVL320825",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:37.282Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BEXVL321053",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:38.064Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE9VL323327",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:39.078Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE5VL325379",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:39.770Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE1VL325492",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:40.418Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6BE2VL325260",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:41.052Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9CV7VY227759",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:41.670Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9CV9VY227911",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:42.503Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9CV0VY224492",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:17.565Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3BA4SC202755",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:18.733Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE3TL442048",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:19.908Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE7TL442277",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:21.396Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE2TL442316",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:22.872Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE2VL314452",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:23.924Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE4VL317014",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:25.001Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3BA4SC205221",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:26.357Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE8VL324922",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:43.085Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9CV8VY216169",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:27.495Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE7TL440528",
+      "day": "2026-10-09",
+      "at": "2026-10-09T13:51:28.631Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE4TL441815",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:23.609Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE0TL435252",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:24.781Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE2VL305346",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:25.720Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CEXVL323657",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:43.710Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE5VL323338",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:44.352Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE7VL305598",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:27.054Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CEXVL307006",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:27.896Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE4VL320740",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:45.007Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV2VY203710",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:28.572Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV8VY206286",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:29.976Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE5TL382886",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:31.446Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE8TL436150",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:32.882Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DVXVY209173",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:34.714Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV2VY211130",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:17.372Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CE6VL320285",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:45.593Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV3VY202100",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:16:11.522Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV4VY204888",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:18.386Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DVXVY208699",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:18.174Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV0VY221915",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:19.640Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV2VY228378",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:46.235Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV8VY201315",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:20.435Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV2VY210270",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:22.044Z"
+    },
+    {
+      "key": "coggin-avenues:3N8AP6CBXTL439637",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:23.337Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV6TN367415",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:46.880Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV7VY207462",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:24.008Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV6VY207341",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:24.578Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9EW8TY255640",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:26.104Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV4TN363315",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:26.777Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CA2RC212533",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:28.793Z"
+    },
+    {
+      "key": "coggin-avenues:3N1AB9DV9VY206023",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:28.042Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD8TW474413",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:35.221Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4DV1TN364387",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:18:59.173Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4CV1TN361619",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:29.565Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4CV1TN362589",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:30.199Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4CV9TN365207",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:31.680Z"
+    },
+    {
+      "key": "coggin-avenues:1N4BL4CV9TN365465",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:32.351Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ1RN632066",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:33.051Z"
+    },
+    {
+      "key": "coggin-avenues:JN8AY2BD3N9676331",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:33.691Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ8RN610517",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:35.897Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA4TC883252",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:37.210Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA0TC883037",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:37.893Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA2TC885856",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:39.297Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA8TC880001",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:40.020Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3BD3RC235055",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:43.082Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA2TC884674",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:41.715Z"
+    },
+    {
+      "key": "coggin-avenues:JN8AY2BC0P9180994",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:43.731Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB5TC875654",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:42.337Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB1TC883167",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:18.591Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EK6PN631291",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:45.402Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA4TC829403",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:22:20.115Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA9TC885210",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:46.782Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA0TC875889",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:48.643Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA9TC883375",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:50.569Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA6TC883401",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:51.951Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA7TC881592",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:53.610Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BAXTC882865",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:54.334Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EK0RN650504",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:54.996Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA2TC875716",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:56.343Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB1TC879507",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:56.956Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB9TC873602",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:58.464Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB9TC866410",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:59.207Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA0VC678692",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:02.799Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA9VC678318",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:30:59.848Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB1TC884920",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:01.528Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB2TC885140",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:02.614Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB3TC884837",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:03.904Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BAXVC681647",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:47.475Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BA6VC679748",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:05.604Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB1TC862173",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:05.231Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB2TC890404",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:06.145Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ0VN605631",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:06.765Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJXVN606754",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:07.497Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB5TC894091",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:08.209Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB6TC891944",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:09.801Z"
+    },
+    {
+      "key": "coggin-avenues:5N1BT3BB1TC894525",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:11.320Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1CM8VN605910",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:31:12.793Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1CM2VN601948",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:13.948Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ4TN669331",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:33:47.900Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ0TN678835",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:15.537Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ8TN679487",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:16.889Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ8TN679747",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:18.435Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ3TN676190",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:19.156Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ9TN680437",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:19.800Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ8TN678713",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:20.964Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ0TN675532",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:21.682Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJXTN669916",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:23.579Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJXVN606544",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:24.188Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ6VN606363",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:25.327Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ3TN681499",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:26.109Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ7TN671445",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:27.577Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ2TN671949",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:28.219Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EK6VN608347",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:28.890Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EKXVN613924",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:48.239Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ3TN672818",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:30.373Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ0TN676521",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:31.921Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ8TN675424",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:32.569Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJXTN673335",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:39:53.819Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EK2VN606045",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:42:59.468Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJXVN607998",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:00.141Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ9VN608124",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:00.747Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ2VN611107",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:02.050Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ5VN610985",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:03.562Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ6VN600630",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:04.831Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ5TN671329",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:05.483Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD7TW488531",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:07.213Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD8TW319733",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:08.786Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD4TW485778",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:10.432Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ4VN601825",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:12.079Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD4TW014794",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:12.691Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD5TW433723",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:13.448Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ7TN674071",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:15.021Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ5TN666017",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:16.246Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ0TN673697",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:17.699Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD4TW433891",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:18.377Z"
+    },
+    {
+      "key": "coggin-avenues:JN8BT3DD5TW430353",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:19.100Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS8TC261283",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:20.735Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS3TC249848",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:21.961Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS3TC233360",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:22.672Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS8TC279881",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:23.955Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS2TC273896",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:25.234Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS1TC278894",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:26.477Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS4TC277657",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:27.066Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS5TC292085",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:43:28.431Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS3TC293459",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:24.286Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS1TC277650",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:25.883Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS1TC296375",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:26.683Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CSXTC298092",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:27.422Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS4TC301326",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:48.896Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS6TC298445",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:28.516Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS0TC272357",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:30.632Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS7TC277796",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:32.143Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS7TC276857",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:32.899Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3CS0TC295704",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:33.474Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3BE4TC298956",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:03.534Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3BEXTC298895",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:04.818Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EJ4VN604837",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:35.743Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3BS3VC106566",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:36.395Z"
+    },
+    {
+      "key": "coggin-avenues:JN1BZ4AH7VM551104",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:37.726Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS2TC114198",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:39.089Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS5TC131559",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:39.969Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS0TC118959",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:45:41.451Z"
+    },
+    {
+      "key": "coggin-avenues:JA4T0LA94TZ032858",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:41.241Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS7TC108641",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:42.697Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS2TC131941",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:44.133Z"
+    },
+    {
+      "key": "coggin-avenues:1N6ED1EK5VN607285",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:44.835Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CS4TC121704",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:46.223Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3CSXVC106711",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:46.815Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DV2TC297060",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:49.501Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DS2TC132618",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:48.428Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DV8TC297676",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:49.089Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DV2TC297821",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:49.758Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DM9TC260630",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:51.470Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DS2TC132621",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:52.623Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DM6TC298459",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:53.544Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DS3VC101509",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:54.203Z"
+    },
+    {
+      "key": "coggin-avenues:JA4T0MA96TZ046847",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:55.824Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DS4VC108176",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:56.549Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DS5VC109532",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:50.233Z"
+    },
+    {
+      "key": "coggin-avenues:5N1AZ3DSXVC109493",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:15:50.908Z"
+    },
+    {
+      "key": "coggin-avenues:5N1DR3DK1TC282328",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:57.930Z"
+    },
+    {
+      "key": "coggin-avenues:JN1BZ4BH8VM550462",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:48:59.187Z"
+    },
+    {
+      "key": "coggin-avenues:JN1BZ4BH4VM550071",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:00.751Z"
+    },
+    {
+      "key": "coggin-avenues:JN8AY3BA7T9031206",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:15.944Z"
+    },
+    {
+      "key": "coggin-avenues:JN8AY3BA6T9031455",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:25:16.619Z"
+    },
+    {
+      "key": "coggin-avenues:JN8AY3EA5T9030812",
+      "day": "2026-10-09",
+      "at": "2026-10-09T14:49:01.449Z"
+    }
+  ]
+}
