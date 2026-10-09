@@ -1,0 +1,14 @@
+{
+  "source": "https://www.greenwaykiaattheavenues.com",
+  "records": {
+    "1J4GW58N0YC419531": {
+      "vin": "1J4GW58N0YC419531",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:11:56.035Z",
+      "errors": [
+        "HTTP 403"
+      ]
+    }
+  },
+  "checkedAt": "2026-10-09T13:11:56.036Z"
+}

@@ -1,0 +1,15 @@
+{
+  "source": "https://www.nissanattheavenues.com",
+  "records": {
+    "3FADP4BJ2KM151471": {
+      "vin": "3FADP4BJ2KM151471",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:11:55.763Z",
+      "errors": [
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    }
+  },
+  "checkedAt": "2026-10-09T13:11:55.763Z"
+}
