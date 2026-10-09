@@ -96,13 +96,13 @@
       "status": "verified",
       "url": "https://www.carfax.com/phoenix/sticker/v4/KIA/TGwcUy07GWnjC8EV028IVu2l59miib5rsbGi_hUwvoBV1Wv5BchHx2iPmIx-FmhQ1pGx3Gdo1sdo7goyB58xo0zAtPrDHy8LiOzI_5cK0XmmVADkaXSdoMOoiLyRoLrn8Q60A-61jeXqzPbOkxL1iwLp7-sS4uEz179JBJf1opvNejPAvdVQh8OU7rFLX6Uvk6N_m5s92Es2NLqdvgyPXKSRfvWkq6qWeRhVlJQ_deDZ8SlkSO142G9NwLYHmSH_cFRRfP-JZo_xRa8d622QZPltaR10vuyM7eZwEJ6aGO-URyXb0WpGKKp4gr6OaxIwrJKYZ5DK-NF-no_kKf_sVfiHXJvRVtRLH6A-ojWkuK7KD8Qfporofx44L8vWuI0gel551Q.cfx",
       "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/88V0iAzrvbdJ7W7wz1jqr222o8V4CQEPv8ezTvYkY013IHVesdC7jsbPW-ycMKSTcYfy_t66iyCW5tZmKaf1a0aMbjcCSO_vULw",
-      "checkedAt": "2026-10-09T13:38:34.565Z",
+      "checkedAt": "2026-10-09T13:41:56.650Z",
       "sha256": "f4dfac218a8974c7271888327220fac319dd15725377b98f2cb2c345d58468c8"
     },
     "3N1AB8CV7LY203579": {
       "vin": "3N1AB8CV7LY203579",
       "status": "unverified",
-      "checkedAt": "2026-10-09T13:38:36.187Z",
+      "checkedAt": "2026-10-09T13:41:58.477Z",
       "errors": [
         "HTTP 410",
         "Security challenge; skipped",
@@ -112,7 +112,52 @@
     "JN8AY2ND0KX010367": {
       "vin": "JN8AY2ND0KX010367",
       "status": "unverified",
-      "checkedAt": "2026-10-09T13:38:39.484Z",
+      "checkedAt": "2026-10-09T13:42:01.106Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "KL8CD6SAXLC451314": {
+      "vin": "KL8CD6SAXLC451314",
+      "status": "unavailable",
+      "checkedAt": "2026-10-09T13:37:59.983Z",
+      "browserPages": [
+        {
+          "sourceUrl": "https://www.cogginnissanatlantic.com/used/Chevrolet/2020-Chevrolet-Spark-in-Jacksonville-ccf71059ac181a98f5666e5300e551a3.htm",
+          "identity": true
+        },
+        {
+          "sourceUrl": "https://www.carfax.com/vehiclehistory/ar20/ih0cpZts4qA0J_7lW3Dm6Ng2B0Vay9aJcTd81HOoKgj53ivyBkuqOLq4K0Afm0s0VI60-eqwSVnsmY4WlarvvSVnAlcRpGcoov0",
+          "identity": true
+        }
+      ]
+    },
+    "3N1CP5CV5NL509902": {
+      "vin": "3N1CP5CV5NL509902",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:42:02.862Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "5N1DR3AA4RC230423": {
+      "vin": "5N1DR3AA4RC230423",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:43:13.758Z",
+      "errors": [
+        "Document VIN or original Monroney content not confirmed",
+        "Security challenge; skipped",
+        "HTTP 403"
+      ]
+    },
+    "5N1BT3BAXRC691942": {
+      "vin": "5N1BT3BAXRC691942",
+      "status": "unverified",
+      "checkedAt": "2026-10-09T13:43:14.978Z",
       "errors": [
         "Document VIN or original Monroney content not confirmed",
         "Security challenge; skipped",
@@ -120,5 +165,5 @@
       ]
     }
   },
-  "checkedAt": "2026-10-09T13:38:39.485Z"
+  "checkedAt": "2026-10-09T13:43:14.978Z"
 }
