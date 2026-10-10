@@ -24,12 +24,12 @@ export function inventoryColorLabel(value,make=''){
  if(String(make).trim().toLowerCase()==='kia'){
   const code=raw.toUpperCase().replace(/\/+$/,'').trim();
   if(kiaPaintColors[code])return kiaPaintColors[code];
-  if(/^[A-Z0-9]{2,4}(?:\/[A-Z0-9]*)?$/.test(raw.toUpperCase())&&/\d/.test(raw))return 'Color unavailable';
+  if(/^[A-Z0-9]{2,4}(?:\/[A-Z0-9]*)?$/.test(raw.toUpperCase())&&/\d/.test(raw))return raw;
  }
  const original=String(value??'').trim();
  const words=original.toLowerCase().replace(/[^a-z]+/g,' ').split(/\s+/);
  const matches=Object.entries(colorFamilies).filter(([,shades])=>shades.some(shade=>words.includes(shade))).map(([name])=>name);
- return matches.length?matches.map(name=>name[0].toUpperCase()+name.slice(1)).join(' / '):'Color unavailable';
+ return matches.length?matches.map(name=>name[0].toUpperCase()+name.slice(1)).join(' / '):(raw||'Color unavailable');
 }
 export function inventorySearchMatches(vehicle,query){
  const normalize=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -131,6 +131,7 @@ export function inventoryDeal(row,previous){
   // A replacement vehicle must not carry a rebate from the previous car.
   rebate:'',rebateOffers:row.condition==='new'?row.rebateOffers||[]:[],offerCheckedAt:row.offerCheckedAt||'',offerStock:stockNumber,offerVin:vin,inventorySource:row.sourceUrl||'',inventoryCheckedAt:row.checkedAt||''};
 }
+
 
 
 
