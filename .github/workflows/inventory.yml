@@ -25,50 +25,69 @@ jobs:
         run: |
           mkdir -p public/inventory
           cp inventory/*.json public/inventory/
-      - name: Collect complete public inventory
-        run: |
-          node scripts/collect-dealerrater.mjs
-          node scripts/collect-dealerrater.mjs coggin-atlantic
-          node scripts/collect-dealerrater.mjs coggin-avenues
-      - name: Collect official Coggin customer cash and links
-        id: official-coggin
+      - name: Refresh Greenway public inventory
+        id: greenway
         continue-on-error: true
-        run: node scripts/collect-coggin-offers.mjs
-      # Greenway official prices are verified in the supported local browser by
-      # the 7 a.m./noon Codex heartbeat. This host is denied by the dealer; never
-      # replace its verified map with syndicated or partial pricing.
-      # AutoNation USA Jacksonville likewise uses the supported local browser
-      # at 7 a.m./noon. These jobs retain its map without attempting denied HTTP.
-      - name: Publish refreshed snapshot
+        run: node scripts/collect-dealerrater.mjs greenway
+      - name: Refresh Atlantic public inventory
+        id: atlantic
+        continue-on-error: true
+        run: node scripts/collect-dealerrater.mjs coggin-atlantic
+      - name: Refresh Avenues public inventory
+        id: avenues
+        continue-on-error: true
+        run: node scripts/collect-dealerrater.mjs coggin-avenues
+      - name: Collect official Atlantic prices and links
+        id: official-atlantic
+        continue-on-error: true
+        run: node scripts/collect-coggin-offers.mjs coggin-atlantic
+      - name: Collect official Avenues prices and links
+        id: official-avenues
+        continue-on-error: true
+        run: node scripts/collect-coggin-offers.mjs coggin-avenues
+      # Greenway and AutoNation official evidence still use the supported local browser.
+      - name: Publish successful complete snapshots
         env:
           GH_TOKEN: ${{ github.token }}
+          GREENWAY: ${{ steps.greenway.outcome }}
+          ATLANTIC: ${{ steps.atlantic.outcome }}
+          AVENUES: ${{ steps.avenues.outcome }}
+          OFFICIAL_ATLANTIC: ${{ steps.official-atlantic.outcome }}
+          OFFICIAL_AVENUES: ${{ steps.official-avenues.outcome }}
         run: |
-          mkdir -p inventory
-          cp public/inventory/*.json inventory/
+          files=()
+          [ "$GREENWAY" != success ] || files+=(greenway.json)
+          [ "$ATLANTIC" != success ] || files+=(coggin-atlantic.json)
+          [ "$AVENUES" != success ] || files+=(coggin-avenues.json)
+          [ "$OFFICIAL_ATLANTIC" != success ] || files+=(coggin-atlantic-links.json)
+          [ "$OFFICIAL_AVENUES" != success ] || files+=(coggin-avenues-links.json)
+          if [ ${#files[@]} -eq 0 ]; then echo 'No complete fresh snapshots; previous evidence retained.'; exit 1; fi
           git config user.name 'Pocket Desking inventory'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add inventory/*.json
-          git diff --cached --quiet || git commit -m 'Refresh all store inventories'
+          for file in "${files[@]}"; do cp "public/inventory/$file" "inventory/$file"; git add "inventory/$file"; done
+          git diff --cached --quiet || git commit -m 'Refresh complete store inventories independently'
           published=false
           for attempt in 1 2 3 4 5; do
             git pull --rebase origin main
-            if git push; then
-              published=true
-              break
-            fi
-            echo "Publish collided with another update; retrying ($attempt/5)."
+            if git push; then published=true; break; fi
             sleep "$attempt"
           done
-          if [ "$published" != true ]; then
-            echo "::error::Inventory publish failed after five attempts. Existing live inventory is unchanged."
+          if [ "$published" != true ]; then exit 1; fi
+          gh api --method POST repos/${{ github.repository }}/pages/builds
+      - name: Report freshness for each source
+        if: always()
+        env:
+          GREENWAY: ${{ steps.greenway.outcome }}
+          ATLANTIC: ${{ steps.atlantic.outcome }}
+          AVENUES: ${{ steps.avenues.outcome }}
+          OFFICIAL_ATLANTIC: ${{ steps.official-atlantic.outcome }}
+          OFFICIAL_AVENUES: ${{ steps.official-avenues.outcome }}
+        run: |
+          printf '| Source | Outcome |\n|---|---|\n| Greenway | %s |\n| Atlantic | %s |\n| Avenues | %s |\n| Official Atlantic | %s |\n| Official Avenues | %s |\n' "$GREENWAY" "$ATLANTIC" "$AVENUES" "$OFFICIAL_ATLANTIC" "$OFFICIAL_AVENUES" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$GREENWAY" != success ] || [ "$ATLANTIC" != success ] || [ "$AVENUES" != success ]; then
+            echo '::error::A public inventory source could not refresh. Other complete sources were published; prior evidence for the failed source was retained.'
             exit 1
           fi
-          gh api --method POST repos/${{ github.repository }}/pages/builds
-
-
-
-
-
-
-
-
+          if [ "$OFFICIAL_ATLANTIC" != success ] || [ "$OFFICIAL_AVENUES" != success ]; then
+            echo '::warning::Official pricing needs the scheduled local recovery. Previous verified prices remain available.'
+          fi
