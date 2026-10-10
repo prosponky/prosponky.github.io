@@ -17,7 +17,7 @@ export async function collectCarfaxBatch(tab,snapshot,checkpoint,{maxVehicles=5}
   if(!identity.toUpperCase().includes(vin))throw Error('Vehicle detail VIN unavailable; previous reports retained');
   const hrefs=await tab.playwright.locator('a[href]').evaluateAll(es=>es.filter(e=>/carfax/i.test(e.href)).map(e=>e.href));
   const links=[...new Set(hrefs.map(verifiedCarfaxUrl).filter(Boolean))];if(links.length>1)throw Error('Conflicting dealer Carfax reports');
-  state.reports[vin]={stockNumber:row.stockNumber,listingUrl:row.url,url:links[0]||null};state.index++;
+  state.reports[vin]={stockNumber:row.stockNumber,listingUrl:row.url,interiorColor:identity.match(/(?:^|\n)Interior(?: Color)?\s*:?\s*\n?([^\n]+)/i)?.[1]?.trim()||'',url:links[0]||null};state.index++;
   await writeFile(checkpoint+'.tmp',JSON.stringify(state));await rename(checkpoint+'.tmp',checkpoint);
  }
  return {done:state.index===state.total,count:state.index,total:state.total,map:state.index===state.total?{source:state.source,checkedAt:new Date().toISOString(),total:state.total,reports:state.reports}:null};

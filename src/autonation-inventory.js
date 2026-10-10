@@ -19,7 +19,7 @@ export function autoNationVehicle(evidence,config,checkedAt){
  const price=values[0]??null;
  if(evidence.cardPrice!==price)throw Error('AutoNation list and vehicle prices changed during collection.');
  if(condition==='NEW')throw Error('New AutoNation pricing requires separate verified MSRP semantics.');
- return {vin,stockNumber,condition:'used',year:v.Year,make:v.Make,model:v.Model,trim:String(v.Trim||'').trim(),color:String(v.ExteriorColor||'').trim(),mileage:typeof v.Mileage==='number'&&Number.isFinite(v.Mileage)&&v.Mileage>=0?v.Mileage:null,
+ return {vin,stockNumber,condition:'used',year:v.Year,make:v.Make,model:v.Model,trim:String(v.Trim||'').trim(),color:String(v.ExteriorColor||'').trim(),interiorColor:typeof v.InteriorColor==='string'?v.InteriorColor.trim():'',mileage:typeof v.Mileage==='number'&&Number.isFinite(v.Mileage)&&v.Mileage>=0?v.Mileage:null,
   certified:['AN-Cert','CPO'].includes(v.Certification),certificationLabel:v.Certification==='AN-Cert'?'AutoNation Certified':v.Certification==='CPO'?'Certified pre-owned':'',
   fuelType:v.FuelType||'',advertisedPrice:price,priceLabel:config.salePriceLabel,msrp:null,dealerDiscount:null,discountKind:'',
   carfaxUrl:verifiedCarfaxUrl(details?.VehicleHistory?.CarfaxUrl),dealerListingUrl:url,sourceUrl:url,checkedAt,priceCheckedAt:checkedAt,physicalStoreId:String(v.ActualHyperionId),advertisingStoreId:config.storeId};

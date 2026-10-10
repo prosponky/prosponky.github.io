@@ -62,7 +62,7 @@ export async function loadInventory(){
  // Direct dealer links are matched by exact VIN; never construct guessed vehicle URLs.
  if(!config.officialFeed)try{
   const response=await fetch(inventoryBase+'/inventory/'+(config.account?config.file+'-links.json':'dealer-links.json'),{cache:'no-store'});
-  if(response.ok){const map=await response.json();if(config.account)data=reconcileOfficialAvailability(data,map,config);for(const row of data.vehicles){const link=config.account?verifiedCogginLink(map.stocks?.[stockKey(row.stockNumber)],config.origin):verifiedDealerLink(map.links?.[stockKey(row.vin)],row.vin);if(link)row.dealerListingUrl=link;if(config.account&&link)row.certified=row.condition==='used'&&map.certified?.[row.vin]===true;if(config.account&&link&&row.condition==='used')row.carfaxUrl=verifiedCarfaxUrl(map.carfax?.[row.vin]);if(config.account&&link&&typeof map.trims?.[row.vin]==='string')row.trim=map.trims[row.vin].trim();if(config.account&&row.condition!=='new'){const price=map.retailPrices?.[row.vin];row.retailPrice=priceEvidenceAvailable(map)&&typeof price==='number'&&Number.isFinite(price)&&price>0?price:null;}if(config.account&&row.condition==='new') {row.rebateOffers=usableCustomerCash(map.offers?.[row.vin],map.checkedAt);row.offerCheckedAt=map.checkedAt;}}}
+  if(response.ok){const map=await response.json();if(config.account)data=reconcileOfficialAvailability(data,map,config);for(const row of data.vehicles){const link=config.account?verifiedCogginLink(map.stocks?.[stockKey(row.stockNumber)],config.origin):verifiedDealerLink(map.links?.[stockKey(row.vin)],row.vin);if(link)row.dealerListingUrl=link;if(config.account&&link)row.certified=row.condition==='used'&&map.certified?.[row.vin]===true;if(config.account&&link&&row.condition==='used')row.carfaxUrl=verifiedCarfaxUrl(map.carfax?.[row.vin]);if(config.account&&link&&typeof map.interiorColors?.[row.vin]==='string'&&map.interiorColors[row.vin].trim())row.interiorColor=map.interiorColors[row.vin].trim();if(config.account&&link&&typeof map.trims?.[row.vin]==='string')row.trim=map.trims[row.vin].trim();if(config.account&&row.condition!=='new'){const price=map.retailPrices?.[row.vin];row.retailPrice=priceEvidenceAvailable(map)&&typeof price==='number'&&Number.isFinite(price)&&price>0?price:null;}if(config.account&&row.condition==='new') {row.rebateOffers=usableCustomerCash(map.offers?.[row.vin],map.checkedAt);row.offerCheckedAt=map.checkedAt;}}}
  }catch{} // Inventory and pricing remain usable if the separate link map is unavailable.
  if(!config.account&&!config.officialFeed){
   let official;try{const response=await fetch(inventoryBase+'/inventory/greenway-prices.json',{cache:'no-store'});if(response.ok)official=await response.json();}catch{}
@@ -70,7 +70,7 @@ export async function loadInventory(){
   for(const row of data.vehicles){
    const report=reports?.reports?.[stockKey(row.vin)];if(row.condition==='used'&&reports?.source===config.origin&&report?.stockNumber===row.stockNumber&&verifiedDealerLink(report.listingUrl,row.vin))row.carfaxUrl=verifiedCarfaxUrl(report.url);
    const record=official?.prices?.[stockKey(row.vin)];
-   if(verifiedDealerLink(record?.url,row.vin)&&record.stockNumber===row.stockNumber&&record.condition===row.condition){row.trim=trimFromTitle(row,record.vehicleTitle);row.certified=row.condition==='used'&&record.certified===true;}
+   if(verifiedDealerLink(record?.url,row.vin)&&record.stockNumber===row.stockNumber&&record.condition===row.condition){row.interiorColor=report?.interiorColor||record.interiorColor||row.interiorColor||'';row.trim=trimFromTitle(row,record.vehicleTitle);row.certified=row.condition==='used'&&record.certified===true;}
    if(row.condition!== 'new')row.advertisedPrice=priceEvidenceAvailable(official||{})&&verifiedDealerLink(record?.url,row.vin)&&typeof record?.price==='number'&&Number.isFinite(record.price)&&record.price>0?record.price:null;
   }
  }
@@ -115,8 +115,9 @@ export function inventoryDeal(row,previous){
  // include incentives. Only a feed field explicitly marked dealer discount.
  const discount=row.condition==='new'&&row.discountKind==='dealer'?amount(row.dealerDiscount):null;
  if(price!==null&&discount!==null&&discount>price)throw Error('Inventory discount exceeds the vehicle price.');
- return {...previous,stockNumber,vin,condition:row.condition,year:String(row.year??''),makeId:String(row.makeId??''),model:String(row.model??''),
-  vehicle:[row.year,row.make,row.model,'Stock '+stockNumber].filter(Boolean).join(' '),vehicleAuto:true,
+ return {...previous,stockNumber,vin,inventoryStoreLabel:row.storeLabel||'',condition:row.condition,year:String(row.year??''),makeId:String(row.makeId??''),model:String(row.model??''),
+  vehicle:[row.year,row.make,row.model].filter(Boolean).join(' '),vehicleAuto:true,
+  trim:String(row.trim||''),color:String(row.color||''),mileage:row.mileage??null,
   price:price===null?'':String(price),discount:discount===null?'':String(discount),
   // A replacement vehicle must not carry a rebate from the previous car.
   rebate:'',rebateOffers:row.condition==='new'?row.rebateOffers||[]:[],offerCheckedAt:row.offerCheckedAt||'',offerStock:stockNumber,offerVin:vin,inventorySource:row.sourceUrl||'',inventoryCheckedAt:row.checkedAt||''};
