@@ -15,12 +15,13 @@ if(!resume)await save(meta.checkpoint,initial);await save('tmp/autonation-curren
 const html=`<!doctype html><html><body><h1>AutoNation collection checkpoint</h1><p id="status">Ready</p><form method="post"><label>Checkpoint<textarea name="checkpoint" id="checkpoint"></textarea></label><button>Save checkpoint</button></form></body></html>`;
 createServer(async(req,res)=>{
  try{
- if(req.method==='GET'){res.writeHead(200,{'Content-Type':'text/html'});res.end(html);return;}
+ if(req.method==='GET'){res.writeHead(200,{'Content-Type':'text/html'});const saved=JSON.parse(await readFile(meta.checkpoint,'utf8'));res.end(html.replace('</textarea>',JSON.stringify(saved).replaceAll('&','&amp;').replaceAll('<','&lt;')+'</textarea>'));return;}
  if(req.method!=='POST'||!['http://127.0.0.1:4319','http://localhost:4319'].includes(req.headers.origin))throw Error('Only the local checkpoint form may write this run.');
  let body='';for await(const chunk of req){body+=chunk;if(body.length>2000000)throw Error('Checkpoint too large.');}
  const state=JSON.parse(new URLSearchParams(body).get('checkpoint'));
  const old=JSON.parse(await readFile(meta.checkpoint,'utf8'));
  if(state.startedAt!==old.startedAt||!['list','details','confirm-list','done'].includes(state.phase)||state.detailCount!==state.evidence.length||state.detailCount<old.detailCount||state.cards.length<old.cards.length)throw Error('Invalid checkpoint progression.');
+ if(old.cards.some((card,i)=>state.cards[i]?.vin!==card.vin||state.cards[i]?.price!==card.price||state.cards[i]?.url!==card.url))throw Error('Accepted VIN evidence changed while resuming.');
  for(const e of state.evidence)autoNationVehicle(e,config,state.startedAt);
  await save(meta.checkpoint,state);
  if(state.phase==='done'){
