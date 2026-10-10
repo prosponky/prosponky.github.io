@@ -62,17 +62,7 @@ jobs:
           [ "$OFFICIAL_ATLANTIC" != success ] || files+=(coggin-atlantic-links.json)
           [ "$OFFICIAL_AVENUES" != success ] || files+=(coggin-avenues-links.json)
           if [ ${#files[@]} -eq 0 ]; then echo 'No complete fresh snapshots; previous evidence retained.'; exit 1; fi
-          git config user.name 'Pocket Desking inventory'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          for file in "${files[@]}"; do cp "public/inventory/$file" "inventory/$file"; git add "inventory/$file"; done
-          git diff --cached --quiet || git commit -m 'Refresh complete store inventories independently'
-          published=false
-          for attempt in 1 2 3 4 5; do
-            git pull --rebase origin main
-            if git push; then published=true; break; fi
-            sleep "$attempt"
-          done
-          if [ "$published" != true ]; then exit 1; fi
+          node scripts/publish-inventory-snapshots.mjs "${files[@]}"
           gh api --method POST repos/${{ github.repository }}/pages/builds
       - name: Report freshness for each source
         if: always()
@@ -91,3 +81,4 @@ jobs:
           if [ "$OFFICIAL_ATLANTIC" != success ] || [ "$OFFICIAL_AVENUES" != success ]; then
             echo '::warning::Official pricing needs the scheduled local recovery. Previous verified prices remain available.'
           fi
+
