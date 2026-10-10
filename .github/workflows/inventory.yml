@@ -25,18 +25,9 @@ jobs:
         run: |
           mkdir -p public/inventory
           cp inventory/*.json public/inventory/
-      - name: Refresh Greenway public inventory
-        id: greenway
-        continue-on-error: true
-        run: node scripts/collect-dealerrater.mjs greenway
-      - name: Refresh Atlantic public inventory
-        id: atlantic
-        continue-on-error: true
-        run: node scripts/collect-dealerrater.mjs coggin-atlantic
-      - name: Refresh Avenues public inventory
-        id: avenues
-        continue-on-error: true
-        run: node scripts/collect-dealerrater.mjs coggin-avenues
+      - name: Refresh public inventories with two paced workers
+        id: public
+        run: node scripts/collect-public-inventory.mjs
       - name: Collect official Atlantic prices and links
         id: official-atlantic
         continue-on-error: true
@@ -49,9 +40,9 @@ jobs:
       - name: Publish successful complete snapshots
         env:
           GH_TOKEN: ${{ github.token }}
-          GREENWAY: ${{ steps.greenway.outcome }}
-          ATLANTIC: ${{ steps.atlantic.outcome }}
-          AVENUES: ${{ steps.avenues.outcome }}
+          GREENWAY: ${{ steps.public.outputs.greenway }}
+          ATLANTIC: ${{ steps.public.outputs.atlantic }}
+          AVENUES: ${{ steps.public.outputs.avenues }}
           OFFICIAL_ATLANTIC: ${{ steps.official-atlantic.outcome }}
           OFFICIAL_AVENUES: ${{ steps.official-avenues.outcome }}
         run: |
@@ -67,9 +58,9 @@ jobs:
       - name: Report freshness for each source
         if: always()
         env:
-          GREENWAY: ${{ steps.greenway.outcome }}
-          ATLANTIC: ${{ steps.atlantic.outcome }}
-          AVENUES: ${{ steps.avenues.outcome }}
+          GREENWAY: ${{ steps.public.outputs.greenway }}
+          ATLANTIC: ${{ steps.public.outputs.atlantic }}
+          AVENUES: ${{ steps.public.outputs.avenues }}
           OFFICIAL_ATLANTIC: ${{ steps.official-atlantic.outcome }}
           OFFICIAL_AVENUES: ${{ steps.official-avenues.outcome }}
         run: |

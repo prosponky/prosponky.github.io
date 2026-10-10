@@ -15,12 +15,21 @@ let inventoryAccess={owner:'',store:'',revision:0};
 export function setInventoryAccess(owner,store){if(inventoryAccess.owner!==owner||inventoryAccess.store!==store)inventoryAccess={owner,store,revision:inventoryAccess.revision+1};}
 export function inventoryAccessMessage(){return inventoryAccess.store?'Inventory is not available for your assigned store yet.':'No store assigned. Ask your administrator to assign your store.';}
 const stockKey=value=>String(value??'').trim().toUpperCase();
-const colorFamilies={red:['red','scarlet','crimson','ruby','garnet'],blue:['blue'],black:['black','onyx','ebony'],white:['white'],gray:['gray','grey','gunmetal'],silver:['silver'],green:['green'],brown:['brown'],orange:['orange'],yellow:['yellow'],purple:['purple']};
-export function inventoryColorLabel(value){
+const colorFamilies={red:['red','scarlet','crimson','ruby','garnet'],blue:['blue','navy'],black:['black','onyx','ebony'],white:['white'],gray:['gray','grey','gunmetal','charcoal','graphite'],silver:['silver'],green:['green'],brown:['brown','mocha','espresso'],tan:['tan','beige','sand'],cream:['cream','ivory'],orange:['orange'],yellow:['yellow'],purple:['purple']};
+// Kia exterior codes verified against Kia's published color brochures.
+const kiaPaintColors={P2M:'Gray',PT9:'Gray',SWP:'White',ISG:'Silver',ISM:'Silver',OBG:'Blue',OBM:'Blue',ABP:'Black',DFG:'Gray',C7R:'Red',IEG:'Green',IEB:'Green', '4SS':'Silver',C4S:'Silver'};
+export function inventoryColorLabel(value,make=''){
+ const raw=String(value??'').trim();
+ if(/^sport$/i.test(raw))return 'Sport';
+ if(String(make).trim().toLowerCase()==='kia'){
+  const code=raw.toUpperCase().replace(/\/+$/,'').trim();
+  if(kiaPaintColors[code])return kiaPaintColors[code];
+  if(/^[A-Z0-9]{2,4}(?:\/[A-Z0-9]*)?$/.test(raw.toUpperCase())&&/\d/.test(raw))return 'Color unavailable';
+ }
  const original=String(value??'').trim();
  const words=original.toLowerCase().replace(/[^a-z]+/g,' ').split(/\s+/);
  const matches=Object.entries(colorFamilies).filter(([,shades])=>shades.some(shade=>words.includes(shade))).map(([name])=>name);
- return matches.length===1?matches[0][0].toUpperCase()+matches[0].slice(1):original||'Color unavailable';
+ return matches.length?matches.map(name=>name[0].toUpperCase()+name.slice(1)).join(' / '):'Color unavailable';
 }
 export function inventorySearchMatches(vehicle,query){
  const normalize=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -117,10 +126,11 @@ export function inventoryDeal(row,previous){
  if(price!==null&&discount!==null&&discount>price)throw Error('Inventory discount exceeds the vehicle price.');
  return {...previous,stockNumber,vin,inventoryStoreLabel:row.storeLabel||'',condition:row.condition,year:String(row.year??''),makeId:String(row.makeId??''),model:String(row.model??''),
   vehicle:[row.year,row.make,row.model].filter(Boolean).join(' '),vehicleAuto:true,
-  trim:String(row.trim||''),color:String(row.color||''),mileage:row.mileage??null,
+  trim:String(row.trim||''),color:inventoryColorLabel(row.exteriorColor||row.color,row.make),mileage:row.mileage??null,
   price:price===null?'':String(price),discount:discount===null?'':String(discount),
   // A replacement vehicle must not carry a rebate from the previous car.
   rebate:'',rebateOffers:row.condition==='new'?row.rebateOffers||[]:[],offerCheckedAt:row.offerCheckedAt||'',offerStock:stockNumber,offerVin:vin,inventorySource:row.sourceUrl||'',inventoryCheckedAt:row.checkedAt||''};
 }
+
 
 

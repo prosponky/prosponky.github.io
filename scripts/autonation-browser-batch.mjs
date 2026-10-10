@@ -24,7 +24,7 @@ export async function autoNationBrowserBatch(tab,state,config,{maxPages=3,maxVeh
  }else if(state.phase==='details'){
   for(let n=0;n<maxVehicles&&state.detailCount<state.cards.length;n++){
    const card=state.cards[state.detailCount];await tab.goto(card.url);await tab.playwright.locator('#my-app-state').waitFor({state:'attached',timeoutMs:25000});
-   const e=await tab.playwright.evaluate(()=>{const s=JSON.parse(document.querySelector('#my-app-state').textContent),v=s.VehicleDetails;return {url:location.href,storeId:s.StoreInfo?.HyperionId,vehicle:v&&{Vin:v.Vin,StockNumber:v.StockNumber,HyperionId:v.HyperionId,ActualHyperionId:v.ActualHyperionId,IsAvailabile:v.IsAvailabile,StockType:v.StockType,StockTypeForSite:v.StockTypeForSite,Make:v.Make,Model:v.Model,Year:v.Year,Trim:v.Trim,ExteriorColor:v.ExteriorColor,Mileage:v.Mileage,Certification:v.Certification,FuelType:v.FuelType,InventoryVehicleDetail:{PricingStack:v.InventoryVehicleDetail?.PricingStack,VehicleHistory:{CarfaxUrl:v.InventoryVehicleDetail?.VehicleHistory?.CarfaxUrl}}}};});
+   const e=await tab.playwright.evaluate(()=>{const s=JSON.parse(document.querySelector('#my-app-state').textContent),v=s.VehicleDetails;return {url:location.href,storeId:s.StoreInfo?.HyperionId,vehicle:v&&{Vin:v.Vin,StockNumber:v.StockNumber,HyperionId:v.HyperionId,ActualHyperionId:v.ActualHyperionId,IsAvailabile:v.IsAvailabile,StockType:v.StockType,StockTypeForSite:v.StockTypeForSite,Make:v.Make,Model:v.Model,Year:v.Year,Trim:v.Trim,ExteriorColor:v.ExteriorColor,InteriorColor:v.InteriorColor,Mileage:v.Mileage,Certification:v.Certification,FuelType:v.FuelType,InventoryVehicleDetail:{PricingStack:v.InventoryVehicleDetail?.PricingStack,VehicleHistory:{CarfaxUrl:v.InventoryVehicleDetail?.VehicleHistory?.CarfaxUrl}}}};});
    if(e.vehicle?.Vin!==card.vin)throw Error('Detail page VIN changed or source denied access.');
    state.evidence.push({...e,expectedVin:card.vin,cardPrice:card.price});state.detailCount++;
   }
@@ -39,3 +39,4 @@ export async function autoNationBrowserBatch(tab,state,config,{maxPages=3,maxVeh
  }
  return {phase:state.phase,total:state.total,listCount:state.cards.length,detailCount:state.detailCount};
 }
+
