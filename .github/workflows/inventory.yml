@@ -54,7 +54,10 @@ jobs:
           [ "$OFFICIAL_AVENUES" != success ] || files+=(coggin-avenues-links.json)
           if [ ${#files[@]} -eq 0 ]; then echo 'No complete fresh snapshots; previous evidence retained.'; exit 1; fi
           node scripts/publish-inventory-snapshots.mjs "${files[@]}"
-          gh api --method POST repos/${{ github.repository }}/pages/builds
+          if ! gh api --method POST repos/${{ github.repository }}/pages/builds; then
+            echo '::warning::Pages build request failed; exact live evidence will determine whether the push deployed.'
+          fi
+          node scripts/verify-published-inventory.mjs "${files[@]}"
       - name: Report freshness for each source
         if: always()
         env:

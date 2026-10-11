@@ -2,6 +2,7 @@ import {execFileSync,spawnSync} from 'node:child_process';
 import {mkdtempSync,readFileSync,writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join,resolve} from 'node:path';
+import {retainCogginPrices} from '../src/retained-official-prices.js';
 const files=process.argv.slice(2);
 const allowed=new Set(['greenway.json','coggin-atlantic.json','coggin-avenues.json','coggin-atlantic-links.json','coggin-avenues-links.json']);
 if(!files.length||files.some(f=>!allowed.has(f)))throw Error('Invalid snapshot selection');
@@ -18,8 +19,10 @@ for(let attempt=0;attempt<5;attempt++){
   const incomingTime=Date.parse(JSON.parse(text).checkedAt);
   const currentTime=Date.parse(JSON.parse(current).checkedAt);
   if(!Number.isFinite(incomingTime))throw Error('Snapshot missing check date: '+file);
-  if(currentTime>incomingTime){console.log('Retaining newer published snapshot: '+file);continue;}
-  if(current!==text){writeFileSync(path,text);changed.push('inventory/'+file);}
+  if(currentTime>incomingTime){console.log('Retaining newer published snapshot: '+file);writeFileSync(resolve('public/inventory',file),current);continue;}
+  const finalText=file.endsWith('-links.json')?JSON.stringify(retainCogginPrices(JSON.parse(text),JSON.parse(current))):text;
+  writeFileSync(resolve('public/inventory',file),finalText);
+  if(current!==finalText){writeFileSync(path,finalText);changed.push('inventory/'+file);}
  }
  if(!changed.length){console.log('Latest complete snapshots already published');process.exit(0);}
  git(['add','--',...changed],dir);

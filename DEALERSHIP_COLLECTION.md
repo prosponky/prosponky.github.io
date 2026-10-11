@@ -1,5 +1,13 @@
 # Official dealership collection
 
+## Standard Playwright and Crawlee trial (October 10)
+
+The user authorized ordinary local Playwright, Crawlee and Microsoft Playwright MCP installation. These are development dependencies; no AI API key, paid service, proxy, fingerprint injection, private API or CAPTCHA solver is used. `npm run inventory:tools:verify` checks standard Chromium extraction against a local five-vehicle fixture, reopens the saved Crawlee queue, and verifies a real MCP initialize/list/navigation exchange. Codex has `pocket-desking-playwright` registered through `scripts/start-playwright-mcp.mjs`; it uses an isolated profile, the standard headless-shell executable, and retains automation identification. Reconnect/restart may be needed for newly registered MCP tools to appear in an existing chat.
+
+`npm run inventory:browser:probe` performs one bounded batch per browser store with no publication. `npm run inventory:browser:collect` collects with durable checkpoints under `tmp/standard-browser`, at most two stores concurrently, and the existing strict official verification. `node scripts/collect-standard-browser.mjs STORE --resume` resumes only a non-expired incomplete run. `--publish` serializes the existing complete-snapshot publishers and their exact live checks. A run lock prevents overlapping launches. Authentication failures, HTTP 403/429, challenges, identity or inventory changes stop safely; access denials are never retried. Navigation failures have one bounded retry. A changed inventory requires a fresh complete run, never edited timestamps or mixed snapshots.
+
+The first standard-browser live probe on October 10 was denied by both Greenway and AutoNation. No snapshots were published from it. **This is not an accepted production replacement.** Keep the existing 7 a.m./noon Eastern schedule and supported CUA recovery. Do not repeatedly probe denied dealers within the same scheduled check or switch browsers to evade a denial. The packages and local tests working do not establish dealer access, fresh inventory, or scheduled end-to-end success. The prior supported-browser AutoNation retry remains incomplete and expired; retain the previous complete published snapshot until a fresh permitted collection succeeds.
+
 The project uses public dealership pages without dealer API credentials or paid services. All stores share `data/dealership-sources.json`, VIN and price checks, complete-pagination requirements, atomic snapshots, and safe publication. Websites with a different layout require a new adapter or configuration verified against that site's public pages. No collector can promise access to every website or prices that never change between checks.
 
 ## Greenway: supported browser workflow
@@ -35,6 +43,16 @@ Inspect the official-price step itself: `continue-on-error` can leave GitHub rep
 To onboard a dealership: verify the official site and its inventory pages in the browser; identify the platform; add a registry entry using an existing adapter where compatible; otherwise add a tested adapter for that layout. Confirm exact VIN/stock matching, new/used price semantics, every page and official count, zero/unavailable prices, and stale-data fallback. Test a complete collection and live publication before making the feed selectable. Newly added stores receive no automatic access for unassigned users.
 
 ## Schedule and acceptance
+
+### Local unattended Coggin recovery
+
+The Windows task `Pocket Desking Official Coggin Recovery` runs `scripts/run-local-inventory-recovery.ps1` at 7 a.m. and noon in the confirmed Eastern Windows time zone. It uses `scripts/local-inventory-recovery.mjs`: skip an already fresh, structurally complete live map; otherwise collect each official Coggin store independently, archive a complete snapshot, publish only its map through the clean release checkout, request Pages, and compare exact live JSON. It shares the official-price publication lock with Greenway. Access denials stop without retry. A demonstrably dead worker lock can be recovered; an unknown owner is never displaced.
+
+Setup is reproducible with `scripts/install-local-inventory-task.ps1`. The task uses the existing Windows user session without saving a password and can run while locked. It cannot run when that user is signed out or the PC is powered off. Catch-up and wake settings are enabled, subject to hardware and Windows power capabilities. Logs and dated evidence/reports are under `tmp/local-inventory-recovery`. A manual Task Scheduler start is a scheduler execution test, **not** a successful morning/noon scheduled acceptance run. This task covers the two Coggin official maps only; it does not establish unattended Greenway or AutoNation access.
+
+The Codex heartbeat should inspect this task's current report before attempting Coggin recovery. Do not start duplicate manual collectors if the worker is running. If needed, invoke the same worker with `--publish`, which owns a run lock and verifies live freshness. Do not run the denied standalone Greenway/AutoNation probe repeatedly.
+
+After Coggin recovery, the Windows wrapper runs `scripts/audit-unattended-inventory.mjs` against the published maps only. It does not contact dealership sites. `tmp/unattended-audit/latest-report.json` separates current-window verification, retained older evidence, invalid live evidence and missing legacy interior fields. It checks the separate Greenway Carfax map against the embedded report evidence and enforces AutoNation physical scope and advertised/promotion counts. An all-current map report still does not prove a scheduled trigger or lack of user intervention; scheduled acceptance remains a separate gate. Audit exit code 2 means at least one store needs attention; the Coggin task retains its own worker exit code, with both recorded in `task-outcomes.json`. Run this audit again after the browser checks finish, and never describe retained AutoNation values as newly verified.
 
 ### AutoNation USA Jacksonville
 
