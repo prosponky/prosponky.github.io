@@ -74,3 +74,5 @@ Per-store states: fresh and verified, retained after failure, no verified amount
 If no permitted public collector can complete automatically for a store, record that external limitation explicitly. A different scheduling library cannot fix denied access. Keep the goal active while meaningful research/implementation remains; do not claim success by hiding alerts or relaxing complete-evidence requirements.
 
 Official new-price audit: Coggin public HTML includes an explicitly labeled MSRP. The collector now saves msrps by VIN and retains original MSRP verification dates when absent in a later complete check. Parser/collector/retention tests pass. Next live collection and app consumption of this field remain unverified; existing public-feed MSRP must not be called officially verified.
+
+App source now consumes official Coggin msrps when available and exact source/listing match; Greenway new MSRP uses exact VIN/stock/condition official evidence. Per-price original dates and retained flags remain attached. Eight focused tests and production build pass. Cloudflare app deployment remains pending; GitHub source publication is not a live app release.
