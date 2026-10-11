@@ -6,6 +6,17 @@ import {validateAutoNationFeed} from '../src/autonation-inventory.js';
 import {verifiedCarfaxUrl} from '../src/carfax.js';
 
 function validDate(value,now){const time=Date.parse(value);if(!Number.isFinite(time)||time>now)throw Error('Invalid verification date');return time;}
+export function amountMetrics(values,retained={},dates={},checkedAt){
+ let available=0,fresh=0,kept=0;
+ for(const [vin,amount]of Object.entries(values||{})){
+  if(amount===null)continue;
+  if(!(typeof amount==='number'&&Number.isFinite(amount)&&amount>0))throw Error('Invalid official amount');
+  const date=dates[vin]||checkedAt;validDate(date,Date.parse(checkedAt));
+  if(retained[vin]===true&&!dates[vin])throw Error('Retained amount lacks original verification date');
+  available++;if(retained[vin]===true)kept++;else fresh++;
+ }
+ return {availableAmounts:available,freshAmounts:fresh,retainedAmounts:kept};
+}
 function validateGreenway(data,reports,config,now){
  validDate(data.checkedAt,now);
  const entries=Object.entries(data.prices||{});
@@ -34,7 +45,7 @@ export function auditOfficialMaps(registry,maps,{now=Date.now(),slotStartedAt=ea
     // Structural verification is separate from freshness. Old valid maps are
     // retained evidence, not invalidated solely because their amounts are old.
     validateCogginSnapshot(data,config,data.checkedAt,Date.parse(data.checkedAt));
-    metrics={total:data.total,interiorColors:Object.values(data.interiorColors).filter(v=>v.trim()).length,verifiedAmounts:Object.values(data.retailPrices).filter(v=>v>0).length,retainedAmounts:Object.values(data.priceRetained||{}).filter(v=>v===true).length,carfaxReports:Object.values(data.carfax).filter(Boolean).length};
+    metrics={total:data.total,interiorColors:Object.values(data.interiorColors).filter(v=>v.trim()).length,verifiedAmounts:Object.values(data.retailPrices).filter(v=>v>0).length,...amountMetrics(data.retailPrices,data.priceRetained,data.priceCheckedAt,data.checkedAt),msrp:amountMetrics(data.msrps,data.msrpRetained,data.msrpCheckedAt,data.checkedAt),officialMsrpMapPresent:!!data.msrps,carfaxReports:Object.values(data.carfax).filter(Boolean).length};
    }else if(key==='autonation-jacksonville'){
     validateAutoNationFeed(data,config);validDate(data.listRecheckedAt,now);
     if(data.scope!=='physical'||data.promotionalTileCount!==3||data.resultsTotal!==data.advertisedTotal+3||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt))throw Error('AutoNation physical scope or final listing reconciliation is incomplete');
