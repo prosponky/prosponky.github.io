@@ -440,5 +440,3 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 /* Keep certification beside the model without changing the restored row styling. */
 .inventory-tile>.inventory-model{flex-direction:row;gap:4px}
 
-/* Reference wolf-spider: separate raster limbs move around body attachment. */
-.october-spider{width:110px;height:100px;filter:drop-shadow(1px 2px 1px #0005)}.october-spider .wolf-leg,.october-spider .wolf-body{position:absolute;inset:0;display:block}.october-spider img{width:100%;height:100%;object-fit:contain;user-select:none}.wolf-body{clip-path:polygon(44% 30%,56% 30%,58% 49%,60% 62%,57% 81%,43% 81%,40% 62%,42% 49%)}.wolf-leg{transform-origin:50% 48%;animation:wolf-step .48s ease-in-out infinite alternate;animation-delay:var(--leg-phase)}@keyframes wolf-step{from{transform:rotate(calc(var(--leg-direction)*-4deg))}to{transform:rotate(calc(var(--leg-direction)*4deg))}}
