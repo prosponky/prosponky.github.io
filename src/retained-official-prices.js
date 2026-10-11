@@ -36,5 +36,16 @@ export function retainCogginPrices(incoming,previous){
   const result=amountEvidence(value,wasRetained,incoming.priceCheckedAt?.[vin],prior?previous.retailPrices?.[vin]:null,priorTime,data.checkedAt);
   data.retailPrices[vin]=result.amount;data.observedRetailPrices[vin]=wasRetained?incoming.observedRetailPrices?.[vin]??null:value;data.priceCheckedAt[vin]=result.checkedAt;data.priceRetained[vin]=result.retained;
  }
+ if(data.msrps){
+  data.msrpCheckedAt={};data.msrpRetained={};data.observedMsrps={};
+  for(const [vin,value]of Object.entries(data.msrps)){
+   if(value!==null&&!positive(value))continue;
+   const wasRetained=incoming.msrpRetained?.[vin]===true;
+   const prior=sameSource&&previous.inventoryVins?.includes(vin)&&incoming.conditions?.[vin]==='new'&&previous.conditions?.[vin]==='new';
+   const priorTime=previous?.msrpRetained?.[vin]===true?previous.msrpCheckedAt?.[vin]:previous?.msrpCheckedAt?.[vin]||previous?.checkedAt;
+   const result=amountEvidence(value,wasRetained,incoming.msrpCheckedAt?.[vin],prior?previous.msrps?.[vin]:null,priorTime,data.checkedAt);
+   data.msrps[vin]=result.amount;data.observedMsrps[vin]=wasRetained?incoming.observedMsrps?.[vin]??null:value;data.msrpCheckedAt[vin]=result.checkedAt;data.msrpRetained[vin]=result.retained;
+  }
+ }
  return data;
 }

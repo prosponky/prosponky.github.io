@@ -9,11 +9,13 @@ export function validateCogginSnapshot(data,config,startedAt,now=Date.now()){
  const age=now-Date.parse(data.checkedAt),vins=data.inventoryVins;
  if(data.complete!==true||data.source!==config.origin||!Number.isFinite(age)||age<0||age>3600000||Date.parse(data.checkedAt)<Date.parse(startedAt)||!Array.isArray(vins)||!vins.length||data.total!==vins.length||new Set(vins).size!==vins.length)throw Error('Incomplete, stale or mismatched official snapshot');
  const maps=['offers','retailPrices','trims','interiorColors','carfax','certified'];
+ if(data.msrps)maps.push('msrps');
  for(const name of maps)if(!data[name]||Object.keys(data[name]).length!==vins.length||vins.some(v=>!Object.hasOwn(data[name],v)))throw Error('Incomplete VIN map: '+name);
  if(Object.keys(data.stocks||{}).length!==vins.length)throw Error('Incomplete stock map');
  for(const vin of vins){
   if(!/^[A-HJ-NPR-Z0-9]{17}$/.test(vin))throw Error('Invalid official VIN');
   const amount=data.retailPrices[vin];if(amount!==null&&!(Number.isFinite(amount)&&amount>0))throw Error('Invalid official amount');
+  if(data.msrps&&data.msrps[vin]!==null&&!(Number.isFinite(data.msrps[vin])&&data.msrps[vin]>0))throw Error('Invalid official MSRP');
   if(data.carfax[vin]!==null&&!verifiedCarfaxUrl(data.carfax[vin]))throw Error('Invalid dealer report link');
   if(typeof data.interiorColors[vin]!=='string'||typeof data.trims[vin]!=='string'||typeof data.certified[vin]!=='boolean'||!Array.isArray(data.offers[vin]))throw Error('Invalid official fields');
  }

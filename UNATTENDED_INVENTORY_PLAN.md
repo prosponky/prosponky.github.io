@@ -72,3 +72,5 @@ Per-store states: fresh and verified, retained after failure, no verified amount
 ## Decision boundary
 
 If no permitted public collector can complete automatically for a store, record that external limitation explicitly. A different scheduling library cannot fix denied access. Keep the goal active while meaningful research/implementation remains; do not claim success by hiding alerts or relaxing complete-evidence requirements.
+
+Official new-price audit: Coggin public HTML includes an explicitly labeled MSRP. The collector now saves msrps by VIN and retains original MSRP verification dates when absent in a later complete check. Parser/collector/retention tests pass. Next live collection and app consumption of this field remain unverified; existing public-feed MSRP must not be called officially verified.

@@ -16,3 +16,10 @@ test('Coggin retention requires exact VIN, official source and used condition, k
  const result=retainCogginPrices(next,old);assert.equal(result.retailPrices[vin],15000);assert.equal(result.priceCheckedAt[vin],old.checkedAt);assert.equal(result.priceRetained[vin],true);assert.deepEqual(result.offers[vin],[]);
  for(const condition of ['new',undefined])assert.equal(retainCogginPrices({...next,conditions:{[vin]:condition}},old).retailPrices[vin],null);
 });
+test('official MSRP retention keeps original evidence and requires new condition',()=>{
+ const old={source:'https://dealer.example',complete:true,checkedAt:'2020-01-01T00:00:00Z',inventoryVins:[vin],conditions:{[vin]:'new'},msrps:{[vin]:24725}};
+ const next={source:old.source,complete:true,checkedAt:'2026-10-10T16:00:00Z',inventoryVins:[vin],conditions:{[vin]:'new'},msrps:{[vin]:null}};
+ const result=retainCogginPrices(next,old);assert.equal(result.msrps[vin],24725);assert.equal(result.msrpCheckedAt[vin],old.checkedAt);assert.equal(result.msrpRetained[vin],true);
+ assert.equal(retainCogginPrices({...next,conditions:{[vin]:'used'}},old).msrps[vin],null);
+ const fresh=retainCogginPrices({...next,msrps:{[vin]:25000}},old);assert.equal(fresh.msrps[vin],25000);assert.equal(fresh.msrpRetained[vin],false);
+});
