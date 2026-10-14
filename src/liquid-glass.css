@@ -30,3 +30,7 @@
 @media(prefers-contrast:more),(forced-colors:active),(prefers-reduced-transparency:reduce){body{background:#101719}:is(.home-shortcuts button,.inventory-tile,.inventory-pin,.admin-user-card,#home-recap,#home-admin-recap,fieldset,dialog){background:#202c30;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-color:#b3c4c7;box-shadow:none}button{background-image:none!important}button.primary,.home-shortcuts button.home-inventory{background:#0a8f82;color:#fff}}
 /* Customer worksheet and print remain plain paper. */
 @media print{body{background:white!important}button,dialog,#app>header,#app>.home-shortcuts{animation:none!important;transition:none!important;backdrop-filter:none!important;box-shadow:none!important}}
+/* Admin menu: one complete repeating texture period, constant speed. */
+@media screen and (prefers-reduced-motion:no-preference){button.admin-highlight{background-color:#173c37;background-image:linear-gradient(110deg,transparent 30%,#8fffe766 48%,transparent 66%);background-size:250% 100%;animation:admin-menu-loop 4.5s linear infinite}}
+@keyframes admin-menu-loop{from{background-position:0% 0}to{background-position:166.666667% 0}}
+@media(prefers-reduced-motion:reduce){button.admin-highlight{animation:none;background-image:none}}
