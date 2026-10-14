@@ -14,6 +14,7 @@ import {adminState,effectiveOwner,refreshAdmin,searchAdminUsers,openAdminUser,sa
 import {notificationButton,bindNotifications,clearInventoryNotifications,addNotification} from './notifications.js';
 
 import './style.css';
+import './liquid-glass.css';
 
 import {salesView,bindSales,resetSales,bindHomeRecap} from './sales.js';
 
