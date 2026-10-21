@@ -11,6 +11,10 @@ export const inventoryStores={'GW Kia Ave':{file:'greenway',origin:'https://www.
 inventoryStores['Coggin group']={members:['Coggin Nissan Atl','Coggin Nissan Ave']};
 inventoryStores['AutoNation USA Jax']={file:'autonation-jacksonville',origin:'https://www.autonationusa.com',storeId:'2993',officialFeed:true};
 inventoryStores['AutoNation group']={members:['AutoNation USA Jax']};
+inventoryStores['Hutchinson Kia']={file:'hutchinson-kia',origin:'https://www.kiaofmacon.com',pending:true};
+inventoryStores['Hutchinson GMC']={file:'hutchinson-gmc',origin:'https://www.hutchinsongmc.com',pending:true};
+inventoryStores['Hutchinson Cadillac']={file:'hutchinson-cadillac',origin:'https://www.hutchinsoncadillac.com',pending:true};
+inventoryStores['Hutchinson']={members:['Hutchinson Kia','Hutchinson GMC','Hutchinson Cadillac']};
 let inventoryAccess={owner:'',store:'',revision:0};
 export function setInventoryAccess(owner,store){if(inventoryAccess.owner!==owner||inventoryAccess.store!==store)inventoryAccess={owner,store,revision:inventoryAccess.revision+1};}
 export function inventoryAccessMessage(){return inventoryAccess.store?'Inventory is not available for your assigned store yet.':'No store assigned. Ask your administrator to assign your store.';}
@@ -60,9 +64,9 @@ export function parseInventoryCard(text,sourceUrl,condition,checkedAt){
 
 export async function loadInventory(){
  const access=inventoryAccess;if(access.store!=='__all__'&&!inventoryStores[access.store])throw Error(inventoryAccessMessage());
- const names=access.store==='__all__'?Object.keys(inventoryStores).filter(name=>inventoryStores[name].file):inventoryStores[access.store].members||[access.store];
+ const names=access.store==='__all__'?Object.keys(inventoryStores).filter(name=>inventoryStores[name].file&&!inventoryStores[name].pending):inventoryStores[access.store].members||[access.store];
  const feeds=await Promise.all(names.map(async name=>{
- const config=inventoryStores[name];
+ const config=inventoryStores[name];if(config.pending)throw Error('Hutchinson inventory is being connected. Your store assignment is available; vehicle data is not ready yet.');
  const response=await fetch(inventoryBase+'/inventory/'+config.file+'.json',{cache:'no-store'});
  if(!response.ok)throw Error('Inventory is not available yet. Enter vehicle details manually.');
  let data=await response.json();

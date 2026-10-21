@@ -1,0 +1,21 @@
+{
+  "group": "Hutchinson",
+  "status": "stores-registered-inventory-not-yet-verified",
+  "stores": [
+    {
+      "store": "Hutchinson Kia",
+      "name": "Hutchinson Kia of Macon",
+      "origin": "https://www.kiaofmacon.com"
+    },
+    {
+      "store": "Hutchinson GMC",
+      "name": "Hutchinson GMC",
+      "origin": "https://www.hutchinsongmc.com"
+    },
+    {
+      "store": "Hutchinson Cadillac",
+      "name": "Hutchinson Cadillac",
+      "origin": "https://www.hutchinsoncadillac.com"
+    }
+  ]
+}
