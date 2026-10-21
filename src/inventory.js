@@ -1,3 +1,4 @@
+import {validateHutchinsonFeed} from './hutchinson-inventory.js';
 import {reconcileOfficialAvailability} from './inventory-availability.js';
 import {verifiedCarfaxUrl} from './carfax.js';
 import {trimFromTitle} from './vehicle-trim.js';
@@ -11,9 +12,9 @@ export const inventoryStores={'GW Kia Ave':{file:'greenway',origin:'https://www.
 inventoryStores['Coggin group']={members:['Coggin Nissan Atl','Coggin Nissan Ave']};
 inventoryStores['AutoNation USA Jax']={file:'autonation-jacksonville',origin:'https://www.autonationusa.com',storeId:'2993',officialFeed:true};
 inventoryStores['AutoNation group']={members:['AutoNation USA Jax']};
-inventoryStores['Hutchinson Kia']={file:'hutchinson-kia',origin:'https://www.kiaofmacon.com',pending:true};
-inventoryStores['Hutchinson GMC']={file:'hutchinson-gmc',origin:'https://www.hutchinsongmc.com',pending:true};
-inventoryStores['Hutchinson Cadillac']={file:'hutchinson-cadillac',origin:'https://www.hutchinsoncadillac.com',pending:true};
+inventoryStores['Hutchinson Kia']={file:'hutchinson-kia',origin:'https://www.kiaofmacon.com',hutchinson:true,officialFeed:true};
+inventoryStores['Hutchinson GMC']={file:'hutchinson-gmc',origin:'https://www.hutchinsongmc.com',hutchinson:true,officialFeed:true};
+inventoryStores['Hutchinson Cadillac']={file:'hutchinson-cadillac',origin:'https://www.hutchinsoncadillac.com',hutchinson:true,officialFeed:true};
 inventoryStores['Hutchinson']={members:['Hutchinson Kia','Hutchinson GMC','Hutchinson Cadillac']};
 let inventoryAccess={owner:'',store:'',revision:0};
 export function setInventoryAccess(owner,store){if(inventoryAccess.owner!==owner||inventoryAccess.store!==store)inventoryAccess={owner,store,revision:inventoryAccess.revision+1};}
@@ -71,7 +72,7 @@ export async function loadInventory(){
  if(!response.ok)throw Error('Inventory is not available yet. Enter vehicle details manually.');
  let data=await response.json();
  if(!Array.isArray(data.vehicles)||!Number.isFinite(Date.parse(data.checkedAt)))throw Error('Inventory data is invalid. Use manual entry.');
- if(config.officialFeed)data=validateAutoNationFeed(data,config);
+ if(config.officialFeed)data=config.hutchinson?validateHutchinsonFeed(data,config):validateAutoNationFeed(data,config);
  // Direct dealer links are matched by exact VIN; never construct guessed vehicle URLs.
  if(!config.officialFeed)try{
   const response=await fetch(inventoryBase+'/inventory/'+(config.account?config.file+'-links.json':'dealer-links.json'),{cache:'no-store'});
@@ -128,7 +129,7 @@ export function stockMatches(rows,query){
 export function inventoryDisplayPrice(row){return row.condition==='new'?row.msrp:inventoryStores[row.storeLabel]?.account?row.retailPrice:row.advertisedPrice;}
 export function inventoryDeal(row,previous){
  const stockNumber=stockKey(row.stockNumber),vin=stockKey(row.vin);
- if(!stockNumber||!['new','used'].includes(row.condition))throw Error('Inventory vehicle is missing its stock number or condition.');
+ if((!stockNumber&&!(row.vinOnlyIdentifier===true&&/^[A-HJ-NPR-Z0-9]{17}$/.test(vin)))||!['new','used'].includes(row.condition))throw Error('Inventory vehicle is missing its stock number or condition.');
  const price=amount(inventoryDisplayPrice(row));
  // Do not infer a discount from MSRP minus an advertised price: that may
  // include incentives. Only a feed field explicitly marked dealer discount.

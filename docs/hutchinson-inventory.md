@@ -1,0 +1,15 @@
+# Hutchinson inventory
+
+Stores: Hutchinson Kia of Macon (kiaofmacon.com), Hutchinson GMC (hutchinsongmc.com), Hutchinson Cadillac (hutchinsoncadillac.com). The app group is Hutchinson.
+
+The initial October 21 supported-Chrome collection reconciled every rendered New and Used page: Kia 362 new + 277 used = 639; GMC 79 new + 276 used = 355; Cadillac 19 new + 69 used = 88. Each store retains its own advertised inventory and price even when another Hutchinson website advertises the same VIN. This is advertised-site scope, not an inferred physical-lot inventory.
+
+Direct HTTP returned 403 for all three and was stopped. The text-only /llm/inventory/ Kia Next link redirected incorrectly, so the collection used ordinary rendered /new-vehicles/ and /used-vehicles/ pages. Pagination page numbers can advance before cards change: require BOTH the expected page number and disappearance of the previous first vehicle's listing before reading the next batch. Save bounded batches durably. No private APIs, stealth or challenge bypasses.
+
+Current raw evidence is tmp/hutchinson/browser-run.json. Every page preserves its count heading, page number, final-page count, card text and exact listing URL. Details tabs provide explicitly labeled mileage and colors; missing stock/color/price fields stay blank/null. Eight in-transit vehicles have no assigned stock number and use their actual VIN for UI identification. One pre-1981 GMC-advertised vehicle has a dealer-provided short serial; it is retained as such, never padded into a modern VIN.
+
+src/hutchinson-inventory.js validates identity, source, per-section complete pagination, final rechecked totals, unique VINs and positive-or-null amounts. scripts/finalize-hutchinson-inventory.mjs creates all three complete files only after validation. New vehicles use explicitly labeled MSRP; used display uses the last explicitly labeled Hutchinson Price (the final price box), without subtracting fees or applying conditional rebates. That final advertised amount may already include dealer fees. No user fee settings were invented or changed.
+
+Carfax links are accepted only if actually present in collected dealer markup; this initial card-based pass does not claim a complete vehicle-detail Carfax audit. Do not synthesize report URLs. Existing color-family display preserves OEM values when it cannot simplify them.
+
+Publication: pull/rebase the clean tmp/hosted-preview checkout; copy ONLY the three complete public/inventory/hutchinson-*.json files into inventory/. Preserve other inventory and releases. Publish the corresponding app/source update through the established Cloudflare workflow, then compare all live JSON maps exactly against local snapshots. These stores have not been added to the paused unattended refresh goal or promised a scheduled unattended collection.
