@@ -470,3 +470,6 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 .store-hub[open]{display:flex;flex-direction:column;overflow:hidden}
 .store-hub>:not(.store-hub-tree){flex-shrink:0}
 .store-hub-tree{flex:1 1 auto;min-height:120px;grid-auto-rows:max-content}
+
+.store-hub input[type=checkbox]{min-height:20px;flex:0 0 20px}
+
