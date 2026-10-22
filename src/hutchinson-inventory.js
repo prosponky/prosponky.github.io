@@ -1,4 +1,5 @@
 import {verifiedCarfaxUrl} from './carfax.js';
+import {hutchinsonModelFields} from './hutchinson-model.js';
 const amount=s=>s?Number(s.replace(/[$,]/g,'')):null;
 const field=(text,name)=>text.match(new RegExp('(?:^|\\n)'+name+'\\s*:[ \\t]*([^\\n]*)','i'))?.[1]?.trim()||'';
 export function hutchinsonCard(card,detail,extra,config,checkedAt){
@@ -10,7 +11,7 @@ export function hutchinsonCard(card,detail,extra,config,checkedAt){
  const prices=[...text.matchAll(/(?:^|\n)Hutchinson Price\s*\n\s*(\$[\d,]+(?:\.\d{2})?)/gi)],msrp=amount(text.match(/(?:^|\n)MSRP\s*\n\s*(\$[\d,]+(?:\.\d{2})?)/i)?.[1]),advertisedPrice=amount(prices.at(-1)?.[1]);
  const stockNumber=field(text,'STOCK'),condition=/\/new-/i.test(url.pathname)?'new':'used',titleText=title[2].trim(),makeMatch=titleText.match(/^(Land Rover|Alfa Romeo|Mercedes-Benz|[\w-]+)\s+(.+)$/i);if(!makeMatch)throw Error('Missing make/model');
  const details=detail?.text||extra?.text||'',mileage=field(details,'MILEAGE').replaceAll(',','');
- return {stockNumber,vin,vinOnlyIdentifier:!stockNumber,condition,year,make:makeMatch[1],model:makeMatch[2],trim:'',vehicleTitle:year+' '+titleText,certified:/Certified Pre-Owned/i.test(text),msrp,advertisedPrice,priceLabel:'Hutchinson Price',priceIncludesDealerFees:true,interiorColor:field(details,'INTERIOR'),exteriorColor:field(details,'EXTERIOR'),mileage:/^\d+$/.test(mileage)?+mileage:null,dealerLocation:field(details,'LOCATION'),dealerListingUrl:url.href,sourceUrl:url.href,carfaxUrl:verifiedCarfaxUrl(card.carfax||detail?.carfax||extra?.carfax?.[0]),checkedAt};
+ return {stockNumber,vin,vinOnlyIdentifier:!stockNumber,condition,year,...hutchinsonModelFields(makeMatch[1],makeMatch[2]),vehicleTitle:year+' '+titleText,certified:/Certified Pre-Owned/i.test(text),msrp,advertisedPrice,priceLabel:'Hutchinson Price',priceIncludesDealerFees:true,interiorColor:field(details,'INTERIOR'),exteriorColor:field(details,'EXTERIOR'),mileage:/^\d+$/.test(mileage)?+mileage:null,dealerLocation:field(details,'LOCATION'),dealerListingUrl:url.href,sourceUrl:url.href,carfaxUrl:verifiedCarfaxUrl(card.carfax||detail?.carfax||extra?.carfax?.[0]),checkedAt};
 }
 export function validateHutchinsonFeed(data,config){
  if(data.complete!==true||data.source!==config.origin||!Number.isFinite(Date.parse(data.checkedAt))||Date.parse(data.checkedAt)>Date.now()||!Array.isArray(data.vehicles)||data.total!==data.vehicles.length||!data.total||new Set(data.vehicles.map(v=>v.vin)).size!==data.total)throw Error('Incomplete Hutchinson inventory');

@@ -1,0 +1,6 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {hutchinsonModelFields as split} from '../src/hutchinson-model.js';
+test('separates trim while preserving multiword model names and dealer casing',()=>{
+ for(const [make,name,model,trim] of [['Kia','K5 GT-Line','K5','GT-Line'],['Kia','Carnival SX Prestige','Carnival','SX Prestige'],['Kia','Carnival Hybrid SX Prestige','Carnival Hybrid','SX Prestige'],['GMC','Sierra 1500 Denali Ultimate','Sierra 1500','Denali Ultimate'],['CADILLAC','ESCALADE IQL PREMIUM SPORT','ESCALADE IQL','PREMIUM SPORT'],['Ford','Bronco Sport Big Bend','Bronco Sport','Big Bend'],['Chevrolet','Silverado 1500 LTD LT','Silverado 1500 LTD','LT']])assert.deepEqual(split(make,name),{make,model,trim});
+});
+test('does not invent missing trim or split unknown model names',()=>{assert.deepEqual(split('Volkswagen','Jetta'),{make:'Volkswagen',model:'Jetta',trim:''});assert.deepEqual(split('Example','Unknown Future Model'),{make:'Example',model:'Unknown Future Model',trim:''});});
+test('handles dealer title aliases',()=>{assert.deepEqual(split('Mazda3','2.5 S Premium Package'),{make:'Mazda',model:'Mazda3',trim:'2.5 S Premium Package'});assert.deepEqual(split('Mercedes-Benz','E 350'),{make:'Mercedes-Benz',model:'E-Class',trim:'E 350'});});
