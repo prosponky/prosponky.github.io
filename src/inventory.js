@@ -1,4 +1,5 @@
 import {validateHutchinsonFeed} from './hutchinson-inventory.js';
+import {expandedStoreGrants} from './store-access.js';
 import {reconcileOfficialAvailability} from './inventory-availability.js';
 import {verifiedCarfaxUrl} from './carfax.js';
 import {trimFromTitle} from './vehicle-trim.js';
@@ -16,8 +17,9 @@ inventoryStores['Hutchinson Kia']={file:'hutchinson-kia',origin:'https://www.kia
 inventoryStores['Hutchinson GMC']={file:'hutchinson-gmc',origin:'https://www.hutchinsongmc.com',hutchinson:true,officialFeed:true};
 inventoryStores['Hutchinson Cadillac']={file:'hutchinson-cadillac',origin:'https://www.hutchinsoncadillac.com',hutchinson:true,officialFeed:true};
 inventoryStores['Hutchinson']={members:['Hutchinson Kia','Hutchinson GMC','Hutchinson Cadillac']};
+inventoryStores['Greenway group']={members:['GW Kia Ave']};
 let inventoryAccess={owner:'',store:'',revision:0};
-export function setInventoryAccess(owner,store){if(inventoryAccess.owner!==owner||inventoryAccess.store!==store)inventoryAccess={owner,store,revision:inventoryAccess.revision+1};}
+export function setInventoryAccess(owner,store,grants){const grantKey=JSON.stringify(grants);if(inventoryAccess.owner!==owner||inventoryAccess.store!==store||inventoryAccess.grantKey!==grantKey)inventoryAccess={owner,store,grants,grantKey,revision:inventoryAccess.revision+1};}
 export function inventoryAccessMessage(){return inventoryAccess.store?'Inventory is not available for your assigned store yet.':'No store assigned. Ask your administrator to assign your store.';}
 const stockKey=value=>String(value??'').trim().toUpperCase();
 const colorFamilies={red:['red','scarlet','crimson','ruby','garnet'],blue:['blue','navy'],black:['black','onyx','ebony'],white:['white'],gray:['gray','grey','gunmetal','charcoal','graphite'],silver:['silver'],green:['green'],brown:['brown','mocha','espresso'],tan:['tan','beige','sand'],cream:['cream','ivory'],orange:['orange'],yellow:['yellow'],purple:['purple']};
@@ -64,8 +66,9 @@ export function parseInventoryCard(text,sourceUrl,condition,checkedAt){
 }
 
 export async function loadInventory(){
- const access=inventoryAccess;if(access.store!=='__all__'&&!inventoryStores[access.store])throw Error(inventoryAccessMessage());
- const names=access.store==='__all__'?Object.keys(inventoryStores).filter(name=>inventoryStores[name].file&&!inventoryStores[name].pending):inventoryStores[access.store].members||[access.store];
+ const access=inventoryAccess,allowed=access.grants===undefined?null:expandedStoreGrants(access.grants,inventoryStores);if(!['__all__','__assigned__'].includes(access.store)&&!inventoryStores[access.store])throw Error(inventoryAccessMessage());
+ const names=access.store==='__assigned__'?allowed||[]:access.store==='__all__'?Object.keys(inventoryStores).filter(name=>inventoryStores[name].file&&!inventoryStores[name].pending):inventoryStores[access.store].members||[access.store];
+ if(!names.length||(allowed&&names.some(name=>!allowed.includes(name))))throw Error('This store is not assigned to your account.');
  const feeds=await Promise.all(names.map(async name=>{
  const config=inventoryStores[name];if(config.pending)throw Error('Hutchinson inventory is being connected. Your store assignment is available; vehicle data is not ready yet.');
  const response=await fetch(inventoryBase+'/inventory/'+config.file+'.json',{cache:'no-store'});

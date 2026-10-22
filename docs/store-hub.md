@@ -1,0 +1,11 @@
+# Store hub and inventory grants
+
+Admin People cards show only name, avatar and settings gear. User settings contains Assign store, opening the Store hub. Expand a group to choose individual stores or check the parent for a full-group grant. Unchecking a child of a selected group converts that grant into the remaining individual stores. Cancel changes nothing; Save access preserves the rest of the dealer settings.
+
+Assignments remain in the existing server-protected dealer_settings.settings.storeLabel field, guarded by supabase/store-assignment.sql. One grant remains the legacy store/group string. Multiple grants use the versioned @stores-v1: JSON-array encoding. No new database privilege or schema is required. Regular settings saves and monthly-goal updates preserve that protected assignment; reset preserves it too. storeAccess and storeAssignment are derived local display fields and are never trusted from stored settings on load. Malformed and unknown grants provide no access.
+
+Full-group grants expand against inventoryStores at read time, including future registered members. Individual store grants do not automatically promote into groups. The inventory loader deduplicates permitted stores and refuses unassigned scopes before fetching. Browse, lookup, scanners, sales vehicle selection and alerts share that loader. Cached store preferences cannot widen grants. Multiple grants default to All assigned stores with individual/group choices limited to the grant set. These are app inventory permissions; public dealership feed URLs remain public, as before.
+
+Existing assignments are not migrated or changed automatically. Saving the new hub affects only the selected account. The feature does not grant Admin authority or add account-management privileges. Email remains available in the existing account-management dialog where required for account actions, but is omitted from the People cards.
+
+Validation: store-access unit tests cover legacy and multiple grants, untrusted derived fields, invalid grants, future group members and refusal before fetch. Browser tests cover group/child toggles, save/cancel/reopen, settings preservation, name-only cards, scoped inventory and preference persistence.
