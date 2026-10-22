@@ -1,3 +1,4 @@
+import {bindAdminBannerActivity} from './admin-banner-activity.js';
 import {uiIcon} from './ui-icons.js';
 import {mountWorksheet} from './quote-worksheet.js';
 import {creditEstimateRate} from './credit-estimate.js';
@@ -394,7 +395,7 @@ function render(){disposeQuotePreview?.();disposeQuotePreview=null;
 
 
 
-  if(adminState.target)app.insertAdjacentHTML('afterbegin',`<aside class="admin-banner"><strong>Viewing as ${esc(adminState.target.display_name||adminState.target.email)}</strong><small>${esc(adminState.target.email)}</small><button type="button" id="return-admin">Return to admin</button></aside>`);
+  if(adminState.target)app.insertAdjacentHTML('afterbegin',`<aside class="admin-banner"><strong>Viewing as ${esc(adminState.target.display_name||adminState.target.email)}</strong><small>${esc(adminState.target.email)}</small><small data-viewing-activity>Last active: Loading…</small><button type="button" id="return-admin">Return to admin</button></aside>`);
 
   const store=authState.user&&dealerReady&&!dealerLoading?inventoryScope():'';setInventoryAccess(effectiveOwner(),store);
 
@@ -1131,6 +1132,7 @@ function bind(){
  document.querySelectorAll('[data-use-cash]').forEach(b=>b.onclick=()=>confirmCustomerCash(Number(b.dataset.useCash)));
 
  bindAdmin();
+ bindAdminBannerActivity();
 
 
 

@@ -440,3 +440,16 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 /* Keep certification beside the model without changing the restored row styling. */
 .inventory-tile>.inventory-model{flex-direction:row;gap:4px}
 
+/* Apple-style trailing swipe action; vertical list scrolling remains native. */
+.sales-swipe{position:relative;overflow:hidden;background:#cf303b;isolation:isolate}
+.sales-swipe .sales-sheet-row{position:relative;z-index:1;background:#20292d;transform:translateX(var(--sale-offset,0px));transition:transform var(--glass-interactive,150ms) var(--glass-ease,ease-out);touch-action:pan-y;user-select:none;-webkit-user-select:none;scale:1!important}
+.sales-swipe.is-dragging .sales-sheet-row{transition:none}
+.sales-swipe .sales-swipe-delete{position:absolute;inset:0 0 0 auto;width:88px;min-height:44px;margin:0;border:0;border-radius:0;background:#cf303b;color:#fff;box-shadow:none;font-size:14px;font-weight:700;visibility:hidden}
+.sales-swipe.is-open .sales-swipe-delete,.sales-swipe.is-dragging .sales-swipe-delete{visibility:visible}
+.sales-swipe.full-swipe .sales-swipe-delete{width:100%;text-align:right;padding-right:24px}
+.sale-undo{position:fixed;z-index:1000;bottom:max(18px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 28px);display:flex;align-items:center;gap:24px;padding:10px 16px;border:1px solid #697b80;border-radius:14px;background:#263437;color:#fff;box-shadow:0 8px 30px #0008}
+.sale-undo button{margin:0;padding:8px 12px;min-height:44px;border:0;color:#82efdf;background:transparent}
+@media(prefers-reduced-motion:reduce){.sales-swipe .sales-sheet-row{transition:none}}
+
+.admin-banner [data-viewing-activity]{display:block;margin-top:5px;color:#f7dfa1}
+
