@@ -146,3 +146,8 @@ export function inventoryDeal(row,previous){
 
 
 
+
+export function inventoryStockLabel(row){
+ const stock=String(row.stockNumber||'').trim(),vin=String(row.vin||'').trim();
+ return inventoryStores[row.storeLabel]?.hutchinson&&vin&&(!stock||stock.toUpperCase()===vin.toUpperCase())?vin.slice(-8):stock||vin;
+}

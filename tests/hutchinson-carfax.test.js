@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {applyHutchinsonCarfax,retainHutchinsonCarfax} from '../src/hutchinson-carfax.js';
+const row={vin:'VIN',condition:'used',dealerListingUrl:'https://www.kiaofmacon.com/inventory/car/',checkedAt:'2026-10-21T12:00:00Z'};
+const feed={vehicles:[row]};
+const checkpoint={index:1,queue:[{store:'kia',vin:'VIN',url:row.dealerListingUrl}],reports:{'kia|VIN':{vin:'VIN',listingUrl:row.dealerListingUrl,url:'https://www.carfax.com/vehiclehistory/ar20/actual-dealer-report',checkedAt:'2026-10-22T00:00:00Z'}}};
+test('merges dealer report without changing price evidence date',()=>{const result=applyHutchinsonCarfax(feed,'kia',checkpoint);assert.equal(result.vehicles[0].checkedAt,row.checkedAt);assert.equal(result.vehicles[0].carfaxUrl,checkpoint.reports['kia|VIN'].url);assert.equal(row.carfaxUrl,undefined);});
+test('rejects incomplete audit and mismatched identities',()=>{assert.throws(()=>applyHutchinsonCarfax(feed,'kia',{...checkpoint,index:0}));assert.throws(()=>applyHutchinsonCarfax(feed,'kia',{...checkpoint,reports:{'kia|VIN':{...checkpoint.reports['kia|VIN'],vin:'OTHER'}}}));});
+test('preserves missing reports and rejects foreign links',()=>{const change=url=>({...checkpoint,reports:{'kia|VIN':{...checkpoint.reports['kia|VIN'],url}}});assert.equal(applyHutchinsonCarfax(feed,'kia',change(null)).vehicles[0].carfaxUrl,null);assert.throws(()=>applyHutchinsonCarfax(feed,'kia',change('https://example.com/report')));});
+test('inventory rebuild retains reports only for the same VIN and listing',()=>{const previous=applyHutchinsonCarfax(feed,'kia',checkpoint);assert.equal(retainHutchinsonCarfax(feed,previous).vehicles[0].carfaxUrl,checkpoint.reports['kia|VIN'].url);assert.equal(retainHutchinsonCarfax({vehicles:[{...row,dealerListingUrl:'https://other.test/'}]},previous).vehicles[0].carfaxUrl,undefined);});

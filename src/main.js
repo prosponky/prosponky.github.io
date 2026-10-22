@@ -52,7 +52,7 @@ async function exportPayoffPdf(value){try{const pdf=await import('./pdf.js');pdf
 
 
 
-import {inventoryColorLabel,inventorySearchMatches,stockMatches,inventoryDeal,inventoryDisplayPrice,loadInventory,inventoryFresh,setInventoryAccess,inventoryAccessMessage,inventoryStores} from './inventory.js';
+import {inventoryStockLabel,inventoryColorLabel,inventorySearchMatches,stockMatches,inventoryDeal,inventoryDisplayPrice,loadInventory,inventoryFresh,setInventoryAccess,inventoryAccessMessage,inventoryStores} from './inventory.js';
 
 
 
@@ -602,7 +602,7 @@ async function bindInventory(){
 
 
 
- list.innerHTML=(!inventoryFresh(data)?'<p>Prices need confirmation.</p>':'')+data.vehicles.map((v,i)=>`<div class="inventory-item" data-inventory-item="${i}"><button type="button" class="inventory-tile${budgetAccount&&budgetVehicle(v)?' budget-unicorn':''}" data-browse-vehicle="${i}" aria-label="${esc([v.stockNumber,v.year,v.make,v.model].join(' '))}"><span class="inventory-stock">${data.dailyChanges?.addedVins?.includes(v.vin)?'<span class="arrival-badge" aria-label="New arrival"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l5 4 4-7 4 7 5-4-2 13H5z" fill="currentColor"/></svg><small>New</small></span>':''}${esc(v.stockNumber||v.vin)}</span><span class="inventory-model"><span class="inventory-model-name">${inventoryModelLabel(String(v.model||'').replace(/\bPathfinder\b/gi,'Path'))}</span>${v.condition==='used'&&v.certified===true?` <span class="hybrid-badge inventory-cpo-badge" aria-label="${v.storeLabel==='AutoNation USA Jax'?'AutoNation Certified':'Certified pre-owned'}">${v.storeLabel==='AutoNation USA Jax'?'CERT':'CPO'}</span>`:''}</span><span>${typeof (inventoryDisplayPrice(v))==='number'?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0,minimumFractionDigits:0}).format(inventoryDisplayPrice(v)):'N/A'}</span></button><button type="button" class="inventory-pin" data-pin="${i}" aria-label="Pin ${esc(v.stockNumber)}" aria-pressed="false">${uiIcon("pin",20)}</button></div>`).join('');
+ list.innerHTML=(!inventoryFresh(data)?'<p>Prices need confirmation.</p>':'')+data.vehicles.map((v,i)=>`<div class="inventory-item" data-inventory-item="${i}"><button type="button" class="inventory-tile${budgetAccount&&budgetVehicle(v)?' budget-unicorn':''}" data-browse-vehicle="${i}" aria-label="${esc([v.stockNumber,v.year,v.make,v.model].join(' '))}"><span class="inventory-stock">${data.dailyChanges?.addedVins?.includes(v.vin)?'<span class="arrival-badge" aria-label="New arrival"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l5 4 4-7 4 7 5-4-2 13H5z" fill="currentColor"/></svg><small>New</small></span>':''}${esc(inventoryStockLabel(v))}</span><span class="inventory-model"><span class="inventory-model-name">${inventoryModelLabel(String(v.model||'').replace(/\bPathfinder\b/gi,'Path'))}</span>${v.condition==='used'&&v.certified===true?` <span class="hybrid-badge inventory-cpo-badge" aria-label="${v.storeLabel==='AutoNation USA Jax'?'AutoNation Certified':'Certified pre-owned'}">${v.storeLabel==='AutoNation USA Jax'?'CERT':'CPO'}</span>`:''}</span><span>${typeof (inventoryDisplayPrice(v))==='number'?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0,minimumFractionDigits:0}).format(inventoryDisplayPrice(v)):'N/A'}</span></button><button type="button" class="inventory-pin" data-pin="${i}" aria-label="Pin ${esc(v.stockNumber)}" aria-pressed="false">${uiIcon("pin",20)}</button></div>`).join('');
 
 
 
