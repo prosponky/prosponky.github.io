@@ -473,3 +473,17 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 
 .store-hub input[type=checkbox]{min-height:20px;flex:0 0 20px}
 
+
+/* Pinned inventory: restrained holographic foil, with a continuous LED edge. */
+#inventory-pinned .inventory-item.pinned .inventory-tile{
+ border:1px solid transparent;color:#f0f7fa;background-color:#17282d;
+ background-image:linear-gradient(112deg,transparent 15%,#71f7ef24 28%,#c39aff30 42%,#ffe4b126 55%,transparent 68%),linear-gradient(#17282d,#17282d),linear-gradient(90deg,#5ff5e0 0%,#87a9ff 12.5%,#f2a1ee 25%,#ffdca5 37.5%,#5ff5e0 50%,#87a9ff 62.5%,#f2a1ee 75%,#ffdca5 87.5%,#5ff5e0 100%);
+ background-origin:padding-box,padding-box,border-box;background-clip:padding-box,padding-box,border-box;
+ background-size:260% 100%,100% 100%,200% 100%;animation:pinned-foil-flow 4s linear infinite;
+ box-shadow:inset 0 0 12px #84ccff0e,0 0 8px #8acaff24;
+}
+#inventory-pinned .inventory-item.pinned .inventory-pin.selected{background:#243842;border-color:#9ae9ef;color:#c5fff5}
+@keyframes pinned-foil-flow{from{background-position:150% 0,0 0,0% 0}to{background-position:-150% 0,0 0,100% 0}}
+@media(prefers-reduced-motion:reduce){#inventory-pinned .inventory-item.pinned .inventory-tile{animation:none;background-position:90% 0,0 0,0 0}}
+@media(forced-colors:active){#inventory-pinned .inventory-item.pinned .inventory-tile{border-color:Highlight;box-shadow:none}}
+

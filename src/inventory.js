@@ -91,7 +91,8 @@ export async function loadInventory(){
    if(row.condition!== 'new')row.advertisedPrice=priceEvidenceAvailable(official||{})&&verifiedDealerLink(record?.url,row.vin)&&typeof record?.price==='number'&&Number.isFinite(record.price)&&record.price>0?record.price:null;
   }
  }
- for(const row of data.vehicles){row.storeLabel=name;if(config.account&&!row.dealerListingUrl){row.dealerListingUrl=config.origin+'/all-inventory/index.htm?accountId='+config.account+'&search='+encodeURIComponent(row.stockNumber);row.dealerSearch=true;}}
+ const arrivals=new Set((data.dailyChanges?.addedVins||[]).map(stockKey));
+ for(const row of data.vehicles){row.newArrival=arrivals.has(stockKey(row.vin));row.storeLabel=name;if(config.account&&!row.dealerListingUrl){row.dealerListingUrl=config.origin+'/all-inventory/index.htm?accountId='+config.account+'&search='+encodeURIComponent(row.stockNumber);row.dealerSearch=true;}}
  return {...data,storeLabel:name};
  }));
  if(access!==inventoryAccess)throw Error('Your store changed. Reopen Inventory.');
@@ -154,3 +155,4 @@ export function inventoryStockLabel(row){
  const stock=String(row.stockNumber||'').trim(),vin=String(row.vin||'').trim();
  return inventoryStores[row.storeLabel]?.hutchinson&&vin&&(!stock||stock.toUpperCase()===vin.toUpperCase())?vin.slice(-8):stock||vin;
 }
+
