@@ -4,6 +4,7 @@ import {resolve} from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {acquireRunLock} from './local-inventory-recovery.mjs';
 import {retainGreenwayPrices} from '../src/retained-official-prices.js';
+import {verifyPublishedSnapshots} from './verify-published-inventory.mjs';
 const [store,input,...flags]=process.argv.slice(2);
 const configs=JSON.parse(await readFile('data/dealership-sources.json','utf8')),config=configs[store];
 if(config?.adapter!=='dealer-inspire-browser'||!input)throw Error('Use a registered browser store and an evidence snapshot.');
@@ -31,10 +32,13 @@ try{
   if(!identity)throw Error('Unsupported publication remote');
   try{execFileSync('gh',['api','--method','POST','repos/'+identity+'/pages/builds'],{stdio:['ignore','pipe','pipe'],timeout:20000});}catch(e){buildRequestWarning=String(e.stderr||e.message).slice(-1000);}
   const live='https://'+identity.split('/')[0]+'.github.io/inventory/'+config.priceFile;
-  for(let attempt=0;attempt<30;attempt++){
-   try{const response=await fetch(live+'?verify='+encodeURIComponent(data.checkedAt),{cache:'no-store',signal:AbortSignal.timeout(10000)});if(response.ok&&JSON.stringify(await response.json())===JSON.stringify(data)){let reportsVerified=!data.carfax;if(data.carfax){const reports=await fetch('https://'+identity.split('/')[0]+'.github.io/inventory/greenway-carfax.json?verify='+encodeURIComponent(data.carfax.checkedAt),{cache:'no-store',signal:AbortSignal.timeout(10000)});reportsVerified=reports.ok&&JSON.stringify(await reports.json())===JSON.stringify(data.carfax);}if(reportsVerified){liveVerified=true;break;}}}catch{}
-   await new Promise(r=>setTimeout(r,2000));
-  }
+  const verification=await verifyPublishedSnapshots([config.priceFile,...(data.carfax?['greenway-carfax.json']:[])],{
+   readExpected:async file=>file===config.priceFile?data:data.carfax,
+   fetchLive:async file=>{const response=await fetch(new URL(file,live).href+'?verify='+encodeURIComponent(data.checkedAt),{cache:'no-store',signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error('Live map HTTP '+response.status);return response.json();},
+   onProgress:progress=>console.log(JSON.stringify(progress))
+  });
+  await writeFile(resolve('tmp','official-publication-verification-'+store+'.json'),JSON.stringify(verification));
+  liveVerified=verification.allVerified;
   if(!liveVerified)throw Error('Valid prices pushed, but live publication was not verified yet');
   await writeFile(resolve('tmp','inventory-health-'+store+'.json'),JSON.stringify({status:'published',store,total:data.total,checkedAt:data.checkedAt,updatedAt:new Date().toISOString(),liveVerified,buildRequestWarning}));
  }

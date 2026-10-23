@@ -1,6 +1,13 @@
 name: Refresh public inventory
+run-name: ${{ github.event_name == 'workflow_dispatch' && format('Inventory recovery - {0}', inputs.reason) || 'Scheduled inventory refresh' }}
 on:
   workflow_dispatch:
+    inputs:
+      reason:
+        description: Reason for this manual recovery check
+        required: false
+        default: Manual recovery verification
+        type: string
   schedule:
     - cron: '0 7 * * *'
       timezone: 'America/New_York'
@@ -15,12 +22,14 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Verify publication guardrails
+        run: node --test tests/published-inventory-verification.test.js
       - name: Start from latest published inventory evidence
         run: |
           mkdir -p public/inventory
@@ -75,4 +84,3 @@ jobs:
           if [ "$OFFICIAL_ATLANTIC" != success ] || [ "$OFFICIAL_AVENUES" != success ]; then
             echo '::warning::Official pricing needs the scheduled local recovery. Previous verified prices remain available.'
           fi
-

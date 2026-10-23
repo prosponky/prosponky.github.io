@@ -1,3 +1,4 @@
+import {verifyPublishedSnapshots} from './verify-published-inventory.mjs';
 import {readFile,writeFile,rename,mkdir,open,unlink} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {spawn,execFileSync} from 'node:child_process';
@@ -76,12 +77,14 @@ async function main(){
  const repo=resolve('tmp/hosted-preview'),safe='safe.directory='+repo.replaceAll('\\','/');
  const git=args=>execFileSync('git',['-c',safe,'-C',repo,'-c','user.name=Pocket Desking inventory','-c','user.email=github-actions[bot]@users.noreply.github.com',...args],{encoding:'utf8',timeout:120000});
  const live=async(config,expected)=>{
-  for(let i=0;i<(expected?30:1);i++){
-   const response=await fetch('https://prosponky.github.io/inventory/'+config.priceFile+'?check='+Date.now(),{signal:AbortSignal.timeout(15000),cache:'no-store'});
-   if(!response.ok)throw Error('Live inventory HTTP '+response.status);
-   const data=await response.json();if(!expected||data.checkedAt===expected)return data;
-   await new Promise(r=>setTimeout(r,2000));
-  }throw Error('Live publication did not become current');
+  let actual;
+  const fetchLive=async()=>{const response=await fetch('https://prosponky.github.io/inventory/'+config.priceFile+'?check='+Date.now(),{signal:AbortSignal.timeout(15000),cache:'no-store'});if(!response.ok)throw Error('Live inventory HTTP '+response.status);actual=await response.json();return actual;};
+  if(!expected)return fetchLive();
+  const target=JSON.parse(await readFile('public/inventory/'+config.priceFile,'utf8'));
+  if(target.checkedAt!==expected)throw Error('Local publication evidence changed');
+  const verification=await verifyPublishedSnapshots([config.priceFile],{readExpected:async()=>target,fetchLive,onProgress:progress=>console.log(JSON.stringify(progress))});
+  if(!verification.allVerified)throw Error('Live publication did not become current: '+verification.files[config.priceFile].reason);
+  return actual;
  };
  try{
   const report=await recoverStores(configs,{force:process.argv.includes('--force'),slotStartedAt:easternSlot(),live,
