@@ -10,6 +10,9 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   const page=Number(target.searchParams.get('_p')||1);await tab.playwright.getByText(new RegExp('Page\\s+'+page+' of \\d+')).waitFor({state:'visible',timeoutMs:20000});
   const heading=await headings(),positions=await tab.playwright.getByText(new RegExp('Page\\s+'+page+' of \\d+')).allTextContents();
   const lastPage=Number(positions.find(t=>/of\s+\d+/.test(t))?.match(/of\s+(\d+)/)?.[1]);
+  // Restore pricing only for a partially read page resumed after interruption.
+  const visibleUrls=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>e.querySelector('a[href*="/inventory/"]')?.href));
+  for(let i=0;i<visibleUrls.length;i++)if(state.details[visibleUrls[i]])await tab.playwright.locator('.hit').nth(i).getByRole('button',{name:'pricing tab',exact:true}).click();
   const cards=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>({text:e.innerText,url:e.querySelector('a[href*="/inventory/"]')?.href})));
   if(!cards.length||!Number.isInteger(lastPage)||lastPage<page)throw Error('Incomplete Hutchinson page');
   for(let i=0;i<cards.length;i++){
