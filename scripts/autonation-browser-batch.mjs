@@ -3,7 +3,7 @@
 export async function autoNationBrowserBatch(tab,state,config,{maxPages=3,maxVehicles=5}={}){
  if(maxPages<1||maxPages>3||maxVehicles<1||maxVehicles>5)throw Error('Batch exceeds bounded limits.');
  if(state.phase==='list'){
-  if(!state.cards.length){await tab.goto(config.origin+config.inventoryPath);await tab.playwright.getByRole('button',{name:/^Load next (?:[1-9]|1\d|2[0-4])$/i}).waitFor({state:'visible',timeoutMs:25000});}
+  if(!state.cards.length){if(await tab.url()!==config.origin+config.inventoryPath)await tab.goto(config.origin+config.inventoryPath);await tab.playwright.getByRole('button',{name:/^Load next (?:[1-9]|1\d|2[0-4])$/i}).waitFor({state:'visible',timeoutMs:25000});}
   for(let page=0;page<maxPages;page++){
    await tab.playwright.locator('[id^="vehicle_"]').filter({has:tab.playwright.locator('a[id^="srp-tile-vdp-link-"]')}).first().waitFor({state:'attached',timeoutMs:25000});
    const e=await tab.playwright.evaluate(()=>({store:document.querySelector('#store-name')?.textContent.trim(),count:document.querySelector('#div-srp-results-count-component')?.textContent,cards:[...document.querySelectorAll('[id^="vehicle_"]')].filter(c=>/^vehicle_[A-HJ-NPR-Z0-9]{17}$/.test(c.id)).map(c=>({vin:c.id.slice(8),url:c.querySelector('a[id^="srp-tile-vdp-link-"]')?.href,priceLabel:c.querySelector('.price-label')?.textContent.trim(),price:c.querySelector('[id^="srp-tile-lockedprice-"]')?.textContent.trim(),store:c.querySelector('.store-desc')?.textContent.trim()})),next:[...document.querySelectorAll('button')].some(b=>/^Load next (?:[1-9]|1\d|2[0-4])$/i.test(b.textContent.trim())&&!b.disabled)}));
@@ -24,8 +24,12 @@ export async function autoNationBrowserBatch(tab,state,config,{maxPages=3,maxVeh
  }else if(state.phase==='details'){
   for(let n=0;n<maxVehicles&&state.detailCount<state.cards.length;n++){
    const card=state.cards[state.detailCount];await tab.goto(card.url);await tab.playwright.locator('#my-app-state').waitFor({state:'attached',timeoutMs:25000});
-   const e=await tab.playwright.evaluate(()=>{const s=JSON.parse(document.querySelector('#my-app-state').textContent),v=s.VehicleDetails;return {url:location.href,storeId:s.StoreInfo?.HyperionId,vehicle:v&&{Vin:v.Vin,StockNumber:v.StockNumber,HyperionId:v.HyperionId,ActualHyperionId:v.ActualHyperionId,IsAvailabile:v.IsAvailabile,StockType:v.StockType,StockTypeForSite:v.StockTypeForSite,Make:v.Make,Model:v.Model,Year:v.Year,Trim:v.Trim,ExteriorColor:v.ExteriorColor,InteriorColor:v.InteriorColor,Mileage:v.Mileage,Certification:v.Certification,FuelType:v.FuelType,InventoryVehicleDetail:{PricingStack:v.InventoryVehicleDetail?.PricingStack,VehicleHistory:{CarfaxUrl:v.InventoryVehicleDetail?.VehicleHistory?.CarfaxUrl}}}};});
-   if(e.vehicle?.Vin!==card.vin)throw Error('Detail page VIN changed or source denied access.');
+   const readDetail=()=>tab.playwright.evaluate(()=>{const s=JSON.parse(document.querySelector('#my-app-state').textContent),v=s.VehicleDetails;return {url:location.href,storeId:s.StoreInfo?.HyperionId,vehicle:v&&{Vin:v.Vin,StockNumber:v.StockNumber,HyperionId:v.HyperionId,ActualHyperionId:v.ActualHyperionId,IsAvailabile:v.IsAvailabile,StockType:v.StockType,StockTypeForSite:v.StockTypeForSite,Make:v.Make,Model:v.Model,Year:v.Year,Trim:v.Trim,ExteriorColor:v.ExteriorColor,InteriorColor:v.InteriorColor,Mileage:v.Mileage,Certification:v.Certification,FuelType:v.FuelType,InventoryVehicleDetail:{PricingStack:v.InventoryVehicleDetail?.PricingStack,VehicleHistory:{CarfaxUrl:v.InventoryVehicleDetail?.VehicleHistory?.CarfaxUrl}}}};});
+   let e,retry=false;
+   try{e=await readDetail();}catch(error){if(error?.name!=='SyntaxError')throw error;retry=true;}
+   if(e&&(e.vehicle?.Vin!==card.vin||String(e.storeId)!==String(config.storeId)||String(e.vehicle?.HyperionId)!==String(config.storeId)))retry=true;
+   if(retry){await tab.reload();await tab.playwright.locator('#my-app-state').waitFor({state:'attached',timeoutMs:25000});e=await readDetail();}
+   if(e.vehicle?.Vin!==card.vin||String(e.storeId)!==String(config.storeId)||String(e.vehicle?.HyperionId)!==String(config.storeId))throw Error('Detail page VIN or advertised store changed or source denied access.');
    state.evidence.push({...e,expectedVin:card.vin,cardPrice:card.price});state.detailCount++;
   }
   if(state.detailCount===state.cards.length){state.phase='confirm-list';state.confirmation={phase:'list',startedAt:state.startedAt,cards:[],evidence:[],detailCount:0};}
@@ -39,5 +43,3 @@ export async function autoNationBrowserBatch(tab,state,config,{maxPages=3,maxVeh
  }
  return {phase:state.phase,total:state.total,listCount:state.cards.length,detailCount:state.detailCount};
 }
-
-

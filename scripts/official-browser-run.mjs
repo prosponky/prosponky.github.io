@@ -1,16 +1,16 @@
 import {collectCarfaxBatch} from './browser-carfax.mjs';
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
-import {resolve} from 'node:path';
+import {resolve,dirname} from 'node:path';
 import {collectBrowserBatch} from './browser-inventory.mjs';
 const root=fileURLToPath(new URL('../',import.meta.url));
-async function save(path,value){await mkdir(resolve(root,'tmp'),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(value));await rename(path+'.tmp',path);}
-export async function createBrowserRun(store){
+async function save(path,value){await mkdir(dirname(path),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(value));await rename(path+'.tmp',path);}
+export async function createBrowserRun(store,{directory=resolve(root,'tmp')}={}){
  const registry=JSON.parse(await readFile(resolve(root,'data/dealership-sources.json'),'utf8')),config=registry[store];
  if(config?.adapter!=='dealer-inspire-browser')throw Error('Store does not use the registered browser adapter');
  const id=new Date().toISOString().replaceAll(':','-');
- const base=resolve(root,'tmp',store+'-official-'+id);
- return {store,config,checkpoint:base+'-checkpoint.json',snapshot:base+'-snapshot.json',health:resolve(root,'tmp','inventory-health-'+store+'.json')};
+ const base=resolve(directory,store+'-official-'+id);
+ const run={store,config,checkpoint:base+'-checkpoint.json',snapshot:base+'-snapshot.json',health:resolve(directory,'inventory-health-'+store+'.json')};await save(base+'-run.json',run);return run;
 }
 export async function runBrowserBatch(tab,run,{maxPages=3}={}){
  let checkpoint;try{checkpoint=JSON.parse(await readFile(run.checkpoint,'utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}

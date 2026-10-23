@@ -1,6 +1,6 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';import {pathToFileURL} from 'node:url';
-const allowed=new Set(['greenway.json','greenway-prices.json','greenway-carfax.json','coggin-atlantic.json','coggin-avenues.json','coggin-atlantic-links.json','coggin-avenues-links.json','autonation-jacksonville.json']);
+const allowed=new Set(['greenway.json','greenway-prices.json','greenway-carfax.json','coggin-atlantic.json','coggin-avenues.json','coggin-atlantic-links.json','coggin-avenues-links.json','autonation-jacksonville.json','hutchinson-kia.json','hutchinson-gmc.json','hutchinson-cadillac.json']);
 export async function verifyPublishedSnapshots(files,{readExpected,fetchLive,wait=ms=>new Promise(r=>setTimeout(r,ms)),attempts=61,intervalMs=10000,timeoutMs=600000,now=Date.now,onProgress=()=>{}}={}){
  if(!files.length||new Set(files).size!==files.length||files.some(file=>!allowed.has(file)))throw Error('Invalid live snapshot selection');
  if(!Number.isInteger(attempts)||attempts<1||!Number.isFinite(intervalMs)||intervalMs<0||!Number.isFinite(timeoutMs)||timeoutMs<=0)throw Error('Invalid publication wait limits');

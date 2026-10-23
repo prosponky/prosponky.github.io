@@ -1,3 +1,4 @@
+import {verifyPublishedSnapshots} from './verify-published-inventory.mjs';
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -23,7 +24,7 @@ try{
   const identity=git(['remote','get-url','origin']).trim().match(/github\.com[:/]([^/]+\/[^/]+?)(?:\.git)?$/)?.[1];if(!identity)throw Error('Unsupported remote.');
   let verified=false,buildRequestWarning;
   try{execFileSync('gh',['api','--method','POST','repos/'+identity+'/pages/builds'],{stdio:['ignore','pipe','pipe'],timeout:20000});}catch(e){buildRequestWarning=String(e.stderr||e.message).slice(-1000);}
-  for(let i=0;i<45;i++){try{const r=await fetch('https://'+identity.split('/')[0]+'.github.io/'+file+'?verify='+Date.now(),{signal:AbortSignal.timeout(10000)});if(r.ok&&JSON.stringify(await r.json())===JSON.stringify(data)){verified=true;break;}}catch{}await new Promise(r=>setTimeout(r,2000));}
+  const report=await verifyPublishedSnapshots(['autonation-jacksonville.json'],{readExpected:async()=>data,fetchLive:async()=>{const response=await fetch('https://'+identity.split('/')[0]+'.github.io/'+file+'?verify='+Date.now(),{cache:'no-store',signal:AbortSignal.timeout(10000)});if(!response.ok)throw Error('Live map HTTP '+response.status);return response.json();},onProgress:p=>console.log(JSON.stringify(p))});verified=report.allVerified;
   await writeFile('tmp/autonation-publication.json',JSON.stringify({count:data.vehicles.length,checkedAt:data.checkedAt,liveVerified:verified,buildRequestWarning},null,2));if(!verified)throw Error('Pushed snapshot is not yet verified live.');
   console.log(JSON.stringify({count:data.vehicles.length,liveVerified:true,buildRequestWarning}));
  }

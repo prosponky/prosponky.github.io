@@ -89,3 +89,7 @@ If the Chrome extension disconnects, the supported in-app browser may continue t
 ## Deployment verification window (October 23)
 
 GitHub Pages can take longer than ninety seconds after a successful push. Public inventory, Greenway price publication and local Coggin recovery now share a bounded ten-minute exact-map verification window, checking every ten seconds and reporting progress. A delayed build can recover; a stale or modified HTTP 200 response still fails. Access denials remain terminal. Collection outcome, publication and official-source failures must remain separate in reports. A manual workflow dispatch is a recovery test, not evidence that the next scheduled run has succeeded.
+
+## All seven stores (October 23)
+
+All current stores are registered in data/dealership-sources.json. The resumed 7 a.m./noon Eastern heartbeat includes Greenway, both Coggin stores, AutoNation and all three Hutchinson stores. Follow docs/all-store-refresh.md for exact supported-browser, checkpoint, finalization, publication and per-store reporting instructions. A successful manual cloud run or current map does not prove a scheduled full seven-store cycle.

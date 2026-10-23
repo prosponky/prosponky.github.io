@@ -1,17 +1,17 @@
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
-import {resolve} from 'node:path';
+import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {autoNationBrowserBatch} from './autonation-browser-batch.mjs';
+const {autoNationBrowserBatch}=await import(new URL('./autonation-browser-batch.mjs',import.meta.url).href+'?fresh='+Date.now());
 import {autoNationVehicle,validateAutoNationFeed} from '../src/autonation-inventory.js';
 import {inventoryChanges} from '../src/inventory-changes.js';
 const root=fileURLToPath(new URL('../',import.meta.url));
-async function save(path,data){await mkdir(resolve(root,'tmp'),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(data,null,2));await rename(path+'.tmp',path);}
-export async function createAutoNationRun({scope='physical'}={}){
+async function save(path,data){await mkdir(dirname(path),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(data,null,2));await rename(path+'.tmp',path);}
+export async function createAutoNationRun({scope='physical',directory=resolve(root,'tmp')}={}){
  const config=JSON.parse(await readFile(resolve(root,'data/dealership-sources.json'),'utf8'))['autonation-jacksonville'];
  if(config?.adapter!=='autonation-browser'||!['physical','advertised'].includes(scope))throw Error('Invalid AutoNation browser configuration.');
- const base=resolve(root,'tmp','autonation-'+new Date().toISOString().replaceAll(':','-'));
- const run={config,scope,checkpoint:base+'-checkpoint.json',snapshot:base+'-snapshot.json',health:resolve(root,'tmp/inventory-health-autonation-jacksonville.json')};
- await save(run.checkpoint,{phase:'list',startedAt:new Date().toISOString(),cards:[],evidence:[],detailCount:0});return run;
+ const base=resolve(directory,'autonation-'+new Date().toISOString().replaceAll(':','-'));
+ const run={config,scope,checkpoint:base+'-checkpoint.json',snapshot:base+'-snapshot.json',health:resolve(directory,'inventory-health-autonation-jacksonville.json')};
+ await save(base+'-run.json',run);await save(run.checkpoint,{phase:'list',startedAt:new Date().toISOString(),cards:[],evidence:[],detailCount:0});return run;
 }
 export async function finalizeAutoNationRun(state,run){
  const age=Date.now()-Date.parse(state.startedAt);

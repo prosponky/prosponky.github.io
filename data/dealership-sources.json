@@ -4,7 +4,16 @@
     "store": "GW Kia Ave",
     "origin": "https://www.greenwaykiaattheavenues.com",
     "adapter": "dealer-inspire-browser",
-    "sections": [{"path":"/new-vehicles/","condition":"new"},{"path":"/pre-owned-vehicles/","condition":"used"}],
+    "sections": [
+      {
+        "path": "/new-vehicles/",
+        "condition": "new"
+      },
+      {
+        "path": "/pre-owned-vehicles/",
+        "condition": "used"
+      }
+    ],
     "cardSelector": ".hit",
     "nextButton": "next page",
     "countHeading": "Vehicles for Sale",
@@ -37,5 +46,59 @@
     "account": "cogginnissanattheavenues",
     "salePriceLabel": "Retail Price",
     "priceFile": "coggin-avenues-links.json"
+  },
+  "hutchinson-kia": {
+    "store": "Hutchinson Kia",
+    "sections": [
+      {
+        "path": "/new-vehicles/",
+        "condition": "new"
+      },
+      {
+        "path": "/used-vehicles/",
+        "condition": "used"
+      }
+    ],
+    "adapter": "hutchinson-browser",
+    "key": "kia",
+    "origin": "https://www.kiaofmacon.com",
+    "priceFile": "hutchinson-kia.json",
+    "name": "Hutchinson Kia of Macon"
+  },
+  "hutchinson-gmc": {
+    "store": "Hutchinson GMC",
+    "sections": [
+      {
+        "path": "/new-vehicles/",
+        "condition": "new"
+      },
+      {
+        "path": "/used-vehicles/",
+        "condition": "used"
+      }
+    ],
+    "adapter": "hutchinson-browser",
+    "key": "gmc",
+    "origin": "https://www.hutchinsongmc.com",
+    "priceFile": "hutchinson-gmc.json",
+    "name": "Hutchinson GMC"
+  },
+  "hutchinson-cadillac": {
+    "store": "Hutchinson Cadillac",
+    "sections": [
+      {
+        "path": "/new-vehicles/",
+        "condition": "new"
+      },
+      {
+        "path": "/used-vehicles/",
+        "condition": "used"
+      }
+    ],
+    "adapter": "hutchinson-browser",
+    "key": "cadillac",
+    "origin": "https://www.hutchinsoncadillac.com",
+    "priceFile": "hutchinson-cadillac.json",
+    "name": "Hutchinson Cadillac"
   }
 }

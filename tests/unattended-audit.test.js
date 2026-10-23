@@ -23,3 +23,8 @@ test('amount audit separates fresh and retained MSRP and rejects missing origina
  assert.throws(()=>amountMetrics({a:24000},{a:true},{},now),/original verification date/);
  assert.throws(()=>amountMetrics({a:24000},{a:true},{a:'2999-01-01T00:00:00Z'},now),/verification date/);
 });
+
+test('all seven stores are required when Hutchinson is registered',()=>{
+ const {registry,maps}=fixture();for(const key of ['kia','gmc','cadillac']){const origin='https://'+key+'.example',file='hutchinson-'+key+'.json';registry['hutchinson-'+key]={adapter:'hutchinson-browser',origin,priceFile:file};const listing=origin+'/inventory/used-example-'+used.toLowerCase()+'/';maps[file]={source:origin,complete:true,checkedAt,total:1,vehicles:[{vin:used,sourceUrl:listing,dealerListingUrl:listing,condition:'used',msrp:null,advertisedPrice:15000,interiorColor:'Sport',exteriorColor:'White',carfaxUrl:null}]};}
+ let report=auditOfficialMaps(registry,maps,{now});assert.equal(Object.keys(report.stores).length,7);assert.equal(report.allCurrent,true);delete maps['hutchinson-kia.json'];report=auditOfficialMaps(registry,maps,{now});assert.equal(report.allCurrent,false);assert.equal(report.stores['hutchinson-kia'].status,'unverified-live-evidence');
+});

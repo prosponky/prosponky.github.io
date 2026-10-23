@@ -1,3 +1,4 @@
+import {validateHutchinsonFeed} from '../src/hutchinson-inventory.js';
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
@@ -34,7 +35,7 @@ function validateGreenway(data,reports,config,now){
 }
 
 export function auditOfficialMaps(registry,maps,{now=Date.now(),slotStartedAt=easternSlot(new Date(now)),errors={}}={}){
- const report={checkedAt:new Date(now).toISOString(),slotStartedAt,scope:'all-four-official-store-maps',stores:{},allCurrent:false,scheduledEndToEndProven:false};
+ const report={checkedAt:new Date(now).toISOString(),slotStartedAt,scope:'all-official-store-maps',stores:{},allCurrent:false,scheduledEndToEndProven:false};
  for(const [key,config]of Object.entries(registry)){
   const file=config.priceFile||'autonation-jacksonville.json',data=maps[file];
   try{
@@ -51,12 +52,16 @@ export function auditOfficialMaps(registry,maps,{now=Date.now(),slotStartedAt=ea
     if(data.scope!=='physical'||data.promotionalTileCount!==3||data.resultsTotal!==data.advertisedTotal+3||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt))throw Error('AutoNation physical scope or final listing reconciliation is incomplete');
     for(const row of data.vehicles)if(row.interiorColor!==undefined&&typeof row.interiorColor!=='string'||typeof row.color!=='string'||row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('AutoNation vehicle color/report fields are invalid');
     metrics={total:data.vehicles.length,advertisedChecked:data.advertisedTotal,interiorColors:data.vehicles.filter(v=>typeof v.interiorColor==='string'&&v.interiorColor.trim()).length,missingInteriorFields:data.vehicles.filter(v=>v.interiorColor===undefined).length,verifiedAmounts:data.vehicles.filter(v=>v.advertisedPrice>0).length,retainedAmounts:data.vehicles.filter(v=>v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length};
+   }else if(config.adapter==='hutchinson-browser'){
+    validateHutchinsonFeed(data,config);
+    for(const row of data.vehicles){if(row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('Invalid Hutchinson dealer report');for(const [field,date,retained]of [['advertisedPrice','priceCheckedAt','priceRetained'],['msrp','msrpCheckedAt','msrpRetained']])if(row[field]>0&&row[retained]===true)validDate(row[date],Date.parse(data.checkedAt));}
+    metrics={total:data.total,interiorColors:data.vehicles.filter(v=>v.interiorColor.trim()).length,verifiedAmounts:data.vehicles.filter(v=>(v.condition==='new'?v.msrp:v.advertisedPrice)>0).length,retainedAmounts:data.vehicles.filter(v=>v.condition==='new'?v.msrpRetained===true:v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length};
    }else throw Error('Unregistered official map adapter');
    const current=Date.parse(data.checkedAt)>=Date.parse(slotStartedAt);
    report.stores[key]={status:current?(metrics.missingInteriorFields?'incomplete-current-fields':'verified-in-current-slot'):'retained-earlier-verification',checkedAt:data.checkedAt,...metrics};
   }catch(e){report.stores[key]={status:'unverified-live-evidence',reason:e.message};}
  }
- report.allCurrent=Object.keys(report.stores).length===4&&Object.values(report.stores).every(s=>s.status==='verified-in-current-slot');
+ report.allCurrent=Object.keys(report.stores).length===Object.keys(registry).length&&Object.values(report.stores).every(s=>s.status==='verified-in-current-slot');
  // Map freshness alone cannot establish which trigger ran or whether anyone
  // intervened. Scheduled execution must be proved from independent run evidence.
  return report;
