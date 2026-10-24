@@ -24,7 +24,7 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   }
   state.pages.push({condition:section.condition,page,lastPage,heading,cards,url:await tab.url()});
   if(page===lastPage){state.sectionIndex++;state.nextUrl=sections[state.sectionIndex]?new URL(sections[state.sectionIndex].path,config.origin).href:null;if(!state.nextUrl){state.phase='inventory-confirm';state.inventoryConfirmIndex=0;state.inventoryFinalChecks=[];state.detailQueue=state.pages.filter(p=>p.condition==='used').flatMap(p=>p.cards).map(c=>({url:c.url,vin:(c.text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1]||new URL(c.url).pathname.match(/-([a-z0-9]+)\/$/i)?.[1]).toUpperCase()}));}}
-  else{const next=tab.playwright.getByRole('button',{name:'next page',exact:true});if(!await next.isEnabled())throw Error('Hutchinson pagination stopped early');const vin=cards[0].text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1];await next.press('Enter');await tab.playwright.locator('.hit').filter({hasText:vin}).waitFor({state:'hidden',timeoutMs:20000});await tab.playwright.domSnapshot();state.nextUrl=await tab.url();}
+  else{const next=tab.playwright.getByRole('button',{name:'next page',exact:true});if(!await next.isEnabled())throw Error('Hutchinson pagination stopped early');await next.press('Enter');await tab.playwright.getByText(new RegExp('Page\\s+'+(page+1)+' of \\d+')).waitFor({state:'visible',timeoutMs:20000});await tab.playwright.domSnapshot();await tab.playwright.waitForURL('**/*_p='+String(page+1)+'&**',{timeoutMs:20000});state.nextUrl=await tab.url();}
   await onCheckpoint(state);
  }
  else if(state.phase==='inventory-ready'){state.phase='details';await onCheckpoint(state);}
