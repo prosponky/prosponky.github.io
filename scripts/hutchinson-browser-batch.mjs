@@ -23,9 +23,13 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
    state.details[cards[i].url]={text,checkedAt:new Date().toISOString()};
   }
   state.pages.push({condition:section.condition,page,lastPage,heading,cards,url:await tab.url()});
-  if(page===lastPage){state.sectionIndex++;state.nextUrl=sections[state.sectionIndex]?new URL(sections[state.sectionIndex].path,config.origin).href:null;if(!state.nextUrl){state.phase='details';state.detailQueue=state.pages.filter(p=>p.condition==='used').flatMap(p=>p.cards).map(c=>({url:c.url,vin:(c.text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1]||new URL(c.url).pathname.match(/-([a-z0-9]+)\/$/i)?.[1]).toUpperCase()}));}}
+  if(page===lastPage){state.sectionIndex++;state.nextUrl=sections[state.sectionIndex]?new URL(sections[state.sectionIndex].path,config.origin).href:null;if(!state.nextUrl){state.phase='inventory-confirm';state.inventoryConfirmIndex=0;state.inventoryFinalChecks=[];state.detailQueue=state.pages.filter(p=>p.condition==='used').flatMap(p=>p.cards).map(c=>({url:c.url,vin:(c.text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1]||new URL(c.url).pathname.match(/-([a-z0-9]+)\/$/i)?.[1]).toUpperCase()}));}}
   else{const next=tab.playwright.getByRole('button',{name:'next page',exact:true});if(!await next.isEnabled())throw Error('Hutchinson pagination stopped early');const vin=cards[0].text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1];await next.press('Enter');await tab.playwright.locator('.hit').filter({hasText:vin}).waitFor({state:'hidden',timeoutMs:20000});await tab.playwright.domSnapshot();state.nextUrl=await tab.url();}
   await onCheckpoint(state);
+ }
+ else if(state.phase==='inventory-ready'){state.phase='details';await onCheckpoint(state);}
+ else if(state.phase==='inventory-confirm'){
+  for(let n=0;n<maxPages&&state.inventoryConfirmIndex<sections.length;n++){const section=sections[state.inventoryConfirmIndex];await tab.goto(new URL(section.path,config.origin).href);await checkPage();await tab.playwright.getByText(/Page\s+1 of \d+/).waitFor({state:'visible',timeoutMs:20000});state.inventoryFinalChecks.push({condition:section.condition,headings:await headings()});state.inventoryConfirmIndex++;if(state.inventoryConfirmIndex===sections.length){state.phase='inventory-ready';state.inventoryFinishedAt=new Date().toISOString();}await onCheckpoint(state);}
  }
  else if(state.phase==='details'){
   for(let n=0;n<maxVehicles&&state.detailIndex<state.detailQueue.length;n++){
@@ -38,5 +42,5 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   const section=sections[state.confirmIndex];await tab.goto(new URL(section.path,config.origin).href);await checkPage();await tab.playwright.getByText(/Page\s+1 of \d+/).waitFor({state:'visible',timeoutMs:20000});state.finalChecks.push({condition:section.condition,headings:await headings()});state.confirmIndex++;
   if(state.confirmIndex===sections.length){state.phase='done';state.finishedAt=new Date().toISOString();}await onCheckpoint(state);
  }
- return {phase:state.phase,pages:state.pages.length,detailIndex:state.detailIndex,total:state.detailQueue.length,done:state.phase==='done'};
+ return {phase:state.phase,pages:state.pages.length,detailIndex:state.detailIndex,total:state.detailQueue.length,inventoryReady:state.phase==='inventory-ready',done:state.phase==='done'};
 }

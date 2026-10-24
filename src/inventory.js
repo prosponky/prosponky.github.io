@@ -38,6 +38,7 @@ export function inventoryColorLabel(value,make=''){
  const matches=Object.entries(colorFamilies).filter(([,shades])=>shades.some(shade=>words.includes(shade))).map(([name])=>name);
  return matches.length?matches.map(name=>name[0].toUpperCase()+name.slice(1)).join(' / '):(raw||'Color unavailable');
 }
+const inventorySearchCache=new WeakMap();
 export function inventorySearchMatches(vehicle,query){
  const normalize=value=>String(value??'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
  const normalized=normalize(query);
@@ -45,8 +46,8 @@ export function inventorySearchMatches(vehicle,query){
  const wantsCertified=certification.test(normalized);
  if(wantsCertified&&(vehicle.condition!=='used'||vehicle.certified!==true))return false;
  const tokens=normalized.replace(certification,' ').split(/\s+/).filter(Boolean);
- const details=normalize([vehicle.stockNumber,vehicle.vin,vehicle.make,vehicle.model,vehicle.trim,vehicle.year,vehicle.color,vehicle.condition,vehicle.vehicleTitle].filter(Boolean).join(' '));
- const color=normalize(vehicle.color);
+ let cached=inventorySearchCache.get(vehicle);if(!cached){cached={details:normalize([vehicle.stockNumber,vehicle.vin,vehicle.make,vehicle.model,vehicle.trim,vehicle.year,vehicle.color,vehicle.condition,vehicle.vehicleTitle].filter(Boolean).join(' ')),color:normalize(vehicle.color)};inventorySearchCache.set(vehicle,cached);}
+ const {details,color}=cached;
  const colors={...colorFamilies,grey:colorFamilies.gray};
  return tokens.every(token=>tokens.length>1&&/^(19|20)\d{2}$/.test(token)?String(vehicle.year)===token:colors[token]?colors[token].some(shade=>color.split(' ').includes(shade)):details.includes(token));
 }
@@ -79,7 +80,7 @@ export async function loadInventory(){
  // Direct dealer links are matched by exact VIN; never construct guessed vehicle URLs.
  if(!config.officialFeed)try{
   const response=await fetch(inventoryBase+'/inventory/'+(config.account?config.file+'-links.json':'dealer-links.json'),{cache:'no-store'});
-  if(response.ok){const map=await response.json();if(config.account)data=reconcileOfficialAvailability(data,map,config);for(const row of data.vehicles){const link=config.account?verifiedCogginLink(map.stocks?.[stockKey(row.stockNumber)],config.origin):verifiedDealerLink(map.links?.[stockKey(row.vin)],row.vin);if(link)row.dealerListingUrl=link;if(config.account&&link)row.certified=row.condition==='used'&&map.certified?.[row.vin]===true;if(config.account&&link&&row.condition==='used')row.carfaxUrl=verifiedCarfaxUrl(map.carfax?.[row.vin]);if(config.account&&link&&typeof map.interiorColors?.[row.vin]==='string'&&map.interiorColors[row.vin].trim())row.interiorColor=map.interiorColors[row.vin].trim();if(config.account&&link&&typeof map.trims?.[row.vin]==='string')row.trim=map.trims[row.vin].trim();if(config.account&&row.condition!=='new'){const price=map.retailPrices?.[row.vin];row.retailPrice=priceEvidenceAvailable(map)&&typeof price==='number'&&Number.isFinite(price)&&price>0?price:null;}if(config.account&&row.condition==='new') {if(map.source===config.origin&&link&&Object.hasOwn(map,'msrps'))applyOfficialMsrp(row,map.msrps?.[row.vin],map.msrpCheckedAt?.[row.vin]||map.checkedAt,map.msrpRetained?.[row.vin]);row.rebateOffers=usableCustomerCash(map.offers?.[row.vin],map.checkedAt);row.offerCheckedAt=map.checkedAt;}}}
+  if(response.ok){const map=await response.json();if(config.account)data=reconcileOfficialAvailability(data,map,config);for(const row of data.vehicles){const link=config.account?verifiedCogginLink(map.stocks?.[stockKey(row.stockNumber)],config.origin):verifiedDealerLink(map.links?.[stockKey(row.vin)],row.vin);if(link)row.dealerListingUrl=link;if(config.account&&link)row.certified=row.condition==='used'&&map.certified?.[row.vin]===true;if(config.account&&link&&row.condition==='used')row.carfaxUrl=verifiedCarfaxUrl(map.carfax?.[row.vin]);if(config.account&&link&&typeof map.interiorColors?.[row.vin]==='string'&&map.interiorColors[row.vin].trim())row.interiorColor=map.interiorColors[row.vin].trim();if(config.account&&link&&typeof map.trims?.[row.vin]==='string')row.trim=map.trims[row.vin].trim();if(config.account&&row.condition!=='new'){const price=map.retailPrices?.[row.vin];row.retailPrice=priceEvidenceAvailable(map)&&typeof price==='number'&&Number.isFinite(price)&&price>0?price:null;row.priceCheckedAt=row.retailPrice===null?null:map.priceCheckedAt?.[row.vin]||map.checkedAt;row.priceRetained=row.retailPrice!==null&&map.priceRetained?.[row.vin]===true;}if(config.account&&row.condition==='new') {if(map.source===config.origin&&link&&Object.hasOwn(map,'msrps'))applyOfficialMsrp(row,map.msrps?.[row.vin],map.msrpCheckedAt?.[row.vin]||map.checkedAt,map.msrpRetained?.[row.vin]);row.rebateOffers=usableCustomerCash(map.offers?.[row.vin],map.checkedAt);row.offerCheckedAt=map.checkedAt;}}}
  }catch{} // Inventory and pricing remain usable if the separate link map is unavailable.
  if(!config.account&&!config.officialFeed){
   let official;try{const response=await fetch(inventoryBase+'/inventory/greenway-prices.json',{cache:'no-store'});if(response.ok)official=await response.json();}catch{}
@@ -88,7 +89,7 @@ export async function loadInventory(){
    const report=reports?.reports?.[stockKey(row.vin)];if(row.condition==='used'&&reports?.source===config.origin&&report?.stockNumber===row.stockNumber&&verifiedDealerLink(report.listingUrl,row.vin))row.carfaxUrl=verifiedCarfaxUrl(report.url);
    const record=official?.prices?.[stockKey(row.vin)];
    if(verifiedDealerLink(record?.url,row.vin)&&record.stockNumber===row.stockNumber&&record.condition===row.condition){row.interiorColor=report?.interiorColor||record.interiorColor||row.interiorColor||'';row.trim=trimFromTitle(row,record.vehicleTitle);row.certified=row.condition==='used'&&record.certified===true;if(row.condition==='new'&&official.source===config.origin)applyOfficialMsrp(row,record.msrp,record.msrpCheckedAt||official.checkedAt,record.msrpRetained);}
-   if(row.condition!== 'new')row.advertisedPrice=priceEvidenceAvailable(official||{})&&verifiedDealerLink(record?.url,row.vin)&&typeof record?.price==='number'&&Number.isFinite(record.price)&&record.price>0?record.price:null;
+   if(row.condition!== 'new'){row.advertisedPrice=priceEvidenceAvailable(official||{})&&verifiedDealerLink(record?.url,row.vin)&&record?.stockNumber===row.stockNumber&&record?.condition===row.condition&&typeof record?.price==='number'&&Number.isFinite(record.price)&&record.price>0?record.price:null;row.priceCheckedAt=row.advertisedPrice===null?null:record.priceCheckedAt||official.checkedAt;row.priceRetained=row.advertisedPrice!==null&&record.priceRetained===true;}
   }
  }
  const arrivals=new Set((data.dailyChanges?.addedVins||[]).map(stockKey));
@@ -156,3 +157,9 @@ export function inventoryStockLabel(row){
  return inventoryStores[row.storeLabel]?.hutchinson&&vin&&(!stock||stock.toUpperCase()===vin.toUpperCase())?vin.slice(-8):stock||vin;
 }
 
+
+export function inventoryFreshnessLabels(data,now=Date.now()){
+ const fmt=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'});
+ return (data.feeds||[data]).map(feed=>{const date=Date.parse(feed.checkedAt),rows=feed.vehicles||[],retained=rows.some(v=>v.condition==='new'?v.msrpRetained:v.priceRetained),dates=rows.filter(v=>typeof inventoryDisplayPrice(v)==='number').map(v=>Date.parse((v.condition==='new'?v.msrpCheckedAt:v.priceCheckedAt)||v.checkedAt||feed.checkedAt)).filter(t=>Number.isFinite(t)&&t<=now),oldest=dates.length?Math.min(...dates):null;
+ return `${feed.storeLabel||'Inventory'}: inventory checked ${Number.isFinite(date)?fmt.format(date):'date unavailable'}.${!inventoryFresh(feed,now)?' Refresh overdue; saved prices shown.':''}${oldest!==null?' Oldest saved price check: '+fmt.format(oldest)+'.':''}${retained?' Some prices retain an earlier verification date.':''}`;});
+}

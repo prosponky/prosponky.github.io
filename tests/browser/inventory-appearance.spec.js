@@ -22,3 +22,5 @@ test('reduced motion preserves the foil outline and crown without motion',async(
 
 
 
+
+test('inventory search and store freshness stay usable with deferred offscreen rows',async({page})=>{await fixture(page,{group:true});await page.getByLabel('View store inventory').selectOption('Hutchinson');await page.getByText('Inventory last checked',{exact:true}).click();await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson Kia: inventory checked');await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson GMC: inventory checked');await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson Cadillac: inventory checked');await page.locator('#browse-search').fill('EXISTING');await expect(page.locator('.inventory-item:visible')).toHaveCount(3);await page.locator('#browse-search').fill('ARRIVED');await expect(page.locator('.inventory-item:visible')).toHaveCount(3);});

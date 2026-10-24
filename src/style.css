@@ -487,3 +487,6 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 @media(prefers-reduced-motion:reduce){#inventory-pinned .inventory-item.pinned .inventory-tile{animation:none;background-position:90% 0,0 0,0 0}}
 @media(forced-colors:active){#inventory-pinned .inventory-item.pinned .inventory-tile{border-color:Highlight;box-shadow:none}}
 
+
+#inventory-list .inventory-item{content-visibility:auto;contain-intrinsic-size:auto 72px}
+.inventory-freshness{font-size:12px;color:#b8c9cd;margin:4px 0 10px}.inventory-freshness p{margin:6px 0;line-height:1.4}

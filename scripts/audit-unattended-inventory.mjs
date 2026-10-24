@@ -53,15 +53,15 @@ export function auditOfficialMaps(registry,maps,{now=Date.now(),slotStartedAt=ea
     for(const row of data.vehicles)if(row.interiorColor!==undefined&&typeof row.interiorColor!=='string'||typeof row.color!=='string'||row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('AutoNation vehicle color/report fields are invalid');
     metrics={total:data.vehicles.length,advertisedChecked:data.advertisedTotal,interiorColors:data.vehicles.filter(v=>typeof v.interiorColor==='string'&&v.interiorColor.trim()).length,missingInteriorFields:data.vehicles.filter(v=>v.interiorColor===undefined).length,verifiedAmounts:data.vehicles.filter(v=>v.advertisedPrice>0).length,retainedAmounts:data.vehicles.filter(v=>v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length};
    }else if(config.adapter==='hutchinson-browser'){
-    validateHutchinsonFeed(data,config);
-    for(const row of data.vehicles){if(row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('Invalid Hutchinson dealer report');for(const [field,date,retained]of [['advertisedPrice','priceCheckedAt','priceRetained'],['msrp','msrpCheckedAt','msrpRetained']])if(row[field]>0&&row[retained]===true)validDate(row[date],Date.parse(data.checkedAt));}
-    metrics={total:data.total,interiorColors:data.vehicles.filter(v=>v.interiorColor.trim()).length,verifiedAmounts:data.vehicles.filter(v=>(v.condition==='new'?v.msrp:v.advertisedPrice)>0).length,retainedAmounts:data.vehicles.filter(v=>v.condition==='new'?v.msrpRetained===true:v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length};
+    validateHutchinsonFeed(data,config);if(data.carfaxAuditAt)validDate(data.carfaxAuditAt,now);
+    for(const row of data.vehicles){if(row.carfaxCheckedAt)validDate(row.carfaxCheckedAt,now);if(row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('Invalid Hutchinson dealer report');for(const [field,date,retained]of [['advertisedPrice','priceCheckedAt','priceRetained'],['msrp','msrpCheckedAt','msrpRetained']])if(row[field]>0&&row[retained]===true)validDate(row[date],Date.parse(data.checkedAt));}
+    metrics={total:data.total,interiorColors:data.vehicles.filter(v=>v.interiorColor.trim()).length,verifiedAmounts:data.vehicles.filter(v=>(v.condition==='new'?v.msrp:v.advertisedPrice)>0).length,retainedAmounts:data.vehicles.filter(v=>v.condition==='new'?v.msrpRetained===true:v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length,carfaxAuditAt:data.carfaxAuditAt||null,retainedCarfaxReports:data.vehicles.filter(v=>v.carfaxRetained===true).length,carfaxCurrent:!!data.carfaxAuditAt&&Number.isFinite(Date.parse(data.carfaxAuditAt))&&Date.parse(data.carfaxAuditAt)<=now&&Date.parse(data.carfaxAuditAt)>=Date.parse(slotStartedAt)&&data.vehicles.filter(v=>v.condition==='used').every(v=>Number.isFinite(Date.parse(v.carfaxCheckedAt))&&Date.parse(v.carfaxCheckedAt)>=Date.parse(slotStartedAt)&&Date.parse(v.carfaxCheckedAt)<=now)};
    }else throw Error('Unregistered official map adapter');
    const current=Date.parse(data.checkedAt)>=Date.parse(slotStartedAt);
    report.stores[key]={status:current?(metrics.missingInteriorFields?'incomplete-current-fields':'verified-in-current-slot'):'retained-earlier-verification',checkedAt:data.checkedAt,...metrics};
   }catch(e){report.stores[key]={status:'unverified-live-evidence',reason:e.message};}
  }
- report.allCurrent=Object.keys(report.stores).length===Object.keys(registry).length&&Object.values(report.stores).every(s=>s.status==='verified-in-current-slot');
+ report.allCurrent=Object.keys(report.stores).length===Object.keys(registry).length&&Object.values(report.stores).every(s=>s.status==='verified-in-current-slot'&&s.carfaxCurrent!==false);
  // Map freshness alone cannot establish which trigger ran or whether anyone
  // intervened. Scheduled execution must be proved from independent run evidence.
  return report;
