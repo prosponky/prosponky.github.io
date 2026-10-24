@@ -3,9 +3,9 @@ import {inventoryStores} from '../../src/inventory.js';
 const stores=Object.entries(inventoryStores).filter(([,c])=>c.file&&!c.pending).map(([name])=>name);
 const vin='1N4BL4DV0SN300001',oldVin='1N4BL4DV0SN300002';
 function feed(store,arrived=true){const c=inventoryStores[store],checkedAt=new Date().toISOString();const vehicles=[vin,oldVin].map((v,i)=>{const url=c.origin+(c.storeId?'/cars/'+v+'/vehicle':'/inventory/used-2026-fixture-car-'+v.toLowerCase()+'/');return {vin:v,stockNumber:i?'EXISTING':'ARRIVED',condition:'used',year:2026,make:'Kia',model:'K4',trim:'EX',msrp:null,advertisedPrice:20000,interiorColor:'Black',exteriorColor:'White',color:'White',carfaxUrl:null,dealerListingUrl:url,sourceUrl:url,advertisingStoreId:'2993',physicalStoreId:'2993',checkedAt};});return {source:c.origin,checkedAt,complete:true,total:2,scope:'physical',storeId:'2993',advertisedTotal:2,detailCount:2,promotionalTileCount:3,resultsTotal:5,vehicles,dailyChanges:{date:checkedAt.slice(0,10),addedVins:arrived?[vin]:[]}};}
-async function fixture(page,{group=false}={}){
+async function fixture(page,{group=false,admin=true}={}){
  const cdp=await page.context().newCDPSession(page);await cdp.send('Emulation.setEmulatedMedia',{features:[{name:'prefers-reduced-transparency',value:'no-preference'},{name:'prefers-contrast',value:'no-preference'}]});
- await page.route('**/rest/v1/rpc/**',route=>route.fulfill({json:route.request().url().includes('is_app_admin')?true:[]}));
+ await page.route('**/rest/v1/rpc/**',route=>route.fulfill({json:route.request().url().includes('is_app_admin')?admin:[]}));
  await page.route('**/inventory/*.json',route=>{const file=new URL(route.request().url()).pathname.split('/').at(-1),entry=Object.entries(inventoryStores).find(([,c])=>c.file+'.json'===file);if(entry)return route.fulfill({json:feed(entry[0],!group||entry[0]==='Hutchinson Kia')});if(file==='greenway-prices.json'){const f=feed('GW Kia Ave');return route.fulfill({json:{checkedAt:f.checkedAt,prices:Object.fromEntries(f.vehicles.map(v=>[v.vin,{condition:v.condition,stockNumber:v.stockNumber,url:v.dealerListingUrl,price:20000,msrp:null}]))}});}return route.fulfill({json:{}});});
  await page.goto('/');await page.getByRole('button',{name:'Inventory',exact:true}).click();
 }
@@ -24,3 +24,8 @@ test('reduced motion preserves the foil outline and crown without motion',async(
 
 
 test('inventory search and store freshness stay usable with deferred offscreen rows',async({page})=>{await fixture(page,{group:true});await page.getByLabel('View store inventory').selectOption('Hutchinson');await page.getByText('Inventory last checked',{exact:true}).click();await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson Kia: inventory checked');await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson GMC: inventory checked');await expect(page.locator('.inventory-freshness')).toContainText('Hutchinson Cadillac: inventory checked');await page.locator('#browse-search').fill('EXISTING');await expect(page.locator('.inventory-item:visible')).toHaveCount(3);await page.locator('#browse-search').fill('ARRIVED');await expect(page.locator('.inventory-item:visible')).toHaveCount(3);});
+
+test.describe('regular user freshness visibility',()=>{
+ test.use({dealerStore:'Hutchinson Kia'});
+ test('regular users have inventory but no freshness section',async({page})=>{await fixture(page,{admin:false});await expect(page.locator('[data-browse-vehicle]')).toHaveCount(2);await expect(page.locator('.inventory-freshness')).toHaveCount(0);await expect(page.getByText('Inventory last checked',{exact:false})).toHaveCount(0);await page.locator('#browse-search').fill('EXISTING');await expect(page.locator('.inventory-item:visible')).toHaveCount(1);});
+});
