@@ -47,12 +47,15 @@ export function validateBridgeProgress(previous,state,config){
   same(previous.source,state.source,'source');same(previous.store,state.store,'store');
   assertAcceptedPrefix(previous,state,['pages','finalChecks']);if(state.pages.length-previous.pages.length>1)throw Error('Page batch too large');
   preserveMap(previous.details,state.details,'listing details');preserveMap(previous.reports,state.reports,'reports');
+  if(previous.inventoryFinalChecks)assertAcceptedPrefix(previous,state,['inventoryFinalChecks']);
+  if(previous.duplicateRun&&!state.duplicateRun)throw Error('Accepted confirmation evidence removed');
+  if(state.duplicateRun){same(state.startedAt,state.duplicateRun.startedAt,'duplicate confirmation date');same(state.source,state.duplicateRun.source,'duplicate confirmation source');if(previous.duplicateRun){assertAcceptedPrefix({...previous.duplicateRun,inventoryFinalChecks:previous.duplicateRun.inventoryFinalChecks??[]},{...state.duplicateRun,inventoryFinalChecks:state.duplicateRun.inventoryFinalChecks??[]},['pages','inventoryFinalChecks']);preserveMap(previous.duplicateRun.details,state.duplicateRun.details,'confirmation details');}if(state.duplicateRun.pages.length-(previous.duplicateRun?.pages.length||0)>1)throw Error('Confirmation page batch too large');}
   if(Object.keys(state.reports).length-Object.keys(previous.reports).length>5)throw Error('Report batch too large');
   if(previous.detailQueue.length)same(previous.detailQueue,state.detailQueue,'report queue');
   if(previous.inventoryFinishedAt){same(previous.inventoryFinishedAt,state.inventoryFinishedAt,'inventory date');same(previous.inventoryFinalChecks,state.inventoryFinalChecks,'inventory count checks');}
   if(state.phase==='inventory-ready')return {inventory:finalizeHutchinsonInventory(state,config)};
   if(state.phase==='done')return {snapshot:finalizeHutchinsonRun(state,config),done:true};
-  if(!['list','inventory-confirm','details','confirm'].includes(state.phase))throw Error('Invalid phase');
+  if(!['list','inventory-confirm','duplicate-list','details','confirm'].includes(state.phase))throw Error('Invalid phase');
   return {};
  }
  if(config.adapter==='autonation-browser'){

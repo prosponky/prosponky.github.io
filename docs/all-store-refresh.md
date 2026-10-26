@@ -65,6 +65,10 @@ The bridge form keeps accepted evidence in the read-only `#checkpoint` field and
 
 The cloud's final health step may use a complete official Coggin vehicle map as an explicit fallback for failed syndicated inventory. It requires evidence from the current Eastern slot, full explicit vehicle identities, and exact equality between the published repository map and live JSON. Older or partial maps cannot make the run green. A failed Greenway public feed still fails the cloud run. Official cloud price-step failures remain separately visible; inspect their actual logs even when the fallback succeeds. The October 25 labeled manual run 40264451789 passed with Atlantic's official fallback; this is not scheduled all-seven acceptance.
 
+## Repeated Hutchinson listings
+
+An identical VIN may appear twice across the dealer's listing pages. Such a run enters `duplicate-list` and reads one additional complete new/used listing pass, one page per browser call, preserving the original `startedAt` and expiry. It reuses accepted labeled detail observations and only restores a pricing tab when that tab is not already visibly active. Both passes must account for every advertised tile, all pages and final counts, and agree on the exact unique VIN set, identities and parsed prices. Conflicting repeats, incomplete confirmation or changed evidence fail. Only after that confirmation may the snapshot contain one row per VIN; section `listedTotal` and `duplicateListings` record the difference from the unique `total`. This does not allow a partial inventory or unverified price to publish.
+
 ## Verification and acceptance
 
 All publishers share the recoverable publication lock, preserve unrelated releases, pull/rebase before committing and verify exact live JSON. Deployment verification waits up to ten minutes and polls every ten seconds; HTTP 401/403/429 stop immediately. Never turn an old or modified HTTP 200 response into success. Missing fresh amounts retain the previous verified amount and its original verification timestamp indefinitely. Missing fresh reports are unavailable rather than synthesized.

@@ -30,7 +30,15 @@ test('resumed listing page preserves accepted detail text and its original times
  const origin='https://www.kiaofmacon.com',url=origin+'/inventory/new-2026-kia-k4-3kpfu4de7te041698/',detail={text:'VIN: 3KPFU4DE7TE041698\nInterior: Crème • Sport',checkedAt:'2026-10-25T10:00:00Z'},card={url,text:'New 2026 Kia K4\nVIN: 3KPFU4DE7TE041698'},state={phase:'list',sectionIndex:0,nextUrl:origin+'/new-vehicles/',pages:[],details:{[url]:structuredClone(detail)},detailQueue:[],detailIndex:0};
  let reads=0,pricingRestored=0;
  const row={getByRole:(_role,{name})=>({click:async()=>{assert.equal(name,'pricing tab');pricingRestored++;}})};
- const tab={url:async()=>state.nextUrl,playwright:{domSnapshot:async()=>'',getByText:()=>({waitFor:async()=>{},allTextContents:async()=>['Page 1 of 1']}),getByRole:()=>({allTextContents:async()=>['1 New Vehicle']}),locator:()=>({evaluateAll:async()=>++reads===1?[url]:[card],nth:()=>row})}};
+ const tab={url:async()=>state.nextUrl,playwright:{domSnapshot:async()=>'',getByText:()=>({waitFor:async()=>{},allTextContents:async()=>['Page 1 of 1']}),getByRole:()=>({allTextContents:async()=>['1 New Vehicle']}),locator:()=>({evaluateAll:async()=>++reads===1?[{url,pricingActive:false}]:[card],nth:()=>row})}};
  await hutchinsonBrowserBatch(tab,state,{origin,sections:[{path:'/new-vehicles/',condition:'new'},{path:'/used-vehicles/',condition:'used'}]});
  assert.equal(pricingRestored,1);assert.deepEqual(state.details[url],detail);assert.equal(state.pages.length,1);
+});
+
+test('identical repeated listings require a complete stable second pass and publish unique VINs',async()=>{
+ const {state,config}=await fixture();state.pages[0].cards.push(structuredClone(state.pages[0].cards[0]));state.pages[0].heading=state.pages[0].heading.map(h=>h.replace(/^1 New/,'2 New'));state.finalChecks[0].headings=state.finalChecks[0].headings.map(h=>h.replace(/^1 New/,'2 New'));
+ assert.throws(()=>finalizeHutchinsonRun(state,config),/confirmation pass/);
+ state.duplicateRun={source:config.origin,startedAt:state.startedAt,phase:'inventory-ready',sectionIndex:2,inventoryConfirmIndex:2,inventoryFinishedAt:state.finishedAt,pages:structuredClone(state.pages),details:structuredClone(state.details),inventoryFinalChecks:structuredClone(state.finalChecks)};
+ const data=finalizeHutchinsonRun(state,config);assert.equal(data.total,2);assert.equal(data.sections[0].listedTotal,2);assert.equal(data.sections[0].total,1);assert.equal(data.sections[0].duplicateListings,1);
+ for(const change of [s=>s.duplicateRun.pages.pop(),s=>s.duplicateRun.pages[0].cards[0].text+='\nHutchinson Price\n$1',s=>s.duplicateRun.inventoryFinalChecks=[],s=>s.duplicateRun.phase='list',s=>s.pages[0].cards[1].text+='\nHutchinson Price\n$1']){const bad=structuredClone(state);change(bad);assert.throws(()=>finalizeHutchinsonRun(bad,config));}
 });

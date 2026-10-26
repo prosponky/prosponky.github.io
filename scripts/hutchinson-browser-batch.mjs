@@ -1,5 +1,5 @@
 // Supported CUA only. Bounded public DOM reads; no private endpoints or challenge retries.
-export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVehicles=5,onCheckpoint=async()=>{}}={}){
+export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVehicles=5,onCheckpoint=async()=>{},confirmDuplicates=true}={}){
  if(!Number.isInteger(maxPages)||maxPages<1||maxPages>3||!Number.isInteger(maxVehicles)||maxVehicles<1||maxVehicles>5)throw Error('Batch exceeds bounded limits');
  const sections=config.sections;
  const checkPage=async()=>{const dom=await tab.playwright.domSnapshot();if(/access denied|verify you are human|security challenge/i.test(dom))throw Error('Dealer access challenge');};
@@ -11,8 +11,8 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   const heading=await headings(),positions=await tab.playwright.getByText(new RegExp('Page\\s+'+page+' of \\d+')).allTextContents();
   const lastPage=Number(positions.find(t=>/of\s+\d+/.test(t))?.match(/of\s+(\d+)/)?.[1]);
   // Restore pricing only for a partially read page resumed after interruption.
-  const visibleUrls=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>e.querySelector('a[href*="/inventory/"]')?.href));
-  for(let i=0;i<visibleUrls.length;i++)if(state.details[visibleUrls[i]])await tab.playwright.locator('.hit').nth(i).getByRole('button',{name:'pricing tab',exact:true}).click();
+  const visibleUrls=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>({url:e.querySelector('a[href*="/inventory/"]')?.href,pricingActive:!!e.querySelector('button[aria-label="pricing tab"].active')})));
+  for(let i=0;i<visibleUrls.length;i++)if(state.details[visibleUrls[i].url]&&!visibleUrls[i].pricingActive)await tab.playwright.locator('.hit').nth(i).getByRole('button',{name:'pricing tab',exact:true}).click();
   const cards=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>({text:e.innerText,url:e.querySelector('a[href*="/inventory/"]')?.href})));
   if(!cards.length||!Number.isInteger(lastPage)||lastPage<page)throw Error('Incomplete Hutchinson page');
   for(let i=0;i<cards.length;i++){
@@ -28,11 +28,21 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   state.pages.push({condition:section.condition,page,lastPage,heading,cards,url:await tab.url()});
   if(page===lastPage){state.sectionIndex++;state.nextUrl=sections[state.sectionIndex]?new URL(sections[state.sectionIndex].path,config.origin).href:null;if(!state.nextUrl){state.phase='inventory-confirm';state.inventoryConfirmIndex=0;state.inventoryFinalChecks=[];state.detailQueue=state.pages.filter(p=>p.condition==='used').flatMap(p=>p.cards).map(c=>({url:c.url,vin:(c.text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1]||new URL(c.url).pathname.match(/-([a-z0-9]+)\/$/i)?.[1]).toUpperCase()}));}}
   else{const next=tab.playwright.getByRole('button',{name:'next page',exact:true});if(!await next.isEnabled())throw Error('Hutchinson pagination stopped early');await next.press('Enter');await tab.playwright.getByText(new RegExp('Page\\s+'+(page+1)+' of \\d+')).waitFor({state:'visible',timeoutMs:20000});await tab.playwright.domSnapshot();await tab.playwright.waitForURL('**/*_p='+String(page+1)+'&**',{timeoutMs:20000});state.nextUrl=await tab.url();}
+  if(state.phase==='inventory-confirm'){const queue=new Map();for(const item of state.detailQueue){if(queue.has(item.vin)&&queue.get(item.vin).url!==item.url)throw Error('Duplicate listing identity changed');queue.set(item.vin,item);}state.detailQueue=[...queue.values()];}
+  await onCheckpoint(state);
+ }
+ else if(state.phase==='duplicate-list'){
+  await hutchinsonBrowserBatch(tab,state.duplicateRun,config,{maxPages,maxVehicles,confirmDuplicates:false});
+  if(state.duplicateRun.phase==='inventory-ready'){state.phase='inventory-ready';state.inventoryFinishedAt=new Date().toISOString();}
   await onCheckpoint(state);
  }
  else if(state.phase==='inventory-ready'){state.phase='details';await onCheckpoint(state);}
  else if(state.phase==='inventory-confirm'){
-  for(let n=0;n<maxPages&&state.inventoryConfirmIndex<sections.length;n++){const section=sections[state.inventoryConfirmIndex];await tab.goto(new URL(section.path,config.origin).href);await checkPage();await tab.playwright.getByText(/Page\s+1 of \d+/).waitFor({state:'visible',timeoutMs:20000});state.inventoryFinalChecks.push({condition:section.condition,headings:await headings()});state.inventoryConfirmIndex++;if(state.inventoryConfirmIndex===sections.length){state.phase='inventory-ready';state.inventoryFinishedAt=new Date().toISOString();}await onCheckpoint(state);}
+  for(let n=0;n<maxPages&&state.inventoryConfirmIndex<sections.length;n++){const section=sections[state.inventoryConfirmIndex];await tab.goto(new URL(section.path,config.origin).href);await checkPage();await tab.playwright.getByText(/Page\s+1 of \d+/).waitFor({state:'visible',timeoutMs:20000});state.inventoryFinalChecks.push({condition:section.condition,headings:await headings()});state.inventoryConfirmIndex++;if(state.inventoryConfirmIndex===sections.length){
+   const urls=state.pages.flatMap(page=>page.cards.map(card=>card.url));
+   if(confirmDuplicates&&new Set(urls).size!==urls.length){state.phase='duplicate-list';state.duplicateRun={store:state.store,source:state.source,startedAt:state.startedAt,phase:'list',sectionIndex:0,nextUrl:new URL(sections[0].path,config.origin).href,pages:[],details:structuredClone(state.details),detailQueue:[],detailIndex:0,reports:{},confirmIndex:0,finalChecks:[]};}
+   else{state.phase='inventory-ready';state.inventoryFinishedAt=new Date().toISOString();}
+  }await onCheckpoint(state);}
  }
  else if(state.phase==='details'){
   for(let n=0;n<maxVehicles&&state.detailIndex<state.detailQueue.length;n++){

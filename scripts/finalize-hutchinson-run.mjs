@@ -2,7 +2,7 @@ import {readFile,writeFile} from 'node:fs/promises';import {resolve} from 'node:
 import {buildHutchinsonSnapshot} from '../src/hutchinson-inventory.js';import {verifiedCarfaxUrl} from '../src/carfax.js';
 export function finalizeHutchinsonRun(state,config,now=Date.now()){
  if(state.phase!=='done'||now-Date.parse(state.startedAt)>7200000||Date.parse(state.startedAt)>now||!Number.isFinite(Date.parse(state.startedAt))||!Number.isFinite(Date.parse(state.finishedAt))||Date.parse(state.finishedAt)>now)throw Error('Incomplete or expired Hutchinson run');
- const key=config.key,legacy={startedAt:state.startedAt,finishedAt:state.inventoryFinishedAt||state.finishedAt,stores:{[key]:{sectionIndex:state.sectionIndex,pages:state.pages}},details:{[key]:state.details},finalChecks:{[key]:state.finalChecks}};
+ const key=config.key,legacy={startedAt:state.startedAt,finishedAt:state.inventoryFinishedAt||state.finishedAt,stores:{[key]:{sectionIndex:state.sectionIndex,pages:state.pages}},details:{[key]:state.details},finalChecks:{[key]:state.finalChecks},duplicateConfirmation:{[key]:state.duplicateRun}};
  const data=buildHutchinsonSnapshot(legacy,key,config),used=data.vehicles.filter(v=>v.condition==='used');
  if(state.detailIndex!==used.length||state.detailQueue.length!==used.length||Object.keys(state.reports).length!==used.length)throw Error('Incomplete Hutchinson report coverage');
  data.vehicles=data.vehicles.map(row=>{
@@ -15,7 +15,7 @@ export function finalizeHutchinsonRun(state,config,now=Date.now()){
 export function finalizeHutchinsonInventory(state,config,now=Date.now()){
  const finished=Date.parse(state.inventoryFinishedAt),started=Date.parse(state.startedAt);
  if(!['inventory-ready','details','confirm','done'].includes(state.phase)||!Number.isFinite(started)||!Number.isFinite(finished)||started>finished||finished>now||now-started>7200000||state.inventoryConfirmIndex!==2)throw Error('Incomplete or expired inventory stage');
- const key=config.key,data=buildHutchinsonSnapshot({startedAt:state.startedAt,finishedAt:state.inventoryFinishedAt,stores:{[key]:{sectionIndex:state.sectionIndex,pages:state.pages}},details:{[key]:state.details},finalChecks:{[key]:state.inventoryFinalChecks}},key,config);
+ const key=config.key,data=buildHutchinsonSnapshot({startedAt:state.startedAt,finishedAt:state.inventoryFinishedAt,stores:{[key]:{sectionIndex:state.sectionIndex,pages:state.pages}},details:{[key]:state.details},finalChecks:{[key]:state.inventoryFinalChecks},duplicateConfirmation:{[key]:state.duplicateRun}},key,config);
  for(const row of data.vehicles){if(!state.details[row.dealerListingUrl])throw Error('Missing listing color detail');row.carfaxUrl=null;row.carfaxCheckedAt=null;}
  return {...data,collectionStage:'inventory',carfaxAuditAt:null};
 }

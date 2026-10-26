@@ -19,6 +19,22 @@ export function validateHutchinsonFeed(data,config){
 }
 export function buildHutchinsonSnapshot(run,key,config){
  const store=run.stores[key];if(store.sectionIndex!==2)throw Error('Incomplete sections');const rows=[],sections=[];
- for(const condition of ['new','used']){const pages=store.pages.filter(p=>p.condition===condition).sort((a,b)=>a.page-b.page);const totals=pages.map(p=>p.heading.find(h=>/^\d+\s+(New|Pre-Owned|Used)/i.test(h))?.match(/^([\d,]+)/)?.[1]).map(s=>Number(s?.replaceAll(',','')));const final=run.finalChecks?.[key]?.find(s=>s.condition===condition)?.headings.find(h=>/^\d+\s+(New|Pre-Owned|Used)/i.test(h))?.match(/^([\d,]+)/)?.[1];if(!pages.length||pages.length!==pages[0].lastPage||pages.some((p,i)=>p.page!==i+1||p.lastPage!==pages.length)||new Set(totals).size!==1||totals[0]!==Number(final?.replaceAll(',',''))||pages.reduce((n,p)=>n+p.cards.length,0)!==totals[0])throw Error('Pagination/count changed');sections.push({condition,total:totals[0]});for(const page of pages)for(const card of page.cards)rows.push(hutchinsonCard(card,run.details?.[key]?.[card.url],run.extra?.[card.url],config,run.finishedAt));}
+ const readSection=(source,condition,checks,details)=>{
+  const pages=source.filter(p=>p.condition===condition).sort((a,b)=>a.page-b.page),count=headings=>Number(headings?.find(h=>/^\d+\s+(New|Pre-Owned|Used)/i.test(h))?.match(/^([\d,]+)/)?.[1]?.replaceAll(',',''));
+  const totals=pages.map(p=>count(p.heading)),final=count(checks?.find(s=>s.condition===condition)?.headings);
+  if(!pages.length||pages.length!==pages[0].lastPage||pages.some((p,i)=>p.page!==i+1||p.lastPage!==pages.length)||new Set(totals).size!==1||totals[0]!==final||pages.reduce((n,p)=>n+p.cards.length,0)!==totals[0])throw Error('Pagination/count changed');
+  const observed=pages.flatMap(page=>page.cards.map(card=>hutchinsonCard(card,details?.[card.url],run.extra?.[card.url],config,run.finishedAt))),unique=new Map();
+  for(const row of observed){const previous=unique.get(row.vin);if(previous&&JSON.stringify(previous)!==JSON.stringify(row))throw Error('Duplicate Hutchinson listing changed identity or price');unique.set(row.vin,row);}
+  return {observed,unique,listedTotal:totals[0]};
+ };
+ for(const condition of ['new','used']){
+  const first=readSection(store.pages,condition,run.finalChecks?.[key],run.details?.[key]);
+  if(first.unique.size!==first.listedTotal||run.duplicateConfirmation?.[key]){
+   const second=run.duplicateConfirmation?.[key];if(second?.phase!=='inventory-ready'||second.sectionIndex!==2||second.inventoryConfirmIndex!==2||second.startedAt!==run.startedAt||second.source!==config.origin||!Number.isFinite(Date.parse(second.inventoryFinishedAt))||Date.parse(second.inventoryFinishedAt)<Date.parse(run.startedAt)||Date.parse(second.inventoryFinishedAt)>Date.parse(run.finishedAt))throw Error('Duplicate listings require a complete stable confirmation pass');
+   const confirmed=readSection(second.pages,condition,second.inventoryFinalChecks,second.details);
+   if(confirmed.listedTotal!==first.listedTotal||confirmed.unique.size!==first.unique.size||[...first.unique].some(([vin,row])=>JSON.stringify(row)!==JSON.stringify(confirmed.unique.get(vin))))throw Error('Duplicate confirmation changed vehicle set or prices');
+  }
+  sections.push({condition,total:first.unique.size,...(first.unique.size!==first.listedTotal?{listedTotal:first.listedTotal,duplicateListings:first.listedTotal-first.unique.size}:{})});rows.push(...first.unique.values());
+ }
  const data={checkedAt:run.finishedAt,startedAt:run.startedAt,source:config.origin,complete:true,scope:'advertised-on-dealer-site',sections,total:rows.length,vehicles:rows};return validateHutchinsonFeed(data,config);
 }
