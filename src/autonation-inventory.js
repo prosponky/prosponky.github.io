@@ -42,12 +42,20 @@ export function autoNationVehicle(evidence,config,checkedAt){
  const entries=details?.PricingStack?.Items?.filter(p=>/^autonation1price$/i.test(p.Name))||[];
  const values=[...new Set(entries.map(p=>p.Value))];
  if(values.length>1||values.some(p=>typeof p!=='number'||!Number.isFinite(p)||p<=0))throw Error('AutoNation advertised price evidence is inconsistent.');
- const price=values[0]??null;
- if(evidence.cardPrice!==price)throw Error('AutoNation list and vehicle prices changed during collection.');
+ const items=details?.PricingStack?.Items||[],base=items.filter(p=>p.Name==='VehiclePrice');
+ // Some dealer detail pages omit the vehicle amount and put only filing fees
+ // into their computed 1Price. That is missing price evidence, never a $499 car.
+ const feeOnly=values.length===1&&base.length>0&&base.every(p=>p.Value===0)&&['lock','unlock'].every(mode=>{
+  const one=items.find(p=>p.Name==='Autonation1Price'&&p.ItemDisplayMode===mode),vehicle=items.find(p=>p.Name==='VehiclePrice'&&p.ItemDisplayMode===mode);
+  const fees=items.filter(p=>['Dealer Fee','Electronic Filing Fee'].includes(p.Name)&&p.ItemDisplayMode===mode);
+  return one&&vehicle?.Value===0&&fees.length>0&&fees.every(p=>typeof p.Value==='number'&&Number.isFinite(p.Value)&&p.Value>=0)&&one.Value===fees.reduce((n,p)=>n+p.Value,0);
+ });
+ const price=feeOnly?null:values[0]??null;
+ if(!feeOnly&&evidence.cardPrice!==price)throw Error('AutoNation list and vehicle prices changed during collection.');
  if(condition==='NEW')throw Error('New AutoNation pricing requires separate verified MSRP semantics.');
  return {vin,stockNumber,condition:'used',year:v.Year,make:v.Make,model:v.Model,trim:String(v.Trim||'').trim(),color:String(v.ExteriorColor||'').trim(),interiorColor:typeof v.InteriorColor==='string'?v.InteriorColor.trim():'',mileage:typeof v.Mileage==='number'&&Number.isFinite(v.Mileage)&&v.Mileage>=0?v.Mileage:null,
   certified:['AN-Cert','CPO'].includes(v.Certification),certificationLabel:v.Certification==='AN-Cert'?'AutoNation Certified':v.Certification==='CPO'?'Certified pre-owned':'',
-  fuelType:v.FuelType||'',advertisedPrice:price,priceLabel:config.salePriceLabel,msrp:null,dealerDiscount:null,discountKind:'',
+  fuelType:v.FuelType||'',advertisedPrice:price,priceUnavailableReason:feeOnly?'Dealer detail contains fees without a vehicle price':'',priceLabel:config.salePriceLabel,msrp:null,dealerDiscount:null,discountKind:'',
   carfaxUrl:verifiedCarfaxUrl(details?.VehicleHistory?.CarfaxUrl),dealerListingUrl:url,sourceUrl:url,checkedAt,priceCheckedAt:checkedAt,physicalStoreId:String(v.ActualHyperionId),advertisingStoreId:config.storeId};
 }
 export function validateAutoNationFeed(data,config){
