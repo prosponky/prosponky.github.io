@@ -61,6 +61,10 @@ For Hutchinson publisher `KEY` use `kia`, `gmc` or `cadillac`, not the full regi
 
 No bridge route authorizes a private dealer API, challenge bypass or retry of denied access. It accepts only its reserved loopback route and same-origin form submissions. Browser availability recovery may resume the same unexpired checkpoint in another supported browser only when ordinary public pages remain accessible.
 
+The bridge form keeps accepted evidence in the read-only `#checkpoint` field and submits only the new append/replace operations through `#update`. This avoids repeatedly filling a growing multi-megabyte text field. Every delta is applied to the matching saved version and then passes the same immutable-evidence and completeness checks. After a failed submission, reload the form before resuming; the accepted version is authoritative.
+
+The cloud's final health step may use a complete official Coggin vehicle map as an explicit fallback for failed syndicated inventory. It requires evidence from the current Eastern slot, full explicit vehicle identities, and exact equality between the published repository map and live JSON. Older or partial maps cannot make the run green. A failed Greenway public feed still fails the cloud run. Official cloud price-step failures remain separately visible; inspect their actual logs even when the fallback succeeds. The October 25 labeled manual run 40264451789 passed with Atlantic's official fallback; this is not scheduled all-seven acceptance.
+
 ## Verification and acceptance
 
 All publishers share the recoverable publication lock, preserve unrelated releases, pull/rebase before committing and verify exact live JSON. Deployment verification waits up to ten minutes and polls every ten seconds; HTTP 401/403/429 stop immediately. Never turn an old or modified HTTP 200 response into success. Missing fresh amounts retain the previous verified amount and its original verification timestamp indefinitely. Missing fresh reports are unavailable rather than synthesized.
