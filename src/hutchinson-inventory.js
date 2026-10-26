@@ -28,13 +28,20 @@ export function buildHutchinsonSnapshot(run,key,config){
   return {observed,unique,listedTotal:totals[0]};
  };
  for(const condition of ['new','used']){
-  const first=readSection(store.pages,condition,run.finalChecks?.[key],run.details?.[key]);
+  const first=readSection(store.pages,condition,run.finalChecks?.[key],run.details?.[key]);let accepted=first;
   if(first.unique.size!==first.listedTotal||run.duplicateConfirmation?.[key]){
    const second=run.duplicateConfirmation?.[key];if(second?.phase!=='inventory-ready'||second.sectionIndex!==2||second.inventoryConfirmIndex!==2||second.startedAt!==run.startedAt||second.source!==config.origin||!Number.isFinite(Date.parse(second.inventoryFinishedAt))||Date.parse(second.inventoryFinishedAt)<Date.parse(run.startedAt)||Date.parse(second.inventoryFinishedAt)>Date.parse(run.finishedAt))throw Error('Duplicate listings require a complete stable confirmation pass');
    const confirmed=readSection(second.pages,condition,second.inventoryFinalChecks,second.details);
-   if(confirmed.listedTotal!==first.listedTotal||confirmed.unique.size!==first.unique.size||[...first.unique].some(([vin,row])=>JSON.stringify(row)!==JSON.stringify(confirmed.unique.get(vin))))throw Error('Duplicate confirmation changed vehicle set or prices');
+   const previousStable=[...first.unique].every(([vin,row])=>JSON.stringify(row)===JSON.stringify(confirmed.unique.get(vin)));
+   if(confirmed.listedTotal!==first.listedTotal||!previousStable)throw Error('Duplicate confirmation changed vehicle set or prices');
+   if(confirmed.unique.size!==first.unique.size){
+    // A complete second new-vehicle pass may resolve a first-pass repeated tile.
+    // Accept that entire pass only; never union partial passes or miss used reports.
+    if(condition!=='new'||first.unique.size===first.listedTotal||confirmed.unique.size!==confirmed.listedTotal)throw Error('Duplicate confirmation changed vehicle set or prices');
+    accepted=confirmed;
+   }
   }
-  sections.push({condition,total:first.unique.size,...(first.unique.size!==first.listedTotal?{listedTotal:first.listedTotal,duplicateListings:first.listedTotal-first.unique.size}:{})});rows.push(...first.unique.values());
+  sections.push({condition,total:accepted.unique.size,...(accepted.unique.size!==accepted.listedTotal?{listedTotal:accepted.listedTotal,duplicateListings:accepted.listedTotal-accepted.unique.size}:{}),...(accepted!==first?{completeRetry:true,firstPassUnique:first.unique.size}:{})});rows.push(...accepted.unique.values());
  }
  const data={checkedAt:run.finishedAt,startedAt:run.startedAt,source:config.origin,complete:true,scope:'advertised-on-dealer-site',sections,total:rows.length,vehicles:rows};return validateHutchinsonFeed(data,config);
 }

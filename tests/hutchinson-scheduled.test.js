@@ -40,5 +40,9 @@ test('identical repeated listings require a complete stable second pass and publ
  assert.throws(()=>finalizeHutchinsonRun(state,config),/confirmation pass/);
  state.duplicateRun={source:config.origin,startedAt:state.startedAt,phase:'inventory-ready',sectionIndex:2,inventoryConfirmIndex:2,inventoryFinishedAt:state.finishedAt,pages:structuredClone(state.pages),details:structuredClone(state.details),inventoryFinalChecks:structuredClone(state.finalChecks)};
  const data=finalizeHutchinsonRun(state,config);assert.equal(data.total,2);assert.equal(data.sections[0].listedTotal,2);assert.equal(data.sections[0].total,1);assert.equal(data.sections[0].duplicateListings,1);
+ const completeRetry=structuredClone(state),replacement=completeRetry.duplicateRun.pages[0].cards[1],originalVin=replacement.text.match(/VIN\s*:\s*([A-Z0-9]+)/i)[1],newVin=originalVin.slice(0,-1)+(originalVin.at(-1)==='1'?'2':'1'),oldUrl=replacement.url;
+ replacement.text=replacement.text.replaceAll(originalVin,newVin);replacement.url=replacement.url.replace(originalVin.toLowerCase(),newVin.toLowerCase());completeRetry.duplicateRun.details[replacement.url]=structuredClone(completeRetry.duplicateRun.details[oldUrl]);
+ const recovered=finalizeHutchinsonRun(completeRetry,config);assert.equal(recovered.total,3);assert.equal(recovered.sections[0].completeRetry,true);assert.equal(recovered.vehicles.filter(v=>v.vin===newVin).length,1);
+ const partialRetry=structuredClone(completeRetry);partialRetry.duplicateRun.pages[0].cards.pop();assert.throws(()=>finalizeHutchinsonRun(partialRetry,config),/Pagination/);
  for(const change of [s=>s.duplicateRun.pages.pop(),s=>s.duplicateRun.pages[0].cards[0].text+='\nHutchinson Price\n$1',s=>s.duplicateRun.inventoryFinalChecks=[],s=>s.duplicateRun.phase='list',s=>s.pages[0].cards[1].text+='\nHutchinson Price\n$1']){const bad=structuredClone(state);change(bad);assert.throws(()=>finalizeHutchinsonRun(bad,config));}
 });

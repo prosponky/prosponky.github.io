@@ -6,7 +6,7 @@ export function finalizeHutchinsonRun(state,config,now=Date.now()){
  const data=buildHutchinsonSnapshot(legacy,key,config),used=data.vehicles.filter(v=>v.condition==='used');
  if(state.detailIndex!==used.length||state.detailQueue.length!==used.length||Object.keys(state.reports).length!==used.length)throw Error('Incomplete Hutchinson report coverage');
  data.vehicles=data.vehicles.map(row=>{
-  if(!state.details[row.dealerListingUrl])throw Error('Missing listing color detail');if(row.condition!=='used')return row;
+  if(!state.details[row.dealerListingUrl]&&!state.duplicateRun?.details?.[row.dealerListingUrl])throw Error('Missing listing color detail');if(row.condition!=='used')return row;
   const item=state.detailQueue.find(v=>v.vin===row.vin),report=state.reports[row.vin];if(item?.url!==row.dealerListingUrl||report?.url!==row.dealerListingUrl||!report.body.toUpperCase().includes(row.vin)||/access denied|verify you are human|security challenge/i.test(report.body)||!Number.isFinite(Date.parse(report.checkedAt))||Date.parse(report.checkedAt)>now)throw Error('Hutchinson report identity mismatch');
   const links=[...new Set(report.hrefs.map(verifiedCarfaxUrl).filter(Boolean))];if(links.length>1)throw Error('Conflicting Hutchinson Carfax reports');return {...row,carfaxUrl:links[0]||null,carfaxCheckedAt:report.checkedAt};
  });data.carfaxAuditAt=state.finishedAt;return data;
@@ -16,7 +16,7 @@ export function finalizeHutchinsonInventory(state,config,now=Date.now()){
  const finished=Date.parse(state.inventoryFinishedAt),started=Date.parse(state.startedAt);
  if(!['inventory-ready','details','confirm','done'].includes(state.phase)||!Number.isFinite(started)||!Number.isFinite(finished)||started>finished||finished>now||now-started>7200000||state.inventoryConfirmIndex!==2)throw Error('Incomplete or expired inventory stage');
  const key=config.key,data=buildHutchinsonSnapshot({startedAt:state.startedAt,finishedAt:state.inventoryFinishedAt,stores:{[key]:{sectionIndex:state.sectionIndex,pages:state.pages}},details:{[key]:state.details},finalChecks:{[key]:state.inventoryFinalChecks},duplicateConfirmation:{[key]:state.duplicateRun}},key,config);
- for(const row of data.vehicles){if(!state.details[row.dealerListingUrl])throw Error('Missing listing color detail');row.carfaxUrl=null;row.carfaxCheckedAt=null;}
+ for(const row of data.vehicles){if(!state.details[row.dealerListingUrl]&&!state.duplicateRun?.details?.[row.dealerListingUrl])throw Error('Missing listing color detail');row.carfaxUrl=null;row.carfaxCheckedAt=null;}
  return {...data,collectionStage:'inventory',carfaxAuditAt:null};
 }
 
