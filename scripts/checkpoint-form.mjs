@@ -5,7 +5,8 @@ const escapeHtml=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&l
 
 // Explicit encoding is essential: a legacy single-byte document also submits
 // form text in that encoding, replacing unsupported evidence with HTML entities.
-export function checkpointForm(state,status,title){
+export function checkpointForm(state,status,title,delta=false){
+ if(delta)return '<!doctype html><html><head><meta charset="utf-8"></head><body><h1>'+escapeHtml(title)+'</h1><p id="status">'+escapeHtml(status)+'</p><textarea id="checkpoint" readonly style="display:none">'+escapeHtml(JSON.stringify(state))+'</textarea><form method="post" accept-charset="UTF-8"><label>Checkpoint update<textarea id="update" name="checkpoint"></textarea></label><button>Save checkpoint</button></form></body></html>';
  return '<!doctype html><html><head><meta charset="utf-8"></head><body><h1>'+escapeHtml(title)+'</h1><p id="status">'+escapeHtml(status)+'</p><form method="post" accept-charset="UTF-8"><label>Checkpoint<textarea id="checkpoint" name="checkpoint">'+escapeHtml(JSON.stringify(state))+'</textarea></label><button>Save checkpoint</button></form></body></html>';
 }
 

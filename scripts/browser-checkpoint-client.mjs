@@ -2,6 +2,7 @@
 const {collectBrowserBatch,restoreOfficialCheckpoint}=await import(new URL('./browser-inventory.mjs',import.meta.url).href+'?fresh='+Date.now());
 const {hutchinsonBrowserBatch}=await import(new URL('./hutchinson-browser-batch.mjs',import.meta.url).href+'?fresh='+Date.now());
 const {autoNationBrowserBatch}=await import(new URL('./autonation-browser-batch.mjs',import.meta.url).href+'?fresh='+Date.now());
+const {checkpointDelta}=await import(new URL('./checkpoint-delta.mjs',import.meta.url).href+'?fresh='+Date.now());
 
 export async function readCheckpointEnvelope(form){
  const field=form.playwright.locator('#checkpoint'),length=await field.evaluate(e=>e.value.length);
@@ -13,13 +14,15 @@ export async function readCheckpointEnvelope(form){
 export async function runCheckpointBatch(tab,form,{maxPages,maxVehicles=5}={}){
  const envelope=await readCheckpointEnvelope(form);
  const {state,config}=envelope;if(envelope.progress.done)return envelope.progress;
+ let acceptedState=structuredClone(state);
  const persist=async()=>{
-  await form.playwright.locator('#checkpoint').fill(JSON.stringify({version:envelope.version,state}));
-  await form.playwright.getByRole('button',{name:'Save checkpoint',exact:true}).click();
+  await form.playwright.locator('#update').fill(JSON.stringify({version:envelope.version,delta:checkpointDelta(acceptedState,state)}));
+  await form.playwright.locator('form button').click();
   await form.playwright.locator('#status').filter({hasText:'"version":'+(envelope.version+1)+','}).waitFor({state:'visible',timeoutMs:10000});
   const accepted=await readCheckpointEnvelope(form);
   if(accepted.version!==envelope.version+1)throw Error('Checkpoint was not saved');
   envelope.version=accepted.version;envelope.progress=accepted.progress;
+  acceptedState=structuredClone(accepted.state);
   Object.assign(state,accepted.state);
  };
  if(config.adapter==='dealer-inspire-browser'){

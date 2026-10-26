@@ -61,12 +61,15 @@ jobs:
           [ "$AVENUES" != success ] || files+=(coggin-avenues.json)
           [ "$OFFICIAL_ATLANTIC" != success ] || files+=(coggin-atlantic-links.json)
           [ "$OFFICIAL_AVENUES" != success ] || files+=(coggin-avenues-links.json)
-          if [ ${#files[@]} -eq 0 ]; then echo 'No complete fresh snapshots; previous evidence retained.'; exit 1; fi
-          node scripts/publish-inventory-snapshots.mjs "${files[@]}"
-          if ! gh api --method POST repos/${{ github.repository }}/pages/builds; then
-            echo '::warning::Pages build request failed; exact live evidence will determine whether the push deployed.'
+          if [ ${#files[@]} -eq 0 ]; then
+            echo 'No cloud snapshots collected; the final health check still requires a complete current live source for every store.'
+          else
+            node scripts/publish-inventory-snapshots.mjs "${files[@]}"
+            if ! gh api --method POST repos/${{ github.repository }}/pages/builds; then
+              echo '::warning::Pages build request failed; exact live evidence will determine whether the push deployed.'
+            fi
+            node scripts/verify-published-inventory.mjs "${files[@]}"
           fi
-          node scripts/verify-published-inventory.mjs "${files[@]}"
       - name: Report freshness for each source
         if: always()
         env:
@@ -77,10 +80,7 @@ jobs:
           OFFICIAL_AVENUES: ${{ steps.official-avenues.outcome }}
         run: |
           printf '| Source | Outcome |\n|---|---|\n| Greenway | %s |\n| Atlantic | %s |\n| Avenues | %s |\n| Official Atlantic | %s |\n| Official Avenues | %s |\n' "$GREENWAY" "$ATLANTIC" "$AVENUES" "$OFFICIAL_ATLANTIC" "$OFFICIAL_AVENUES" >> "$GITHUB_STEP_SUMMARY"
-          if [ "$GREENWAY" != success ] || [ "$ATLANTIC" != success ] || [ "$AVENUES" != success ]; then
-            echo '::error::A public inventory source could not refresh. Other complete sources were published; prior evidence for the failed source was retained.'
-            exit 1
-          fi
+          node scripts/cloud-source-health.mjs
           if [ "$OFFICIAL_ATLANTIC" != success ] || [ "$OFFICIAL_AVENUES" != success ]; then
             echo '::warning::Official pricing needs the scheduled local recovery. Previous verified prices remain available.'
           fi

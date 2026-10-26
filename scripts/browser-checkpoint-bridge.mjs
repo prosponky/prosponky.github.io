@@ -11,6 +11,7 @@ import {finalizeHutchinsonInventory,finalizeHutchinsonRun} from './finalize-hutc
 import {finalizeAutoNationRun} from './autonation-browser-run.mjs';
 import {autoNationVehicle} from '../src/autonation-inventory.js';
 import {checkpointForm,checkpointError,checkpointHtmlHeaders,readCheckpointForm,assertAcceptedPrefix} from './checkpoint-form.mjs';
+import {applyCheckpointDelta} from './checkpoint-delta.mjs';
 
 export async function atomicJson(path,value){await mkdir(dirname(path),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(value));await rename(path+'.tmp',path);}
 const same=(a,b,label)=>{if(!isDeepStrictEqual(a,b))throw Error('Accepted evidence changed: '+label);};
@@ -84,6 +85,7 @@ export function bridgeServer(meta,{port=4321}={}){
   if(req.method==='POST'){
    if(req.headers.origin!==origin)throw Error('Same-origin form required');
    const incoming=await readCheckpointForm(req,24000000);
+   if(incoming.delta){if(incoming.version!==saved.version)throw Error('Checkpoint version changed; reload before resuming');incoming.state=applyCheckpointDelta(saved.state,incoming.delta);}
    if(incoming.version!==saved.version){if(!isDeepStrictEqual(incoming.state,saved.state))throw Error('Checkpoint version changed; reload before resuming');}
    else{
     const result=validateBridgeProgress(saved.state,incoming.state,meta.config),state=incoming.state;
@@ -94,7 +96,7 @@ export function bridgeServer(meta,{port=4321}={}){
     saved={version:saved.version+1,state,progress};await atomicJson(meta.checkpoint,saved);
    }
   }else if(req.method!=='GET')throw Error('Unsupported local method');
-  res.writeHead(200,checkpointHtmlHeaders);res.end(checkpointForm({...saved,config:meta.config},JSON.stringify({version:saved.version,...saved.progress}),'Pocket Desking '+meta.store+' checkpoint'));
+  res.writeHead(200,checkpointHtmlHeaders);res.end(checkpointForm({...saved,config:meta.config},JSON.stringify({version:saved.version,...saved.progress}),'Pocket Desking '+meta.store+' checkpoint',true));
  }catch(error){res.writeHead(400,checkpointHtmlHeaders);res.end(checkpointError(error.message));}};
  const server=createServer((req,res)=>{queue=queue.then(()=>handler(req,res),()=>handler(req,res));});
  return {server,url:origin+path};
