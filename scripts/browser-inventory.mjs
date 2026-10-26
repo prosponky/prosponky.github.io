@@ -8,7 +8,7 @@ export function nextPageUrl(href,current,config,section){
  for(const [key,value] of previous.searchParams)if(key!=='_p'&&!url.searchParams.has(key))url.searchParams.append(key,value);
  return url.href;
 }
-function restore(config,state){
+export function restoreOfficialCheckpoint(config,state){
  const collection=new OfficialCollection(config);
  const age=Date.now()-Date.parse(state.startedAt);
  if(state.source!==config.origin||state.adapter!==config.adapter||!Number.isFinite(age)||age<0||age>3600000)throw Error('Invalid or expired collection checkpoint');
@@ -22,7 +22,7 @@ function restore(config,state){
 export async function collectBrowserBatch(tab,config,{checkpoint,maxPages=3,onCheckpoint=()=>{}}={}){
  if(!Number.isInteger(maxPages)||maxPages<1||maxPages>5)throw Error('Use batches of one to five pages');
  const state=checkpoint?structuredClone(checkpoint):{source:config.origin,adapter:config.adapter,startedAt:new Date().toISOString(),sections:[],nextUrl:new URL(config.sections[0].path,config.origin).href};
- const collection=restore(config,state);
+ const collection=restoreOfficialCheckpoint(config,state);
  for(let processed=0;processed<maxPages&&state.nextUrl;processed++){
   const index=state.sections.filter(s=>s.done).length,section=config.sections[index];
   if(!section)throw Error('Unexpected collection section');

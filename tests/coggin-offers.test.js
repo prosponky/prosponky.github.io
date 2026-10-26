@@ -5,6 +5,13 @@ test('official collector retains the explicit trim field',async()=>{
  const page=cogginOfferPage(html,'cogginnissanattheavenues',Date.parse('2026-10-07T12:00:00Z'));
  assert.equal(page.records[0].trim,'S');
 });
+test('official listing identity and labeled colors are kept without deriving model from title or link',async()=>{
+ const {cogginVehicleFields}=await import('../src/coggin-offers.js');
+ const row=cogginOfferPage(await readFile('tests/fixtures/coggin-rebate.html','utf8'),'cogginnissanattheavenues',Date.parse('2026-10-07')).records[0];
+ assert.equal(row.year,2027);assert.equal(row.make,'Nissan');assert.equal(row.model,'Sentra');assert.equal(row.color,'Gray');assert.equal(row.mileage,2);
+ assert.throws(()=>cogginVehicleFields({type:'used',year:2026,make:'Kia',title:['Carnival SX Prestige'],link:'/used/Kia/Carnival.htm'}),/identity/);
+ const missing=cogginVehicleFields({type:'used',year:2026,make:'Kia',model:'Carnival'});assert.equal(missing.color,'');assert.equal(missing.mileage,null);
+});
 
 test('offer categories distinguish eligibility',async()=>{const p=cogginOfferPage(await readFile('tests/fixtures/coggin-rebate.html','utf8'),'cogginnissanattheavenues',Date.parse('2026-10-07'));assert.deepEqual(p.records[0].offers.map(o=>o.category).sort(),['general','graduate','military']);assert.equal(p.records[0].offers.filter(o=>o.conditional).length,2);});
 

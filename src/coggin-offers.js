@@ -3,6 +3,15 @@ export function cogginInteriorColor(row){
  const field=(row.attributes||[]).find(a=>a.name==='interiorColor'&&/^interior color$/i.test(a.label||''));
  return [field?.normalizedValue,field?.value,row.interiorColor].find(v=>typeof v==='string'&&v.trim())?.trim()||'';
 }
+export function cogginVehicleFields(row){
+ const text=value=>typeof value==='string'?value.trim():'';
+ const attribute=(name,label)=>(row.attributes||[]).find(a=>a.name===name&&label.test(a.label||''));
+ const exterior=attribute('exteriorColor',/^exterior color$/i),odometer=attribute('odometer',/^mileage$/i);
+ const rawMileage=String(odometer?.value??'').trim().replaceAll(',','');
+ const year=Number(row.year),make=text(row.make),model=text(row.model),condition=row.type;
+ if(!Number.isInteger(year)||year<1900||year>2100||!make||!model||!['new','used'].includes(condition))throw Error('Official vehicle identity fields are incomplete; previous snapshot retained.');
+ return {condition,year,make,model,color:[exterior?.normalizedValue,exterior?.value,row.exteriorColor].map(text).find(Boolean)||'',mileage:/^\d+$/.test(rawMileage)?Number(rawMileage):null};
+}
 export function cogginOfferPage(html,account,now=Date.now()){
  const match=[...html.matchAll(/DDC\.WS\.state\['ws-inv-data'\]\['[^']+'\] = (\{[^\n]+\});/g)].find(m=>{try{return JSON.parse(m[1]).moreRequestData?.siteId===account;}catch{return false;}});
  if(!match)throw Error('Official inventory data missing; retain previous offers.');
@@ -13,6 +22,6 @@ export function cogginOfferPage(html,account,now=Date.now()){
  const retailPrice=retail&&/^\$[\d,]+(?:\.\d{2})?$/.test(retail.value)?Number(retail.value.replace(/[$,]/g,'')):null;
  const msrpField=row.type==='new'?(row.pricing?.dprice||[]).find(p=>p.typeClass==='msrp'&&/^MSRP$/i.test(String(p.label).trim())):null;
  const msrp=msrpField&&/^\$[\d,]+(?:\.\d{2})?$/.test(msrpField.value)?Number(msrpField.value.replace(/[$,]/g,'')):null;
- return {msrp:Number.isFinite(msrp)&&msrp>0?msrp:null,certified:row.type!=='new'&&row.certified===true,stock:row.stockNumber,vin:row.vin,link:row.link,interiorColor:cogginInteriorColor(row),trim:typeof row.trim==='string'?row.trim.trim():'',carfaxUrl:row.type!=='new'?verifiedCarfaxUrl((row.callout||[]).find(c=>c.badgeClasses?.includes('carfax'))?.href):null,offers,retailPrice:Number.isFinite(retailPrice)&&retailPrice>0?retailPrice:null};});return {records,total:wis.pageInfo.totalCount,size:wis.pageInfo.pageSize,start:wis.pageInfo.pageStart};
+ return {...cogginVehicleFields(row),msrp:Number.isFinite(msrp)&&msrp>0?msrp:null,certified:row.type!=='new'&&row.certified===true,stock:row.stockNumber,vin:row.vin,link:row.link,interiorColor:cogginInteriorColor(row),trim:typeof row.trim==='string'?row.trim.trim():'',carfaxUrl:row.type!=='new'?verifiedCarfaxUrl((row.callout||[]).find(c=>c.badgeClasses?.includes('carfax'))?.href):null,offers,retailPrice:Number.isFinite(retailPrice)&&retailPrice>0?retailPrice:null};});return {records,total:wis.pageInfo.totalCount,size:wis.pageInfo.pageSize,start:wis.pageInfo.pageStart};
 }
 export function usableCustomerCash(offers,checkedAt,now=Date.now()){if(!Number.isFinite(Date.parse(checkedAt))||now-Date.parse(checkedAt)>86400000||now<Date.parse(checkedAt))return [];return (offers||[]).filter(o=>Number.isFinite(o.amount)&&o.amount>0&&Date.parse(o.effectiveDate)<=now&&Date.parse(o.expirationDate)+86400000>now);}

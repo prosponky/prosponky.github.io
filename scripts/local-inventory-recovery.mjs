@@ -5,10 +5,12 @@ import {spawn,execFileSync} from 'node:child_process';
 import {pathToFileURL} from 'node:url';
 import {verifiedCarfaxUrl} from '../src/carfax.js';
 import {retainCogginPrices} from '../src/retained-official-prices.js';
+import {verifiedCogginVehicles} from '../src/coggin-inventory.js';
 
 export function validateCogginSnapshot(data,config,startedAt,now=Date.now()){
  const age=now-Date.parse(data.checkedAt),vins=data.inventoryVins;
  if(data.complete!==true||data.source!==config.origin||!Number.isFinite(age)||age<0||age>3600000||Date.parse(data.checkedAt)<Date.parse(startedAt)||!Array.isArray(vins)||!vins.length||data.total!==vins.length||new Set(vins).size!==vins.length)throw Error('Incomplete, stale or mismatched official snapshot');
+ if(Object.hasOwn(data,'vehicles')&&!verifiedCogginVehicles(data,config,now))throw Error('Incomplete official vehicle rows');
  const maps=['offers','retailPrices','trims','interiorColors','carfax','certified'];
  if(data.msrps)maps.push('msrps');
  for(const name of maps)if(!data[name]||Object.keys(data[name]).length!==vins.length||vins.some(v=>!Object.hasOwn(data[name],v)))throw Error('Incomplete VIN map: '+name);

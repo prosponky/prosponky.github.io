@@ -1,12 +1,14 @@
 import {cogginOfferPage} from '../src/coggin-offers.js';
 import {retainCogginPrices} from '../src/retained-official-prices.js';
+import {verifiedCogginVehicles} from '../src/coggin-inventory.js';
+import {inventoryChanges} from '../src/inventory-changes.js';
 import {mkdir,writeFile,rename,readFile} from 'node:fs/promises';
 const registry=JSON.parse(await readFile(new URL('../data/dealership-sources.json',import.meta.url),'utf8'));
 const selected=process.argv[2];
 const configs=Object.entries(registry).filter(([key,config])=>config.adapter==='dealer-com-public-html'&&(!selected||key===selected));
 if(!configs.length)throw Error('Unknown official store');
 for(const [file,{origin,account,priceFile}] of configs){
- const checkedAt=new Date().toISOString(),stocks={},stockNumbers={},conditions={},offers={},retailPrices={},msrps={},trims={},interiorColors={},carfax={},certified={},seen=new Set();
+ const checkedAt=new Date().toISOString(),vehicles=[],stocks={},stockNumbers={},conditions={},offers={},retailPrices={},msrps={},trims={},interiorColors={},carfax={},certified={},seen=new Set();
  const path='public/inventory/'+priceFile;let previous;
  try{previous=JSON.parse(await readFile(path,'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
  let start=0,total;
@@ -20,14 +22,18 @@ for(const [file,{origin,account,priceFile}] of configs){
    if(seen.has(row.vin)||Object.hasOwn(stocks,row.stock))throw Error('Repeated official VIN or stock number');seen.add(row.vin);
    const link=new URL(row.link,origin);
    if(link.origin!==origin||!/^\/(new|used|certified)\//.test(link.pathname))throw Error('Invalid official link');
-   stocks[row.stock]=link.href;stockNumbers[row.vin]=row.stock;conditions[row.vin]=link.pathname.startsWith('/new/')?'new':'used';
+   const condition=link.pathname.startsWith('/new/')?'new':'used';if(row.condition!==condition)throw Error('Official condition and listing link disagree');
+   stocks[row.stock]=link.href;stockNumbers[row.vin]=row.stock;conditions[row.vin]=condition;
+   vehicles.push({stockNumber:row.stock,vin:row.vin,condition,year:row.year,make:row.make,model:row.model,trim:row.trim,color:row.color,interiorColor:row.interiorColor,mileage:row.mileage,msrp:row.msrp,advertisedPrice:null,dealerDiscount:null,discountKind:'',sourceName:'Official dealer public inventory',sourceUrl:link.href,checkedAt});
    trims[row.vin]=row.trim;interiorColors[row.vin]=row.interiorColor;certified[row.vin]=row.certified;carfax[row.vin]=row.carfaxUrl;offers[row.vin]=row.offers;retailPrices[row.vin]=row.retailPrice;msrps[row.vin]=row.msrp;
   }
   start+=page.size;console.log(file,seen.size,'of',total);
   if(start<total)await new Promise(r=>setTimeout(r,1000));
  }while(start<total);
  if(seen.size!==total)throw Error('Incomplete official collection');
- const data=retainCogginPrices({checkedAt,source:origin,complete:true,total,inventoryVins:[...seen],stocks,stockNumbers,conditions,offers,retailPrices,msrps,trims,interiorColors,carfax,certified},previous);
+ const baseline=previous?.vehicles?previous:previous?.inventoryVins?{...previous,vehicles:previous.inventoryVins.map(vin=>({vin}))}:null;
+ const data=retainCogginPrices({checkedAt,source:origin,account,complete:true,total,inventoryVins:[...seen],vehicles,dailyChanges:inventoryChanges(baseline,vehicles,checkedAt),stocks,stockNumbers,conditions,offers,retailPrices,msrps,trims,interiorColors,carfax,certified},previous);
+ if(!verifiedCogginVehicles(data,{origin,account}))throw Error('Complete official vehicle rows failed verification; previous snapshot retained.');
  await mkdir('public/inventory',{recursive:true});await writeFile(path+'.tmp',JSON.stringify(data));await rename(path+'.tmp',path);
  console.log('Saved',file,'offers for',Object.values(offers).filter(a=>a.length).length,'vehicles');
 }

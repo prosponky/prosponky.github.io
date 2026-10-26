@@ -16,6 +16,9 @@ export async function hutchinsonBrowserBatch(tab,state,config,{maxPages=1,maxVeh
   const cards=await tab.playwright.locator('.hit').evaluateAll(es=>es.map(e=>({text:e.innerText,url:e.querySelector('a[href*="/inventory/"]')?.href})));
   if(!cards.length||!Number.isInteger(lastPage)||lastPage<page)throw Error('Incomplete Hutchinson page');
   for(let i=0;i<cards.length;i++){
+   // Resume from the first accepted observation. Rereading an already accepted
+   // detail would replace its timestamp and violate the checkpoint prefix.
+   if(state.details[cards[i].url])continue;
    const row=tab.playwright.locator('.hit').nth(i);await row.getByRole('button',{name:'details tab',exact:true}).click();
    const text=await row.innerText(),vin=cards[i].text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1]||new URL(cards[i].url).pathname.match(/-([a-z0-9]+)\/$/i)?.[1]?.toUpperCase();
    const href=await row.locator('a[href*="/inventory/"]').first().getAttribute('href'),printedVin=text.match(/VIN\s*:\s*([A-Z0-9]+)/i)?.[1];

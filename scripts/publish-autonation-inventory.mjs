@@ -2,14 +2,15 @@ import {verifyPublishedSnapshots} from './verify-published-inventory.mjs';
 import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {execFileSync} from 'node:child_process';
-import {validateAutoNationFeed} from '../src/autonation-inventory.js';
+import {validateAutoNationFeed,validateAutoNationPromotions} from '../src/autonation-inventory.js';
 import {acquireRunLock} from './local-inventory-recovery.mjs';
 const [input,...flags]=process.argv.slice(2);
 if(!input)throw Error('Supply a complete AutoNation browser snapshot.');
 const config=JSON.parse(await readFile('data/dealership-sources.json','utf8'))['autonation-jacksonville'];
 const data=validateAutoNationFeed(JSON.parse(await readFile(input,'utf8')),config),age=Date.now()-Date.parse(data.checkedAt);
 if(age<0||age>3600000||!data.vehicles.length||!Number.isFinite(Date.parse(data.listRecheckedAt))||Date.parse(data.listRecheckedAt)>Date.now()||Date.now()-Date.parse(data.listRecheckedAt)>3600000)throw Error('Empty, stale or unrechecked AutoNation evidence will not be published.');
-if(data.scope!=='physical'||data.promotionalTileCount!==3||data.resultsTotal!==data.advertisedTotal+3||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt)||data.vehicles.some(v=>typeof v.interiorColor!=='string'||typeof v.color!=='string'))throw Error('Complete physical-store scope, color fields and promotional reconciliation are required.');
+if(data.scope!=='physical'||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt)||data.vehicles.some(v=>typeof v.interiorColor!=='string'||typeof v.color!=='string'))throw Error('Complete physical-store scope, color fields and promotional reconciliation are required.');
+validateAutoNationPromotions(data);
 const repo=resolve('tmp/hosted-preview'),lock=resolve('tmp/official-price-publish.lock'),file='inventory/autonation-jacksonville.json';
 await mkdir('tmp',{recursive:true});const unlock=await acquireRunLock(lock);
 try{

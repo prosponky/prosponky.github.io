@@ -2,7 +2,7 @@ import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {resolve,dirname} from 'node:path';
 import {fileURLToPath} from 'node:url';
 const {autoNationBrowserBatch}=await import(new URL('./autonation-browser-batch.mjs',import.meta.url).href+'?fresh='+Date.now());
-import {autoNationVehicle,validateAutoNationFeed} from '../src/autonation-inventory.js';
+import {autoNationVehicle,validateAutoNationFeed,validateAutoNationPromotions} from '../src/autonation-inventory.js';
 import {inventoryChanges} from '../src/inventory-changes.js';
 const root=fileURLToPath(new URL('../',import.meta.url));
 async function save(path,data){await mkdir(dirname(path),{recursive:true});await writeFile(path+'.tmp',JSON.stringify(data,null,2));await rename(path+'.tmp',path);}
@@ -14,14 +14,17 @@ export async function createAutoNationRun({scope='physical',directory=resolve(ro
  await save(base+'-run.json',run);await save(run.checkpoint,{phase:'list',startedAt:new Date().toISOString(),cards:[],evidence:[],detailCount:0});return run;
 }
 export async function finalizeAutoNationRun(state,run){
- const age=Date.now()-Date.parse(state.startedAt);
- if(state.phase!=='done'||age<0||age>7200000||!state.listRecheckedAt||state.cards.length!==state.total||state.evidence.length!==state.total||state.detailCount!==state.total||state.resultsTotal!==state.total+state.promotionalTileCount)throw Error('Incomplete or stale AutoNation collection.');
+ const now=Date.now(),started=Date.parse(state.startedAt),age=now-started,rechecked=Date.parse(state.listRecheckedAt),confirmation=state.confirmation;
+ if(state.phase!=='done'||!Number.isFinite(age)||age<0||age>7200000||!Number.isFinite(rechecked)||rechecked<started||rechecked>now||state.cards.length!==state.total||state.evidence.length!==state.total||state.detailCount!==state.total||state.resultsTotal!==state.total+state.promotionalTileCount)throw Error('Incomplete or stale AutoNation collection.');
+ const confirmedCards=new Map(confirmation?.cards?.map(card=>[card.vin,card])||[]);
+ if(confirmation?.phase!=='details'||confirmation.total!==state.total||confirmation.cards.length!==state.total||confirmedCards.size!==state.total||state.cards.some(card=>{const observed=confirmedCards.get(card.vin);return !observed||['url','price','priceLabel','store'].some(key=>card[key]!==observed[key]);}))throw Error('Incomplete or changed AutoNation final inventory recheck.');
+ const promotions=validateAutoNationPromotions({advertisedTotal:state.total,resultsTotal:state.resultsTotal,promotionalTileCount:state.promotionalTileCount,promotionalTiles:state.promotionalTiles,recheckedPromotionalTiles:state.confirmation?.promotionalTiles,recheckedResultsTotal:state.confirmation?.resultsTotal});
  const all=state.evidence.map(e=>autoNationVehicle(e,run.config,state.startedAt));
  if(new Set(all.map(v=>v.vin)).size!==all.length||state.cards.some((card,i)=>card.vin!==all[i].vin))throw Error('Missing or duplicate AutoNation VIN detail evidence.');
  const vehicles=run.scope==='physical'?all.filter(v=>v.physicalStoreId===run.config.storeId):all;
  let previous;try{previous=JSON.parse(await readFile(resolve(root,'public/inventory/autonation-jacksonville.json'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw e;}
  for(const row of vehicles)if(row.advertisedPrice===null){const prior=previous?.vehicles?.find(v=>v.vin===row.vin&&v.stockNumber===row.stockNumber);if(prior?.advertisedPrice>0&&Number.isFinite(prior.advertisedPrice)){row.advertisedPrice=prior.advertisedPrice;row.priceCheckedAt=prior.priceCheckedAt||prior.checkedAt;row.priceRetained=true;}}
- const data=validateAutoNationFeed({source:run.config.origin,storeLabel:run.config.store,storeId:run.config.storeId,scope:run.scope,complete:true,checkedAt:new Date().toISOString(),listRecheckedAt:state.listRecheckedAt,advertisedTotal:state.total,resultsTotal:state.resultsTotal,promotionalTileCount:state.promotionalTileCount,detailCount:state.detailCount,vehicles},run.config);
+ const data=validateAutoNationFeed({source:run.config.origin,storeLabel:run.config.store,storeId:run.config.storeId,scope:run.scope,complete:true,checkedAt:new Date().toISOString(),listRecheckedAt:state.listRecheckedAt,...promotions,detailCount:state.detailCount,vehicles},run.config);
  data.dailyChanges=inventoryChanges(previous,vehicles,data.checkedAt);await save(run.snapshot,data);return data;
 }
 export async function runAutoNationBatch(tab,run,options={}){

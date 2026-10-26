@@ -16,19 +16,58 @@ The user authorized the same 7 a.m. and noon America/New_York refresh for every 
 
 Use the available supported browser. Never substitute the previously denied headless Greenway/AutoNation probes, bypass challenges or retry access denials. Import the runner from its absolute file URL with a fresh query suffix. One bounded batch per browser tool call. Greenway uses at most three list pages or five used detail pages; AutoNation uses at most three pages or five details; Hutchinson defaults to one list page (including the visible details tabs) or five used detail pages. Return a progress update between batches.
 
-Each helper accepts a writable checkpoint directory. When workspace writes are restricted in CUA, use `C:/Users/Sponk/AppData/Local/Temp/pocket-desking-scheduled`. This directory contains public vehicle evidence only. Save and archive the returned run metadata, checkpoint and complete evidence/snapshot into workspace tmp; never change the original startedAt or make an old checkpoint fresh. Start a fresh reserved run for each store at each scheduled slot. Resume the same checkpoint for a navigation interruption. Expired checkpoints are retained as failed evidence and replaced by a new reserved run. Publish stores independently after complete verification, so another store's failure cannot block the successful store.
+Each helper accepts a writable checkpoint directory. When workspace writes are restricted in CUA, use `C:/Users/Sponk/AppData/Local/Temp/pocket-desking-scheduled` if writable. If CUA cannot write there either, use the loopback bridge below; do not abandon collection merely because the browser runtime cannot save files. These directories contain public vehicle evidence only. Save and archive the returned run metadata, checkpoint and complete evidence/snapshot into workspace tmp; never change the original startedAt or make an old checkpoint fresh. Start a fresh reserved run for each store at each scheduled slot. Resume the same checkpoint for a navigation interruption. Expired checkpoints are retained as failed evidence and replaced by a new reserved run. Publish stores independently after complete verification, so another store's failure cannot block the successful store.
 
-Greenway: `createBrowserRun('greenway',{directory})`, then `runBrowserBatch(tab,run,{maxPages:3})` until done; publish the returned complete snapshot. The main runner supports two bounded passes for identical overlapping VINs and preserves complete new/used counts. Do not fall back to the older one-pass checkpoint form just because filesystem writes are restricted; use the writable directory option.
+Greenway: `createBrowserRun('greenway',{directory})`, then `runBrowserBatch(tab,run,{maxPages:3})` until done; publish the returned complete snapshot. The main runner and the new loopback bridge support two bounded passes for identical overlapping VINs and preserve complete new/used counts. Prefer either of these over the older one-pass checkpoint form when imports work.
 
-AutoNation: `createAutoNationRun({scope:'physical',directory})`, then `runAutoNationBatch(tab,run,{maxPages:3,maxVehicles:5})` until done. Check every advertised VIN, final inventory recheck, physical store scope and three promotional tiles before publishing the physical subset. Missing dealer reports remain unavailable.
+AutoNation: `createAutoNationRun({scope:'physical',directory})`, then `runAutoNationBatch(tab,run,{maxPages:3,maxVehicles:5})` until done. Check every advertised VIN, the final inventory recheck, physical store scope and the explicitly observed promotional tiles before publishing the physical subset. The results heading counts VINs only. Rendered tile count must equal VIN count plus distinct recognized non-vehicle promotional tiles (one-price, pre-qualification or appraisal); do not assume there are always three. Save and validate promotional evidence on both passes. Unknown, duplicate, ambiguous or vehicle-linked promotional tiles fail validation. Missing dealer reports remain unavailable.
 
 Hutchinson: `createHutchinsonRun(key,{directory})`, then `runHutchinsonBatch(tab,run,{maxPages:1,maxVehicles:5})` until done. New and used pages capture exact labeled prices plus visible detail-tab colors. Used report destinations are checked separately in batches of five, followed by both section totals. A missing printed VIN in the Cadillac detail tab is accepted only with the unchanged VIN-bearing dealer listing URL and no conflicting printed VIN. Save the returned complete `-evidence.json`; then run `node scripts/finalize-hutchinson-run.mjs EVIDENCE` outside CUA. This performs the Node-only model/trim and complete-data validation and writes `-snapshot.json`. Publish with `node scripts/publish-hutchinson-inventory.mjs KEY SNAPSHOT --publish`. Do not publish the evidence file directly. Keep model and trim separate, last-eight VIN tile labels, OEM color fallback, and Sport interior labels. Never collect window stickers.
+
+## Loopback bridge when CUA cannot save checkpoints (October 25)
+
+Run `scripts/browser-checkpoint-bridge.mjs` from the workspace terminal, outside CUA. It only persists public evidence on this computer; it does not request dealership pages or publish data. Supported registry keys are `greenway`, `autonation-jacksonville`, `hutchinson-kia`, `hutchinson-gmc` and `hutchinson-cadillac`.
+
+```powershell
+# Reserve a new manual recovery. Choose an unused loopback port.
+node scripts/browser-checkpoint-bridge.mjs greenway --port 4321
+# Reopen the same non-expired run after the server or browser was interrupted.
+node scripts/browser-checkpoint-bridge.mjs --resume 'PATH-RETURNED-IN-metadata' --port 4321
+```
+
+Save the emitted metadata and reserved URL. The CLI labels a new run `manual recovery`. For a scheduled wake, reserve through the exported `reserveBridgeRun(store,{trigger:'scheduled',directory})` function and start the returned metadata with `bridgeServer(meta,{port})`, listening on `127.0.0.1`; retain the scheduled slot and actual wake time in the per-store report. Do not describe a manual recovery as a scheduled run. The default directory is `tmp/browser-bridge`.
+
+Open the emitted URL in a separate supported browser tab (`form`) and use another tab (`tab`) for public dealership pages. Import with a fresh absolute file-URL query suffix for each run:
+
+```js
+var checkpointClient = await import('file:///C:/Users/Sponk/Documents/ChatGPT/Pocket%20Desking/scripts/browser-checkpoint-client.mjs?run=' + Date.now());
+var progress = await checkpointClient.runCheckpointBatch(tab, form, {maxPages:3,maxVehicles:5});
+```
+
+Call **one batch per browser tool call**. Use `maxPages:1` for Hutchinson. The client reads the form's `#checkpoint` in 50,000-character chunks so large inventories cannot be truncated by browser tool output limits. It submits the exact JSON to the local form and verifies the incremented version in `#status` before continuing. Do not dump a whole checkpoint into a tool result or reconstruct it from truncated output. UTF-8 response headers, page charset and form encoding preserve Unicode evidence exactly. A rejected save must be inspected; never remove the immutable-evidence checks or edit accepted text to make it pass.
+
+The bridge saves atomically, serializes submissions and rejects conflicting checkpoint versions. Accepted evidence and the original `startedAt` remain fixed. Greenway expires after one hour; AutoNation and Hutchinson after two hours. Publisher freshness validation also applies. Preserve an expired checkpoint as failed evidence and reserve a new run; never extend its timestamps. AutoNation can replay a saved listing prefix on a new tab in bounded batches and checks it against the accepted cards. Hutchinson preserves accepted details when resuming an interrupted listing page.
+
+The bridge runs finalization outside CUA and returns **already-finalized snapshot paths**:
+
+| Progress | File to publish | Command |
+|---|---|---|
+| Greenway `done:true` | `snapshot` | `node scripts/publish-official-prices.mjs greenway SNAPSHOT --publish` |
+| AutoNation `done:true` | `snapshot` | `node scripts/publish-autonation-inventory.mjs SNAPSHOT --publish` |
+| Hutchinson `inventoryReady:true` | `inventorySnapshot` | `node scripts/publish-hutchinson-inventory.mjs KEY SNAPSHOT --inventory-only --publish` |
+| Hutchinson `done:true` after report batches | `snapshot` | `node scripts/publish-hutchinson-inventory.mjs KEY SNAPSHOT --reports-only --publish` |
+
+For Hutchinson publisher `KEY` use `kia`, `gmc` or `cadillac`, not the full registry key. Metadata also retains `inventoryEvidence` and `evidence` for audit. Do not pass those raw evidence files to a publisher. The bridge's `inventorySnapshot` is already finalized, unlike the direct Hutchinson runner's `inventoryEvidence`; the direct runner still requires the separate finalizer described below. Publish and verify inventory-only immediately, then continue the same checkpoint for reports. Neither `inventoryReady` nor a completed local snapshot proves live publication.
+
+No bridge route authorizes a private dealer API, challenge bypass or retry of denied access. It accepts only its reserved loopback route and same-origin form submissions. Browser availability recovery may resume the same unexpired checkpoint in another supported browser only when ordinary public pages remain accessible.
 
 ## Verification and acceptance
 
 All publishers share the recoverable publication lock, preserve unrelated releases, pull/rebase before committing and verify exact live JSON. Deployment verification waits up to ten minutes and polls every ten seconds; HTTP 401/403/429 stop immediately. Never turn an old or modified HTTP 200 response into success. Missing fresh amounts retain the previous verified amount and its original verification timestamp indefinitely. Missing fresh reports are unavailable rather than synthesized.
 
 Before starting Coggin recovery, inspect its Windows task and latest report, and wait for any running worker. Use the existing recovery command with its run lock. Run `node scripts/audit-unattended-inventory.mjs` afterward; this now covers all seven maps. A stale store must remain separately labeled retained, and the scheduled report must list all seven stores, evidence dates, complete counts, publication, live verification and actual trigger. Configured schedules, fixture tests, one-page probes and manual dispatches do not prove scheduled end-to-end success.
+
+Coggin's official maps now include complete vehicle rows from the same public listing reads: explicit year, make, model, trim, labeled colors and mileage, alongside VIN, stock, condition, official links and separately dated prices. The app may use those rows only after every identity agrees with the complete official VIN set, so new arrivals do not depend on a lagging syndicated list. Legacy maps remain readable, and retained amounts keep their original dates. A short syndicated feed must still fail its category/completeness checks. Use `node scripts/local-inventory-recovery.mjs --publish`; `--force` is only for an intentional fresh manual verification after the task/lock check, not an access-denial retry. Inspect `tmp/unattended-audit/latest-report.json` after all completed publications.
 
 The October 23 manual cloud recovery 40007465709 succeeded after the timing repair. Both local Coggin maps passed exact live verification. The new Hutchinson helper passed one real listing-page probe for each of Kia, GMC and Cadillac; AutoNation passed a bounded list probe. These probes did not replace any full inventory. A full unattended scheduled cycle for all seven remains to be proven. The computer, logged-in Windows session, Codex and supported browser must remain available for browser-only stores; the cloud's three public inventory feeds continue independently.
 

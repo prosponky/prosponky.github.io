@@ -3,7 +3,7 @@ import {readFile,writeFile,rename,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import {easternSlot,validateCogginSnapshot} from './local-inventory-recovery.mjs';
-import {validateAutoNationFeed} from '../src/autonation-inventory.js';
+import {validateAutoNationFeed,validateAutoNationPromotions} from '../src/autonation-inventory.js';
 import {verifiedCarfaxUrl} from '../src/carfax.js';
 
 function validDate(value,now){const time=Date.parse(value);if(!Number.isFinite(time)||time>now)throw Error('Invalid verification date');return time;}
@@ -49,7 +49,8 @@ export function auditOfficialMaps(registry,maps,{now=Date.now(),slotStartedAt=ea
     metrics={total:data.total,interiorColors:Object.values(data.interiorColors).filter(v=>v.trim()).length,verifiedAmounts:Object.values(data.retailPrices).filter(v=>v>0).length,...amountMetrics(data.retailPrices,data.priceRetained,data.priceCheckedAt,data.checkedAt),msrp:amountMetrics(data.msrps,data.msrpRetained,data.msrpCheckedAt,data.checkedAt),officialMsrpMapPresent:!!data.msrps,carfaxReports:Object.values(data.carfax).filter(Boolean).length};
    }else if(key==='autonation-jacksonville'){
     validateAutoNationFeed(data,config);validDate(data.listRecheckedAt,now);
-    if(data.scope!=='physical'||data.promotionalTileCount!==3||data.resultsTotal!==data.advertisedTotal+3||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt))throw Error('AutoNation physical scope or final listing reconciliation is incomplete');
+    if(data.scope!=='physical'||data.vehicles.length>data.advertisedTotal||Date.parse(data.listRecheckedAt)>Date.parse(data.checkedAt))throw Error('AutoNation physical scope or final listing reconciliation is incomplete');
+    validateAutoNationPromotions(data,{allowLegacy:true});
     for(const row of data.vehicles)if(row.interiorColor!==undefined&&typeof row.interiorColor!=='string'||typeof row.color!=='string'||row.carfaxUrl!==null&&!verifiedCarfaxUrl(row.carfaxUrl))throw Error('AutoNation vehicle color/report fields are invalid');
     metrics={total:data.vehicles.length,advertisedChecked:data.advertisedTotal,interiorColors:data.vehicles.filter(v=>typeof v.interiorColor==='string'&&v.interiorColor.trim()).length,missingInteriorFields:data.vehicles.filter(v=>v.interiorColor===undefined).length,verifiedAmounts:data.vehicles.filter(v=>v.advertisedPrice>0).length,retainedAmounts:data.vehicles.filter(v=>v.priceRetained===true).length,carfaxReports:data.vehicles.filter(v=>v.carfaxUrl).length};
    }else if(config.adapter==='hutchinson-browser'){

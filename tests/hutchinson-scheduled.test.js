@@ -25,3 +25,12 @@ test('pagination survives missing printed VIN and a URL that lags the visible ne
  await hutchinsonBrowserBatch(tab,state,{origin,sections:[{path:'/new-vehicles/',condition:'new'},{path:'/used-vehicles/',condition:'used'}]},{maxPages:1});
  assert.equal(pressed,true);assert.equal(new URL(state.nextUrl).searchParams.get('_p'),'2');assert.equal(state.pages.length,1);assert.equal(state.pages[0].cards[0].url,url);
 });
+
+test('resumed listing page preserves accepted detail text and its original timestamp',async()=>{
+ const origin='https://www.kiaofmacon.com',url=origin+'/inventory/new-2026-kia-k4-3kpfu4de7te041698/',detail={text:'VIN: 3KPFU4DE7TE041698\nInterior: Crème • Sport',checkedAt:'2026-10-25T10:00:00Z'},card={url,text:'New 2026 Kia K4\nVIN: 3KPFU4DE7TE041698'},state={phase:'list',sectionIndex:0,nextUrl:origin+'/new-vehicles/',pages:[],details:{[url]:structuredClone(detail)},detailQueue:[],detailIndex:0};
+ let reads=0,pricingRestored=0;
+ const row={getByRole:(_role,{name})=>({click:async()=>{assert.equal(name,'pricing tab');pricingRestored++;}})};
+ const tab={url:async()=>state.nextUrl,playwright:{domSnapshot:async()=>'',getByText:()=>({waitFor:async()=>{},allTextContents:async()=>['Page 1 of 1']}),getByRole:()=>({allTextContents:async()=>['1 New Vehicle']}),locator:()=>({evaluateAll:async()=>++reads===1?[url]:[card],nth:()=>row})}};
+ await hutchinsonBrowserBatch(tab,state,{origin,sections:[{path:'/new-vehicles/',condition:'new'},{path:'/used-vehicles/',condition:'used'}]});
+ assert.equal(pricingRestored,1);assert.deepEqual(state.details[url],detail);assert.equal(state.pages.length,1);
+});

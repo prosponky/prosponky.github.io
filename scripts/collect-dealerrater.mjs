@@ -1,10 +1,11 @@
-import {mergeInventoryPage,verifyListingCount,sameVehicleSnapshot} from './dealerrater-collection.mjs';
+import {mergeInventoryPage,verifyListingCount,sameVehicleSnapshot,verifyCategoryCoverage} from './dealerrater-collection.mjs';
 import {InventoryChangedError,collectWithFreshRetry} from './inventory-retry.mjs';
 import {inventoryChanges} from '../src/inventory-changes.js';
 import {mkdir,writeFile,rename,readFile} from 'node:fs/promises';
 import {dealerraterPage} from '../src/dealerrater-inventory.js';
 const configs={greenway:{name:'Greenway Kia at the Avenues',address:'10564 Philips',id:'26040',path:'/classifieds/dealer/Greenway-Kia-at-the-Avenues-cars-26040/'},'coggin-atlantic':{name:'Coggin Nissan On Atlantic',address:'10600 Atlantic Blvd',id:'3377',path:'/classifieds/dealer/Coggin-Nissan-On-Atlantic-cars-3377/'},'coggin-avenues':{name:'Coggin Nissan at the Avenues',address:'10859 Phillips Highway',id:'22911',path:'/classifieds/dealer/Coggin-Nissan-at-the-Avenues-cars-22911/'}};
 const key=process.argv[2]||'greenway',dealer=configs[key];if(!dealer)throw Error('Unknown store');
+const startedAt=new Date().toISOString();
 let passes=0;
 async function collectPass(){
 passes++;
@@ -23,9 +24,10 @@ for(let pageNumber=1;url&&pageNumber<=100;pageNumber++){
  if(url)await new Promise(resolve=>setTimeout(resolve,1000));
 }
 if(url)throw new InventoryChangedError('Incomplete inventory pagination; previous snapshot retained.');verifyListingCount(rows,listed,expected,duplicates);
-if(![...rows.values()].some(r=>r.condition==='new')||![...rows.values()].some(r=>r.condition==='used'))throw Error('Missing inventory category; previous snapshot retained.');
-return {checkedAt,rows,duplicates,listed,expected};
+const coverage=verifyCategoryCoverage(rows,listed,expected);
+return {checkedAt,rows,duplicates,listed,expected,coverage};
 }
+try{
 const collected=await collectWithFreshRetry(collectPass,async error=>{
  console.warn(error.message+' Restarting once from the first page.');
  await new Promise(resolve=>setTimeout(resolve,2000));
@@ -38,3 +40,10 @@ await mkdir('public/inventory',{recursive:true});
 await writeFile(`public/inventory/${key}.json.tmp`,JSON.stringify({dealer:dealer.name,source:'DealerRater public listings',checkedAt,dailyChanges,coverage:dealer.name+' inventory published on DealerRater; third-party availability and pricing may lag the dealer.',vehicles:[...rows.values()]}));
 await rename(`public/inventory/${key}.json.tmp`,`public/inventory/${key}.json`);
 console.log(`Saved ${rows.size} public DealerRater listings.`);
+await mkdir('tmp/public-inventory-diagnostics',{recursive:true});
+await writeFile(`tmp/public-inventory-diagnostics/${key}.json`,JSON.stringify({store:key,source:'DealerRater public listings',startedAt,finishedAt:new Date().toISOString(),status:'success',checkedAt,coverage:collected.coverage},null,2));
+}catch(error){
+ await mkdir('tmp/public-inventory-diagnostics',{recursive:true});
+ await writeFile(`tmp/public-inventory-diagnostics/${key}.json`,JSON.stringify({store:key,source:'DealerRater public listings',startedAt,finishedAt:new Date().toISOString(),status:'failure',code:error.code||'PUBLIC_COLLECTION_FAILED',reason:error.message,coverage:error.coverage||null,priorEvidenceRetained:true},null,2));
+ throw error;
+}

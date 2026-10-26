@@ -1,5 +1,31 @@
 import {verifiedCarfaxUrl} from './carfax.js';
 const vinPattern=/^[A-HJ-NPR-Z0-9]{17}$/;
+export const autoNationPromotions=Object.freeze({
+ 'one-price':'What you see is what you pay',
+ 'pre-qualification':'Get pre-qualified with zero impact',
+ 'appraisal':'Wondering What Your Car'
+});
+export function validateAutoNationPromotions(data,{allowLegacy=false}={}){
+ const check=(tiles,count,total)=>{
+  if(!Array.isArray(tiles)||!Number.isSafeInteger(count)||count!==tiles.length||count>Object.keys(autoNationPromotions).length||!Number.isSafeInteger(total)||total!==data.advertisedTotal+count)throw Error('AutoNation promotional reconciliation is incomplete.');
+  const kinds=new Set();
+  for(const tile of tiles){
+   const matches=typeof tile?.text==='string'?Object.entries(autoNationPromotions).filter(([,label])=>tile.text.includes(label)):[];
+   if(matches.length!==1||matches[0][0]!==tile.kind||kinds.has(tile.kind)||tile.vehicleLinks!==0)throw Error('AutoNation promotional evidence is unknown, duplicated or contains a vehicle link.');
+   kinds.add(tile.kind);
+  }
+ };
+ if(!Number.isSafeInteger(data.advertisedTotal)||data.advertisedTotal<1)throw Error('AutoNation advertised VIN total is invalid.');
+ // Existing verified maps predate persisted tile evidence. They remain readable,
+ // but every newly finalized/published snapshot must contain both listing passes.
+ if(allowLegacy&&data.promotionalTiles===undefined&&data.recheckedPromotionalTiles===undefined&&data.recheckedResultsTotal===undefined){
+  if(data.promotionalTileCount!==3||data.resultsTotal!==data.advertisedTotal+3)throw Error('Legacy AutoNation promotional reconciliation is incomplete.');
+  return data;
+ }
+ check(data.promotionalTiles,data.promotionalTileCount,data.resultsTotal);
+ check(data.recheckedPromotionalTiles,data.recheckedPromotionalTiles?.length,data.recheckedResultsTotal);
+ return data;
+}
 export function verifiedAutoNationLink(value,vin){
  try{const u=new URL(value);return !u.username&&!u.password&&u.origin==='https://www.autonationusa.com'&&u.pathname.toUpperCase().startsWith('/CARS/'+vin.toUpperCase()+'/')&&vinPattern.test(vin.toUpperCase())?u.href:null;}catch{return null;}
 }
