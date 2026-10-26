@@ -40,6 +40,7 @@ test('AutoNation does not substitute an internal vehicle or monthly payment for 
 test('fee-only computed 1Price stays unavailable instead of publishing a filing fee as the vehicle price',()=>{
  const e=structuredClone(f.own);e.cardPrice=19902;e.vehicle.InventoryVehicleDetail.PricingStack.Items=['lock','unlock'].flatMap(ItemDisplayMode=>[{Name:'VehiclePrice',Value:0,ItemDisplayMode},{Name:'Dealer Fee',Value:0,ItemDisplayMode},{Name:'Electronic Filing Fee',Value:499,ItemDisplayMode},{Name:'Autonation1Price',Value:499,ItemDisplayMode}]);
  const row=autoNationVehicle(e,f.config,f.checkedAt);assert.equal(row.advertisedPrice,null);assert.match(row.priceUnavailableReason,/without a vehicle price/);
+ const zero=structuredClone(e);zero.vehicle.InventoryVehicleDetail.PricingStack.Items.forEach(item=>item.Value=0);assert.equal(autoNationVehicle(zero,f.config,f.checkedAt).advertisedPrice,null);
  for(const change of [x=>x.vehicle.InventoryVehicleDetail.PricingStack.Items[0].Value=100,x=>x.vehicle.InventoryVehicleDetail.PricingStack.Items[2].Value=498,x=>x.vehicle.InventoryVehicleDetail.PricingStack.Items.pop()]){const invalid=structuredClone(e);change(invalid);assert.throws(()=>autoNationVehicle(invalid,f.config,f.checkedAt));}
 });
 test('AutoNation group loads only its verified official map and quote uses its advertised price',async()=>{

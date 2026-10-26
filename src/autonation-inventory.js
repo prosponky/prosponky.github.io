@@ -41,7 +41,7 @@ export function autoNationVehicle(evidence,config,checkedAt){
  // payment and fee amounts are not substitutes for an advertised price.
  const entries=details?.PricingStack?.Items?.filter(p=>/^autonation1price$/i.test(p.Name))||[];
  const values=[...new Set(entries.map(p=>p.Value))];
- if(values.length>1||values.some(p=>typeof p!=='number'||!Number.isFinite(p)||p<=0))throw Error('AutoNation advertised price evidence is inconsistent.');
+ if(values.length>1||values.some(p=>typeof p!=='number'||!Number.isFinite(p)||p<0))throw Error('AutoNation advertised price evidence is inconsistent.');
  const items=details?.PricingStack?.Items||[],base=items.filter(p=>p.Name==='VehiclePrice');
  // Some dealer detail pages omit the vehicle amount and put only filing fees
  // into their computed 1Price. That is missing price evidence, never a $499 car.
@@ -51,6 +51,7 @@ export function autoNationVehicle(evidence,config,checkedAt){
   return one&&vehicle?.Value===0&&fees.length>0&&fees.every(p=>typeof p.Value==='number'&&Number.isFinite(p.Value)&&p.Value>=0)&&one.Value===fees.reduce((n,p)=>n+p.Value,0);
  });
  const price=feeOnly?null:values[0]??null;
+ if(price===0)throw Error('AutoNation advertised price evidence is inconsistent.');
  if(!feeOnly&&evidence.cardPrice!==price)throw Error('AutoNation list and vehicle prices changed during collection.');
  if(condition==='NEW')throw Error('New AutoNation pricing requires separate verified MSRP semantics.');
  return {vin,stockNumber,condition:'used',year:v.Year,make:v.Make,model:v.Model,trim:String(v.Trim||'').trim(),color:String(v.ExteriorColor||'').trim(),interiorColor:typeof v.InteriorColor==='string'?v.InteriorColor.trim():'',mileage:typeof v.Mileage==='number'&&Number.isFinite(v.Mileage)&&v.Mileage>=0?v.Mileage:null,
