@@ -4,10 +4,10 @@ import {authClient,authState} from './auth.js';
 
 import {adminState} from './admin.js';
 
-const canConfirmEmail=()=>adminState.allowed&&!adminState.target&&authState.user?.id==='b39d1141-e6c7-4ad9-a27f-c6b841452be1';
+const canConfirmEmail=()=>adminState.allowed&&!adminState.target;
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-async function action(body){if(body.action==='confirm-email'&&!canConfirmEmail())throw Error('Only Mark can confirm accounts.');if(!adminState.allowed||adminState.target)throw Error('Administrator access required.');const {data,error}=await authClient.functions.invoke('admin-user-actions',{body});if(error||data?.error)throw Error(data?.error||'Account tools are not connected yet.');return data;}
+async function action(body){if(body.action==='confirm-email'&&!canConfirmEmail())throw Error('Administrator access required.');if(!adminState.allowed||adminState.target)throw Error('Administrator access required.');const {data,error}=await authClient.functions.invoke('admin-user-actions',{body});if(error||data?.error)throw Error(data?.error||'Account tools are not connected yet.');return data;}
 
 export function openUserSettings(user,onChanged){
 
@@ -20,6 +20,14 @@ export function openUserSettings(user,onChanged){
  const assign=document.createElement('button');assign.type='button';assign.className='primary';assign.textContent='Assign store';dialog.querySelector('[data-actions]').before(assign);assign.onclick=()=>openStoreHub(user,()=>{dialog.close();onChanged?.();});
 
  const status=dialog.querySelector('[role="status"]');let busy=false;
+ if(adminState.allowed&&!adminState.target&&authState.user?.id==='b39d1141-e6c7-4ad9-a27f-c6b841452be1'){
+  const roleButton=document.createElement('button');roleButton.type='button';roleButton.className='quiet full';roleButton.textContent='Admin role';dialog.querySelector('[data-actions]').append(roleButton);
+  const roleForm=document.createElement('form');roleForm.hidden=true;roleForm.innerHTML='<p>Administrators can manage users, access their workspaces and confirm accounts.</p><label><input type="checkbox" data-role-enabled> Administrator</label><label>Type this user&#39;s email to confirm<input type="email" required data-role-email autocomplete="off"></label><button class="primary">Save admin role</button><button type="button" class="quiet full" data-role-cancel>Cancel</button>';roleButton.after(roleForm);
+  roleForm.querySelector('[data-role-cancel]').onclick=()=>roleForm.hidden=true;
+  roleButton.onclick=async()=>{roleButton.disabled=true;try{const {data,error}=await authClient.rpc('owner_user_admin_role',{target_user:user.user_id});if(error)throw Error('Admin role could not be loaded.');roleForm.querySelector('[data-role-enabled]').checked=data===true;roleForm.querySelector('[data-role-email]').value='';roleForm.hidden=false;}catch(e){status.textContent=e.message;}finally{roleButton.disabled=false;}};
+  roleForm.onsubmit=async e=>{e.preventDefault();if(busy)return;const email=roleForm.querySelector('[data-role-email]').value;if(email!==user.email){status.textContent='Type the exact email shown above.';return;}busy=true;roleForm.querySelectorAll('button,input').forEach(b=>b.disabled=true);try{const {error}=await authClient.rpc('owner_set_admin_role',{target_user:user.user_id,make_admin:roleForm.querySelector('[data-role-enabled]').checked,confirm_email:email});if(error)throw Error('Admin role could not be saved.');roleForm.hidden=true;status.textContent='Admin role saved.';onChanged?.();}catch(e){status.textContent=e.message;}finally{busy=false;roleForm.querySelectorAll('button,input').forEach(b=>b.disabled=false);}};
+ }
+
 
  const login=dialog.querySelector('[data-last-login]');
 

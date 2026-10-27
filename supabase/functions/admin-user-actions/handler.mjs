@@ -16,7 +16,6 @@ export function createAdminHandler({createClient,url,publicKey,serviceKey}){
    const {data:admin,error:adminError}=await caller.rpc('is_app_admin');
    if(adminError||admin!==true)return reply(403,{error:'Administrator access required.'});
    const body=await req.json();
-   if(body.action==='confirm-email'&&identity.user.id!=='b39d1141-e6c7-4ad9-a27f-c6b841452be1')return reply(403,{error:'Only Mark can confirm accounts.'});
    if(body.action==='capabilities')return reply(200,{ready:true});
    if(!['reset-password','edit-email','delete-user','confirm-email'].includes(body.action)||!/^[0-9a-f-]{36}$/i.test(body.userId||''))return reply(400,{error:'Invalid account action.'});
    if(body.userId===identity.user.id)return reply(403,{error:'Manage your own account through account settings.'});

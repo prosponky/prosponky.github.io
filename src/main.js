@@ -1,3 +1,4 @@
+import {openSupportTickets,openTicket,refreshTicketNotifications} from './support-tickets.js';
 import {inventoryArrivalKey} from './inventory-changes.js';
 import {settingsStoreGrants,storeScopes,defaultStoreScope} from './store-access.js';
 import {bindAdminBannerActivity} from './admin-banner-activity.js';
@@ -405,7 +406,7 @@ function render(){disposeQuotePreview?.();disposeQuotePreview=null;
 
   bind();
 
-  bindNotifications(effectiveOwner(),(vins,arrivalStore='GW Kia Ave',budget=false,preview=false)=>{if(preview){showBudgetPreview();return;}if(adminState.allowed&&!adminState.target){adminInventoryStore=arrivalStore;localStorage.setItem('pd-admin-inventory-store-v2',adminInventoryStore);}else {const grants=inventoryGrants();if(!storeScopes(grants,inventoryStores).includes(arrivalStore)&&!(arrivalStore==='__assigned__'&&grants.length>1))return;defaults.inventoryStorePreference=arrivalStore;localStorage.setItem('pd-group-inventory-store-'+effectiveOwner(),arrivalStore);}inventoryArrivalVins=new Set(vins);if(budget)budgetPinsPending={owner:effectiveOwner(),vins};screen='inventory';render();},email=>{if(!adminState.allowed||adminState.target)return;adminSearchDraft=email;screen='admin';render();});clearInventoryNotifications(effectiveOwner());configureBudgetAlerts();if(adminState.allowed&&!adminState.target)checkNewUsers();
+  bindNotifications(effectiveOwner(),(vins,arrivalStore='GW Kia Ave',budget=false,preview=false)=>{if(preview){showBudgetPreview();return;}if(adminState.allowed&&!adminState.target){adminInventoryStore=arrivalStore;localStorage.setItem('pd-admin-inventory-store-v2',adminInventoryStore);}else {const grants=inventoryGrants();if(!storeScopes(grants,inventoryStores).includes(arrivalStore)&&!(arrivalStore==='__assigned__'&&grants.length>1))return;defaults.inventoryStorePreference=arrivalStore;localStorage.setItem('pd-group-inventory-store-'+effectiveOwner(),arrivalStore);}inventoryArrivalVins=new Set(vins);if(budget)budgetPinsPending={owner:effectiveOwner(),vins};screen='inventory';render();},email=>{if(!adminState.allowed||adminState.target)return;adminSearchDraft=email;screen='admin';render();},id=>openTicket(id).catch(()=>{}));clearInventoryNotifications(effectiveOwner());configureBudgetAlerts();if(adminState.allowed&&!adminState.target)checkNewUsers();
 
 
 
@@ -514,7 +515,7 @@ function homeView(){const firstName=String(defaults.displayName||'').trim().spli
 
 
 
-function menuView(){return `<header><h1>Menu</h1><button class="quiet" data-go="${menuReturn}">Back</button></header><button class="quiet full" data-go="home">Home</button><button class="quiet full" id="start-new-quote">Start a new quote</button><button class="quiet full" data-go="sales">Sales tracking</button><button class="quiet full" data-go="inventory">Inventory</button><button class="quiet full" data-go="history">History</button><button class="quiet full" data-go="defaults">Settings</button>${adminState.allowed?'<button class="quiet full admin-highlight" data-go="admin">Admin settings</button>':''}${authState.user?'<button class="quiet full" id="sign-out">Sign out</button>':'<button class="quiet full" data-go="login">Sign in</button>'}<div id="message"></div>`}
+function menuView(){return `<header><h1>Menu</h1><button class="quiet" data-go="${menuReturn}">Back</button></header><button class="quiet full" data-go="home">Home</button><button class="quiet full" id="start-new-quote">Start a new quote</button><button class="quiet full" data-go="sales">Sales tracking</button><button class="quiet full" data-go="inventory">Inventory</button><button class="quiet full" data-go="history">History</button><button class="quiet full" data-go="defaults">Settings</button>${authState.user&&!adminState.target?'<button class="quiet full" id="support-tickets">Submit a ticket</button>':''}${adminState.allowed?'<button class="quiet full admin-highlight" data-go="admin">Admin settings</button>':''}${authState.user?'<button class="quiet full" id="sign-out">Sign out</button>':'<button class="quiet full" data-go="login">Sign in</button>'}<div id="message"></div>`}
 
 
 
@@ -1112,6 +1113,8 @@ function bindGuide(){
 
 
 function bind(){
+ document.querySelector('#support-tickets')?.addEventListener('click',()=>openSupportTickets(defaults));
+ refreshTicketNotifications();
 
  document.querySelector('#zip-tax-info')?.addEventListener('click',openZipTaxDetails);
  document.querySelectorAll('[data-rebate-info]').forEach(b=>b.onclick=()=>rebateInformation(Number(b.dataset.rebateInfo)));
