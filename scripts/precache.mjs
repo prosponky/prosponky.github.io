@@ -5,6 +5,7 @@ function visit(key){const item=manifest[key];if(!item||selected.has('/'+item.fil
 for(const [key,item]of Object.entries(manifest))if(item.isEntry)visit(key);
 // Keep basic PDF export available even on the first offline quote.
 visit('src/pdf.js');
+visit('src/sales-report.js');
 const assets=[...selected].sort();
 const hash=createHash('sha256').update(assets.join('|')).digest('hex').slice(0,12);
 let worker=await readFile('dist/sw.js','utf8');
