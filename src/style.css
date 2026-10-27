@@ -493,4 +493,6 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 
 .sales-bonuses{margin-top:22px}.bonus-sheet .sales-sheet-head,.bonus-sheet .sales-sheet-row{grid-template-columns:64px minmax(0,1fr) 84px;align-items:center}.bonus-sheet .sales-sheet-row{background:#20292d;min-height:52px;margin:0}.bonus-sheet .sales-sheet-row span:last-child,.bonus-sheet .sales-sheet-head span:last-child{text-align:right}.bonus-sheet .sales-sheet-row span{overflow-wrap:anywhere}
 
-.sales-add-actions{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:12px}.sales-add-actions button{width:100%;margin:0}.sales-totals>.sales-bonus-total{grid-column:1/-1}
+.sales-totals>.sales-bonus-total{grid-column:1/-1}
+
+.sales-bonus-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}.sales-bonus-heading h2{margin:0}.sales-bonus-heading button{width:44px;min-width:44px;height:44px;margin:0;padding:0;font-size:26px}
