@@ -1,3 +1,4 @@
+import {displaySalesPhone} from './sales-phone.js';
 import {jsPDF} from 'jspdf';
 import {salesByCondition} from './sales-recap.js';
 import {totalBonuses} from './sales-bonuses.js';
@@ -13,7 +14,7 @@ export function createSalesReport({period,name='',sales=[],bonuses=[],orientatio
  for(const row of rows.length?rows:[labels.map((_,i)=>i===0?'No entries':'')]){doc.setFont('helvetica','normal');let cells=row.map((v,i)=>fixed.has(labels[i])?[clean(v)]:doc.splitTextToSize(clean(v),widths[i]-10));let lines=Math.max(...cells.map(c=>c.length));const maxLines=Math.max(1,Math.floor((h-36-111)/10));for(let start=0;start<lines;){const count=Math.min(lines-start,maxLines);const height=count*10+8;if(room(height))heading();doc.setFont('helvetica','normal');doc.setFontSize(8);let x=margin;cells.forEach((c,i)=>{doc.setDrawColor(190,202,206);doc.rect(x,y,widths[i],height);const content=c.slice(start,start+count);doc.setFontSize(fixed.has(labels[i])?Math.min(8,8*(widths[i]-10)/Math.max(1,doc.getTextWidth(clean(content[0]||'')))):8);doc.text(content,x+5,y+11);doc.setFontSize(8);x+=widths[i];});y+=height;start+=count;}}if(summary){const cells=summary.map((v,i)=>fixed.has(labels[i])?[clean(v)]:doc.splitTextToSize(clean(v),widths[i]-10));const height=Math.max(...cells.map(c=>c.length))*10+10;if(room(height))heading();doc.setFont('helvetica','bold');doc.setFontSize(8);let x=margin;cells.forEach((c,i)=>{doc.setFillColor(237,242,243);doc.setDrawColor(190,202,206);doc.rect(x,y,widths[i],height,'FD');doc.text(c,x+5,y+12);x+=widths[i];});y+=height;}y+=12;}
  const {columns,rows}=salesReportTable(sales,{phoneReference,orientation});
  const earnedTotal=sales.reduce((n,r)=>n+(phoneReference&&r.front===0?(r.isSplit?100:200):(Number(r.back)||0)),0);const splitCount=sales.filter(r=>r.isSplit).length;
- table('Sales',columns.map(c=>c.label),columns.map(c=>c.width),rows,columns.map((c,i)=>i===0?'Totals':c.label==='Units'?unitText(units):c.label==='Split with'?'Splits: '+splitCount:['Earned','Back'].includes(c.label)?cash(earnedTotal):''));
+ table('Sales',columns.map(c=>c.label),columns.map(c=>c.width),rows,columns.map((c,i)=>c.label==='Units'?unitText(units):c.label==='Date'?'Totals':c.label==='Split with'?'Splits: '+splitCount:['Earned','Back'].includes(c.label)?cash(earnedTotal):''));
  table('Bonuses',['Date','Notes','Amount'],[70,orientation==='landscape'?530:330,95],bonuses.map(r=>[r.bonusDate?reportDate(r.bonusDate):'Monthly',r.notes||'-',cash(r.amount)]));room(28);doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Total bonuses: '+cash(totalBonuses(bonuses)),margin,y+14);
  if(y+40>h-115){doc.addPage();header();}doc.setFont('helvetica','normal');doc.setFontSize(9);doc.text('I confirm that the sales and bonuses listed in this report are correct.',margin,h-101);doc.setDrawColor(70);doc.line(margin,h-65,w-margin-155,h-65);doc.line(w-margin-125,h-65,w-margin,h-65);doc.text('Salesperson signature',margin,h-51);doc.text('Date',w-margin-125,h-51);
  const pages=doc.getNumberOfPages();for(let i=1;i<=pages;i++){doc.setPage(i);doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(90);doc.text('Pocket Desking  |  '+period+'  |  Page '+i+' of '+pages,margin,h-18);}return doc;
@@ -23,14 +24,14 @@ export function salesReportTable(sales,{phoneReference=false,orientation='portra
  const earned=r=>phoneReference&&r.front===0?(r.isSplit?100:200):r.back;
  const hasText=field=>sales.some(r=>String(r[field]??'').trim());
  const columns=[
+ {label:'Units',width:28,value:r=>r.isSplit?'.5':'1'},
  {label:'Date',width:75,value:r=>reportDate(r.soldDate)},
- ...(hasText('dealNumber')?[{label:phoneReference?'Phone #':'Deal #',width:phoneReference?75:55,value:r=>r.dealNumber||''}]:[]),
+ ...(hasText('dealNumber')?[{label:phoneReference?'Phone #':'Deal #',width:phoneReference?75:55,value:r=>phoneReference?displaySalesPhone(r.dealNumber):r.dealNumber||''}]:[]),
  ...(hasText('condition')?[{label:'Type',width:38,value:r=>r.condition||''}]:[]),
  ...(hasText('stockNumber')?[{label:'Stock #',width:65,value:r=>r.stockNumber||''}]:[]),
  ...(hasText('vehicle')?[{label:'Vehicle',width:orientation==='landscape'?150:100,value:r=>r.vehicle||''}]:[]),
  ...(hasText('lastName')?[{label:'Customer',width:80,value:r=>r.lastName||''}]:[]),
  {label:'Split with',width:80,value:r=>r.isSplit?(r.splitWith||'Not entered'):''},
- {label:'Units',width:28,value:r=>r.isSplit?'.5':'1'},
  ...(sales.some(r=>Number.isFinite(r.front)&&r.front!==0)?[{label:'Front',width:53,value:r=>r.front?cash(r.front):''}]:[]),
  ...(sales.some(r=>Number.isFinite(earned(r))&&earned(r)!==0)?[{label:phoneReference?'Earned':'Back',width:53,value:r=>earned(r)?cash(earned(r)):''}]:[])
  ];return {columns,rows:sales.map(r=>columns.map(c=>c.value(r)))};

@@ -499,3 +499,5 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 
 /* Compact bonus action and monthly earnings summary. */
 .sales-bonus-heading{margin-bottom:6px}.sales-bonus-heading button{width:32px;min-width:32px;height:32px;min-height:32px;font-size:21px;position:relative}.sales-bonus-heading button:before{content:"";position:absolute;inset:-6px}.sales-bonuses{margin-top:14px}.sales-bonuses h2{font-size:18px}.sales-totals{gap:9px 12px;margin:14px 0;font-size:12px;line-height:1.3}.sales-totals b{font-size:17px;margin-top:3px}.sales-totals>.sales-bonus-total{grid-column:auto}.sales-totals .sales-type-summary{grid-column:1/-1}
+
+.sales-phone-sheet .sales-sheet-row>span:nth-child(2){font-size:11px;white-space:nowrap}

@@ -1,0 +1,2 @@
+export function normalizeSalesPhone(value){const raw=String(value??'').trim();if(!raw)return '';if(!/^[\d\s()+.,"'‘’“”\-]+$/.test(raw))return null;let digits=raw.replace(/\D/g,'');if(digits.length===11&&digits.startsWith('1'))digits=digits.slice(1);if(digits.length!==10)return null;return '('+digits.slice(0,3)+') '+digits.slice(3,6)+'-'+digits.slice(6);}
+export function displaySalesPhone(value){return normalizeSalesPhone(value)??String(value??'').trim();}

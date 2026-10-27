@@ -1,0 +1,3 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {normalizeSalesPhone,displaySalesPhone} from '../src/sales-phone.js';
+test('US phone punctuation, quoted input and country code normalize consistently',()=>{for(const raw of ['9045550123','+1 (904) 555-0123','"+1 904.555.0123"',"'904-555-0123'"])assert.equal(normalizeSalesPhone(raw),'(904) 555-0123');});
+test('invalid or extended phone values are preserved for display and rejected on save',()=>{for(const raw of ['123','+44 1234567890','9045550123 ext 2']){assert.equal(normalizeSalesPhone(raw),null);assert.equal(displaySalesPhone(raw),raw);}assert.equal(normalizeSalesPhone(''),'');});
