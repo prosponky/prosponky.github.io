@@ -35,7 +35,7 @@ export function salesReportTable(sales,{phoneReference=false,orientation='portra
  ...(hasText('lastName')?[{label:'Customer',width:80,value:r=>r.lastName||''}]:[]),
  {label:'Split with',width:80,value:r=>r.isSplit?(r.splitWith||'Not entered'):''},
  ...(sales.some(r=>Number.isFinite(r.front)&&r.front!==0)?[{label:'Front',width:53,value:r=>r.front?cash(r.front):''}]:[]),
- ...(sales.some(r=>Number.isFinite(earned(r))&&earned(r)!==0)?[{label:phoneReference?'Earned':'Back',width:53,value:r=>earned(r)?cash(earned(r)):''}]:[])
+ ...(!phoneReference&&sales.some(r=>Number.isFinite(earned(r))&&earned(r)!==0)?[{label:'Back',width:53,value:r=>earned(r)?cash(earned(r)):''}]:[])
  ];return {columns,rows:sales.map(r=>columns.map(c=>c.value(r)))};
 }
 
