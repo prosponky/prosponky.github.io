@@ -11,3 +11,5 @@ test('washout uses minimal currency decimals and half-unit notation',()=>{const 
 test('washout heading uses full month and year',()=>{assert.equal(reportMonth('2026-10'),'October 2026');assert.equal(reportMonth('2027-01'),'January 2027');});
 
 test('combined washout total adds earned sales and bonuses once',()=>{const pdf=createSalesReport({period:'2026-10',sales:[{soldDate:'2026-10-01',front:0,back:100},{soldDate:'2026-10-02',front:500,back:200}],bonuses:[{amount:50}]}).output();assert.ok(pdf.includes('Sales + bonuses'));assert.ok(pdf.includes('$350'));});
+
+test('washout footer contains only page numbering',()=>{const pdf=createSalesReport({period:'2026-10'}).output();assert.ok(pdf.includes('Page 1 of 1'));assert.ok(!pdf.includes('Pocket Desking  |'));});
