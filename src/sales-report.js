@@ -15,7 +15,9 @@ export function createSalesReport({period,name='',sales=[],bonuses=[],orientatio
  const {columns,rows}=salesReportTable(sales,{phoneReference,orientation});
  const earnedTotal=sales.reduce((n,r)=>n+(phoneReference&&r.front===0?(r.isSplit?100:200):(Number(r.back)||0)),0);const splitCount=sales.filter(r=>r.isSplit).length;
  table('Sales',columns.map(c=>c.label),columns.map(c=>c.width),rows,columns.map((c,i)=>c.label==='Units'?unitText(units):c.label==='Date'?'Totals':c.label==='Split with'?'Splits: '+splitCount:['Earned','Back'].includes(c.label)?cash(earnedTotal):''));
- table('Bonuses',['Date','Notes','Amount'],[70,orientation==='landscape'?530:330,95],bonuses.map(r=>[r.bonusDate?reportDate(r.bonusDate):'Monthly',r.notes||'-',cash(r.amount)]));room(28);doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Total bonuses: '+cash(totalBonuses(bonuses)),margin,y+14);
+ const bonusTotal=totalBonuses(bonuses);
+ table('Bonuses',['Date','Notes','Amount'],[70,orientation==='landscape'?530:330,95],bonuses.map(r=>[r.bonusDate?reportDate(r.bonusDate):'Monthly',r.notes||'-',cash(r.amount)]),['Totals','',cash(bonusTotal)]);
+ room(40);doc.setFillColor(225,233,235);doc.setDrawColor(190,202,206);doc.rect(margin,y,width,30,'FD');doc.setFont('helvetica','bold');doc.setFontSize(11);doc.text('Sales + bonuses',margin+8,y+20);doc.text(cash(earnedTotal+bonusTotal),w-margin-8,y+20,{align:'right'});y+=42;
  if(y+40>h-115){doc.addPage();header();}doc.setFont('helvetica','normal');doc.setFontSize(9);doc.text('I confirm that the sales and bonuses listed in this report are correct.',margin,h-101);doc.setDrawColor(70);doc.line(margin,h-65,w-margin-155,h-65);doc.line(w-margin-125,h-65,w-margin,h-65);doc.text('Salesperson signature',margin,h-51);doc.text('Date',w-margin-125,h-51);
  const pages=doc.getNumberOfPages();for(let i=1;i<=pages;i++){doc.setPage(i);doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(90);doc.text('Pocket Desking  |  '+period+'  |  Page '+i+' of '+pages,margin,h-18);}return doc;
 }
