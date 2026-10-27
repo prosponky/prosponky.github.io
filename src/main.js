@@ -714,7 +714,7 @@ function bindAdmin(){
 
    const users=await searchAdminUsers(form.querySelector('input').value.trim());if(!results.isConnected)return;rememberAdminStores(users);
 
-   results.innerHTML=users.length?`<p class="admin-result-count">${users.length} ${users.length===1?'user':'users'}</p>`+users.map((u,i)=>`<section class="admin-user-card" data-admin-user="${i}" tabindex="0" role="link" aria-label="Open workspace for ${esc(u.display_name||'Unnamed user')}"><div class="admin-user-heading"><span class="admin-avatar" aria-hidden="true">${esc((u.display_name||'?').slice(0,1).toUpperCase())}</span><div><strong>${esc(u.display_name||'Unnamed user')}</strong></div><button type="button" class="icon admin-user-gear" data-user-settings="${i}" aria-label="Settings for ${esc(u.display_name||'Unnamed user')}" title="User settings">${uiIcon('settings',20)}</button></div></section>`).join(''):'<section class="admin-empty"><h2>No users found</h2><p>Try another name, or show all users.</p></section>';
+   results.innerHTML=users.length?`<p class="admin-result-count">${users.length} ${users.length===1?'user':'users'}</p>`+users.map((u,i)=>`<section class="admin-user-card" data-admin-user="${i}" tabindex="0" role="link" aria-label="Open workspace for ${esc(u.display_name||'Unnamed user')}"><div class="admin-user-heading"><span class="admin-avatar" aria-hidden="true">${esc((u.display_name||'?').slice(0,1).toUpperCase())}</span><div><strong>${esc(u.display_name||'Unnamed user')}</strong><small>User ID: ${esc(u.reference_id||'Unavailable')}</small></div><button type="button" class="icon admin-user-gear" data-user-settings="${i}" aria-label="Settings for ${esc(u.display_name||'Unnamed user')}" title="User settings">${uiIcon('settings',20)}</button></div></section>`).join(''):'<section class="admin-empty"><h2>No users found</h2><p>Try another name, or show all users.</p></section>';
 
    results.querySelectorAll('[data-user-settings]').forEach(b=>b.onclick=()=>openUserSettings(users[Number(b.dataset.userSettings)],()=>form.requestSubmit()));
    results.querySelectorAll('[data-admin-user]').forEach(b=>{b.onkeydown=e=>{if(e.target===b&&(e.key==='Enter'||e.key===' ')){e.preventDefault();b.click();}};b.onclick=async e=>{if(e.target.closest('button,input,select,label,a'))return;if(b.dataset.busy)return;b.dataset.busy='true';try{await openAdminUser(users[Number(b.dataset.adminUser)]);sessionStorage.removeItem('pd-refresh-page');setHistoryOwner(effectiveOwner());history=readHistory();quote=null;quoteRecord=null;deal={mode:'cash',price:'',trade:'',payoff:'',zip:''};await refreshDealer(effectiveOwner());}catch(e){fail(e);}finally{delete b.dataset.busy;}};});
@@ -1587,4 +1587,5 @@ document.addEventListener('touchcancel',()=>horizontalSwipeStart=null,{passive:t
 
 
 
-
+
+
