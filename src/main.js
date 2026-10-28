@@ -665,7 +665,7 @@ async function bindInventory(){
 
 
 
-function defaultsView(){return `${header('Settings','')}<div id="message"></div><div class="settings-workspace"><form id="defaults-form" class="settings-form" novalidate><section class="settings-card dealer-profile-card"><h2>Dealer profile</h2>${(authState.user?input('settings-name','Your name',draft.displayName||'','','text'):'')+input('default-zip','Dealer ZIP',draft.zip,'Used when customer ZIP is blank','text')}</section><section class="settings-card"><h2>Quote fees</h2>${draft.feesByCondition?`<label>Vehicle fees<select id="settings-fee-condition"><option value="new" ${(draft.feeCondition||deal.condition)==='new'?'selected':''}>New</option><option value="used" ${(draft.feeCondition||deal.condition)!=='new'?'selected':''}>Pre-Owned</option></select></label>`:''}${draft.fees.map((f,i)=>`<div class="fee">${input('fee-name-'+i,'Fee name',f.name,'','text')}${input('fee-amount-'+i,'Amount',f.amount)}${i>0?`<button type="button" class="quiet" data-remove-fee="${i}">Remove fee</button>`:''}</div>`).join('')}<button type="button" class="quiet teal" id="add-fee">+ Add fee</button>${draft.tagFees?`<div class="settings-tags">${input('settings-new-tag','New tag estimate',draft.tagFees.new)+input('settings-transfer-tag','Transfer tag estimate',draft.tagFees.transfer)}</div>`:''}</section>
+function defaultsView(){return `${header('Settings','')}<div id="message"></div><div class="settings-workspace"><form id="defaults-form" class="settings-form" novalidate><section class="settings-card dealer-profile-card"><h2>Dealer profile</h2>${(authState.user?input('settings-name','Your name',draft.displayName||'','','text'):'')+input('default-zip','Dealer ZIP',draft.zip,'Used when customer ZIP is blank','text')}</section><details class="settings-card settings-fees" id="settings-fees"><summary>Quote fees <span class="settings-section-count">${draft.fees.length} ${draft.fees.length===1?'fee':'fees'}</span></summary>${draft.feesByCondition?`<label>Vehicle fees<select id="settings-fee-condition"><option value="new" ${(draft.feeCondition||deal.condition)==='new'?'selected':''}>New</option><option value="used" ${(draft.feeCondition||deal.condition)!=='new'?'selected':''}>Pre-Owned</option></select></label>`:''}${draft.fees.map((f,i)=>`<div class="fee">${input('fee-name-'+i,'Fee name',f.name,'','text')}${input('fee-amount-'+i,'Amount',f.amount)}${i>0?`<button type="button" class="quiet" data-remove-fee="${i}">Remove fee</button>`:''}</div>`).join('')}<button type="button" class="quiet teal" id="add-fee">+ Add fee</button>${draft.tagFees?`<div class="settings-tags">${input('settings-new-tag','New tag estimate',draft.tagFees.new)+input('settings-transfer-tag','Transfer tag estimate',draft.tagFees.transfer)}</div>`:''}</details>
 
 
 
@@ -1426,7 +1426,7 @@ document.querySelector('#cost-form')?.addEventListener('submit',e=>{e.preventDef
 
 
 
-document.querySelector('#add-fee')?.addEventListener('click',()=>{readDraft();if(draft.fees.length>=15)return fail(Error('Up to 15 fees can be saved.'));draft.fees.push({name:'',amount:0});render()});
+document.querySelector('#add-fee')?.addEventListener('click',()=>{readDraft();if(draft.fees.length>=15)return fail(Error('Up to 15 fees can be saved.'));draft.fees.push({name:'',amount:0});render();document.querySelector('#settings-fees').open=true});
 
 
 
@@ -1434,7 +1434,7 @@ document.querySelector('#add-fee')?.addEventListener('click',()=>{readDraft();if
 
 
 
-document.querySelectorAll('[data-remove-fee]').forEach(b=>b.onclick=()=>{readDraft();const index=+b.dataset.removeFee;draft.fees.splice(index,1);draft.rules.forEach(r=>r.taxableFees=r.taxableFees.filter(i=>i!==index).map(i=>i>index?i-1:i));render()});
+document.querySelectorAll('[data-remove-fee]').forEach(b=>b.onclick=()=>{readDraft();const index=+b.dataset.removeFee;draft.fees.splice(index,1);draft.rules.forEach(r=>r.taxableFees=r.taxableFees.filter(i=>i!==index).map(i=>i>index?i-1:i));render();document.querySelector('#settings-fees').open=true});
 
 
 
@@ -1458,7 +1458,7 @@ document.querySelectorAll('[data-remove-rule]').forEach(b=>b.onclick=()=>{readDr
 
 
 
-document.querySelector('#settings-fee-condition')?.addEventListener('change',e=>{const key=e.target.value;readDraft();draft.feesByCondition[draft.feeCondition||deal.condition||'used']=structuredClone(draft.fees);draft.feeCondition=key;draft.fees=structuredClone(draft.feesByCondition[key]);render();});
+document.querySelector('#settings-fee-condition')?.addEventListener('change',e=>{const key=e.target.value;readDraft();draft.feesByCondition[draft.feeCondition||deal.condition||'used']=structuredClone(draft.fees);draft.feeCondition=key;draft.fees=structuredClone(draft.feesByCondition[key]);render();document.querySelector('#settings-fees').open=true;});
 
 
 

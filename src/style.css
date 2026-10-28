@@ -518,3 +518,16 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 #sales-body .sales-type-summary small{color:#ff0000;font-weight:600}
 #sales-body .sales-report-controls select,#sales-body .sales-report-controls button{box-sizing:border-box;width:100%;height:48px;min-height:48px;max-height:48px;padding:11px 8px;line-height:24px;border-radius:10px;font-size:13px}
 #sales-body .bonus-sheet .sales-sheet-row>span:last-child{color:#34c759;font-weight:700}
+.settings-workspace .settings-card{padding:14px}
+.settings-workspace .dealer-profile-card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:12px}
+.settings-workspace .dealer-profile-card h2{grid-column:1/-1;margin:0 0 2px}
+.settings-workspace .settings-card label{font-size:12px;margin:8px 0}
+.settings-workspace .settings-card input:not([type=checkbox]),.settings-workspace .settings-card select{min-width:0;width:100%;box-sizing:border-box;margin-top:4px;padding:10px;font-size:16px}
+.settings-workspace .settings-card summary{min-height:24px;line-height:24px;font-size:14px}
+.settings-section-count{font-size:11px;font-weight:500;color:#a8b8bf;float:right}
+.settings-workspace .settings-card[open]>summary{margin-bottom:10px}
+.settings-workspace .settings-fees .fee{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:10px;margin-bottom:8px;padding-bottom:8px;align-items:start}
+.settings-workspace .settings-fees .fee button{grid-column:1/-1;justify-self:end;margin:0;padding:6px 10px;font-size:12px}
+.settings-workspace .settings-tags{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.settings-workspace .settings-form>.primary{width:calc(100% - 28px);margin:12px 14px 14px}
+.settings-reset{margin-top:12px;padding:12px 14px;font-size:13px}
