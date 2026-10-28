@@ -531,3 +531,7 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 .settings-workspace .settings-tags{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .settings-workspace .settings-form>.primary{width:calc(100% - 28px);margin:12px 14px 14px}
 .settings-reset{margin-top:12px;padding:12px 14px;font-size:13px}
+.settings-options>.settings-card+.settings-card{border-top:1px solid #374449}
+.settings-options .settings-reset{margin:0;border-radius:0}
+.settings-options .settings-reset>summary{color:#edb3ad}
+.settings-form>.settings-save{width:100%;margin:12px 0 0}
