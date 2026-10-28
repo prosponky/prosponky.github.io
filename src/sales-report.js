@@ -39,7 +39,7 @@ export function salesReportTable(sales,{phoneReference=false,orientation='portra
  ];return {columns,rows:sales.map(r=>columns.map(c=>c.value(r)))};
 }
 
-export function reportDate(value){const match=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value));if(!match)return clean(value);return ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][Number(match[2])-1]+' '+Number(match[3])+', '+match[1];}
+export function reportDate(value){const match=/^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value));if(!match)return clean(value);return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][Number(match[2])-1]+' '+match[3]+', '+match[1];}
 
 export function unitText(value){return String(value).replace(/^0\./,'.');}
 
