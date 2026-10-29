@@ -535,3 +535,4 @@ dialog{overscroll-behavior:contain}html:has(dialog[open]){overflow:hidden}
 .settings-options .settings-reset{margin:0;border-radius:0}
 .settings-options .settings-reset>summary{color:#edb3ad}
 .settings-form>.settings-save{width:100%;margin:12px 0 0}
+.sales-sheet-row .sales-credit-missing{color:#ff0000;font-weight:700}
