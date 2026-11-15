@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-14T17:00:02.175Z",
+  "checkedAt": "2026-11-15T12:00:02.666Z",
   "source": "https://www.cogginnissanatlantic.com",
   "account": "cogginnissanonatlantic",
   "complete": true,
-  "total": 264,
+  "total": 261,
   "inventoryVins": [
     "3N1AB9BV8VY243776",
     "3N1AB9BV3VY243801",
@@ -178,7 +178,6 @@
     "5N1DR3BS6TC280075",
     "JN8BT3DD7TW018161",
     "5N1DR3BS9TC301369",
-    "5N1DR3BS6TC288693",
     "5N1DR3BS7TC305534",
     "JN8BT3DD9TW016220",
     "5N1DR3CS7TC272842",
@@ -221,14 +220,12 @@
     "JN8AY3EB1T9144962",
     "JN8AY3CH8T9730548",
     "JN8AY3CH5T9730541",
-    "1N4AL3AP7EC329363",
     "1N4AL3AP7FC425737",
     "JN8AZ2NF6H9646433",
     "5N1AZ2MG7HN140960",
     "1C6RR6FT3JS221803",
     "JN8AT2MT0JW487991",
     "ZACCJBBB4JPJ45068",
-    "5N1AT2MT5JC793867",
     "4T1B61HK7JU135887",
     "5N1AZ2MGXJN128937",
     "JN8AT2MT3JW492067",
@@ -239,19 +236,18 @@
     "5UXTY5C03L9C53815",
     "KNDEPCAA1M7107436",
     "KNDJ23AU4M7125758",
-    "1C4RJKAG9M8163510",
+    "5N1AT3BA2MC745514",
     "5N1AZ2CJ0NC111336",
     "JN8BT3DC3NW117649",
     "3N1CP5BV2NL496334",
     "5J6RT6H99NL003757",
-    "1G6DR5RW8P0136711",
+    "W1N0G8EBXNV397515",
     "1GCPSCEK7P1233141",
     "1N6AA1EF6PN103342",
     "5N1BT3BA1PC754052",
     "5FPYK3F50PB047694",
     "5N1BT3BA4PC749184",
     "JN8BT3DD6PW312706",
-    "5NTJB4AE4RH087564",
     "JM3KKEHA2R1156407",
     "3N1CP5BV1RL560742",
     "KL77LGE24RC131367",
@@ -267,6 +263,7 @@
     "5N1DR3DV2TC303780",
     "5N1AZ3CS5TC116740",
     "JA4T0LA97TZ029873",
+    "3N8AP6CE5TL309078",
     "JN1BZ4BH6VM550377",
     "JN1BZ4BH1VM551064"
   ],
@@ -288,7 +285,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a42333a3ac1817dfac417dcded5f44a0.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY243801",
@@ -307,7 +304,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a42334a9ac182461e020f7bca6c7c795.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY247432",
@@ -326,7 +323,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-c6eed35aac184f6a66ab43c1eabdedaa.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY250639",
@@ -345,7 +342,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-d543b235ac1813160b05864379159630.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY251391",
@@ -364,7 +361,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-d69b0552ac1852839bb3a6f8407ad0b9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL310957",
@@ -383,7 +380,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-b01c8469ac183203d1d9fe25ce28a3c8.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL315668",
@@ -402,7 +399,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-c90ac701ac183ecbd73d4eae90a05446.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL318036",
@@ -421,7 +418,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-ce318fefac1822ed3b294cb0bdce405e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL322351",
@@ -440,7 +437,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-f4fb15f1ac180048e88f6d7ee3d6e52e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL319888",
@@ -459,7 +456,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-1b706ae8ac180fd5248013145086f530.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL320481",
@@ -478,7 +475,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-391ba014ac1810359a18d2324fca1a65.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL323014",
@@ -497,7 +494,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-17a14d84ac1854fcdbbb7336e27d3531.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325544",
@@ -516,7 +513,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-1b706c68ac1831418a026fd3a641ca4c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325824",
@@ -535,7 +532,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-235708f8ac18391d0d26353cc561cbb8.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325807",
@@ -554,7 +551,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-23570d26ac18391d0d26353ccacef41c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL327040",
@@ -573,7 +570,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-391b9db4ac1835231353a5d464f85a92.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325969",
@@ -592,7 +589,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-44ce5cdfac181a19555748b6afd763d1.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL326228",
@@ -611,7 +608,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-44ce5e31ac18073cc8abc758c095d2cc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY224938",
@@ -630,7 +627,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-dda44e10ac181130db090a68f02a54f6.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "VY240659",
@@ -649,7 +646,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-6dc7b9bdac18224eefc6e7deb523f45d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY247048",
@@ -668,7 +665,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a4233115ac1800e06ea8fa61034577fe.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY245167",
@@ -687,7 +684,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a4233243ac182461e020f7bc683ff46e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY250793",
@@ -706,7 +703,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-d543af9dac183689e79dc0973b60cc8c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY241763",
@@ -725,7 +722,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-c6eececfac183b5a737be74c14f13e9f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL334738",
@@ -744,7 +741,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-c6eed105ac184c26a5569d0de9524501.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY246211",
@@ -763,7 +760,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a4232fddac1842b5072d655b9068fc18.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL320249",
@@ -782,7 +779,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-391ba126ac1835231353a5d4150cae18.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY229987",
@@ -801,7 +798,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-1123b397ac183210c430dfaa33bba3e9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY235474",
@@ -820,7 +817,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-25bd18dfac1845a2c588d9a5b90d737b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY214399",
@@ -839,7 +836,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-5298ab30ac184f13ed91f8cbe7276fa0.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CNATL441815",
@@ -858,7 +855,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Kicks-in-Jacksonville-c5d1988fac18108e2810c16139ea5dbd.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY203585",
@@ -877,7 +874,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-68026440ac184d75e32c2e10f70b622b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY201332",
@@ -896,7 +893,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-68026bfdac1813b262e6ac109d533255.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY214880",
@@ -915,7 +912,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-68026e6aac184bccd6d58c5b9d4beebb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY217616",
@@ -934,7 +931,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a6639639ac18279fde168c344aaeddc3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY217071",
@@ -953,7 +950,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-aa24c304ac18279fde168c34a04b21c3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY210571",
@@ -972,7 +969,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-1f192fd4ac181bbdf7ea82705e077336.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY228814",
@@ -991,7 +988,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-127b18c4ac1815683e0f53880d4d9602.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY206947",
@@ -1010,7 +1007,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-1f193247ac18341f4df4ff9e4ad113fa.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY206669",
@@ -1029,7 +1026,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-1f193d56ac1842897581138d11c1061c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL314691",
@@ -1048,7 +1045,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-a663951dac182087090c39b22956ef52.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL315649",
@@ -1067,7 +1064,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-aa24cae5ac183203311d4ef2f4ac8791.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL320865",
@@ -1086,7 +1083,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-1b70683bac183bd6400d388ce49f76e7.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL324421",
@@ -1105,7 +1102,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-17a15144ac1831418a026fd31afda11a.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325119",
@@ -1124,7 +1121,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-1b7066f0ac180d50c4c90ee1128fa121.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL325146",
@@ -1143,7 +1140,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-23570bc0ac180fbb83f769e40fe413f0.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL328296",
@@ -1162,7 +1159,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-44ce58c2ac184aac7d7b10fee39fb16d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL327996",
@@ -1181,7 +1178,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-44ce5a18ac184ee43516cb47374cfa36.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL328966",
@@ -1200,7 +1197,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-49f59951ac1814a3e95687bafc27c54c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL329248",
@@ -1219,7 +1216,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-49f59ad8ac184ee43516cb47f8cd897d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL329055",
@@ -1238,7 +1235,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-49f5a02aac1826babac76bb12573c202.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL329902",
@@ -1257,7 +1254,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-65af7459ac1848eb3b80d88abb6d5363.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL330361",
@@ -1276,7 +1273,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-65af7599ac183997d1488028035cc2b9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL304475",
@@ -1295,7 +1292,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-6c580340ac183b721f3e022385daec92.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL304801",
@@ -1314,7 +1311,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-a59707c3ac185bc6fc1af9b507ce6fed.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL304251",
@@ -1333,7 +1330,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-a59717b5ac1851979897d8869df824dc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260076",
@@ -1352,7 +1349,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-64d622e1ac185252e576917f245c99c8.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "323705",
@@ -1371,7 +1368,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-4ddb6282ac185f211fe82f4e8a3a7c37.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL308035",
@@ -1390,7 +1387,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-a5970641ac183ecbd73d4eaec30bd584.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL317987",
@@ -1409,7 +1406,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-c90ac5e1ac180edf8db7c817956edf23.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL307187",
@@ -1428,7 +1425,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-127b1674ac180d50c4c90ee1eae033a0.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL307132",
@@ -1447,7 +1444,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-164a09c6ac1831418a026fd3dd14305f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL303732",
@@ -1466,7 +1463,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-44ce5ba8ac184ee43516cb47627c3c80.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL320422",
@@ -1485,7 +1482,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-17a14fdfac1844cced8e7ffca5ec69bd.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL331401",
@@ -1504,7 +1501,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-833d0dc4ac181f3d0fc7ccd9f1edc340.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN365020",
@@ -1523,7 +1520,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-d87e3afaac183e1692c7be596a29fd94.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVY207102",
@@ -1542,7 +1539,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a5970d01ac185fef39d0f00fc01b312e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN360428",
@@ -1561,7 +1558,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-6c5800acac184d75e32c2e10093141e6.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN361996",
@@ -1580,7 +1577,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-8b3ebf15ac1832f658f324a03be28210.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN365779",
@@ -1599,7 +1596,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-f4fb1bbbac180048e88f6d7e3b129b24.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTL426151",
@@ -1618,7 +1615,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Kicks-in-Jacksonville-e58b8bb5ac180fc245f8f4d013c3e1fa.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTL425433",
@@ -1637,7 +1634,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Kicks-in-Jacksonville-ff82b5bfac18361d01ce1908a32ec518.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "TC874923D",
@@ -1656,7 +1653,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-cafbb786ac1814a66a8e8c5e41a4b4c7.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN357641",
@@ -1675,7 +1672,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-1f193798ac181da0dd1bebc310b6125f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN352747",
@@ -1694,7 +1691,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Altima-in-Jacksonville-ae7233f8ac1829477e81ca70386439a9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVL317288",
@@ -1713,7 +1710,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Kicks-in-Jacksonville-391b9b3bac18067071592c04a28d0c33.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC670631",
@@ -1732,7 +1729,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-bc6c3d7aac184ff9ddf8de418b45fba4.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC670282",
@@ -1751,7 +1748,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b1794ac180d50c4c90ee182513027.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC687640",
@@ -1770,7 +1767,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-49f5957aac1840e209bf44d21f5a98ba.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC692628",
@@ -1789,7 +1786,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-6dc7b67eac1848eb3b80d88a0f74b093.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC696890",
@@ -1808,7 +1805,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-c6eed575ac1830faa63d6f96c1edbb84.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC699484",
@@ -1827,7 +1824,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-c6eed6adac1843157aee933ea50ba361.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673050",
@@ -1846,7 +1843,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1123b876ac183bd6400d388ca5965e40.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC679276",
@@ -1865,7 +1862,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b1529ac1806945ded6275cdfece05.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC682154",
@@ -1884,7 +1881,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b1e0eac1816bee9b0b4cf12aa1ce3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC693679",
@@ -1903,7 +1900,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-6dc7b556ac185949e7beb42ff3d60d08.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC692818",
@@ -1922,7 +1919,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-6dc7b7a4ac183997d148802878b5e7ed.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC695490",
@@ -1941,7 +1938,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-9219cf99ac182386efd5c8765ceb9223.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC692133",
@@ -1960,7 +1957,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-9219d0bcac182a678e69018bcb8b2e21.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC695349",
@@ -1979,7 +1976,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-c6eed47eac1832b5b898a9dd23a37191.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC695433",
@@ -1998,7 +1995,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-c6eed211ac184c26a5569d0d18cbfc58.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC678762",
@@ -2017,7 +2014,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1b7069b0ac1854fcdbbb7336b24cb107.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC691645",
@@ -2036,7 +2033,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-9219ce6eac1817dfac417dcd0bcad66b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC680583",
@@ -2055,7 +2052,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b12abac1815683e0f53881b15f143.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673978",
@@ -2074,7 +2071,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b13e7ac185c43e2a374ec39621e96.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC696500",
@@ -2093,7 +2090,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-a4232e6aac1819391fa31a93f741bf74.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880592",
@@ -2112,7 +2109,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-2f236a32ac18393ecccba8dd9baf5cbb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880529",
@@ -2131,7 +2128,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-2f236c20ac185c86595994b6d690e5d6.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880352",
@@ -2150,7 +2147,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-2f236dfdac181fb2fad705a47a1e20ad.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880398",
@@ -2169,7 +2166,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-2f236f9dac181fb2fad705a4003e9055.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC889326",
@@ -2188,7 +2185,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-484c7c65ac1827bd9540ac678ebe587e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC891461",
@@ -2207,7 +2204,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-5db335faac184ab54e39a495b2211b2a.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC891195",
@@ -2226,7 +2223,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-5db33888ac18005db88bfdc451584831.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC876124",
@@ -2245,7 +2242,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-fc8e0c6aac18341fab2e75cb14042d83.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC876087",
@@ -2264,7 +2261,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-fc8e0dcbac1820d641fd659972244014.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880639",
@@ -2283,7 +2280,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-2f2371b5ac18090df99629c9c6d86465.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC880824",
@@ -2302,7 +2299,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-4d7343e0ac185c308f227df7fe9b7445.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC681636",
@@ -2321,7 +2318,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b117aac1844cced8e7ffc3f8854bc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "VC690472",
@@ -2340,7 +2337,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-6dc7bf56ac18580bd9dc5bbe829e8601.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC696884",
@@ -2359,7 +2356,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-a4232cd2ac18146d3def4bf363823a81.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC885232",
@@ -2378,7 +2375,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-68026592ac185ca9e7e2cb7fc7461d2c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC694899",
@@ -2397,7 +2394,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-a4232b8eac185057c76f07d42a6450e9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC676733",
@@ -2416,7 +2413,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1123b0f6ac182bbee63c6cf33482d066.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673881",
@@ -2435,7 +2432,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1123b737ac180fd524801314d3e36d85.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC676681",
@@ -2454,7 +2451,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b0ef0ac1815683e0f5388d370c26b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC682410",
@@ -2473,7 +2470,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b103cac180d50c4c90ee1309512ed.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC680439",
@@ -2492,7 +2489,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-25bd1793ac185f3ac5185ec487aee5b5.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC684106",
@@ -2511,7 +2508,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-391ba25dac18570c4725e22f8eef9712.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC695280",
@@ -2530,7 +2527,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-9219d778ac18146d3def4bf3cb100ef5.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC884551",
@@ -2549,7 +2546,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-6dcc4753ac184bccd6d58c5b541a9bad.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC881494",
@@ -2568,7 +2565,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-b01c8e23ac18279fde168c34061cba7f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673397",
@@ -2587,7 +2584,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-f4fb1a7bac180048e88f6d7ebcd1606e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC678015",
@@ -2606,7 +2603,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-f4fb1d97ac181555db079d353c288f58.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673467",
@@ -2625,7 +2622,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1123aa7cac183210c430dfaa00c13e27.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC673187",
@@ -2644,7 +2641,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1123b4eaac180fd52480131491ce0d71.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC682580",
@@ -2663,7 +2660,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b1b80ac1831418a026fd3e802ddf4.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC682356",
@@ -2682,7 +2679,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-127b1cddac180fd524801314337d3707.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC681123",
@@ -2701,7 +2698,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1b706342ac183bd6400d388cc5862b86.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC682538",
@@ -2720,7 +2717,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-23570a7bac18265c5d7dcd3d87f48803.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC689724",
@@ -2739,7 +2736,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-65af70c1ac1822f5a3c0cac985a32c6f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC693218",
@@ -2758,7 +2755,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-6dc7be39ac181f93afca8f15ad84b02c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC699374",
@@ -2777,7 +2774,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-c6eecfe7ac1830faa63d6f96833a8c88.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC889069",
@@ -2796,7 +2793,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-5db339cbac182f002812faeb8b502fb2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC890872",
@@ -2815,7 +2812,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-71a82880ac1813b262e6ac10634b4fa4.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC894197",
@@ -2834,7 +2831,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-a6639781ac18279fde168c3429525157.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC894134",
@@ -2853,7 +2850,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-a6639c9eac180edf8db7c817c6791694.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC894404",
@@ -2872,7 +2869,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-aa24bc10ac185bc6fc1af9b5c5e3a7ed.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN607543",
@@ -2891,7 +2888,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-aa24cddcac1817c99dfd0f5c7283f838.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN613577",
@@ -2910,7 +2907,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-1123ad2cac1806945ded627551a64359.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC683183",
@@ -2929,7 +2926,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Rogue-in-Jacksonville-1b706d8fac183210c430dfaa185e1051.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN604707",
@@ -2948,7 +2945,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-620d5f5fac180b7620d871aec2bccafb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN675503",
@@ -2967,7 +2964,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-7277d475ac181c46cdfd0dfe004efc95.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN681873",
@@ -2986,7 +2983,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-6c57f711ac1838ffae3a022aa3dfaebf.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN601264",
@@ -3005,7 +3002,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-6c57ff64ac1859f7ab7450ad18263b1d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN601121",
@@ -3024,7 +3021,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-6c58020eac18278e4c624aba2a9257b9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN607949",
@@ -3043,7 +3040,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8b3ec32fac18112a41dc78ae95dcee27.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN600349",
@@ -3062,7 +3059,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-6c57f5cdac1849bfafd15ef59cf2f9bc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN609776",
@@ -3081,7 +3078,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-c90ac841ac1812bef6ec80185f5c23ed.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN605736",
@@ -3100,7 +3097,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-f4fb1759ac184161c3469b7581e36c19.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN608793",
@@ -3119,7 +3116,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-a59710e7ac180452357e7dbbc319ae7d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260635",
@@ -3138,7 +3135,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-d9ca0629ac1839c94c8d3a4aafe4dfbc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN672057",
@@ -3157,7 +3154,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-f5014f85ac1848577d092645e8ab44bf.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN678903",
@@ -3176,7 +3173,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-b3015930ac1836316e8e0c1631802f52.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTN679665",
@@ -3195,7 +3192,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Frontier-in-Jacksonville-d29b9a61ac182e013d1b274b7663b706.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN609385",
@@ -3214,7 +3211,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-aa24d015ac18431504067597d8a25413.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN607499",
@@ -3233,7 +3230,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8b3ec5b3ac1847cfb9a6796094e0a8dd.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN608060",
@@ -3252,7 +3249,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8b3ec1d3ac1823ba6e362206ada7c5c9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "VN622250",
@@ -3271,7 +3268,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-b37e75eaac182688797bebd5441c3d46.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260163",
@@ -3290,7 +3287,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Frontier-in-Jacksonville-60e094c8ac1854109e3beb1a50341010.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN607504",
@@ -3309,7 +3306,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8b3ec47aac184d75e32c2e104dbb71ab.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN617845",
@@ -3328,7 +3325,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-391ba385ac185fd0f33972f38e05acb6.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN601634",
@@ -3347,7 +3344,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-620d637fac181e63234f4fee0267255d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN620763",
@@ -3366,7 +3363,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8d541df1ac1842b56cb96808a1a9a11e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN621384",
@@ -3385,7 +3382,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-b37e7743ac184ff978a9883d441d66c2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN616115",
@@ -3404,7 +3401,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-391b9ed2ac18408556963d5e97ab757b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN607975",
@@ -3423,7 +3420,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8b3ec08eac180ee004f7d21e34038317.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "TW013843D",
@@ -3442,7 +3439,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-c5d19a8cac185e90098054900e79ef55.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC278250",
@@ -3461,7 +3458,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-dc17ffd6ac18051249bdee002ddbdc20.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC280725",
@@ -3480,7 +3477,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-f157c102ac18490df7541314e87bec9b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC280786",
@@ -3499,7 +3496,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-fc8e008fac180936a0a72ed8dbdd6d96.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CNATC280075",
@@ -3518,7 +3515,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-9065437fac1849e6c966ea6f6d7aa308.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTW018161",
@@ -3537,7 +3534,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-a3b1e4a3ac181189b98677b05a6b6595.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC301369",
@@ -3556,26 +3553,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-25bd15bfac18551af8c02fae229cbcf8.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
-    },
-    {
-      "stockNumber": "CJNTC288693",
-      "vin": "5N1DR3BS6TC288693",
-      "condition": "new",
-      "year": 2026,
-      "make": "Nissan",
-      "model": "Pathfinder",
-      "trim": "SV",
-      "color": "Gray",
-      "interiorColor": "Gray",
-      "mileage": null,
-      "msrp": 43030,
-      "advertisedPrice": null,
-      "dealerDiscount": null,
-      "discountKind": "",
-      "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-68026d38ac184d75e32c2e101e47cf8f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC305534",
@@ -3594,7 +3572,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-6dc7bcfdac1822f5a3c0cac9deaa332e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTW016220",
@@ -3613,7 +3591,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-9219d4b2ac182a678e69018b41268477.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC272842",
@@ -3632,7 +3610,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-514383a9ac1843223622966a018b8f0d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260421",
@@ -3651,7 +3629,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-905c42d8ac182ccb5bdbebaef7f6e02c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260420",
@@ -3670,7 +3648,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-905c4683ac181d86d10bb9f72ec47812.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC269998",
@@ -3689,7 +3667,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-0471bf49ac1823d859b5afaefcdf1ccb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC269605",
@@ -3708,7 +3686,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-3d5d48e1ac180a3ce49606b46d03ddc2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC276935",
@@ -3727,7 +3705,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-c2739ff7ac18065879bcb5eb873e67c8.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC276383",
@@ -3746,7 +3724,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-c273a289ac1829477e81ca70694e7bc1.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC278673",
@@ -3765,7 +3743,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-dd705b56ac185184d8a067b1c5b26cfc.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC292120",
@@ -3784,7 +3762,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-aba4fc2dac185fef39d0f00f7f2b97ec.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC293964",
@@ -3803,7 +3781,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-c90ac4b4ac183203d1d9fe255e61695d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC306486",
@@ -3822,7 +3800,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-6dc7bbdbac1822f5a3c0cac954d27c11.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC307557",
@@ -3841,7 +3819,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-a4232a0aac182a678e69018bf3288e3d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC308595",
@@ -3860,7 +3838,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-d543b0f7ac18100891b135ef01d0f8b2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC297519",
@@ -3879,7 +3857,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-ee481624ac182dabbad5c25552a0a483.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC277147",
@@ -3898,7 +3876,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-c273a3a8ac1809a92caa6c07a03efa24.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC303775",
@@ -3917,7 +3895,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-49f596bcac18448d75f65ca82a4e8dbe.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC304303",
@@ -3936,7 +3914,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-49f59800ac18461540c11b25645f74d9.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC306294",
@@ -3955,7 +3933,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-65af7336ac180c8acdceba1cae4f4343.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC305032",
@@ -3974,7 +3952,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-9219d64aac181015f549c1f411cee3f3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN602052",
@@ -3993,7 +3971,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-620d5cc6ac18005db88bfdc436b43d61.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN620163",
@@ -4012,7 +3990,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-65af7201ac18580bd9dc5bbe3d5a6125.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTZ041279",
@@ -4031,7 +4009,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-Plug-In-Hybrid-in-Jacksonville-5143853aac1809e136d79eb2e221350e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVN621312",
@@ -4050,7 +4028,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Frontier-in-Jacksonville-8d541f68ac1859195da2a0cf429c0dfd.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC309346",
@@ -4069,7 +4047,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-c6eecda2ac1830faa63d6f96a7f5b9f5.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC101106",
@@ -4088,7 +4066,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-6c57f8b3ac183d20eebe8ad19836c597.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC101503",
@@ -4107,7 +4085,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-4325aad1ac18460621052e7c2b2e507f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "TC296953D",
@@ -4126,7 +4104,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-d2a38e42ac18053f4b4d852e9e7554b1.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260453",
@@ -4145,7 +4123,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Murano-in-Jacksonville-2fcb6e9bac1846b2c5d9aed6821ca3ea.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTZ046796",
@@ -4164,7 +4142,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-Plug-In-Hybrid-in-Jacksonville-8a65e7e1ac18347aee8c697de1ade1bb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260234",
@@ -4183,7 +4161,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Murano-in-Jacksonville-fcbb3219ac180fbbb5a0852f17035546.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC108541",
@@ -4202,7 +4180,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-f4fb18edac180b5a8d6e7471ed625991.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC109468",
@@ -4221,7 +4199,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-1b7065b6ac184ea5d5917557a7d1ef3b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC105867",
@@ -4240,7 +4218,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-c90ac008ac1859095d9be20d6e13a70b.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC297492",
@@ -4259,7 +4237,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-127b1a1dac180fd5248013140f28e1e2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTC308232",
@@ -4278,7 +4256,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-9219d1caac182386efd5c8761ecd34b5.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJN260133",
@@ -4297,7 +4275,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Z-in-Jacksonville-f675377aac185b829147d6b313b7481f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVC110115",
@@ -4316,7 +4294,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Murano-in-Jacksonville-391b9c8bac185fd0f33972f376f547db.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNT9144962",
@@ -4335,7 +4313,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-1b706470ac180d50c4c90ee1801451a3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNT9730548",
@@ -4354,7 +4332,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-ed17cf4dac18336d3f8a8d6f810ca39e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNT9730541",
@@ -4373,26 +4351,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-ce3192b0ac185bc0410e180bea158777.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
-    },
-    {
-      "stockNumber": "EC329363T",
-      "vin": "1N4AL3AP7EC329363",
-      "condition": "used",
-      "year": 2014,
-      "make": "Nissan",
-      "model": "Altima",
-      "trim": "2.5 S",
-      "color": "Silver",
-      "interiorColor": "Gray",
-      "mileage": 118770,
-      "msrp": null,
-      "advertisedPrice": null,
-      "dealerDiscount": null,
-      "discountKind": "",
-      "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2014-Nissan-Altima-in-Jacksonville-d01d527eac18053f4b4d852ee1b9254d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "FC425737T",
@@ -4411,7 +4370,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2015-Nissan-Altima-in-Jacksonville-ba61e48cac1803e19c0cf696c1144e64.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTH9646433",
@@ -4430,7 +4389,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/INFINITI/2017-INFINITI-QX80-in-Jacksonville-1a26bed4ac1815683e0f53885be21e01.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "HN140960T",
@@ -4449,7 +4408,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2017-Nissan-Murano-in-Jacksonville-ba61e30eac181692208c0f6fca164a86.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTJS221803",
@@ -4468,7 +4427,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Ram/2018-Ram-1500-in-Jacksonville-f8e3db51ac184360c70a902ab49de68e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "JW487991T",
@@ -4487,7 +4446,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-89c97a93ac18371a271dd48ec874cdc2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "JPJ45068T",
@@ -4506,26 +4465,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Jeep/2018-Jeep-Renegade-in-Jacksonville-963ad05bac1800e06ea8fa61430d9627.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
-    },
-    {
-      "stockNumber": "JC793867T",
-      "vin": "5N1AT2MT5JC793867",
-      "condition": "used",
-      "year": 2018,
-      "make": "Nissan",
-      "model": "Rogue",
-      "trim": "SV",
-      "color": "Red",
-      "interiorColor": "Gray",
-      "mileage": 124337,
-      "msrp": null,
-      "advertisedPrice": null,
-      "dealerDiscount": null,
-      "discountKind": "",
-      "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-c9acfdbdac1824e7b438cec41c62c820.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "JU135887T",
@@ -4544,7 +4484,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Toyota/2018-Toyota-Camry-in-Jacksonville-cb55f59fac185b3f2fa96a44ec96cf6d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "JN128937T",
@@ -4563,7 +4503,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Murano-in-Jacksonville-d4158e7bac18100891b135ef8f15de3d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "JW492067T",
@@ -4582,7 +4522,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-d91d1b2eac18061cf5be9d53008472fe.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTKW623041",
@@ -4601,7 +4541,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Jeep/2019-Jeep-Wrangler-in-Jacksonville-a44c96efac1851979897d886e1fd24d6.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTKGA04413",
@@ -4620,7 +4560,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Ford/2019-Ford-Explorer-in-Jacksonville-ebdcbe18ac180e9912b4aee83f122825.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "KM264795T",
@@ -4639,7 +4579,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Toyota/2019-Toyota-Tacoma-in-Jacksonville-6cc420afac1808fa9e51b2649b4e1483.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "KD509241T",
@@ -4658,7 +4598,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Toyota/2019-Toyota-RAV4-in-Jacksonville-a07a3484ac18240ddaef9832eb3b7229.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "L9C53815T",
@@ -4677,7 +4617,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/BMW/2020-BMW-X3-in-Jacksonville-7c0d5b00ac1853f68714c455055d018d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTM7107436",
@@ -4696,7 +4636,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Kia/2021-Kia-Seltos-in-Jacksonville-de3dfcf5ac181130db090a681db9508c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTM7125758",
@@ -4715,26 +4655,26 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Kia/2021-Kia-Soul-in-Jacksonville-4a605c6bac1826babac76bb103d33116.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
-      "stockNumber": "M8163510T",
-      "vin": "1C4RJKAG9M8163510",
+      "stockNumber": "MC745514T",
+      "vin": "5N1AT3BA2MC745514",
       "condition": "used",
       "year": 2021,
-      "make": "Jeep",
-      "model": "Grand Cherokee L",
-      "trim": "Laredo",
-      "color": "Gray",
-      "interiorColor": "Black",
-      "mileage": 113388,
+      "make": "Nissan",
+      "model": "Rogue",
+      "trim": "SV",
+      "color": "White",
+      "interiorColor": "Gray",
+      "mileage": 17187,
       "msrp": null,
       "advertisedPrice": null,
       "dealerDiscount": null,
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Jeep/2021-Jeep-Grand-Cherokee-L-in-Jacksonville-c4602082ac180008953599fbd10af5fb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2021-Nissan-Rogue-in-Jacksonville-dea5826cac185c1036044b3207446f53.htm",
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTNC111336",
@@ -4753,7 +4693,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2022-Nissan-Murano-in-Jacksonville-e1e06821ac18317c333ce9bd9f54cb2c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "NW117649T",
@@ -4772,7 +4712,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2022-Nissan-Rogue-in-Jacksonville-a67c38cbac185c3a4b66caaa623e845a.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "NL496334T",
@@ -4791,7 +4731,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2022-Nissan-Kicks-in-Jacksonville-d01d547cac183f1e9f5905f9831fe80d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "NL003757T",
@@ -4802,7 +4742,7 @@
       "model": "CR-V Hybrid",
       "trim": "Touring",
       "color": "",
-      "interiorColor": "",
+      "interiorColor": "Gray",
       "mileage": 59431,
       "msrp": null,
       "advertisedPrice": null,
@@ -4810,26 +4750,26 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Honda/2022-Honda-CR-V-Hybrid-in-Jacksonville-d91d1c99ac18199a12c5e531195915ef.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
-      "stockNumber": "CJNTP0136711",
-      "vin": "1G6DR5RW8P0136711",
+      "stockNumber": "NV397515T",
+      "vin": "W1N0G8EBXNV397515",
       "condition": "used",
-      "year": 2023,
-      "make": "CADILLAC",
-      "model": "CT5-V",
-      "trim": "V-Series",
-      "color": "White",
-      "interiorColor": "Brown",
-      "mileage": 25491,
+      "year": 2022,
+      "make": "Mercedes-Benz",
+      "model": "GLC 300",
+      "trim": "4MATIC",
+      "color": "",
+      "interiorColor": "",
+      "mileage": 23184,
       "msrp": null,
       "advertisedPrice": null,
       "dealerDiscount": null,
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/CADILLAC/2023-CADILLAC-CT5-V-in-Jacksonville-23036abeac1826798ad94e3b64b7d61f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Mercedes-Benz/2022-Mercedes-Benz-GLC-300-in-Jacksonville-dea583c2ac1854d266b70450f261cd6d.htm",
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CCJTP1233141",
@@ -4848,7 +4788,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Chevrolet/2023-Chevrolet-Colorado-in-Jacksonville-45ba9648ac18090da9ed9f9d1e19f918.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNSPN103342",
@@ -4867,7 +4807,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Titan-in-Jacksonville-8a2d0253ac185ca9e7e2cb7ff6564a27.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTPC754052",
@@ -4886,7 +4826,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-3e6a8975ac185fd0f33972f33ace9238.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "PB047694P",
@@ -4905,7 +4845,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Honda/2023-Honda-Ridgeline-in-Jacksonville-680939bcac181f3d0fc7ccd9bd217f9f.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "PC749184T",
@@ -4924,7 +4864,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-724a34f6ac181f3d0fc7ccd9dea0f595.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "PW312706T",
@@ -4943,26 +4883,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-7a1189f4ac183997ad020d88278912d3.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
-    },
-    {
-      "stockNumber": "CHYTRH087564A",
-      "vin": "5NTJB4AE4RH087564",
-      "condition": "used",
-      "year": 2024,
-      "make": "Hyundai",
-      "model": "Santa Cruz",
-      "trim": "2.5L SEL",
-      "color": "Gray",
-      "interiorColor": "Black",
-      "mileage": 87020,
-      "msrp": null,
-      "advertisedPrice": null,
-      "dealerDiscount": null,
-      "discountKind": "",
-      "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Hyundai/2024-Hyundai-Santa-Cruz-in-Jacksonville-45e449f5ac185c30e41528d4474bf773.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTR1156407",
@@ -4981,7 +4902,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Mazda/2024-Mazda-CX-90-Plug-In-Hybrid-in-Jacksonville-f8e3ddb9ac180048e88f6d7e20c62f6d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTRL560742",
@@ -5000,7 +4921,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2024-Nissan-Kicks-in-Jacksonville-4374f4b5ac182ca389c28a5aa17d1f06.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTRC131367",
@@ -5019,7 +4940,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Chevrolet/2024-Chevrolet-Trax-in-Jacksonville-4374f6ebac18437bfc1e90ace2271ad2.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTS7350433",
@@ -5038,7 +4959,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Kia/2025-Kia-Sportage-in-Jacksonville-a44c988dac180edf8db7c817f744162d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CHOTSE000436",
@@ -5057,7 +4978,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Honda/2025-Honda-CR-V-in-Jacksonville-3bfff453ac1823476a7eab3f10c6b126.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "SR527571T",
@@ -5076,7 +4997,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Chrysler/2025-Chrysler-Pacifica-in-Jacksonville-c7d19e6eac185bc6fc1af9b5b3786d87.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "714686",
@@ -5095,7 +5016,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-64d621e8ac1819733e9ca9c42dae020e.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260521",
@@ -5114,7 +5035,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Sentra-in-Jacksonville-a080d479ac182d59c0f767e204977fd5.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260061",
@@ -5133,7 +5054,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Murano-in-Jacksonville-d0fbb92fac185b829147d6b341342037.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNTTN653384",
@@ -5152,7 +5073,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Frontier-in-Jacksonville-e1e06952ac185bc0410e180b1e10cecb.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260024",
@@ -5171,7 +5092,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-587669e0ac183d319ef18547fdbbd569.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "TL405576T",
@@ -5190,7 +5111,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-d6181203ac18101fae2fc5585bd0753d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "TC303780T",
@@ -5209,7 +5130,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-b2fc2409ac18031ef338a299d9146e22.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260390",
@@ -5227,8 +5148,8 @@
       "dealerDiscount": null,
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
-      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Murano-in-Jacksonville-0bf92db3ac1857715e05f4fdde145f9d.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "sourceUrl": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Murano-in-Jacksonville-0bf92db3ac1857715e05f4fdde145f9d.htm",
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNL260605",
@@ -5247,7 +5168,26 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Rogue-Plug-In-Hybrid-in-Jacksonville-fdc88f82ac1828a51474883969abc325.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
+    },
+    {
+      "stockNumber": "309078",
+      "vin": "3N8AP6CE5TL309078",
+      "condition": "used",
+      "year": 2026,
+      "make": "Nissan",
+      "model": "Kicks",
+      "trim": "SV",
+      "color": "Gray",
+      "interiorColor": "Gray",
+      "mileage": null,
+      "msrp": null,
+      "advertisedPrice": null,
+      "dealerDiscount": null,
+      "discountKind": "",
+      "sourceName": "Official dealer public inventory",
+      "sourceUrl": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Kicks-in-Jacksonville-97b025bfac183940af9ec96b08a11a45.htm",
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVM550377",
@@ -5266,7 +5206,7 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Z-in-Jacksonville-1f1941a8ac180771c28b0c0e848b1118.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     },
     {
       "stockNumber": "CJNVM551064",
@@ -5285,17 +5225,18 @@
       "discountKind": "",
       "sourceName": "Official dealer public inventory",
       "sourceUrl": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Z-in-Jacksonville-1f1949f5ac180771c28b0c0e13a5b16c.htm",
-      "checkedAt": "2026-11-14T17:00:02.175Z"
+      "checkedAt": "2026-11-15T12:00:02.666Z"
     }
   ],
   "dailyChanges": {
-    "date": "2026-11-14",
-    "baselineDate": "2026-11-13",
+    "date": "2026-11-15",
+    "baselineDate": "2026-11-14",
     "baselineVins": [
       "3N1AB9BV8VY243776",
       "3N1AB9BV3VY243801",
       "3N1AB9BV7VY247432",
       "3N1AB9BV0VY250639",
+      "3N1AB9BV6VY251391",
       "3N8AP6BEXVL310957",
       "3N8AP6BE6VL315668",
       "3N8AP6BE6VL318036",
@@ -5380,13 +5321,12 @@
       "5N1BT3BA0VC692818",
       "5N1BT3BA7VC695490",
       "5N1BT3BA1VC692133",
-      "5N1BT3BA6VC695433",
       "5N1BT3BA6VC695349",
+      "5N1BT3BA6VC695433",
       "5N1BT3BA6VC678762",
       "5N1BT3BA1VC691645",
       "5N1BT3BA5VC680583",
       "5N1BT3BA4VC673978",
-      "5N1BT3BB5TC896374",
       "5N1BT3BA0VC696500",
       "5N1BT3BA2TC880592",
       "5N1BT3BA6TC880529",
@@ -5510,7 +5450,6 @@
       "JN8AY3CH5T9730541",
       "1N4AL3AP7EC329363",
       "1N4AL3AP7FC425737",
-      "1N4AA6AP1GC375958",
       "JN8AZ2NF6H9646433",
       "5N1AZ2MG7HN140960",
       "1C6RR6FT3JS221803",
@@ -5519,6 +5458,7 @@
       "5N1AT2MT5JC793867",
       "4T1B61HK7JU135887",
       "5N1AZ2MGXJN128937",
+      "JN8AT2MT3JW492067",
       "1C4HJXEN8KW623041",
       "1FM5K7D81KGA04413",
       "3TMCZ5AN9KM264795",
@@ -5530,6 +5470,7 @@
       "5N1AZ2CJ0NC111336",
       "JN8BT3DC3NW117649",
       "3N1CP5BV2NL496334",
+      "5J6RT6H99NL003757",
       "1G6DR5RW8P0136711",
       "1GCPSCEK7P1233141",
       "1N6AA1EF6PN103342",
@@ -5546,7 +5487,6 @@
       "2C4RC1BG3SR527571",
       "5N1BT3BA4TC714686",
       "3N1AB9EW6TY268578",
-      "3N1AB9EWXTY273511",
       "5N1AZ3CS4TC100870",
       "1N6ED1FJ2TN653384",
       "3N8AP6DA7TL309191",
@@ -5558,12 +5498,13 @@
       "JN1BZ4BH1VM551064"
     ],
     "addedVins": [
-      "3N1AB9BV6VY251391",
-      "JN8AT2MT3JW492067",
-      "5J6RT6H99NL003757"
+      "5N1AT3BA2MC745514",
+      "W1N0G8EBXNV397515",
+      "3N8AP6CE5TL309078"
     ]
   },
   "stocks": {
+    "309078": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Kicks-in-Jacksonville-97b025bfac183940af9ec96b08a11a45.htm",
     "323705": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-4ddb6282ac185f211fe82f4e8a3a7c37.htm",
     "714686": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-64d621e8ac1819733e9ca9c42dae020e.htm",
     "CJNVY243776": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Sentra-in-Jacksonville-a42333a3ac1817dfac417dcded5f44a0.htm",
@@ -5738,7 +5679,6 @@
     "CNATC280075": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-9065437fac1849e6c966ea6f6d7aa308.htm",
     "CJNTW018161": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-a3b1e4a3ac181189b98677b05a6b6595.htm",
     "CJNTC301369": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-25bd15bfac18551af8c02fae229cbcf8.htm",
-    "CJNTC288693": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-68026d38ac184d75e32c2e101e47cf8f.htm",
     "CJNTC305534": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-6dc7bcfdac1822f5a3c0cac9deaa332e.htm",
     "CJNTW016220": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Rogue-in-Jacksonville-9219d4b2ac182a678e69018b41268477.htm",
     "CJNTC272842": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-514383a9ac1843223622966a018b8f0d.htm",
@@ -5781,14 +5721,12 @@
     "CJNT9144962": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-1b706470ac180d50c4c90ee1801451a3.htm",
     "CJNT9730548": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-ed17cf4dac18336d3f8a8d6f810ca39e.htm",
     "CJNT9730541": "https://www.cogginnissanatlantic.com/new/Nissan/2026-Nissan-Armada-in-Jacksonville-ce3192b0ac185bc0410e180bea158777.htm",
-    "EC329363T": "https://www.cogginnissanatlantic.com/used/Nissan/2014-Nissan-Altima-in-Jacksonville-d01d527eac18053f4b4d852ee1b9254d.htm",
     "FC425737T": "https://www.cogginnissanatlantic.com/used/Nissan/2015-Nissan-Altima-in-Jacksonville-ba61e48cac1803e19c0cf696c1144e64.htm",
     "CJNTH9646433": "https://www.cogginnissanatlantic.com/used/INFINITI/2017-INFINITI-QX80-in-Jacksonville-1a26bed4ac1815683e0f53885be21e01.htm",
     "HN140960T": "https://www.cogginnissanatlantic.com/used/Nissan/2017-Nissan-Murano-in-Jacksonville-ba61e30eac181692208c0f6fca164a86.htm",
     "CJNTJS221803": "https://www.cogginnissanatlantic.com/used/Ram/2018-Ram-1500-in-Jacksonville-f8e3db51ac184360c70a902ab49de68e.htm",
     "JW487991T": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-89c97a93ac18371a271dd48ec874cdc2.htm",
     "JPJ45068T": "https://www.cogginnissanatlantic.com/used/Jeep/2018-Jeep-Renegade-in-Jacksonville-963ad05bac1800e06ea8fa61430d9627.htm",
-    "JC793867T": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-c9acfdbdac1824e7b438cec41c62c820.htm",
     "JU135887T": "https://www.cogginnissanatlantic.com/used/Toyota/2018-Toyota-Camry-in-Jacksonville-cb55f59fac185b3f2fa96a44ec96cf6d.htm",
     "JN128937T": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Murano-in-Jacksonville-d4158e7bac18100891b135ef8f15de3d.htm",
     "JW492067T": "https://www.cogginnissanatlantic.com/used/Nissan/2018-Nissan-Rogue-in-Jacksonville-d91d1b2eac18061cf5be9d53008472fe.htm",
@@ -5799,19 +5737,18 @@
     "L9C53815T": "https://www.cogginnissanatlantic.com/used/BMW/2020-BMW-X3-in-Jacksonville-7c0d5b00ac1853f68714c455055d018d.htm",
     "CJNTM7107436": "https://www.cogginnissanatlantic.com/used/Kia/2021-Kia-Seltos-in-Jacksonville-de3dfcf5ac181130db090a681db9508c.htm",
     "CJNTM7125758": "https://www.cogginnissanatlantic.com/used/Kia/2021-Kia-Soul-in-Jacksonville-4a605c6bac1826babac76bb103d33116.htm",
-    "M8163510T": "https://www.cogginnissanatlantic.com/used/Jeep/2021-Jeep-Grand-Cherokee-L-in-Jacksonville-c4602082ac180008953599fbd10af5fb.htm",
+    "MC745514T": "https://www.cogginnissanatlantic.com/used/Nissan/2021-Nissan-Rogue-in-Jacksonville-dea5826cac185c1036044b3207446f53.htm",
     "CJNTNC111336": "https://www.cogginnissanatlantic.com/used/Nissan/2022-Nissan-Murano-in-Jacksonville-e1e06821ac18317c333ce9bd9f54cb2c.htm",
     "NW117649T": "https://www.cogginnissanatlantic.com/certified/Nissan/2022-Nissan-Rogue-in-Jacksonville-a67c38cbac185c3a4b66caaa623e845a.htm",
     "NL496334T": "https://www.cogginnissanatlantic.com/used/Nissan/2022-Nissan-Kicks-in-Jacksonville-d01d547cac183f1e9f5905f9831fe80d.htm",
     "NL003757T": "https://www.cogginnissanatlantic.com/used/Honda/2022-Honda-CR-V-Hybrid-in-Jacksonville-d91d1c99ac18199a12c5e531195915ef.htm",
-    "CJNTP0136711": "https://www.cogginnissanatlantic.com/used/CADILLAC/2023-CADILLAC-CT5-V-in-Jacksonville-23036abeac1826798ad94e3b64b7d61f.htm",
+    "NV397515T": "https://www.cogginnissanatlantic.com/used/Mercedes-Benz/2022-Mercedes-Benz-GLC-300-in-Jacksonville-dea583c2ac1854d266b70450f261cd6d.htm",
     "CCJTP1233141": "https://www.cogginnissanatlantic.com/used/Chevrolet/2023-Chevrolet-Colorado-in-Jacksonville-45ba9648ac18090da9ed9f9d1e19f918.htm",
     "CJNSPN103342": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Titan-in-Jacksonville-8a2d0253ac185ca9e7e2cb7ff6564a27.htm",
     "CJNTPC754052": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-3e6a8975ac185fd0f33972f33ace9238.htm",
     "PB047694P": "https://www.cogginnissanatlantic.com/used/Honda/2023-Honda-Ridgeline-in-Jacksonville-680939bcac181f3d0fc7ccd9bd217f9f.htm",
     "PC749184T": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-724a34f6ac181f3d0fc7ccd9dea0f595.htm",
     "PW312706T": "https://www.cogginnissanatlantic.com/used/Nissan/2023-Nissan-Rogue-in-Jacksonville-7a1189f4ac183997ad020d88278912d3.htm",
-    "CHYTRH087564A": "https://www.cogginnissanatlantic.com/used/Hyundai/2024-Hyundai-Santa-Cruz-in-Jacksonville-45e449f5ac185c30e41528d4474bf773.htm",
     "CJNTR1156407": "https://www.cogginnissanatlantic.com/used/Mazda/2024-Mazda-CX-90-Plug-In-Hybrid-in-Jacksonville-f8e3ddb9ac180048e88f6d7e20c62f6d.htm",
     "CJNTRL560742": "https://www.cogginnissanatlantic.com/certified/Nissan/2024-Nissan-Kicks-in-Jacksonville-4374f4b5ac182ca389c28a5aa17d1f06.htm",
     "CJNTRC131367": "https://www.cogginnissanatlantic.com/used/Chevrolet/2024-Chevrolet-Trax-in-Jacksonville-4374f6ebac18437bfc1e90ace2271ad2.htm",
@@ -5824,7 +5761,7 @@
     "CJNL260024": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-587669e0ac183d319ef18547fdbbd569.htm",
     "TL405576T": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Kicks-in-Jacksonville-d6181203ac18101fae2fc5585bd0753d.htm",
     "TC303780T": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Pathfinder-in-Jacksonville-b2fc2409ac18031ef338a299d9146e22.htm",
-    "CJNL260390": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Murano-in-Jacksonville-0bf92db3ac1857715e05f4fdde145f9d.htm",
+    "CJNL260390": "https://www.cogginnissanatlantic.com/certified/Nissan/2026-Nissan-Murano-in-Jacksonville-0bf92db3ac1857715e05f4fdde145f9d.htm",
     "CJNL260605": "https://www.cogginnissanatlantic.com/used/Nissan/2026-Nissan-Rogue-Plug-In-Hybrid-in-Jacksonville-fdc88f82ac1828a51474883969abc325.htm",
     "CJNVM550377": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Z-in-Jacksonville-1f1941a8ac180771c28b0c0e848b1118.htm",
     "CJNVM551064": "https://www.cogginnissanatlantic.com/new/Nissan/2027-Nissan-Z-in-Jacksonville-1f1949f5ac180771c28b0c0e13a5b16c.htm"
@@ -6003,7 +5940,6 @@
     "5N1DR3BS6TC280075": "CNATC280075",
     "JN8BT3DD7TW018161": "CJNTW018161",
     "5N1DR3BS9TC301369": "CJNTC301369",
-    "5N1DR3BS6TC288693": "CJNTC288693",
     "5N1DR3BS7TC305534": "CJNTC305534",
     "JN8BT3DD9TW016220": "CJNTW016220",
     "5N1DR3CS7TC272842": "CJNTC272842",
@@ -6046,14 +5982,12 @@
     "JN8AY3EB1T9144962": "CJNT9144962",
     "JN8AY3CH8T9730548": "CJNT9730548",
     "JN8AY3CH5T9730541": "CJNT9730541",
-    "1N4AL3AP7EC329363": "EC329363T",
     "1N4AL3AP7FC425737": "FC425737T",
     "JN8AZ2NF6H9646433": "CJNTH9646433",
     "5N1AZ2MG7HN140960": "HN140960T",
     "1C6RR6FT3JS221803": "CJNTJS221803",
     "JN8AT2MT0JW487991": "JW487991T",
     "ZACCJBBB4JPJ45068": "JPJ45068T",
-    "5N1AT2MT5JC793867": "JC793867T",
     "4T1B61HK7JU135887": "JU135887T",
     "5N1AZ2MGXJN128937": "JN128937T",
     "JN8AT2MT3JW492067": "JW492067T",
@@ -6064,19 +5998,18 @@
     "5UXTY5C03L9C53815": "L9C53815T",
     "KNDEPCAA1M7107436": "CJNTM7107436",
     "KNDJ23AU4M7125758": "CJNTM7125758",
-    "1C4RJKAG9M8163510": "M8163510T",
+    "5N1AT3BA2MC745514": "MC745514T",
     "5N1AZ2CJ0NC111336": "CJNTNC111336",
     "JN8BT3DC3NW117649": "NW117649T",
     "3N1CP5BV2NL496334": "NL496334T",
     "5J6RT6H99NL003757": "NL003757T",
-    "1G6DR5RW8P0136711": "CJNTP0136711",
+    "W1N0G8EBXNV397515": "NV397515T",
     "1GCPSCEK7P1233141": "CCJTP1233141",
     "1N6AA1EF6PN103342": "CJNSPN103342",
     "5N1BT3BA1PC754052": "CJNTPC754052",
     "5FPYK3F50PB047694": "PB047694P",
     "5N1BT3BA4PC749184": "PC749184T",
     "JN8BT3DD6PW312706": "PW312706T",
-    "5NTJB4AE4RH087564": "CHYTRH087564A",
     "JM3KKEHA2R1156407": "CJNTR1156407",
     "3N1CP5BV1RL560742": "CJNTRL560742",
     "KL77LGE24RC131367": "CJNTRC131367",
@@ -6092,6 +6025,7 @@
     "5N1DR3DV2TC303780": "TC303780T",
     "5N1AZ3CS5TC116740": "CJNL260390",
     "JA4T0LA97TZ029873": "CJNL260605",
+    "3N8AP6CE5TL309078": "309078",
     "JN1BZ4BH6VM550377": "CJNVM550377",
     "JN1BZ4BH1VM551064": "CJNVM551064"
   },
@@ -6269,7 +6203,6 @@
     "5N1DR3BS6TC280075": "new",
     "JN8BT3DD7TW018161": "new",
     "5N1DR3BS9TC301369": "new",
-    "5N1DR3BS6TC288693": "new",
     "5N1DR3BS7TC305534": "new",
     "JN8BT3DD9TW016220": "new",
     "5N1DR3CS7TC272842": "new",
@@ -6312,14 +6245,12 @@
     "JN8AY3EB1T9144962": "new",
     "JN8AY3CH8T9730548": "new",
     "JN8AY3CH5T9730541": "new",
-    "1N4AL3AP7EC329363": "used",
     "1N4AL3AP7FC425737": "used",
     "JN8AZ2NF6H9646433": "used",
     "5N1AZ2MG7HN140960": "used",
     "1C6RR6FT3JS221803": "used",
     "JN8AT2MT0JW487991": "used",
     "ZACCJBBB4JPJ45068": "used",
-    "5N1AT2MT5JC793867": "used",
     "4T1B61HK7JU135887": "used",
     "5N1AZ2MGXJN128937": "used",
     "JN8AT2MT3JW492067": "used",
@@ -6330,19 +6261,18 @@
     "5UXTY5C03L9C53815": "used",
     "KNDEPCAA1M7107436": "used",
     "KNDJ23AU4M7125758": "used",
-    "1C4RJKAG9M8163510": "used",
+    "5N1AT3BA2MC745514": "used",
     "5N1AZ2CJ0NC111336": "used",
     "JN8BT3DC3NW117649": "used",
     "3N1CP5BV2NL496334": "used",
     "5J6RT6H99NL003757": "used",
-    "1G6DR5RW8P0136711": "used",
+    "W1N0G8EBXNV397515": "used",
     "1GCPSCEK7P1233141": "used",
     "1N6AA1EF6PN103342": "used",
     "5N1BT3BA1PC754052": "used",
     "5FPYK3F50PB047694": "used",
     "5N1BT3BA4PC749184": "used",
     "JN8BT3DD6PW312706": "used",
-    "5NTJB4AE4RH087564": "used",
     "JM3KKEHA2R1156407": "used",
     "3N1CP5BV1RL560742": "used",
     "KL77LGE24RC131367": "used",
@@ -6358,6 +6288,7 @@
     "5N1DR3DV2TC303780": "used",
     "5N1AZ3CS5TC116740": "used",
     "JA4T0LA97TZ029873": "used",
+    "3N8AP6CE5TL309078": "used",
     "JN1BZ4BH6VM550377": "new",
     "JN1BZ4BH1VM551064": "new"
   },
@@ -10335,28 +10266,6 @@
         "terms": "Available to the following individuals with proof of eligibility: U.S. residents with a valid U.S. driver's license who are: (i) current U.S. Active and Reserve Military personnel,(ii) U.S. Military Veterans within 24 months of separation from Active or Reserve duty, (ii) U.S. Military Retirees who have completed at least 20 years of Active or Reserve duty, or (iii) U.S. military surviving spouse, child, or parent who provides dealer with a photocopy of DD-214, Summary of Benefits letter, or death certificate. Cash offer is available towards the purchase or lease of an eligible vehicle from new dealer stock. Subject to residency restrictions. Cannot be combined with the Nissan College Grad Program offer or other VPP offers. Limit up to 2 vehicle leases or purchases per calendar year per qualified participant for personal use only. Offer not valid for fleet or business use. Other restrictions may apply. Contact dealer for details. Offer is subject to change or termination at any time without notice."
       }
     ],
-    "5N1DR3BS6TC288693": [
-      {
-        "id": "zf7034a4540472eafc77f189a45e55fe",
-        "title": "Nissan Conditional Offer - College Graduate Discount",
-        "category": "graduate",
-        "conditional": true,
-        "amount": 500,
-        "effectiveDate": "Nov 03, 2026",
-        "expirationDate": "Nov 30, 2026",
-        "terms": "Proof of current enrollment in an accredited U.S. college, university, or graduate school with proof of graduation within the past 24 months, or written confirmation of upcoming graduation within the next 6 months, required. Cash offer is available towards the purchase or lease of an eligible vehicle from new dealer stock. Subject to residency restrictions. Cannot be combined with the Nissan Military Program offer or other VPP offers. Limit one vehicle purchase per qualified participant. Other restrictions apply. Contact dealer for details. Offer is subject to change or termination at any time without notice."
-      },
-      {
-        "id": "zaab0ddac80b5500aec5cbc2711311d0",
-        "title": "Nissan Conditional Offer - Military Appreciation",
-        "category": "military",
-        "conditional": true,
-        "amount": 500,
-        "effectiveDate": "Nov 03, 2026",
-        "expirationDate": "Nov 30, 2026",
-        "terms": "Available to the following individuals with proof of eligibility: U.S. residents with a valid U.S. driver's license who are: (i) current U.S. Active and Reserve Military personnel,(ii) U.S. Military Veterans within 24 months of separation from Active or Reserve duty, (ii) U.S. Military Retirees who have completed at least 20 years of Active or Reserve duty, or (iii) U.S. military surviving spouse, child, or parent who provides dealer with a photocopy of DD-214, Summary of Benefits letter, or death certificate. Cash offer is available towards the purchase or lease of an eligible vehicle from new dealer stock. Subject to residency restrictions. Cannot be combined with the Nissan College Grad Program offer or other VPP offers. Limit up to 2 vehicle leases or purchases per calendar year per qualified participant for personal use only. Offer not valid for fleet or business use. Other restrictions may apply. Contact dealer for details. Offer is subject to change or termination at any time without notice."
-      }
-    ],
     "5N1DR3BS7TC305534": [
       {
         "id": "zf7034a4540472eafc77f189a45e55fe",
@@ -11281,14 +11190,12 @@
         "terms": "Proof of current enrollment in an accredited U.S. college, university, or graduate school with proof of graduation within the past 24 months, or written confirmation of upcoming graduation within the next 6 months, required. Cash offer is available towards the purchase or lease of an eligible vehicle from new dealer stock. Subject to residency restrictions. Cannot be combined with the Nissan Military Program offer or other VPP offers. Limit one vehicle purchase per qualified participant. Other restrictions apply. Contact dealer for details. Offer is subject to change or termination at any time without notice."
       }
     ],
-    "1N4AL3AP7EC329363": [],
     "1N4AL3AP7FC425737": [],
     "JN8AZ2NF6H9646433": [],
     "5N1AZ2MG7HN140960": [],
     "1C6RR6FT3JS221803": [],
     "JN8AT2MT0JW487991": [],
     "ZACCJBBB4JPJ45068": [],
-    "5N1AT2MT5JC793867": [],
     "4T1B61HK7JU135887": [],
     "5N1AZ2MGXJN128937": [],
     "JN8AT2MT3JW492067": [],
@@ -11299,19 +11206,18 @@
     "5UXTY5C03L9C53815": [],
     "KNDEPCAA1M7107436": [],
     "KNDJ23AU4M7125758": [],
-    "1C4RJKAG9M8163510": [],
+    "5N1AT3BA2MC745514": [],
     "5N1AZ2CJ0NC111336": [],
     "JN8BT3DC3NW117649": [],
     "3N1CP5BV2NL496334": [],
     "5J6RT6H99NL003757": [],
-    "1G6DR5RW8P0136711": [],
+    "W1N0G8EBXNV397515": [],
     "1GCPSCEK7P1233141": [],
     "1N6AA1EF6PN103342": [],
     "5N1BT3BA1PC754052": [],
     "5FPYK3F50PB047694": [],
     "5N1BT3BA4PC749184": [],
     "JN8BT3DD6PW312706": [],
-    "5NTJB4AE4RH087564": [],
     "JM3KKEHA2R1156407": [],
     "3N1CP5BV1RL560742": [],
     "KL77LGE24RC131367": [],
@@ -11348,6 +11254,7 @@
     "5N1DR3DV2TC303780": [],
     "5N1AZ3CS5TC116740": [],
     "JA4T0LA97TZ029873": [],
+    "3N8AP6CE5TL309078": [],
     "JN1BZ4BH6VM550377": [
       {
         "id": "z5f4f5d20b949f6dd06274e772b2c825",
@@ -11450,7 +11357,7 @@
     "3N8AP6CB0VL304475": null,
     "3N8AP6CB9VL304801": null,
     "3N8AP6CB0VL304251": null,
-    "3N8AP6DA0TL324499": 24002,
+    "3N8AP6DA0TL324499": 23502,
     "3N8AP6DA5TL323705": 23752,
     "3N8AP6CB3VL308035": null,
     "3N8AP6CB4VL317987": null,
@@ -11567,7 +11474,6 @@
     "5N1DR3BS6TC280075": null,
     "JN8BT3DD7TW018161": null,
     "5N1DR3BS9TC301369": null,
-    "5N1DR3BS6TC288693": null,
     "5N1DR3BS7TC305534": null,
     "JN8BT3DD9TW016220": null,
     "5N1DR3CS7TC272842": null,
@@ -11610,41 +11516,38 @@
     "JN8AY3EB1T9144962": null,
     "JN8AY3CH8T9730548": null,
     "JN8AY3CH5T9730541": null,
-    "1N4AL3AP7EC329363": 8275,
     "1N4AL3AP7FC425737": 9252,
     "JN8AZ2NF6H9646433": 15502,
     "5N1AZ2MG7HN140960": 16500,
     "1C6RR6FT3JS221803": 17994,
     "JN8AT2MT0JW487991": 9997,
     "ZACCJBBB4JPJ45068": 12502,
-    "5N1AT2MT5JC793867": 9916,
     "4T1B61HK7JU135887": 21502,
     "5N1AZ2MGXJN128937": 18999,
-    "JN8AT2MT3JW492067": null,
+    "JN8AT2MT3JW492067": 11391,
     "1C4HJXEN8KW623041": 19974,
     "1FM5K7D81KGA04413": 15994,
     "3TMCZ5AN9KM264795": 32999,
-    "JTMC1RFV5KD509241": 22002,
+    "JTMC1RFV5KD509241": 21502,
     "5UXTY5C03L9C53815": 24502,
     "KNDEPCAA1M7107436": 10998,
     "KNDJ23AU4M7125758": 12502,
-    "1C4RJKAG9M8163510": 19999,
+    "5N1AT3BA2MC745514": 19499,
     "5N1AZ2CJ0NC111336": 19975,
-    "JN8BT3DC3NW117649": 22552,
+    "JN8BT3DC3NW117649": 22320,
     "3N1CP5BV2NL496334": 14490,
     "5J6RT6H99NL003757": 28289,
-    "1G6DR5RW8P0136711": 45751,
+    "W1N0G8EBXNV397515": 29062,
     "1GCPSCEK7P1233141": 23994,
     "1N6AA1EF6PN103342": 21996,
     "5N1BT3BA1PC754052": 15891,
     "5FPYK3F50PB047694": 27602,
-    "5N1BT3BA4PC749184": 19002,
+    "5N1BT3BA4PC749184": 18752,
     "JN8BT3DD6PW312706": 21752,
-    "5NTJB4AE4RH087564": 17337,
     "JM3KKEHA2R1156407": 29994,
     "3N1CP5BV1RL560742": 16502,
     "KL77LGE24RC131367": 16752,
-    "KNDPU3DF7S7350433": 23152,
+    "KNDPU3DF7S7350433": 22252,
     "7FARS3H76SE000436": 26502,
     "2C4RC1BG3SR527571": 27500,
     "5N1BT3BA4TC714686": null,
@@ -11656,6 +11559,7 @@
     "5N1DR3DV2TC303780": 41844,
     "5N1AZ3CS5TC116740": 35705,
     "JA4T0LA97TZ029873": 37222,
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
@@ -11833,7 +11737,6 @@
     "5N1DR3BS6TC280075": 42650,
     "JN8BT3DD7TW018161": 42760,
     "5N1DR3BS9TC301369": 42775,
-    "5N1DR3BS6TC288693": 43030,
     "5N1DR3BS7TC305534": 43060,
     "JN8BT3DD9TW016220": 43750,
     "5N1DR3CS7TC272842": 44410,
@@ -11876,14 +11779,12 @@
     "JN8AY3EB1T9144962": 78070,
     "JN8AY3CH8T9730548": 88810,
     "JN8AY3CH5T9730541": 89780,
-    "1N4AL3AP7EC329363": null,
     "1N4AL3AP7FC425737": null,
     "JN8AZ2NF6H9646433": null,
     "5N1AZ2MG7HN140960": null,
     "1C6RR6FT3JS221803": null,
     "JN8AT2MT0JW487991": null,
     "ZACCJBBB4JPJ45068": null,
-    "5N1AT2MT5JC793867": null,
     "4T1B61HK7JU135887": null,
     "5N1AZ2MGXJN128937": null,
     "JN8AT2MT3JW492067": null,
@@ -11894,19 +11795,18 @@
     "5UXTY5C03L9C53815": null,
     "KNDEPCAA1M7107436": null,
     "KNDJ23AU4M7125758": null,
-    "1C4RJKAG9M8163510": null,
+    "5N1AT3BA2MC745514": null,
     "5N1AZ2CJ0NC111336": null,
     "JN8BT3DC3NW117649": null,
     "3N1CP5BV2NL496334": null,
     "5J6RT6H99NL003757": null,
-    "1G6DR5RW8P0136711": null,
+    "W1N0G8EBXNV397515": null,
     "1GCPSCEK7P1233141": null,
     "1N6AA1EF6PN103342": null,
     "5N1BT3BA1PC754052": null,
     "5FPYK3F50PB047694": null,
     "5N1BT3BA4PC749184": null,
     "JN8BT3DD6PW312706": null,
-    "5NTJB4AE4RH087564": null,
     "JM3KKEHA2R1156407": null,
     "3N1CP5BV1RL560742": null,
     "KL77LGE24RC131367": null,
@@ -11922,6 +11822,7 @@
     "5N1DR3DV2TC303780": null,
     "5N1AZ3CS5TC116740": null,
     "JA4T0LA97TZ029873": null,
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
@@ -12099,7 +12000,6 @@
     "5N1DR3BS6TC280075": "SV",
     "JN8BT3DD7TW018161": "Platinum",
     "5N1DR3BS9TC301369": "SV",
-    "5N1DR3BS6TC288693": "SV",
     "5N1DR3BS7TC305534": "SV",
     "JN8BT3DD9TW016220": "Platinum",
     "5N1DR3CS7TC272842": "SL",
@@ -12142,14 +12042,12 @@
     "JN8AY3EB1T9144962": "Platinum",
     "JN8AY3CH8T9730548": "Platinum Reserve",
     "JN8AY3CH5T9730541": "Platinum Reserve",
-    "1N4AL3AP7EC329363": "2.5 S",
     "1N4AL3AP7FC425737": "2.5 SV",
     "JN8AZ2NF6H9646433": "",
     "5N1AZ2MG7HN140960": "Platinum",
     "1C6RR6FT3JS221803": "Express",
     "JN8AT2MT0JW487991": "SL",
     "ZACCJBBB4JPJ45068": "Latitude 4x4",
-    "5N1AT2MT5JC793867": "SV",
     "4T1B61HK7JU135887": "XSE",
     "5N1AZ2MGXJN128937": "Platinum",
     "JN8AT2MT3JW492067": "SV",
@@ -12160,19 +12058,18 @@
     "5UXTY5C03L9C53815": "xDrive30i",
     "KNDEPCAA1M7107436": "LX",
     "KNDJ23AU4M7125758": "X-Line",
-    "1C4RJKAG9M8163510": "Laredo",
+    "5N1AT3BA2MC745514": "SV",
     "5N1AZ2CJ0NC111336": "SL",
     "JN8BT3DC3NW117649": "Platinum",
     "3N1CP5BV2NL496334": "S",
     "5J6RT6H99NL003757": "Touring",
-    "1G6DR5RW8P0136711": "V-Series",
+    "W1N0G8EBXNV397515": "4MATIC",
     "1GCPSCEK7P1233141": "LT",
     "1N6AA1EF6PN103342": "SV",
     "5N1BT3BA1PC754052": "SV",
     "5FPYK3F50PB047694": "RTL",
     "5N1BT3BA4PC749184": "SV",
     "JN8BT3DD6PW312706": "Platinum",
-    "5NTJB4AE4RH087564": "2.5L SEL",
     "JM3KKEHA2R1156407": "Premium Plus",
     "3N1CP5BV1RL560742": "S",
     "KL77LGE24RC131367": "1RS",
@@ -12188,6 +12085,7 @@
     "5N1DR3DV2TC303780": "Platinum",
     "5N1AZ3CS5TC116740": "SL",
     "JA4T0LA97TZ029873": "SL",
+    "3N8AP6CE5TL309078": "SV",
     "JN1BZ4BH6VM550377": "Performance",
     "JN1BZ4BH1VM551064": "Performance"
   },
@@ -12365,7 +12263,6 @@
     "5N1DR3BS6TC280075": "Gray",
     "JN8BT3DD7TW018161": "Brown",
     "5N1DR3BS9TC301369": "Gray",
-    "5N1DR3BS6TC288693": "Gray",
     "5N1DR3BS7TC305534": "Gray",
     "JN8BT3DD9TW016220": "Brown",
     "5N1DR3CS7TC272842": "Gray",
@@ -12408,14 +12305,12 @@
     "JN8AY3EB1T9144962": "Brown",
     "JN8AY3CH8T9730548": "Brown",
     "JN8AY3CH5T9730541": "Brown",
-    "1N4AL3AP7EC329363": "Gray",
     "1N4AL3AP7FC425737": "Gray",
     "JN8AZ2NF6H9646433": "Gray",
     "5N1AZ2MG7HN140960": "Gray",
     "1C6RR6FT3JS221803": "Gray",
     "JN8AT2MT0JW487991": "Beige",
     "ZACCJBBB4JPJ45068": "Black",
-    "5N1AT2MT5JC793867": "Gray",
     "4T1B61HK7JU135887": "Black",
     "5N1AZ2MGXJN128937": "Gray",
     "JN8AT2MT3JW492067": "Beige",
@@ -12426,19 +12321,18 @@
     "5UXTY5C03L9C53815": "Black",
     "KNDEPCAA1M7107436": "Black",
     "KNDJ23AU4M7125758": "Black",
-    "1C4RJKAG9M8163510": "Black",
+    "5N1AT3BA2MC745514": "Gray",
     "5N1AZ2CJ0NC111336": "Gray",
     "JN8BT3DC3NW117649": "Beige",
     "3N1CP5BV2NL496334": "Gray",
-    "5J6RT6H99NL003757": "",
-    "1G6DR5RW8P0136711": "Brown",
+    "5J6RT6H99NL003757": "Gray",
+    "W1N0G8EBXNV397515": "",
     "1GCPSCEK7P1233141": "Black",
     "1N6AA1EF6PN103342": "Black",
     "5N1BT3BA1PC754052": "Gray",
     "5FPYK3F50PB047694": "Black",
     "5N1BT3BA4PC749184": "Gray",
     "JN8BT3DD6PW312706": "Gray",
-    "5NTJB4AE4RH087564": "Black",
     "JM3KKEHA2R1156407": "Black",
     "3N1CP5BV1RL560742": "Gray",
     "KL77LGE24RC131367": "Black",
@@ -12454,6 +12348,7 @@
     "5N1DR3DV2TC303780": "Brown",
     "5N1AZ3CS5TC116740": "Gray",
     "JA4T0LA97TZ029873": "Black",
+    "3N8AP6CE5TL309078": "Gray",
     "JN1BZ4BH6VM550377": "Gray",
     "JN1BZ4BH1VM551064": "Red"
   },
@@ -12514,8 +12409,8 @@
     "3N8AP6CB0VL304475": null,
     "3N8AP6CB9VL304801": null,
     "3N8AP6CB0VL304251": null,
-    "3N8AP6DA0TL324499": "https://www.carfax.com/vehiclehistory/ar20/_od-LAChYFHhztE14gdjFRgXox3qec83dCQ8XvztRyAZcdzdRudb0nY26WEwBBb4RsccwSz6vditxN0vX2xaOTJZ1M8NQ1evq1c",
-    "3N8AP6DA5TL323705": "https://www.carfax.com/vehiclehistory/ar20/s4RQoQmQB6fG25bnMWglSgWJphUZS4shZPbB96PTK7-IS9s50pZHQPry9raeorbPTeD-Wwie-Pal8GkU0XOGSNwu5BsyiKbBm4I",
+    "3N8AP6DA0TL324499": "https://www.carfax.com/vehiclehistory/ar20/orvcHa9ujAVzKJZE9ODmjSPtaMgo--uh3Xqq2cTAJLPZ4X5-mjSoiKqQjMf8Bbmr-5PqSRfrZKIJpIGEpVioXlCI7pwkDEBsgas",
+    "3N8AP6DA5TL323705": "https://www.carfax.com/vehiclehistory/ar20/klJ6m5L1uhJGwR6KdMpYrMAfX901cORsVTNsdI2ZQQ3w_fbvchvLvpLYqbVJzRWjID6vYlf5oV07FRD62ih6a-IlxpbkAS1Sbdo",
     "3N8AP6CB3VL308035": null,
     "3N8AP6CB4VL317987": null,
     "3N8AP6CBXVL307187": null,
@@ -12616,7 +12511,7 @@
     "1N6ED1EJ3VN607499": null,
     "1N6ED1EJ9VN608060": null,
     "1N6ED1EJ7VN622250": null,
-    "1N6ED1EJ7TN621743": "https://www.carfax.com/vehiclehistory/ar20/tV174O470RaD4Du6MJOB2he9UJxzQWewVoHwkkXIxgw72bSvAd_TZ6jmBdSYgo9JkyeNDF8NHl7FObrKyp9ZJI_-EiEam0HJUvk",
+    "1N6ED1EJ7TN621743": "https://www.carfax.com/vehiclehistory/ar20/-iS_Uic90OSjiLwz-5GPnAxKedFIpB3_cCK7cOdBlMvz16tYhBqSCwU-BcuqKZkjIFw_feyIwZ1HOXom4bspMhZLOGcx8ZWlVHU",
     "1N6ED1EJ3VN607504": null,
     "1N6ED1EJ2VN617845": null,
     "1N6ED1EJ8VN601634": null,
@@ -12631,7 +12526,6 @@
     "5N1DR3BS6TC280075": null,
     "JN8BT3DD7TW018161": null,
     "5N1DR3BS9TC301369": null,
-    "5N1DR3BS6TC288693": null,
     "5N1DR3BS7TC305534": null,
     "JN8BT3DD9TW016220": null,
     "5N1DR3CS7TC272842": null,
@@ -12674,52 +12568,50 @@
     "JN8AY3EB1T9144962": null,
     "JN8AY3CH8T9730548": null,
     "JN8AY3CH5T9730541": null,
-    "1N4AL3AP7EC329363": "https://www.carfax.com/vehiclehistory/ar20/L-AzYd1YRkARONQmkAwHjA3WgNATcyvmrnr0UDHuUWGh-3q3gmO6HXNLFcL_Du91tHZkAksoVg-Oi3KdzD56-Wkujc25x4ihjhQ",
-    "1N4AL3AP7FC425737": "https://www.carfax.com/vehiclehistory/ar20/cEN9YHbXZrfXQhLKzHrU9D-qjARuTwKWktwyRe601Fer-rhEg-A-JA48VJd8NWZRRi3e2nrOKoYLWZqCrvB0pBYTuLghty77-Ig",
-    "JN8AZ2NF6H9646433": "https://www.carfax.com/vehiclehistory/ar20/mQfpVIhVchrJOSMnkvc2rPAJRCCPltjAe9oSv1qRnSp9hYxiZl1oRZzkq0u3IRFp4M222vdlq5IgdSrMhzlx72u4FY-JeTtXmfI",
-    "5N1AZ2MG7HN140960": "https://www.carfax.com/vehiclehistory/ar20/AgUaFMWPe9jjoodDuTe3uotvBKA7y9rSZr68vOmLvv3c09MHPqHLekD5_l23-1j4N73pzhwcP6yvDfm13PqZewbtK97nJAkCZIo",
-    "1C6RR6FT3JS221803": "https://www.carfax.com/vehiclehistory/ar20/8DFzXMqO5I3EVoP5RTocCOkWFwuA_LQtczRsJHQGi2tlM3nkj8mTtvuirCFUEK4aqJBZzRld5s4B2_RvaTOsR-2z1H1YvbN-_x4",
-    "JN8AT2MT0JW487991": "https://www.carfax.com/vehiclehistory/ar20/TRx-PWfTIYutipX11Ud6QHbTjbFb_1KhvfI-4vPPj_3lr8FMdnvTeYVPGTzQ5y-xZ-G-RMgsrDSGKEE8OtIAGU4qVdOu7F-V12w",
-    "ZACCJBBB4JPJ45068": "https://www.carfax.com/vehiclehistory/ar20/JSyF5AoIfX0VNEUlnBCPyNY5je9py1pqY2MeZns7E7032thz6184SMxKKVMqNE2IpPV247J1E3CucDafn-9GsUw5IsGVAM4aAv4",
-    "5N1AT2MT5JC793867": "https://www.carfax.com/vehiclehistory/ar20/3VwIcOfKvy1PnMqTsM0ZjW2jFDjEmT0bJt9_P6iaHjIXaY5mC2gUUeRQFQvQr3ru-AwYLFMH967cm7OL8glt6UPGF_Co2NuZyaY",
-    "4T1B61HK7JU135887": "https://www.carfax.com/vehiclehistory/ar20/9h33lsJwAZ_4-v0yahlWE6pZh24xvu2plXg2e-h2EthxFjl66Aq64YIVADb-V5ekAS9LgbMt5g7H_bPsZnDlfjvnxNAM0qZH-mo",
-    "5N1AZ2MGXJN128937": null,
+    "1N4AL3AP7FC425737": "https://www.carfax.com/vehiclehistory/ar20/xHVGBecgJ2CbuODsCQm9MbzTJsnwPxIa96X82fC515RygExxeK12mmjI9RcZv0uHLMONWZq0we5HkwB2IemobvgQXvJTuz3bGqY",
+    "JN8AZ2NF6H9646433": "https://www.carfax.com/vehiclehistory/ar20/P7JPTFnLSuzpBrtxY6_fM2fcujxG8z-piwczz5URBQPP_zReGDuqAxLs-N7d7BJl5syUlkiCiotb8cYJZuNcqjJtOxr0jDDTmUw",
+    "5N1AZ2MG7HN140960": "https://www.carfax.com/vehiclehistory/ar20/3rdK9rTHE7AMSgYx2H2C1e1_ZEQ_4W5uVvrW2Ck6RIeMHJ-6nECxm4iXBqW3HdL-fWR5TqclwPxIpZoUzjKn-9hbEp1G41c6WEs",
+    "1C6RR6FT3JS221803": "https://www.carfax.com/vehiclehistory/ar20/rfcU88Peq71UpDti9TfeSAsSovqMCXIEkzkNRRhJg7sdGxWEba9fSgw8i1Uns2o87KqlSQ23vr7b-dgO1u5yvDxAPMtqxJwqz6U",
+    "JN8AT2MT0JW487991": "https://www.carfax.com/vehiclehistory/ar20/s-y5Glal9H5SXPNR5fW-NFhH2FszE16hFSzvFr0Id7ou7Z2GKSJh2UMqhCdVOxhdeVTN4a0uXvBmAXNpDX3nr6UJ3q8XkBrEyx8",
+    "ZACCJBBB4JPJ45068": "https://www.carfax.com/vehiclehistory/ar20/0de8uwon_NzFQL5HEFpRxRCvwavNovjXDCdqyhDGfdmXCD7Ay7w55byawroJrja4peltPGFgVbDbNNtaCP5cvc7__MtEsWKlcRA",
+    "4T1B61HK7JU135887": "https://www.carfax.com/vehiclehistory/ar20/pp5OfDXOY2ExbkAGKQsfxIZL0EwAVIOog5uKK6Kfqgy7lxF58VckDhiVBpRZNV9o7qG4Ow5LUr3uqWr2UxUpFcXKmACK2YqnWhA",
+    "5N1AZ2MGXJN128937": "https://www.carfax.com/vehiclehistory/ar20/ppRQeLPEyPHaYLM9t7tILgtug284ePxxD-RASs4rB-0jD8-IeDuGs-bJ_R-I5K-5U__BuObORpb9RQ2c5eGXdkHBul6ZeCw548s",
     "JN8AT2MT3JW492067": null,
-    "1C4HJXEN8KW623041": "https://www.carfax.com/vehiclehistory/ar20/bDtfEamYkGO75Q8ZmA6TJvVQYvA1MzqEYUiaJMMFJMu0Wd2p1RPf_CCaK1LQKtbbStU2V2_wBTkHqlVSa8jj508rJlXvS3G4Fok",
-    "1FM5K7D81KGA04413": "https://www.carfax.com/vehiclehistory/ar20/1ED441HhZBsmy732WK_6Ua2B_4AJyH7thSMy2GI7GxXOOtbDyvhGm6TLBW2SQoIvnVRpBEST0uaIg22_GD7uofi8hnyKwoN6X24",
-    "3TMCZ5AN9KM264795": "https://www.carfax.com/vehiclehistory/ar20/LdzX0F9cXxD1YQ2Pwh2OaHuV4U_CQIokuMtvW2gxdKdoz1oIMDfBoN_OxGKCvLCyuJpL2zRaw3JGpZupdt7tzuMFCH52_Tdmwdo",
-    "JTMC1RFV5KD509241": "https://www.carfax.com/vehiclehistory/ar20/zeYfKL5JJh6OzoWLROkOxS8TCBXlXuz2aSv3-JHeMrBEt6PjiMe9nkr1LEotAKcusSN4R5EgZAv7mA_hYU5cnteKF91E-Wshz7Y",
-    "5UXTY5C03L9C53815": "https://www.carfax.com/vehiclehistory/ar20/rnhj2Og6u0R_dKtT1oDUURC1IBqtdPVLnOO_kirQClUZgE2_FSWgHby1oVjBKVdE4mgigD8FVZZSgzM5H5EGY-3mY1VPXbYjmN0",
-    "KNDEPCAA1M7107436": "https://www.carfax.com/vehiclehistory/ar20/DnfmNQtKZbJtIMzyMvjC027srs0i7TflVMebj6G6y0Km0op7c-jr_LYBHlYIT1q-pIhYzjFjFjWAxL9uaW9YPeBATQ__VPU3qkY",
-    "KNDJ23AU4M7125758": "https://www.carfax.com/vehiclehistory/ar20/3RIF42hjSHlEt3YVc5BZyJK7kMnJB40_IKTHPJ5MPMrm61cthGcK0b3FvV4KMkVE2bLAoVZFg7RPx2PQCkcWvzhdyK5nhr939Vk",
-    "1C4RJKAG9M8163510": "https://www.carfax.com/vehiclehistory/ar20/0AIaFCJ_82WwQtmwgvtvFc7uEqiD6xBbfJ96rATq6bhtMP3iXBs0gHmV0j92Zvi2vjy33yTZdZ02MVEvN6SuPd8cgMFGrAPQo8E",
-    "5N1AZ2CJ0NC111336": "https://www.carfax.com/vehiclehistory/ar20/XBlEOE4qWjJ3ZVUgUYbzhSAUOZQjjMlyPyGr-9U2x_yF1bHo_9ISIr7awF0mHS-LMU0RTvYIl9qazfaMrLdv7zjDZyKH706idVU",
-    "JN8BT3DC3NW117649": "https://www.carfax.com/vehiclehistory/ar20/MVPG7suZvnKYobSj7o7G-XOg0uIDZmpVSpJ7eAV-_3Cz8WkgzCQjdr2bVHaPz5_hefcqLM51qVc4yVkRBT1gVNGt9GBvbBeXJT8",
-    "3N1CP5BV2NL496334": "https://www.carfax.com/vehiclehistory/ar20/Msk7O2L9xNd4OxxN1qIRzLNMSvxjc69HOoR4YcilkIOuh2iDw6NmpuWkAGCsfREkGwOOcfoTwJrf3CY02V0ksvFfv-DEyUl8Bc8",
+    "1C4HJXEN8KW623041": "https://www.carfax.com/vehiclehistory/ar20/rup9kqU0ke7xZe6WRoURI6KO81NUTE9ePGTmXMta9iSY84gcPDxmHPUF5--RzdqGceI2FpQybkGbLGx8Fe3GRdGDIOSQJflVgjk",
+    "1FM5K7D81KGA04413": "https://www.carfax.com/vehiclehistory/ar20/fUbqg6Yqf8AIoSr3EPuin4ggwVqTEorksEBwhzhPFeDkdjx_krDX3rAktu18q8E7d79Eaj8eExQ1Yir2rWzgS6LswQl_HNWIPok",
+    "3TMCZ5AN9KM264795": "https://www.carfax.com/vehiclehistory/ar20/wMT26Muz53M6ZS5l8MY7EbV3DVBTmngNaMBRt8Wh4t1Knzo_hHCzCeeWXqOpjfc9hr15-cx4cyYT8J0EjOX8L_3xr14tpBgns9U",
+    "JTMC1RFV5KD509241": "https://www.carfax.com/vehiclehistory/ar20/GVKbNXBnwfkuroZBlBj_InYFZZJy6YGDoGj-nDiqxq5Bh_wP6Fvap8Y8QAVl2gm5mzRyWSHRAE0DdwEdeXVxZGsqAc9-fyjyUz8",
+    "5UXTY5C03L9C53815": "https://www.carfax.com/vehiclehistory/ar20/jDzEmQ5tIMwp1_czQ7i1nTiwesdp0eCTxtC5MS_sKEBEwti982XJ_y58XdlNEy3FRotE0fhVxKw1c-EyQWbREbI0r3Fo5RjeJ3g",
+    "KNDEPCAA1M7107436": "https://www.carfax.com/vehiclehistory/ar20/ojEmfA83TYrA__t-8whn6thfsHkRjKu5sr9XflLkWWLo90uC7Rb5tkQAK3hpMe_LGLDsJrsu6Ll68F0380jr2RwOG-TPak0Mrq4",
+    "KNDJ23AU4M7125758": "https://www.carfax.com/vehiclehistory/ar20/HW-Yl3_Q84px8cyUE6J75j9rQ9aXUANSjTDsdeD1qJ2ElDuHMr12RqMr9gn1sK9-RnLwuETWsySsJIRJ0s8b6GX-dSYj_xtW0e8",
+    "5N1AT3BA2MC745514": null,
+    "5N1AZ2CJ0NC111336": "https://www.carfax.com/vehiclehistory/ar20/WNzXL_J9vJJDEhCBwyc2_AGqDXH7_fwLYJjCrqz1kK0ADZZDllveia_rArPALE5XKekML-HqVmcF3NNkhltOL-O4BXlMYWQBl28",
+    "JN8BT3DC3NW117649": "https://www.carfax.com/vehiclehistory/ar20/hakWYb5SmgzNYbBCgiMNU-CNGa6iflTO-yRP1JBzG2FVDY06najYVoGvgBnLdoD8fajuYG94Vr4ufHHSV4hj4qwyuiyQhWFmzs8",
+    "3N1CP5BV2NL496334": "https://www.carfax.com/vehiclehistory/ar20/VvQSAQjQrKFxWhmzplWCaxMLHsgCfyJ9b7wBOOun7u5ejgbgDrJlWAMZWeuCjkZG11yL_o8Xq72jYJOI3mbY9GN_lBGxJELJXRk",
     "5J6RT6H99NL003757": null,
-    "1G6DR5RW8P0136711": "https://www.carfax.com/vehiclehistory/ar20/8UkuUgNvNEX3pZYQFgMoVKgQBL-4T9qLH8atYxwWfoqfiCYkvPRGyLQDIAwd9x1XQ9nuYp6YNVtm0KH4Fb52Hur5OSY2vooRmB8",
-    "1GCPSCEK7P1233141": "https://www.carfax.com/vehiclehistory/ar20/XVoh24Ah0sbVx5j6S3qizdM5iVhCARdEmCzC9R46xry5z5U7vDWTF5f-doRmYAkNvBWjcKD260O5336pfXCt6M_EuMyUkGmXB8M",
-    "1N6AA1EF6PN103342": "https://www.carfax.com/vehiclehistory/ar20/e1-3xoiO_NwAJ-rmTsan6thHqlJv6Eh8KtqCPMYIax6W5dOCdyoLMrFGDBT3tGzhaBhVshE1njhqegPtzBk5fnBGI-HHSortFmE",
-    "5N1BT3BA1PC754052": "https://www.carfax.com/vehiclehistory/ar20/wsDjhfaJFUhnhpsE6aExV95tqJQNxijGwL1N9oTnW9xOI0RYZ_DYnJ6uiDPVhVja_I4fo0JptP90p7tmEGD5TJL7BjXbOzF2VYM",
-    "5FPYK3F50PB047694": "https://www.carfax.com/vehiclehistory/ar20/pyYRM3PSyATJ8wYHjpb_Nxeu38E4StpEoADEg7bfClFvLNkm4RaThqznHNdEkCALZMGFAY0EN6_Qf_66byRLaRLkIIwA3pXtAZU",
-    "5N1BT3BA4PC749184": "https://www.carfax.com/vehiclehistory/ar20/Y_2JBdVlR77mjU8fOeupz7Qj23MsBaONfOqAFGieZMnL-8i3B0qADPxBUWITQfDEQZddv9F2CuY2NSeQyjomZoVqyvi44ivwzV4",
-    "JN8BT3DD6PW312706": "https://www.carfax.com/vehiclehistory/ar20/C3a5J7ns2OthqVBb3gc0J6ggOWqEAN52ajhwGX5DOoVfAuJkovUWk130n02asemsMrD8-i3Qr_rzdfPfkpG5VsXG8c_44prpJC8",
-    "5NTJB4AE4RH087564": "https://www.carfax.com/vehiclehistory/ar20/A2TdxlbsoU7JE5RX6YIcapTdg9bHhkbyR6GBpg6D8tAc_6Wcn3jD-3sqVOHpt1aLzfeOUKgx7FUVoLlxFHack0QT0M5jcIexuvI",
-    "JM3KKEHA2R1156407": "https://www.carfax.com/vehiclehistory/ar20/Gbt7eMBAGTuThRcWSmlGaz_XoPjE_JQCoXcyJj84PWqq1DdDX6ut-mxHtplj5ZtSXyGdqYxWjQRqt26W_fFd_l1SVJ78Tw12zng",
-    "3N1CP5BV1RL560742": "https://www.carfax.com/vehiclehistory/ar20/NsAcJsKb1hGTRhlZQyTN0S6--lsZwg6JTwM0u47LSO9Jl0sUlD4qTJsUcy4zC76ZkbWrqJqrP76vQZwfu52-AkByAQW-H7iv4gA",
-    "KL77LGE24RC131367": "https://www.carfax.com/vehiclehistory/ar20/usJpL1_v2H9DW0IFRgeMP9tdo0xRnJGpz-7gautPDbZuyWbvKplzKUY6-UTF0uIIiorxBrZ6YWnA781GVIQbgaNYyL3fqWhdOMw",
-    "KNDPU3DF7S7350433": "https://www.carfax.com/vehiclehistory/ar20/zDKThbCkuauz39LIQ1dHZZdM6hn-rULpZbxxnxTaNKIBpscO-ElizXiyq6XfvHEkKbqWMZlkIiNP9mGU2BNnP4IRzehA1QexvWM",
-    "7FARS3H76SE000436": "https://www.carfax.com/vehiclehistory/ar20/n0cWg1Thi3OCuLGAL0ojuwaJdbzXHsvwRiXpQIKPQ0Zpcdr_-BrUjVScFYIUSmUd3eNrxk5NMBbgLWSokETrhev6ZE1G6p3MJP8",
-    "2C4RC1BG3SR527571": "https://www.carfax.com/vehiclehistory/ar20/IzzgUQSH_BTl-eKSINlw3VyUY_wqip-9W5UJ04UKeFWvr4cUxMd1cMijaZOJxqwhDMNV8a9nlHl3hiF1_DUBKLKaIqenhfOhe3g",
+    "W1N0G8EBXNV397515": null,
+    "1GCPSCEK7P1233141": "https://www.carfax.com/vehiclehistory/ar20/3cZA3pgPUqSGRTRSEj6SCJ-Sa1xz7ilK_2Lv3-3u3AGc8XQontI-RcVVaHApnjn33SU8DxhsJFrRmTFubAlYnivyqZ8ZxTQFj_Q",
+    "1N6AA1EF6PN103342": "https://www.carfax.com/vehiclehistory/ar20/O18m2vBl1iDpAHEqVVw2DrKzqKMQuF3pBFJ_i6jhMuYK0Ipp7Ih84Laq9fobhrdgWtREdc1qPFO-xHZZQvBnMIWHDrzqprYAGTA",
+    "5N1BT3BA1PC754052": "https://www.carfax.com/vehiclehistory/ar20/9lpZskIOuvlxID0K4XCZ5tCsympgosmbui_glGCDD77bHOKwIQzLB-i_qsRa4hE5y4KsPW_12BTCB7XANwaHohXTozylleVX11o",
+    "5FPYK3F50PB047694": "https://www.carfax.com/vehiclehistory/ar20/iH3eBxzakYLjDtlwQkVcpD_v-pcfLSgm3KMpegLe9ANgUjt5L438ZdP3agVutUFhTEjP7ZFx9NoxWFyw4nsKtSisgVFntZphwyw",
+    "5N1BT3BA4PC749184": "https://www.carfax.com/vehiclehistory/ar20/YNWSeRoh2RISL50JtPqqQE7BYaHA7NW8OH-b67uVIx4eFNL1uQ6OMB_F-dFSIxBrjx-VKB9WgxWH1oOsvIdBYZp0eUC_NjyzYus",
+    "JN8BT3DD6PW312706": "https://www.carfax.com/vehiclehistory/ar20/JJCRb2_XJTswU2FHJfDmGQuDEbiIxKWAVYDisz7eq5wHSFHRPMwcHVz8H4vpZ02rpR6zRO8vLFne5qvhgD3Gj_wDaPBYKBGX2uY",
+    "JM3KKEHA2R1156407": "https://www.carfax.com/vehiclehistory/ar20/zZ8zspdRnRki_33iIdRVkuYiPMrTPxoj1Hhl44oxUiXMqDdRZ4bACZHgAaK_Hn631htflSvDnwe38l1TIgsN3mQDQRuJa05MAX8",
+    "3N1CP5BV1RL560742": "https://www.carfax.com/vehiclehistory/ar20/RY1tjJV5wbrRhjBaCQEj1vqeA7kAuBK8Vew_28sqfsZqiXmfjKXBc8cDk5KUo28b0GhHur8Donrm2Eefux_MCtZh3lluu3Pg0iM",
+    "KL77LGE24RC131367": "https://www.carfax.com/vehiclehistory/ar20/ha1hHqbEgryalpGNpai19WW-B1HfJBJrORitCnPQWp4R--fqTJvVvOOXjn73uYtTP9PXusHLQ0QpKWBSbh-eDiD9HJ0fyYje-lI",
+    "KNDPU3DF7S7350433": "https://www.carfax.com/vehiclehistory/ar20/MhkMYfAJJn5POkmsvlZic2lhh_Lqshfudu4L6QRs9R7MecW6aRNBsTeLCERDSbHbTvv8J1DwirvN2F3h2bpwS5O5yMYqGT7vxN8",
+    "7FARS3H76SE000436": "https://www.carfax.com/vehiclehistory/ar20/NkfVY1uB2k-HByDdyZVKY3hmr9jvd0VHQPQVdTpn62ZUMiWGPAVpqdQfvUeLNVtIYbssuv-BZ2gekMWsLwfbon3dAHtqouHQ0EY",
+    "2C4RC1BG3SR527571": "https://www.carfax.com/vehiclehistory/ar20/_lde62ZDFTKdL3WlF3u3ZVrYpZp67dc1Eup9e_alMiCe0cOmT8H_0WWLJzWEsyogAYB2xBqTLM8Tw-pDqTPfzTr67trKODsyezA",
     "5N1BT3BA4TC714686": null,
-    "3N1AB9EW6TY268578": "https://www.carfax.com/vehiclehistory/ar20/of93rkIOIIRNPgmwNNw27DCkgSUuHtNoCDIhZrvrT85NsBtdOdcjqaY8-1WCMQbnRL70Io5f5ZyYo8ZdRv_BGIMbvn1fORa9an0",
-    "5N1AZ3CS4TC100870": "https://www.carfax.com/vehiclehistory/ar20/Sx0t8ORSyYVNzBSMongeC9ZwD0hPxBw6kzQaSP1gWISv0d-tquabNLcBfDazOzXm1IYvezmU1ZyczsX5gHYaZ_pHKtm1AEPK030",
-    "1N6ED1FJ2TN653384": "https://www.carfax.com/vehiclehistory/ar20/PlXCrNBdka0FFffiP9PQYXkRFAXeT2rJVpWmo7WOVhRvG8m3uKcSqxAP84Pj2AKegel28iu9fliOJKw95PWZ5thDz37xheA2-7k",
-    "3N8AP6DA7TL309191": "https://www.carfax.com/vehiclehistory/ar20/GQfYveLmgQQyymAQKDyWBwFh0Cp4Jfeq416AbrgAqVbgaEY3q4MHzzlhkNIvqUGdOMjmexS67n3L2GjmljzZGxKykR-NU_uXAds",
-    "3N8AP6CE8TL405576": "https://www.carfax.com/vehiclehistory/ar20/aorRHyI6R_LkSEM6wh1MDuCcjC1pPhWTZVibsNqlok635DvBDlxImt6TEMC8UrgzDigAAn9S2BiLH-FlPLZ7zFtxzRRpYyENNIw",
-    "5N1DR3DV2TC303780": "https://www.carfax.com/vehiclehistory/ar20/hYTIOoL6udsa40A3XwM1YTxFbLjXHp1tC256DKnkfLqYGSN2m7mhdgB2A7nbss2niHe1viXek7Pdv_waPl4HJieewFymBGhbtSg",
-    "5N1AZ3CS5TC116740": "https://www.carfax.com/vehiclehistory/ar20/dPg258smiX2-XnyREGqKsg488JInAFp0_DtpW-vY68buLnGva4XIukRYFNocMtLK1vhav6npQxlsAEfoDojmGGy_01_Xbs1QgGI",
-    "JA4T0LA97TZ029873": "https://www.carfax.com/vehiclehistory/ar20/lUJe0bHdg_yMdPPApTcvlrsEJhRcDw0-9D5nf_cjWx9Qbyma1FMCukeHi_C7coUol6Rx5qkJoWJnpSxzLxZwBMgkGfA_VCsSrH8",
+    "3N1AB9EW6TY268578": "https://www.carfax.com/vehiclehistory/ar20/GUM-c0kab7uPh4zPwyAVvl6owNGkK1FOJOnz1us1oWF0UtdjKIUg-de2QlQBiZFe-Liw602ATDXxxYzsfpXET_kjImAmmpZ3GpU",
+    "5N1AZ3CS4TC100870": "https://www.carfax.com/vehiclehistory/ar20/LW3FDgc4_mOd1n8iFCKr1G0SGd-Zg2BFEQP1c5538Wm8AUKrM6i4GF91hcp40zLuvKue9TKQ4ZQ8UJXOl5g7VxHY5KBZb_4mC2A",
+    "1N6ED1FJ2TN653384": "https://www.carfax.com/vehiclehistory/ar20/7Tjy9ekA6jXPWivvH4NbbZd92gTEttdwHpggj7-1aaaeuxMLnwazVgLxY6CvC9ui5senPRT1-ar_mUH6ioFpYn3ugm3y67TGlwg",
+    "3N8AP6DA7TL309191": "https://www.carfax.com/vehiclehistory/ar20/U30pT28fzNkCLPf-b_zgq36y2rJb6M3FcPiB_OwyW9usAGWq4XSNZ_Asrtu8_IsE-y8aAE3JYbVKFxwOuF86HtuXAnH25PX8mVc",
+    "3N8AP6CE8TL405576": "https://www.carfax.com/vehiclehistory/ar20/0OwVGGyM9HUmPZFHT5QzagYwbfK_ixVl8b7OMttSSNK_CQDVlkZI5pY672RqzxIXZ-zFFFNYEtDDCni7n73rcLo337N0vw2fcsg",
+    "5N1DR3DV2TC303780": "https://www.carfax.com/vehiclehistory/ar20/mcHHHfukJ04HTIWaL2pbRJnQHXlAd6GxEJvFxIlajwo9JR9MhpzTnwkpJIRGAVQn5BAgJ62kbL8AYSsmSPMepnInktbOG7XiriE",
+    "5N1AZ3CS5TC116740": "https://www.carfax.com/vehiclehistory/ar20/-U3NwbO4pIJD8JDy5IeHr8UCzpT5POGvp7td8Jz8IbVtphfmx-cGhRpcHezs9K1zHaX8Dh3VN-w3wq4pYRL1UN2BOl94dm-YuC4",
+    "JA4T0LA97TZ029873": "https://www.carfax.com/vehiclehistory/ar20/h3kWx9i8cZYNDk5-8HO75dbV8zowtM2JV_BmrQ5e0vwJ8cKWcOwzaHl-eaH-fgM5tS06DwOcqBy4BervM3gEdp-Uc9OtZKeHel8",
+    "3N8AP6CE5TL309078": "https://www.carfax.com/vehiclehistory/ar20/D7kqcx__C52VF8bpdI1GQENr4DxuYXeinY_6QvGVgVKXMVie-fszwBEZ8U1GOjgl3nLGAv7jvP4Sj2vwF6BsiMGgvdBI6wueDIA",
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
@@ -12897,7 +12789,6 @@
     "5N1DR3BS6TC280075": false,
     "JN8BT3DD7TW018161": false,
     "5N1DR3BS9TC301369": false,
-    "5N1DR3BS6TC288693": false,
     "5N1DR3BS7TC305534": false,
     "JN8BT3DD9TW016220": false,
     "5N1DR3CS7TC272842": false,
@@ -12940,14 +12831,12 @@
     "JN8AY3EB1T9144962": false,
     "JN8AY3CH8T9730548": false,
     "JN8AY3CH5T9730541": false,
-    "1N4AL3AP7EC329363": false,
     "1N4AL3AP7FC425737": false,
     "JN8AZ2NF6H9646433": false,
     "5N1AZ2MG7HN140960": false,
     "1C6RR6FT3JS221803": false,
     "JN8AT2MT0JW487991": false,
     "ZACCJBBB4JPJ45068": false,
-    "5N1AT2MT5JC793867": false,
     "4T1B61HK7JU135887": false,
     "5N1AZ2MGXJN128937": false,
     "JN8AT2MT3JW492067": false,
@@ -12958,19 +12847,18 @@
     "5UXTY5C03L9C53815": false,
     "KNDEPCAA1M7107436": false,
     "KNDJ23AU4M7125758": false,
-    "1C4RJKAG9M8163510": false,
+    "5N1AT3BA2MC745514": false,
     "5N1AZ2CJ0NC111336": false,
     "JN8BT3DC3NW117649": true,
     "3N1CP5BV2NL496334": false,
     "5J6RT6H99NL003757": false,
-    "1G6DR5RW8P0136711": false,
+    "W1N0G8EBXNV397515": false,
     "1GCPSCEK7P1233141": false,
     "1N6AA1EF6PN103342": false,
     "5N1BT3BA1PC754052": false,
     "5FPYK3F50PB047694": false,
     "5N1BT3BA4PC749184": false,
     "JN8BT3DD6PW312706": false,
-    "5NTJB4AE4RH087564": false,
     "JM3KKEHA2R1156407": false,
     "3N1CP5BV1RL560742": true,
     "KL77LGE24RC131367": false,
@@ -12984,8 +12872,9 @@
     "3N8AP6DA7TL309191": true,
     "3N8AP6CE8TL405576": true,
     "5N1DR3DV2TC303780": true,
-    "5N1AZ3CS5TC116740": false,
+    "5N1AZ3CS5TC116740": true,
     "JA4T0LA97TZ029873": false,
+    "3N8AP6CE5TL309078": false,
     "JN1BZ4BH6VM550377": false,
     "JN1BZ4BH1VM551064": false
   },
@@ -13046,8 +12935,8 @@
     "3N8AP6CB0VL304475": null,
     "3N8AP6CB9VL304801": null,
     "3N8AP6CB0VL304251": null,
-    "3N8AP6DA0TL324499": "2026-11-14T17:00:02.175Z",
-    "3N8AP6DA5TL323705": "2026-11-14T17:00:02.175Z",
+    "3N8AP6DA0TL324499": "2026-11-15T12:00:02.666Z",
+    "3N8AP6DA5TL323705": "2026-11-15T12:00:02.666Z",
     "3N8AP6CB3VL308035": null,
     "3N8AP6CB4VL317987": null,
     "3N8AP6CBXVL307187": null,
@@ -13148,7 +13037,7 @@
     "1N6ED1EJ3VN607499": null,
     "1N6ED1EJ9VN608060": null,
     "1N6ED1EJ7VN622250": null,
-    "1N6ED1EJ7TN621743": "2026-11-14T17:00:02.175Z",
+    "1N6ED1EJ7TN621743": "2026-11-15T12:00:02.666Z",
     "1N6ED1EJ3VN607504": null,
     "1N6ED1EJ2VN617845": null,
     "1N6ED1EJ8VN601634": null,
@@ -13163,7 +13052,6 @@
     "5N1DR3BS6TC280075": null,
     "JN8BT3DD7TW018161": null,
     "5N1DR3BS9TC301369": null,
-    "5N1DR3BS6TC288693": null,
     "5N1DR3BS7TC305534": null,
     "JN8BT3DD9TW016220": null,
     "5N1DR3CS7TC272842": null,
@@ -13206,52 +13094,50 @@
     "JN8AY3EB1T9144962": null,
     "JN8AY3CH8T9730548": null,
     "JN8AY3CH5T9730541": null,
-    "1N4AL3AP7EC329363": "2026-11-14T17:00:02.175Z",
-    "1N4AL3AP7FC425737": "2026-11-14T17:00:02.175Z",
-    "JN8AZ2NF6H9646433": "2026-11-14T17:00:02.175Z",
-    "5N1AZ2MG7HN140960": "2026-11-14T17:00:02.175Z",
-    "1C6RR6FT3JS221803": "2026-11-14T17:00:02.175Z",
-    "JN8AT2MT0JW487991": "2026-11-14T17:00:02.175Z",
-    "ZACCJBBB4JPJ45068": "2026-11-14T17:00:02.175Z",
-    "5N1AT2MT5JC793867": "2026-11-14T17:00:02.175Z",
-    "4T1B61HK7JU135887": "2026-11-14T17:00:02.175Z",
-    "5N1AZ2MGXJN128937": "2026-11-14T17:00:02.175Z",
-    "JN8AT2MT3JW492067": null,
-    "1C4HJXEN8KW623041": "2026-11-14T17:00:02.175Z",
-    "1FM5K7D81KGA04413": "2026-11-14T17:00:02.175Z",
-    "3TMCZ5AN9KM264795": "2026-11-14T17:00:02.175Z",
-    "JTMC1RFV5KD509241": "2026-11-14T17:00:02.175Z",
-    "5UXTY5C03L9C53815": "2026-11-14T17:00:02.175Z",
-    "KNDEPCAA1M7107436": "2026-11-14T17:00:02.175Z",
-    "KNDJ23AU4M7125758": "2026-11-14T17:00:02.175Z",
-    "1C4RJKAG9M8163510": "2026-11-14T17:00:02.175Z",
-    "5N1AZ2CJ0NC111336": "2026-11-14T17:00:02.175Z",
-    "JN8BT3DC3NW117649": "2026-11-14T17:00:02.175Z",
-    "3N1CP5BV2NL496334": "2026-11-14T17:00:02.175Z",
-    "5J6RT6H99NL003757": "2026-11-14T17:00:02.175Z",
-    "1G6DR5RW8P0136711": "2026-11-14T17:00:02.175Z",
-    "1GCPSCEK7P1233141": "2026-11-14T17:00:02.175Z",
-    "1N6AA1EF6PN103342": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA1PC754052": "2026-11-14T17:00:02.175Z",
-    "5FPYK3F50PB047694": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4PC749184": "2026-11-14T17:00:02.175Z",
-    "JN8BT3DD6PW312706": "2026-11-14T17:00:02.175Z",
-    "5NTJB4AE4RH087564": "2026-11-14T17:00:02.175Z",
-    "JM3KKEHA2R1156407": "2026-11-14T17:00:02.175Z",
-    "3N1CP5BV1RL560742": "2026-11-14T17:00:02.175Z",
-    "KL77LGE24RC131367": "2026-11-14T17:00:02.175Z",
-    "KNDPU3DF7S7350433": "2026-11-14T17:00:02.175Z",
-    "7FARS3H76SE000436": "2026-11-14T17:00:02.175Z",
-    "2C4RC1BG3SR527571": "2026-11-14T17:00:02.175Z",
+    "1N4AL3AP7FC425737": "2026-11-15T12:00:02.666Z",
+    "JN8AZ2NF6H9646433": "2026-11-15T12:00:02.666Z",
+    "5N1AZ2MG7HN140960": "2026-11-15T12:00:02.666Z",
+    "1C6RR6FT3JS221803": "2026-11-15T12:00:02.666Z",
+    "JN8AT2MT0JW487991": "2026-11-15T12:00:02.666Z",
+    "ZACCJBBB4JPJ45068": "2026-11-15T12:00:02.666Z",
+    "4T1B61HK7JU135887": "2026-11-15T12:00:02.666Z",
+    "5N1AZ2MGXJN128937": "2026-11-15T12:00:02.666Z",
+    "JN8AT2MT3JW492067": "2026-11-15T12:00:02.666Z",
+    "1C4HJXEN8KW623041": "2026-11-15T12:00:02.666Z",
+    "1FM5K7D81KGA04413": "2026-11-15T12:00:02.666Z",
+    "3TMCZ5AN9KM264795": "2026-11-15T12:00:02.666Z",
+    "JTMC1RFV5KD509241": "2026-11-15T12:00:02.666Z",
+    "5UXTY5C03L9C53815": "2026-11-15T12:00:02.666Z",
+    "KNDEPCAA1M7107436": "2026-11-15T12:00:02.666Z",
+    "KNDJ23AU4M7125758": "2026-11-15T12:00:02.666Z",
+    "5N1AT3BA2MC745514": "2026-11-15T12:00:02.666Z",
+    "5N1AZ2CJ0NC111336": "2026-11-15T12:00:02.666Z",
+    "JN8BT3DC3NW117649": "2026-11-15T12:00:02.666Z",
+    "3N1CP5BV2NL496334": "2026-11-15T12:00:02.666Z",
+    "5J6RT6H99NL003757": "2026-11-15T12:00:02.666Z",
+    "W1N0G8EBXNV397515": "2026-11-15T12:00:02.666Z",
+    "1GCPSCEK7P1233141": "2026-11-15T12:00:02.666Z",
+    "1N6AA1EF6PN103342": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA1PC754052": "2026-11-15T12:00:02.666Z",
+    "5FPYK3F50PB047694": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4PC749184": "2026-11-15T12:00:02.666Z",
+    "JN8BT3DD6PW312706": "2026-11-15T12:00:02.666Z",
+    "JM3KKEHA2R1156407": "2026-11-15T12:00:02.666Z",
+    "3N1CP5BV1RL560742": "2026-11-15T12:00:02.666Z",
+    "KL77LGE24RC131367": "2026-11-15T12:00:02.666Z",
+    "KNDPU3DF7S7350433": "2026-11-15T12:00:02.666Z",
+    "7FARS3H76SE000436": "2026-11-15T12:00:02.666Z",
+    "2C4RC1BG3SR527571": "2026-11-15T12:00:02.666Z",
     "5N1BT3BA4TC714686": null,
-    "3N1AB9EW6TY268578": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3CS4TC100870": "2026-11-14T17:00:02.175Z",
-    "1N6ED1FJ2TN653384": "2026-11-14T17:00:02.175Z",
-    "3N8AP6DA7TL309191": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CE8TL405576": "2026-11-14T17:00:02.175Z",
-    "5N1DR3DV2TC303780": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3CS5TC116740": "2026-11-14T17:00:02.175Z",
-    "JA4T0LA97TZ029873": "2026-11-14T17:00:02.175Z",
+    "3N1AB9EW6TY268578": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3CS4TC100870": "2026-11-15T12:00:02.666Z",
+    "1N6ED1FJ2TN653384": "2026-11-15T12:00:02.666Z",
+    "3N8AP6DA7TL309191": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CE8TL405576": "2026-11-15T12:00:02.666Z",
+    "5N1DR3DV2TC303780": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3CS5TC116740": "2026-11-15T12:00:02.666Z",
+    "JA4T0LA97TZ029873": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
@@ -13429,7 +13315,6 @@
     "5N1DR3BS6TC280075": false,
     "JN8BT3DD7TW018161": false,
     "5N1DR3BS9TC301369": false,
-    "5N1DR3BS6TC288693": false,
     "5N1DR3BS7TC305534": false,
     "JN8BT3DD9TW016220": false,
     "5N1DR3CS7TC272842": false,
@@ -13472,14 +13357,12 @@
     "JN8AY3EB1T9144962": false,
     "JN8AY3CH8T9730548": false,
     "JN8AY3CH5T9730541": false,
-    "1N4AL3AP7EC329363": false,
     "1N4AL3AP7FC425737": false,
     "JN8AZ2NF6H9646433": false,
     "5N1AZ2MG7HN140960": false,
     "1C6RR6FT3JS221803": false,
     "JN8AT2MT0JW487991": false,
     "ZACCJBBB4JPJ45068": false,
-    "5N1AT2MT5JC793867": false,
     "4T1B61HK7JU135887": false,
     "5N1AZ2MGXJN128937": false,
     "JN8AT2MT3JW492067": false,
@@ -13490,19 +13373,18 @@
     "5UXTY5C03L9C53815": false,
     "KNDEPCAA1M7107436": false,
     "KNDJ23AU4M7125758": false,
-    "1C4RJKAG9M8163510": false,
+    "5N1AT3BA2MC745514": false,
     "5N1AZ2CJ0NC111336": false,
     "JN8BT3DC3NW117649": false,
     "3N1CP5BV2NL496334": false,
     "5J6RT6H99NL003757": false,
-    "1G6DR5RW8P0136711": false,
+    "W1N0G8EBXNV397515": false,
     "1GCPSCEK7P1233141": false,
     "1N6AA1EF6PN103342": false,
     "5N1BT3BA1PC754052": false,
     "5FPYK3F50PB047694": false,
     "5N1BT3BA4PC749184": false,
     "JN8BT3DD6PW312706": false,
-    "5NTJB4AE4RH087564": false,
     "JM3KKEHA2R1156407": false,
     "3N1CP5BV1RL560742": false,
     "KL77LGE24RC131367": false,
@@ -13518,6 +13400,7 @@
     "5N1DR3DV2TC303780": false,
     "5N1AZ3CS5TC116740": false,
     "JA4T0LA97TZ029873": false,
+    "3N8AP6CE5TL309078": false,
     "JN1BZ4BH6VM550377": false,
     "JN1BZ4BH1VM551064": false
   },
@@ -13578,7 +13461,7 @@
     "3N8AP6CB0VL304475": null,
     "3N8AP6CB9VL304801": null,
     "3N8AP6CB0VL304251": null,
-    "3N8AP6DA0TL324499": 24002,
+    "3N8AP6DA0TL324499": 23502,
     "3N8AP6DA5TL323705": 23752,
     "3N8AP6CB3VL308035": null,
     "3N8AP6CB4VL317987": null,
@@ -13695,7 +13578,6 @@
     "5N1DR3BS6TC280075": null,
     "JN8BT3DD7TW018161": null,
     "5N1DR3BS9TC301369": null,
-    "5N1DR3BS6TC288693": null,
     "5N1DR3BS7TC305534": null,
     "JN8BT3DD9TW016220": null,
     "5N1DR3CS7TC272842": null,
@@ -13738,41 +13620,38 @@
     "JN8AY3EB1T9144962": null,
     "JN8AY3CH8T9730548": null,
     "JN8AY3CH5T9730541": null,
-    "1N4AL3AP7EC329363": 8275,
     "1N4AL3AP7FC425737": 9252,
     "JN8AZ2NF6H9646433": 15502,
     "5N1AZ2MG7HN140960": 16500,
     "1C6RR6FT3JS221803": 17994,
     "JN8AT2MT0JW487991": 9997,
     "ZACCJBBB4JPJ45068": 12502,
-    "5N1AT2MT5JC793867": 9916,
     "4T1B61HK7JU135887": 21502,
     "5N1AZ2MGXJN128937": 18999,
-    "JN8AT2MT3JW492067": null,
+    "JN8AT2MT3JW492067": 11391,
     "1C4HJXEN8KW623041": 19974,
     "1FM5K7D81KGA04413": 15994,
     "3TMCZ5AN9KM264795": 32999,
-    "JTMC1RFV5KD509241": 22002,
+    "JTMC1RFV5KD509241": 21502,
     "5UXTY5C03L9C53815": 24502,
     "KNDEPCAA1M7107436": 10998,
     "KNDJ23AU4M7125758": 12502,
-    "1C4RJKAG9M8163510": 19999,
+    "5N1AT3BA2MC745514": 19499,
     "5N1AZ2CJ0NC111336": 19975,
-    "JN8BT3DC3NW117649": 22552,
+    "JN8BT3DC3NW117649": 22320,
     "3N1CP5BV2NL496334": 14490,
     "5J6RT6H99NL003757": 28289,
-    "1G6DR5RW8P0136711": 45751,
+    "W1N0G8EBXNV397515": 29062,
     "1GCPSCEK7P1233141": 23994,
     "1N6AA1EF6PN103342": 21996,
     "5N1BT3BA1PC754052": 15891,
     "5FPYK3F50PB047694": 27602,
-    "5N1BT3BA4PC749184": 19002,
+    "5N1BT3BA4PC749184": 18752,
     "JN8BT3DD6PW312706": 21752,
-    "5NTJB4AE4RH087564": 17337,
     "JM3KKEHA2R1156407": 29994,
     "3N1CP5BV1RL560742": 16502,
     "KL77LGE24RC131367": 16752,
-    "KNDPU3DF7S7350433": 23152,
+    "KNDPU3DF7S7350433": 22252,
     "7FARS3H76SE000436": 26502,
     "2C4RC1BG3SR527571": 27500,
     "5N1BT3BA4TC714686": null,
@@ -13784,234 +13663,232 @@
     "5N1DR3DV2TC303780": 41844,
     "5N1AZ3CS5TC116740": 35705,
     "JA4T0LA97TZ029873": 37222,
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
   "msrpCheckedAt": {
-    "3N1AB9BV8VY243776": "2026-11-14T17:00:02.175Z",
-    "3N1AB9BV3VY243801": "2026-11-14T17:00:02.175Z",
-    "3N1AB9BV7VY247432": "2026-11-14T17:00:02.175Z",
-    "3N1AB9BV0VY250639": "2026-11-14T17:00:02.175Z",
-    "3N1AB9BV6VY251391": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BEXVL310957": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE6VL315668": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE6VL318036": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE1VL322351": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE7VL319888": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE4VL320481": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BEXVL323014": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE5VL325544": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE0VL325824": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE0VL325807": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE9VL327040": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE4VL325969": "2026-11-14T17:00:02.175Z",
-    "3N8AP6BE0VL326228": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV3VY224938": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV2VY240659": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV8VY247048": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV6VY245167": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV1VY250793": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CV2VY241763": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CEXVL334738": "2026-11-14T17:00:02.175Z",
-    "3N1AB9CVXVY246211": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CE2VL320249": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DVXVY229987": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV0VY235474": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV6VY214399": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CE4TL441815": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV3VY203585": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV8VY201332": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV5VY214880": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV3VY217616": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV9VY217071": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV5VY210571": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV7VY228814": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV4VY206947": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DV2VY206669": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB1VL314691": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB7VL315649": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB5VL320865": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB0VL324421": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB6VL325119": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB9VL325146": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CBXVL328296": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB0VL327996": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB7VL328966": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB4VL329248": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB4VL329055": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB8VL329902": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB5VL330361": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB0VL304475": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB9VL304801": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB0VL304251": "2026-11-14T17:00:02.175Z",
+    "3N1AB9BV8VY243776": "2026-11-15T12:00:02.666Z",
+    "3N1AB9BV3VY243801": "2026-11-15T12:00:02.666Z",
+    "3N1AB9BV7VY247432": "2026-11-15T12:00:02.666Z",
+    "3N1AB9BV0VY250639": "2026-11-15T12:00:02.666Z",
+    "3N1AB9BV6VY251391": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BEXVL310957": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE6VL315668": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE6VL318036": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE1VL322351": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE7VL319888": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE4VL320481": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BEXVL323014": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE5VL325544": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE0VL325824": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE0VL325807": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE9VL327040": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE4VL325969": "2026-11-15T12:00:02.666Z",
+    "3N8AP6BE0VL326228": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV3VY224938": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV2VY240659": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV8VY247048": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV6VY245167": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV1VY250793": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CV2VY241763": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CEXVL334738": "2026-11-15T12:00:02.666Z",
+    "3N1AB9CVXVY246211": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CE2VL320249": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DVXVY229987": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV0VY235474": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV6VY214399": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CE4TL441815": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV3VY203585": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV8VY201332": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV5VY214880": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV3VY217616": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV9VY217071": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV5VY210571": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV7VY228814": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV4VY206947": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DV2VY206669": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB1VL314691": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB7VL315649": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB5VL320865": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB0VL324421": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB6VL325119": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB9VL325146": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CBXVL328296": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB0VL327996": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB7VL328966": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB4VL329248": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB4VL329055": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB8VL329902": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB5VL330361": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB0VL304475": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB9VL304801": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB0VL304251": "2026-11-15T12:00:02.666Z",
     "3N8AP6DA0TL324499": null,
     "3N8AP6DA5TL323705": null,
-    "3N8AP6CB3VL308035": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB4VL317987": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CBXVL307187": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB7VL307132": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB0VL303732": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB4VL320422": "2026-11-14T17:00:02.175Z",
-    "3N8AP6CB7VL331401": "2026-11-14T17:00:02.175Z",
-    "1N4BL4DV6TN365020": "2026-11-14T17:00:02.175Z",
-    "3N1AB9DVXVY207102": "2026-11-14T17:00:02.175Z",
-    "1N4BL4CV0TN360428": "2026-11-14T17:00:02.175Z",
-    "1N4BL4CV9TN361996": "2026-11-14T17:00:02.175Z",
-    "1N4BL4DV1TN365779": "2026-11-14T17:00:02.175Z",
-    "3N8AP6DB9TL426151": "2026-11-14T17:00:02.175Z",
-    "3N8AP6DB3TL425433": "2026-11-14T17:00:02.175Z",
-    "5N1BT3AA0TC874923": "2026-11-14T17:00:02.175Z",
-    "1N4BL4DV9TN357641": "2026-11-14T17:00:02.175Z",
-    "1N4BL4DV0TN352747": "2026-11-14T17:00:02.175Z",
-    "3N8AP6DD0VL317288": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC670631": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA7VC670282": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4VC687640": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC692628": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC696890": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BAXVC699484": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA1VC673050": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA2VC679276": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA3VC682154": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC693679": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA0VC692818": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA7VC695490": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA1VC692133": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC695349": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC695433": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6VC678762": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA1VC691645": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA5VC680583": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4VC673978": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA0VC696500": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA2TC880592": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6TC880529": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4TC880352": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA6TC880398": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4TC889326": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA9TC891461": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA3TC891195": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA4TC876124": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA2TC876087": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA2TC880639": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA8TC880824": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA5VC681636": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA2VC690472": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA0VC696884": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BA8TC885232": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB2VC694899": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BBXVC676733": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BBXVC673881": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB6VC676681": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB5VC682410": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB8VC680439": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB1VC684106": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB6VC695280": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB7TC884551": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB6TC881494": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB5VC673397": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB1VC678015": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB0VC673467": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB5VC673187": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB8VC682580": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB3VC682356": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB8VC681123": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB9VC682538": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB8VC689724": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB2VC693218": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB2VC699374": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB9TC889069": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB2TC890872": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BBXTC894197": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB8TC894134": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB0TC894404": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ2VN607543": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ5VN613577": "2026-11-14T17:00:02.175Z",
-    "5N1BT3BB3VC683183": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ2VN604707": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ4TN675503": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ1TN681873": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EK0VN601264": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EK0VN601121": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ8VN607949": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ4VN600349": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ2VN609776": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ3VN605736": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ8VN608793": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ4TN655753": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ3TN672057": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ2TN678903": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ6TN679665": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ9VN609385": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ3VN607499": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ9VN608060": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ7VN622250": "2026-11-14T17:00:02.175Z",
+    "3N8AP6CB3VL308035": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB4VL317987": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CBXVL307187": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB7VL307132": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB0VL303732": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB4VL320422": "2026-11-15T12:00:02.666Z",
+    "3N8AP6CB7VL331401": "2026-11-15T12:00:02.666Z",
+    "1N4BL4DV6TN365020": "2026-11-15T12:00:02.666Z",
+    "3N1AB9DVXVY207102": "2026-11-15T12:00:02.666Z",
+    "1N4BL4CV0TN360428": "2026-11-15T12:00:02.666Z",
+    "1N4BL4CV9TN361996": "2026-11-15T12:00:02.666Z",
+    "1N4BL4DV1TN365779": "2026-11-15T12:00:02.666Z",
+    "3N8AP6DB9TL426151": "2026-11-15T12:00:02.666Z",
+    "3N8AP6DB3TL425433": "2026-11-15T12:00:02.666Z",
+    "5N1BT3AA0TC874923": "2026-11-15T12:00:02.666Z",
+    "1N4BL4DV9TN357641": "2026-11-15T12:00:02.666Z",
+    "1N4BL4DV0TN352747": "2026-11-15T12:00:02.666Z",
+    "3N8AP6DD0VL317288": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC670631": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA7VC670282": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4VC687640": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC692628": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC696890": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BAXVC699484": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA1VC673050": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA2VC679276": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA3VC682154": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC693679": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA0VC692818": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA7VC695490": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA1VC692133": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC695349": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC695433": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6VC678762": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA1VC691645": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA5VC680583": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4VC673978": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA0VC696500": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA2TC880592": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6TC880529": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4TC880352": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA6TC880398": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4TC889326": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA9TC891461": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA3TC891195": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA4TC876124": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA2TC876087": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA2TC880639": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA8TC880824": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA5VC681636": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA2VC690472": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA0VC696884": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BA8TC885232": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB2VC694899": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BBXVC676733": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BBXVC673881": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB6VC676681": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB5VC682410": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB8VC680439": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB1VC684106": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB6VC695280": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB7TC884551": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB6TC881494": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB5VC673397": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB1VC678015": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB0VC673467": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB5VC673187": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB8VC682580": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB3VC682356": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB8VC681123": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB9VC682538": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB8VC689724": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB2VC693218": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB2VC699374": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB9TC889069": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB2TC890872": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BBXTC894197": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB8TC894134": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB0TC894404": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ2VN607543": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ5VN613577": "2026-11-15T12:00:02.666Z",
+    "5N1BT3BB3VC683183": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ2VN604707": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ4TN675503": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ1TN681873": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EK0VN601264": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EK0VN601121": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ8VN607949": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ4VN600349": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ2VN609776": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ3VN605736": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ8VN608793": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ4TN655753": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ3TN672057": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ2TN678903": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ6TN679665": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ9VN609385": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ3VN607499": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ9VN608060": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ7VN622250": "2026-11-15T12:00:02.666Z",
     "1N6ED1EJ7TN621743": null,
-    "1N6ED1EJ3VN607504": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ2VN617845": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ8VN601634": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ4VN620763": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ1VN621384": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ4VN616115": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EJ9VN607975": "2026-11-14T17:00:02.175Z",
-    "JN8BT3DD8TW013843": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BSXTC278250": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS8TC280725": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS6TC280786": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS6TC280075": "2026-11-14T17:00:02.175Z",
-    "JN8BT3DD7TW018161": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS9TC301369": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS6TC288693": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BS7TC305534": "2026-11-14T17:00:02.175Z",
-    "JN8BT3DD9TW016220": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS7TC272842": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS8TC218191": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CSXTC216264": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS1TC269998": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS0TC269605": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS1TC276935": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CSXTC276383": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS7TC278673": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS3TC292120": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS5TC293964": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS7TC306486": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS9TC307557": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS0TC308595": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS4TC297519": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS3TC277147": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CSXTC303775": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS7TC304303": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS9TC306294": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CS7TC305032": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EK1VN602052": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EK1VN620163": "2026-11-14T17:00:02.175Z",
-    "JA4T0LA90TZ041279": "2026-11-14T17:00:02.175Z",
-    "1N6ED1EK8VN621312": "2026-11-14T17:00:02.175Z",
-    "5N1DR3CU4TC309346": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3CS1VC101106": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3CS0VC101503": "2026-11-14T17:00:02.175Z",
-    "5N1DR3BT1TC296953": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3CS2TC118185": "2026-11-14T17:00:02.175Z",
-    "JA4T0MA94TZ046796": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3DS5TC111004": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3DS1VC108541": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3DS0VC109468": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3DS5VC105867": "2026-11-14T17:00:02.175Z",
-    "5N1DR3DV9TC297492": "2026-11-14T17:00:02.175Z",
-    "5N1DR3DV7TC308232": "2026-11-14T17:00:02.175Z",
-    "JN1BZ4BH1TM501049": "2026-11-14T17:00:02.175Z",
-    "5N1AZ3DT4VC110115": "2026-11-14T17:00:02.175Z",
-    "JN8AY3EB1T9144962": "2026-11-14T17:00:02.175Z",
-    "JN8AY3CH8T9730548": "2026-11-14T17:00:02.175Z",
-    "JN8AY3CH5T9730541": "2026-11-14T17:00:02.175Z",
-    "1N4AL3AP7EC329363": null,
+    "1N6ED1EJ3VN607504": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ2VN617845": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ8VN601634": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ4VN620763": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ1VN621384": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ4VN616115": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EJ9VN607975": "2026-11-15T12:00:02.666Z",
+    "JN8BT3DD8TW013843": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BSXTC278250": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BS8TC280725": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BS6TC280786": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BS6TC280075": "2026-11-15T12:00:02.666Z",
+    "JN8BT3DD7TW018161": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BS9TC301369": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BS7TC305534": "2026-11-15T12:00:02.666Z",
+    "JN8BT3DD9TW016220": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS7TC272842": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS8TC218191": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CSXTC216264": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS1TC269998": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS0TC269605": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS1TC276935": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CSXTC276383": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS7TC278673": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS3TC292120": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS5TC293964": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS7TC306486": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS9TC307557": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS0TC308595": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS4TC297519": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS3TC277147": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CSXTC303775": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS7TC304303": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS9TC306294": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CS7TC305032": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EK1VN602052": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EK1VN620163": "2026-11-15T12:00:02.666Z",
+    "JA4T0LA90TZ041279": "2026-11-15T12:00:02.666Z",
+    "1N6ED1EK8VN621312": "2026-11-15T12:00:02.666Z",
+    "5N1DR3CU4TC309346": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3CS1VC101106": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3CS0VC101503": "2026-11-15T12:00:02.666Z",
+    "5N1DR3BT1TC296953": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3CS2TC118185": "2026-11-15T12:00:02.666Z",
+    "JA4T0MA94TZ046796": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3DS5TC111004": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3DS1VC108541": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3DS0VC109468": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3DS5VC105867": "2026-11-15T12:00:02.666Z",
+    "5N1DR3DV9TC297492": "2026-11-15T12:00:02.666Z",
+    "5N1DR3DV7TC308232": "2026-11-15T12:00:02.666Z",
+    "JN1BZ4BH1TM501049": "2026-11-15T12:00:02.666Z",
+    "5N1AZ3DT4VC110115": "2026-11-15T12:00:02.666Z",
+    "JN8AY3EB1T9144962": "2026-11-15T12:00:02.666Z",
+    "JN8AY3CH8T9730548": "2026-11-15T12:00:02.666Z",
+    "JN8AY3CH5T9730541": "2026-11-15T12:00:02.666Z",
     "1N4AL3AP7FC425737": null,
     "JN8AZ2NF6H9646433": null,
     "5N1AZ2MG7HN140960": null,
     "1C6RR6FT3JS221803": null,
     "JN8AT2MT0JW487991": null,
     "ZACCJBBB4JPJ45068": null,
-    "5N1AT2MT5JC793867": null,
     "4T1B61HK7JU135887": null,
     "5N1AZ2MGXJN128937": null,
     "JN8AT2MT3JW492067": null,
@@ -14022,19 +13899,18 @@
     "5UXTY5C03L9C53815": null,
     "KNDEPCAA1M7107436": null,
     "KNDJ23AU4M7125758": null,
-    "1C4RJKAG9M8163510": null,
+    "5N1AT3BA2MC745514": null,
     "5N1AZ2CJ0NC111336": null,
     "JN8BT3DC3NW117649": null,
     "3N1CP5BV2NL496334": null,
     "5J6RT6H99NL003757": null,
-    "1G6DR5RW8P0136711": null,
+    "W1N0G8EBXNV397515": null,
     "1GCPSCEK7P1233141": null,
     "1N6AA1EF6PN103342": null,
     "5N1BT3BA1PC754052": null,
     "5FPYK3F50PB047694": null,
     "5N1BT3BA4PC749184": null,
     "JN8BT3DD6PW312706": null,
-    "5NTJB4AE4RH087564": null,
     "JM3KKEHA2R1156407": null,
     "3N1CP5BV1RL560742": null,
     "KL77LGE24RC131367": null,
@@ -14050,6 +13926,7 @@
     "5N1DR3DV2TC303780": null,
     "5N1AZ3CS5TC116740": null,
     "JA4T0LA97TZ029873": null,
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   },
@@ -14227,7 +14104,6 @@
     "5N1DR3BS6TC280075": false,
     "JN8BT3DD7TW018161": false,
     "5N1DR3BS9TC301369": false,
-    "5N1DR3BS6TC288693": false,
     "5N1DR3BS7TC305534": false,
     "JN8BT3DD9TW016220": false,
     "5N1DR3CS7TC272842": false,
@@ -14270,14 +14146,12 @@
     "JN8AY3EB1T9144962": false,
     "JN8AY3CH8T9730548": false,
     "JN8AY3CH5T9730541": false,
-    "1N4AL3AP7EC329363": false,
     "1N4AL3AP7FC425737": false,
     "JN8AZ2NF6H9646433": false,
     "5N1AZ2MG7HN140960": false,
     "1C6RR6FT3JS221803": false,
     "JN8AT2MT0JW487991": false,
     "ZACCJBBB4JPJ45068": false,
-    "5N1AT2MT5JC793867": false,
     "4T1B61HK7JU135887": false,
     "5N1AZ2MGXJN128937": false,
     "JN8AT2MT3JW492067": false,
@@ -14288,19 +14162,18 @@
     "5UXTY5C03L9C53815": false,
     "KNDEPCAA1M7107436": false,
     "KNDJ23AU4M7125758": false,
-    "1C4RJKAG9M8163510": false,
+    "5N1AT3BA2MC745514": false,
     "5N1AZ2CJ0NC111336": false,
     "JN8BT3DC3NW117649": false,
     "3N1CP5BV2NL496334": false,
     "5J6RT6H99NL003757": false,
-    "1G6DR5RW8P0136711": false,
+    "W1N0G8EBXNV397515": false,
     "1GCPSCEK7P1233141": false,
     "1N6AA1EF6PN103342": false,
     "5N1BT3BA1PC754052": false,
     "5FPYK3F50PB047694": false,
     "5N1BT3BA4PC749184": false,
     "JN8BT3DD6PW312706": false,
-    "5NTJB4AE4RH087564": false,
     "JM3KKEHA2R1156407": false,
     "3N1CP5BV1RL560742": false,
     "KL77LGE24RC131367": false,
@@ -14316,6 +14189,7 @@
     "5N1DR3DV2TC303780": false,
     "5N1AZ3CS5TC116740": false,
     "JA4T0LA97TZ029873": false,
+    "3N8AP6CE5TL309078": false,
     "JN1BZ4BH6VM550377": false,
     "JN1BZ4BH1VM551064": false
   },
@@ -14493,7 +14367,6 @@
     "5N1DR3BS6TC280075": 42650,
     "JN8BT3DD7TW018161": 42760,
     "5N1DR3BS9TC301369": 42775,
-    "5N1DR3BS6TC288693": 43030,
     "5N1DR3BS7TC305534": 43060,
     "JN8BT3DD9TW016220": 43750,
     "5N1DR3CS7TC272842": 44410,
@@ -14536,14 +14409,12 @@
     "JN8AY3EB1T9144962": 78070,
     "JN8AY3CH8T9730548": 88810,
     "JN8AY3CH5T9730541": 89780,
-    "1N4AL3AP7EC329363": null,
     "1N4AL3AP7FC425737": null,
     "JN8AZ2NF6H9646433": null,
     "5N1AZ2MG7HN140960": null,
     "1C6RR6FT3JS221803": null,
     "JN8AT2MT0JW487991": null,
     "ZACCJBBB4JPJ45068": null,
-    "5N1AT2MT5JC793867": null,
     "4T1B61HK7JU135887": null,
     "5N1AZ2MGXJN128937": null,
     "JN8AT2MT3JW492067": null,
@@ -14554,19 +14425,18 @@
     "5UXTY5C03L9C53815": null,
     "KNDEPCAA1M7107436": null,
     "KNDJ23AU4M7125758": null,
-    "1C4RJKAG9M8163510": null,
+    "5N1AT3BA2MC745514": null,
     "5N1AZ2CJ0NC111336": null,
     "JN8BT3DC3NW117649": null,
     "3N1CP5BV2NL496334": null,
     "5J6RT6H99NL003757": null,
-    "1G6DR5RW8P0136711": null,
+    "W1N0G8EBXNV397515": null,
     "1GCPSCEK7P1233141": null,
     "1N6AA1EF6PN103342": null,
     "5N1BT3BA1PC754052": null,
     "5FPYK3F50PB047694": null,
     "5N1BT3BA4PC749184": null,
     "JN8BT3DD6PW312706": null,
-    "5NTJB4AE4RH087564": null,
     "JM3KKEHA2R1156407": null,
     "3N1CP5BV1RL560742": null,
     "KL77LGE24RC131367": null,
@@ -14582,6 +14452,7 @@
     "5N1DR3DV2TC303780": null,
     "5N1AZ3CS5TC116740": null,
     "JA4T0LA97TZ029873": null,
+    "3N8AP6CE5TL309078": null,
     "JN1BZ4BH6VM550377": null,
     "JN1BZ4BH1VM551064": null
   }
